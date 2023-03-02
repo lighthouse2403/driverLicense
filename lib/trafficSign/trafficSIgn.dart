@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 class TrafficSign extends StatefulWidget {
-  const TrafficSign({super.key, required this.title});
-
-  final String title;
+  const TrafficSign({super.key});
 
   @override
   State<TrafficSign> createState() => _TrafficSignState();
@@ -14,7 +12,7 @@ class _TrafficSignState extends State<TrafficSign> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text(widget.title),
+        title: Text('Biển báo'),
         backgroundColor: Colors.green,
       ),
       body: const Center(

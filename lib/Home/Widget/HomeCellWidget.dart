@@ -1,14 +1,21 @@
+import 'dart:ffi';
+
 import 'package:flutter/material.dart';
+import '../../trafficSign/trafficSIgn.dart';
 
 class HomeCellWidget extends StatelessWidget {
-  const HomeCellWidget({super.key, required this.text, required this.icon});
+  const HomeCellWidget({super.key, required this.text, required this.icon, required this.type});
   final String text;
   final String icon;
+  final int type;
+
   @override
   Widget build(BuildContext context) {
     return InkWell(
             splashColor: Colors.blue,
-            onTap: () {},
+            onTap: () {
+              gotoDetail(context);
+            },
             child: Container(
                       decoration: const BoxDecoration(
                                     color: Colors.green,
@@ -30,5 +37,49 @@ class HomeCellWidget extends StatelessWidget {
                             ),
                   ),
           );
+  }
+
+  void gotoDetail(BuildContext context) {
+    switch (type) {
+      case 0: {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const TrafficSign()),
+        );
+      }
+      break;
+      case 1: {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const TrafficSign()),
+        );
+      }
+      break;
+      case 2: {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const TrafficSign()),
+        );
+      }
+      break;
+      case 3: {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const TrafficSign()),
+        );
+      }
+      break;
+      case 4: {
+        Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => const TrafficSign()),
+        );
+      }
+      break;
+      case 5: {
+
+      }
+      break;
+    }
   }
 }
