@@ -10,7 +10,7 @@
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-		O5Q7ZmoORECLm6og2WXOyt/cDwM=
+		5myGqCbs6HoHnKmHl0l2mKhND6M=
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -20,9 +20,37 @@
 		<data>
 		wDH5D2bRg/hlIvlEWVSBPdmDqDY=
 		</data>
+		<key>flutter_assets/assets/home/conversation.png</key>
+		<data>
+		vvVjfinDM9ksftAGiWZxfhGG7SM=
+		</data>
+		<key>flutter_assets/assets/home/document.png</key>
+		<data>
+		y+cdleF5+5U0ah4gH08A7DIt7+o=
+		</data>
 		<key>flutter_assets/assets/home/examination.png</key>
 		<data>
 		JB4y7EdMUhjloR81Am1iVFBZj4U=
+		</data>
+		<key>flutter_assets/assets/home/tips.png</key>
+		<data>
+		JmK5LFIGlghGNtm/Fxwua8wkCsE=
+		</data>
+		<key>flutter_assets/assets/home/trafficSign.png</key>
+		<data>
+		V09XNwiFc1k3QMuGJ7gl8rO8/js=
+		</data>
+		<key>flutter_assets/assets/home/wrongAnswer.png</key>
+		<data>
+		vr5demYpy85WC3cFZNtInPWT93g=
+		</data>
+		<key>flutter_assets/assets/json/question.json</key>
+		<data>
+		2gPBYcjwQrrP05CBXVuJXuvkLWA=
+		</data>
+		<key>flutter_assets/assets/json/trafficSign.json</key>
+		<data>
+		/FO68KXrK5wLuswlb832tlx9h4s=
 		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
@@ -34,7 +62,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-		ISR76/JfqtpxdkpzpanIpAvNqHI=
+		ilKh8OlReKnAhWb/LfPP78FCMp0=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -55,7 +83,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			83einSYq2YixArd45zFqd6iiw5yRbdU75xp2o4SEY7w=
+			i2oUnXIx+3nqP19hh1w32/cS9G/bm9aXIZ8fcdk+ntw=
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -72,11 +100,60 @@
 			PpxwDKta79EyoX5iSFRt4iNU/WE97quqaG2Nz+pmiAs=
 			</data>
 		</dict>
+		<key>flutter_assets/assets/home/conversation.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			RimW8TyxcZTrTPYpMM0GEySIj3iuLp7PL5CQB9v24b4=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/home/document.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			pWDIv/gYqLiCSiHMJa1sazKlDJK4I20AXSLWPMQNhW4=
+			</data>
+		</dict>
 		<key>flutter_assets/assets/home/examination.png</key>
 		<dict>
 			<key>hash2</key>
 			<data>
 			SyDVYNE9XNmX+XDtMtLPg3wMjAciqU8glzW4f9dG3+I=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/home/tips.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			8KBFkUExbMPUsOw4LeXZLjSdN11+hy/3EWTr6/LMI5o=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/home/trafficSign.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			h08tFmgajN6Q5NmTUyqzJFA6RojiiGcqVsjctrlZrQw=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/home/wrongAnswer.png</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			35Om8zXHwvCUNRSvtuqqkcYFBIjaEysblOLxvJ0azA8=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/question.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			IXgaQYOe1HBfTNsEcr5/JxcL1ih05DaBPOWpcxlufQ4=
+			</data>
+		</dict>
+		<key>flutter_assets/assets/json/trafficSign.json</key>
+		<dict>
+			<key>hash2</key>
+			<data>
+			MNS6hR+c+AsCKZBhCWH0oiGzzHip/+eGMoS4fEJKFi0=
 			</data>
 		</dict>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
@@ -97,7 +174,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			s+yews7AwDyTckThA2zu8mbx9veYs+LHRulw2KPovBA=
+			oCTKqk3u2klbG+haJNZarRRL3pxaOyENnXzUbOKOk+Y=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>

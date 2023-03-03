@@ -24,12 +24,12 @@ class _HomeScreenState extends State<HomeScreen> {
             mainAxisSpacing: 16,
             crossAxisCount: 2,
             children: const <Widget>[
-              HomeCellWidget(text: 'Thi thử', icon: 'assets/home/examination.png', type: 0),
-              HomeCellWidget(text: 'Biển báo', icon: 'assets/home/examination.png', type: 1),
-              HomeCellWidget(text: 'Lý thuyết', icon: 'assets/home/examination.png', type: 2),
-              HomeCellWidget(text: 'Câu hay sai', icon: 'assets/home/examination.png', type: 3),
-              HomeCellWidget(text: 'Lý thuyết', icon: 'assets/home/examination.png', type: 4),
-              HomeCellWidget(text: 'Diễn đàn', icon: 'assets/home/examination.png', type: 5)
+              HomeCellWidget(text: 'Thi thử', icon: 'examination.png', type: 0),
+              HomeCellWidget(text: 'Biển báo', icon: 'trafficSign.png', type: 1),
+              HomeCellWidget(text: 'Lý thuyết', icon: 'document.png', type: 2),
+              HomeCellWidget(text: 'Câu hay sai', icon: 'wrongAnswer.png', type: 3),
+              HomeCellWidget(text: 'Mẹo', icon: 'tips.png', type: 4),
+              HomeCellWidget(text: 'Diễn đàn', icon: 'conversation.png', type: 5)
             ],
           )
       ),

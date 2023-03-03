@@ -1,0 +1,932 @@
+{
+  "chapers" : [
+    {
+      "id": 1,
+      "name": "Các khái niệm và quy tắc giao thông đường bộ"
+    },
+    {
+      "id": 2,
+      "name": "Nghiệp vụ vận tải"
+    },
+    {
+      "id": 3,
+      "name": "Văn hoá giao thông và đạo đức người lái xe"
+    },
+    {
+      "id": 4,
+      "name": "Kỹ thuật lái xe"
+    },
+    {
+      "id": 5,
+      "name": "Biển báo đường bộ"
+    },
+    {
+      "id": 6,
+      "name": "Sa hình"
+    },
+  ],
+
+  "questions": [
+    {
+      "id": 1,
+      "chapter_id": 1,
+      "question_text": "Phần của đường bộ được sử dụng cho các phương tiện giao thông qua lại  là gì?",
+      "question_image" : "",
+      "answer_list": ["Phần mặt đường và lề đường.", "Phần đường xe chạy.", "Phần đường xe cơ giới."],
+      "answer_index": 1,
+      "is_dead_point": false,
+      "comment": "Lề đường không sử dụng cho các phương tiện giao thông qua lại"
+    },
+    {
+      "id": 2,
+      "chapter_id": 1,
+      "question_text": "“Làn đường” là gì?",
+      "question_image" : "",
+      "answer_list": ["Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, sử dụng cho xe chạy", "Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có bề rộng đủ cho xe chạy an toàn.", "Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ bề rộng cho xe ô tô chạy an toàn"],
+      "answer_index": 1,
+      "is_dead_point": false,
+      "comment": "Có bề rộng đủ cho xe chạy an toàn"
+    },
+    {
+      "id": 3,
+      "chapter_id": 1,
+      "question_text": "Khái niệm “Khổ giới hạn đường bộ” được hiểu như thế nào là đúng?",
+      "question_image" : "",
+      "answer_list": ["Là khoảng trống có kích thước giới hạn về chiều cao, chiều rộng của đường, cầu, bến phà, hầm đường bộ để các xe kể cả hàng hóa xếp trên xe đi qua được an toàn.", "Là khoảng trống có kích thước giới hạn về chiều rộng của đường, cầu, bến phà, hầm trên đường bộ để các xe kể cả hàng hóa xếp trên xe đi qua được an toàn.", "Là khoảng trống có kích thước giới hạn về chiều cao của cầu, bến phà, hầm trên đường bộ để các xe đi qua được an toàn."],
+      "answer_index": 0,
+      "is_dead_point": false,
+      "comment": "Giới hạn về chiều cao, chiều rộng"
+    },
+    {
+      "id": 4,
+      "chapter_id": 1,
+      "question_text": "Trong các khái niệm dưới đây, “dải phân cách” được hiểu như thế nào là đúng?",
+      "question_image" : "",
+      "answer_list": ["Là bộ phận của đường để ngăn cách không cho các loại xe vào những nơi không được phép.", "Là bộ phận của đường để phân tách phần đường xe chạy và hành lang an toàn giao thông.", "Là bộ phận của đường để phân chia mặt đường thành hai chiều xe chạy riêng biệt hoặc để phân chia phần đường của xe cơ giới và xe thô sơ."],
+      "answer_index": 2,
+      "is_dead_point": false,
+      "comment": "Dải phân cách phân chia mặt đường thành hai chiều xe chạy riêng biệt"
+    },
+    {
+      "id": 5,
+      "chapter_id": 1,
+      "question_text": "Dải phân cách” trên đường bộ gồm những loại nào?",
+      "question_image" : "",
+      "answer_list": ["Dải phân cách gồm loại cố định và loại di động", "Dải phân cách gồm tường chống ồn, hộ lan cứng và hộ lan mềm.", "Dải phân cách gồm giá long môn và biển báo hiệu đường bộ."],
+      "answer_index": 0,
+      "is_dead_point": false,
+      "comment": "Dải phân cách gồm cố định và di động"
+    },
+    {
+      "id": 6,
+      "chapter_id": 1,
+      "question_text": "Người lái xe được hiểu như thế nào trong các khái niệm dưới đây ?",
+      "question_image" : "",
+      "answer_list": ["Là người điều khiển xe cơ giới.", "Là người điều khiển xe thô sơ.", "Là người điều khiển xe có súc vật kéo"],
+      "answer_index": 0,
+      "is_dead_point": false,
+      "comment": "Người lái xe là người điểu khiển xe cơ giới"
+    },
+    {
+      "id": 7,
+      "chapter_id": 1,
+      "question_text": "Đường mà trên đó phương tiện tham gia giao thông được các phương tiện giao thông đến từ hướng khác nhường đường khi qua nơi đường giao nhau, được cắm biển báo hiệu đường ưu tiên là loại đường gì?",
+      "question_image" : "",
+      "answer_list": ["Đường không ưu tiên.", "Đường tỉnh lộ.", "Đường quốc lộ.", "Đường ưu tiên."],
+      "answer_index": 3,
+      "is_dead_point": false,
+      "comment": "Đường ưu tiên được nhường đường khi qua nơi giao nhau"
+    },
+    {
+      "id": 8,
+      "chapter_id": 1,
+      "question_text": "Khái niệm “phương tiện giao thông cơ giới đường bộ” được hiểu thế nào là đúng?",
+      "question_image" : "",
+      "answer_list": ["Gồm xe ô tô; máy kéo; xe mô tô hai bánh; xe mô tô ba bánh; xe gắn máy; xe cơ giới dùng cho người khuyết tật và xe máy chuyên dùng.", "Gồm xe ô tô; máy kéo; rơ moóc hoặc sơ mi rơ moóc được kéo bởi ô tô, máy kéo; xe mô tô hai bánh; xe mô tô ba bánh, xe gắn máy (kể cả xe máy điện) và các loại xe tương tự."],
+      "answer_index": 1,
+      "is_dead_point": false,
+      "comment": "Phương tiện giao thông cơ giới không có xe máy chuyên dùng"
+    },
+    {
+      "id": 9,
+      "chapter_id": 1,
+      "question_text": "Khái niệm “phương tiện giao thông thô sơ đường bộ” được hiểu thế nào là đúng?",
+      "question_image" : "",
+      "answer_list": ["Gồm xe đạp (kể cả xe đạp máy, xe đạp điện), xe xích lô, xe lăn dùng cho người khuyết tật, xe xúc vật kéo và các loại xe tương tự.", "Gồm xe đạp (kể cả xe đạp máy, xe đạp điện), xe gắn máy, xe cơ giới dùng cho người khuyết tật và xe máy chuyên dùng.", "Gồm xe ô tô, máy kéo, rơ moóc hoặc sơ mi rơ moóc được kéo bởi xe ô tô, máy kéo."],
+      "answer_index": 0,
+      "is_dead_point": false,
+      "comment": "Phương tiện giao thông thô sơ không có xe máy chuyên dùng, xe ô tô"
+    },
+    {
+      "id": 10,
+      "chapter_id": 1,
+      "question_text": "Phương tiện tham gia giao thông đường bộ” gồm những loại nào?",
+      "question_image" : "",
+      "answer_list": ["Phương tiện giao thông cơ giới đường bộ.", "Phương tiện giao thông thô sơ đường bộ và xe máy chuyên dùng.", "Cả ý 1 và ý 2."],
+      "answer_index": 2,
+      "is_dead_point": false,
+      "comment": "Phương tiện tham gia giao thông đường bộ gồm phương tiện giao thông đường bộ (cơ giới và thô sơ) và xe máy chuyên dùng"
+    },
+    {
+      "id": 11,
+      "chapter_id": 1,
+      "question_text": "“Người tham gia giao thông đường bộ” gồm những đối tượng nào?",
+      "question_image" : "",
+      "answer_list": ["Người điều khiển, người sử dụng phương tiện tham gia giao thông đường bộ.", "Người điều khiển, dẫn dắt súc vật; người đi bộ trên đường bộ.", "Cả ý 1 và ý 2."],
+      "answer_index": 2,
+      "is_dead_point": false,
+      "comment": "Người tham gia giao thông gồm người sử dụng phương tiện và người đi bộ"
+    },
+    {
+      "id": 12,
+      "chapter_id": 1,
+      "question_text": "“Người điều khiển phương tiện tham gia giao thông đường bộ” gồm những đối tượng nào dưới đây?",
+      "question_image" : "",
+      "answer_list": ["Người điều khiển xe cơ giới, người điều khiển xe thô sơ.", "Người điều khiển xe máy chuyên dùng tham gia giao thông đường bộ.", "Cả ý 1 và ý 2"],
+      "answer_index": 2,
+      "is_dead_point": false,
+      "comment": "Người điều khiển phương tiện gồm cả xe cơ giới và xe máy chuyên dùng"
+    },
+    {
+      "id": 13,
+      "chapter_id": 1,
+      "question_text": "Khái niệm “người điều khiển giao thông” được hiểu như thế nào là đúng?",
+      "question_image" : "",
+      "answer_list": ["Là người điều khiển phương tiện tham gia giao thông tại nơi thi công, nơi ùn tắc giao thông, ở bến phà, tại cầu đường bộ đi chung với đường sắt.", "Là cảnh sát giao thông, người được giao nhiệm vụ hướng dẫn giao thông tại nơi thi công, nơi ùn tắc giao thông, ở bến phà, tại cầu đường bộ đi chung với đường sắt.", "Là người tham gia giao thông tại nơi thi công, nơi ùn tắc giao thông, ở bến phà, tại cầu đường bộ đi chung với đường sắt."],
+      "answer_index": 1,
+      "is_dead_point": false,
+      "comment": "Người điều khiển giao thông khác với người điều khiển phương tiện tham gia giao thông"
+    },
+    {
+      "id": 14,
+      "chapter_id": 1,
+      "question_text": "Trong các khái niệm dưới đây khái niệm “dừng xe” được hiểu như thế nào là đúng quy tắc giao thông?",
+      "question_image" : "",
+      "answer_list": ["Là trạng thái đứng yên của phương tiện giao thông không giới hạn thời gian để cho người lên, xuống phương tiện, xếp dỡ hàng hóa hoặc thực hiện công việc khác.", "Là trạng thái đứng yên tạm thời của phương tiện giao thông trong một khoảng thời gian cần thiết đủ để cho người lên xuống phương tiện, xếp dỡ hàng hóa hoặc thực hiện công việc khác.", "Là trạng thái đứng yên của phương tiện giao thông không giới hạn thời gian giữa 2 lần vận chuyển hàng hóa hoặc hành khách."],
+      "answer_index": 1,
+      "is_dead_point": false,
+      "comment": "Dừng xe là đứng yên tạm thời"
+    },
+    {
+      "id": 15,
+      "chapter_id": 1,
+      "question_text": "Khái niệm “đỗ xe” được hiểu như thế nào là đúng quy tắc giao thông?",
+      "question_image" : "",
+      "answer_list": ["Là trạng thái đứng yên của phương tiện giao thông có giới hạn trong một khoảng thời gian cần thiết đủ để cho người lên, xuống phương tiện đó, xếp dỡ hàng hóa hoặc thực hiện công việc khác", "Là trạng thái đứng yên của phương tiện giao thông không giới hạn thời gian."],
+      "answer_index": 1,
+      "is_dead_point": false,
+      "comment": "Trạng thái đứng yên của phương tiện giao thông không giới hạn thời gian."
+    },
+    {
+      "id": 16,
+      "chapter_id": 1,
+      "question_text": "Khái niệm “đường cao tốc“ được hiểu như thế nào là đúng",
+      "question_image" : "",
+      "answer_list": ["Đường dành riêng cho xe ô tô và một số loại xe chuyên dùng được phép đi vào theo quy định của Luật giao thông đường bộ.", "Có giải phân cách phân chia đường cho xe chạy hai chiều riêng biệt mà giải phân cách này xe không đi được lên trên; không giao nhau cùng mức với một hoặc một số đường khác.", "Được bố trí đầy đủ trang thiết bị phục vụ, bảo đảm giao thông liên tục, an toàn, rút ngắn thời gian hành trình và chỉ cho xe ra, vào ở những điểm nhất định.", "Tất cả các ý trên."],
+      "answer_index": 3,
+      "is_dead_point": false,
+      "comment": "Đường cao tốc gồm tất cả các ý"
+    },
+    {
+      "id": 17,
+      "chapter_id": 1,
+      "question_text": "Hành vi nào dưới đây bị nghiêm cấm?",
+      "question_image" : "",
+      "answer_list": ["Đỗ xe trên đường phố.", "Sử dụng xe đạp đi trên các tuyến quốc lộ có tốc độ cao.", "Làm hỏng (cố ý) cọc tiêu, gương cầu, dải phân cách.", "Sử dụng còi và quay đầu xe trong khu dân cư."],
+      "answer_index": 2,
+      "is_dead_point": true,
+      "comment": "Hành vi làm hỏng cọc tiêu bị nghiêm cấm"
+    },
+    {
+      "id": 18,
+      "chapter_id": 1,
+      "question_text": "Hành vi đưa xe cơ giới, xe máy chuyên dùng không đảm bảo tiêu chuẩn an toàn kỹ thuật và bảo vệ môi trường vào tham gia giao thông đường bộ có bị nghiêm cấm hay không?",
+      "question_image" : "",
+      "answer_list": ["Không bị nghiêm cấm.", "Bị nghiêm cấm.", "Bị nghiêm cấm tùy theo các tuyến đường.", "Bị nghiêm cấm tùy theo loại xe."],
+      "answer_index": 1,
+      "is_dead_point": true,
+      "comment": "Hành vi đưa xe không đảm bảo kỹ thuật bị nghiêm cấm"
+    },
+    {
+      "id": 19,
+      "chapter_id": 1,
+      "question_text": "Cuộc đua xe chỉ được thực hiện khi nào?",
+      "question_image" : "",
+      "answer_list": ["Diễn ra trên đường phố không có người qua lại.", "Được người dân ủng hộ.", "Được cơ quan có thẩm quyền cấp phép."],
+      "answer_index": 2,
+      "is_dead_point": true,
+      "comment": ""
+    },
+    {
+      "id": 20,
+      "chapter_id": 1,
+      "question_text": "Người điều khiển phương tiện giao thông đường bộ mà trong cơ thể có chất ma túy có bị nghiêm cấm hay không?",
+      "question_image" : "",
+      "answer_list": ["Bị nghiêm cấm.", "Không bị nghiêm cấm.", "Không bị nghiêm cấm."],
+      "answer_index": 0,
+      "is_dead_point": true,
+      "comment": "Có ma tuý bị nghiêm cấm"
+    },
+    {
+      "id": 21
+      "chapter_id": 1,
+      "question_text": "Việc lái xe mô tô, ô tô, máy kéo ngay sau khi uống rượu, bia có được phép hay không?",
+      "question_image" : "",
+      "answer_list": ["Không được phép.", "Chỉ được lái ở tốc độ chậm và quãng đường ngắn.". "Chỉ được lái nếu trong cơ thể có nồng độ cồn thấp."],
+      "answer_index": 0,
+      "is_dead_point": true,
+      "comment": "Uống rượu bia thì không được lái xe"
+    },
+    {
+      "id": 22,
+      "chapter_id": 1,
+      "question_text": "Người điều khiển xe mô tô, ô tô, máy kéo trên đường mà trong máu hoặc hơi thở có nồng độ cồn có bị nghiêm cấm không?",
+      "question_image" : "",
+      "answer_list": ["Bị nghiêm cấm.", "Không bị nghiêm cấm.", "Không bị nghiêm cấm, nếu nồng độ cồn trong máu ở mức nhẹ, có thể điều khiển phương tiện tham gia giao thông."],
+      "answer_index": 0,
+      "is_dead_point": true,
+      "comment": "Trong máu hoặc hơi thở có nồng độ cồn bị nghiêm cấm"
+    },
+    {
+      "id": 23,
+      "chapter_id": 1,
+      "question_text": "Sử dụng rượu bia khi lái xe, nếu bị phát hiện thì bị xử lý như thế nào?",
+      "question_image" : "",
+      "answer_list": ["Chỉ bị nhắc nhở.", "Bị xử phạt hành chính hoặc có thể bị xử lý hình sự tùy theo mức độ vi phạm.", "Không bị xử lý hình sự."],
+      "answer_index": 1,
+      "is_dead_point": true,
+      "comment": "Sử dụng rượu, bia khi lái xe bị xử phạt hành chính hoặc xử lý hình sự"
+    },
+    {
+      "id": 24
+      "chapter_id": 1,
+      "question_text": "Theo Luật phòng chống tác hại của rượu, bia, đối tượng nào dưới đây bị cấm sử dụng rượu bia khi tham gia giao thông?",
+      "question_image" : "",
+      "answer_list": ["Người điều khiển: Xe ô tô, xe mô tô, xe đạp, xe gắn máy.", "Người ngồi phía sau người điều khiển xe cơ giới.", "Người đi bộ.", "Cả ý 1 và ý 2."],
+      "answer_index": 0,
+      "is_dead_point": true,
+      "comment": ""
+    },
+    {
+      "id": 25,
+      "chapter_id": 1,
+      "question_text": "Hành vi giao xe cơ giới, xe máy chuyên dùng cho người không đủ điều kiện để điều khiển xe tham gia giao thông có được phép hay không?",
+      "question_image" : "",
+      "answer_list": ["Chỉ được thực hiện nếu đã hướng dẫn đầy đủ.", "Không được phép.", "Được phép tuỳ từng trường hợp.", "Chỉ được phép thực hiện với thành viên trong gia đình."],
+      "answer_index": 1,
+      "is_dead_point": true,
+      "comment": "Không được phép giao xe cho người không đủ điều kiện tham gia giao thông"
+    },
+    {
+      "id": 26,
+      "chapter_id": 1,
+      "question_text": "Hành vi điều khiển xe cơ giới chạy quá tốc độ quy định, giành đường, vượt ẩu có bị nghiêm cấm hay không?",
+      "question_image" : "",
+      "answer_list": ["Bị nghiêm cấm tuỳ từng trường hợp.", "Không bị nghiêm cấm.", "Bị nghiêm cấm."],
+      "answer_index": 2,
+      "is_dead_point": true,
+      "comment": ""
+    },
+    {
+      "id": 27,
+      "chapter_id": 1,
+      "question_text": "Khi lái xe trên đường, người lái xe cần quan sát và bảo đảm tốc độ phương tiện như thế nào?",
+      "question_image" : "",
+      "answer_list": ["Chỉ lớn hơn tốc độ tối đa cho phép khi đường vắng.", "Chỉ lớn hơn tốc độ tối đa cho phép vào ban đêm.", "Không vượt quá tốc độ cho phép."],
+      "answer_index": 2,
+      "is_dead_point": true,
+      "comment": ""
+    },
+    {
+      "id": 28,
+      "chapter_id": 1,
+      "question_text": "Phương tiện giao thông đường bộ di chuyển với tốc độ thấp hơn phải đi như thế nào?",
+      "question_image" : "",
+      "answer_list": ["Đi về phía bên trái.", "Đi về phía bên phải.", "Đi ở giữa."],
+      "answer_index": 1,
+      "is_dead_point": true,
+      "comment": "Di chuyển tốc độ thấp hơn đi về phía bên phải"
+    },
+    {
+      "id": 29,
+      "chapter_id": 1,
+      "question_text": "Trên đường có nhiều làn đường, khi điều khiển phương tiện ở tốc độ chậm bạn phải đi ở làn đường nào?",
+      "question_image" : "",
+      "answer_list": ["Đi ở làn bên phải trong cùng.", "Đi ở làn phía bên trái.", "Đi ở làn giữa.", "Đi ở bất cứ làn nào nhưng phải bấm đèn cảnh báo nguy hiểm để báo hiệu cho các phương tiện khác."],
+      "answer_index": 0,
+      "is_dead_point": true,
+      "comment": "Tốc độ chậm đi ở làn bên phải trong cùng"
+    },
+    {
+      "id": 30,
+      "chapter_id": 1,
+      "question_text": "Hành vi vượt xe tại các vị trí có tầm nhìn hạn chế, đường vòng, đầu dốc có bị nghiêm cấm hay không?",
+      "question_image" : "",
+      "answer_list": ["Không bị nghiêm cấm.", "Không bị nghiêm cấm khi rất vội.", "Bị nghiêm cấm.", "Không bị nghiêm cấm khi khẩn cấp."],
+      "answer_index": 2,
+      "is_dead_point": true,
+      "comment": ""
+    },
+    {
+      "id": 31,
+      "chapter_id": 1,
+      "question_text": "Khi lái xe trong khu đô thị và đông dân cư trừ các khu vực có biển cấm sử dụng còi, người lái xe được sử dụng còi như thế nào trong các trường hợp dưới đây?",
+      "question_image" : "",
+      "answer_list": ["Từ 22 giờ đêm đến 5 giờ sáng.", "Từ 5 giờ sáng đến 22 giờ tối.", "Từ 23 giờ đêm đến 5 giờ sáng hôm sau."],
+      "answer_index": 1,
+      "is_dead_point": false,
+      "comment": "Chỉ sử dụng còi từ 5 giờ sáng đến 22 giờ tối"
+    },
+    {
+      "id": 32,
+      "chapter_id": 1,
+      "question_text": "Người lái xe sử dụng đèn như thế nào khi lái xe trong khu đô thị và đông dân cư vào ban đêm?",
+      "question_image" : "",
+      "answer_list": ["Bất cứ đèn nào miễn là mắt nhìn rõ phía trước.", "Chỉ bật đèn chiếu xa (đèn pha) khi không nhìn rõ đường.", "Đèn chiếu xa (đèn pha) khi đường vắng, đèn pha chiếu gần (đèn cốt) khi có xe đi ngược chiều.", "Đèn chiếu gần (đèn cốt)."],
+      "answer_index": 3,
+      "is_dead_point": false,
+      "comment": "Trong đô thị sử dụng đèn chiếu gần"
+    },
+    {
+      "id": 33,
+      "chapter_id": 1,
+      "question_text": "Hành vi lắp đặt, sử dụng còi, đèn không đúng thiết kế của nhà sản xuất đối với từng loại xe cơ giới có được phép hay không?",
+      "question_image" : "",
+      "answer_list": ["Được phép.", "Không được phép.", "Được phép tùy từng trường hợp."],
+      "answer_index": 1,
+      "is_dead_point": true,
+      "comment": "Không được phép lắp đặt còi đèn không đúng thiết kế"
+    },
+    {
+      "id": 34,
+      "chapter_id": 1,
+      "question_text": "Trong trường hợp đặc biệt, để được lắp đặt, sử dụng còi, đèn không đúng với thiết kế của nhà sản xuất đối với từng loại xe cơ giới bạn phải đảm bảo yêu cầu nào dưới đây?",
+      "question_image" : "",
+      "answer_list": ["Phải đảm bảo phụ tùng do đúng nhà sản xuất đó cung cấp.", "Phải được chấp thuận của cơ quan có thẩm quyền.", "Phải là xe đăng ký và hoạt động tại các khu vực có địa hình phức tạp."],
+      "answer_index": 1,
+      "is_dead_point": false,
+      "comment": "Lắp đặt còi đèn không đúng thiết kế phải được chấp thuận của cơ quan có thẩm quyền"
+    },
+    {
+      "id": 35,
+      "chapter_id": 1,
+      "question_text": "Việc sản xuất, mua bán, sử dụng biển số xe cơ giới, xe máy chuyên dùng được quy định như thế nào trong Luật Giao thông đường bộ?",
+      "question_image" : "",
+      "answer_list": ["Được phép sản xuất, sử dụng khi bị mất biển số.", "Được phép mua bán, sử dụng khi bị mất biển số.", "Nghiêm cấm sản xuất, mua bán, sử dụng trái phép."],
+      "answer_index": 2,
+      "is_dead_point": true,
+      "comment": ""
+    },
+    {
+      "id": 36,
+      "chapter_id": 1,
+      "question_text": "Người lái xe không được vượt xe khác khi gặp trường hợp nào ghi ở dưới đây?",
+      "question_image" : "",
+      "answer_list": ["Trên cầu hẹp có một làn xe. Nơi đường giao nhau, đường bộ giao nhau cùng mức với đường sắt; xe được quyền ưu tiên đang phát tín hiệu ưu tiên đi làm nhiệm vụ.", "Trên cầu có từ 02 làn xe trở lên; nơi đường bộ giao nhau không cùng mức với đường sắt; xe được quyền ưu tiên đang đi phía trước nhưng không phát tín hiệu ưu tiên.", "Trên đường có 2 làn đường được phân chia làn bằng vạch kẻ nét đứt."],
+      "answer_index": 0,
+      "is_dead_point": true,
+      "comment": "Không được vượt xe trên cầu hẹp có một làn xe"
+    },
+    {
+      "id": 37,
+      "chapter_id": 1,
+      "question_text": "Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc, tại nơi đường bộ giao nhau cùng mức với đường sắt có được quay đầu xe hay không?",
+      "question_image" : "",
+      "answer_list": ["Được phép.", "Không được phép.", "Tùy từng trường hợp."],
+      "answer_index": 1,
+      "is_dead_point": true,
+      "comment": "Không được phép quay đầu xe ở phần đường dành cho người đi bộ qua đường"
+    },
+    {
+      "id": 38,
+      "chapter_id": 1,
+      "question_text": "Bạn đang lái xe phía trước có một xe cảnh sát giao thông không phát tín hiệu ưu tiên bạn có được phép vượt hay không?",
+      "question_image" : "",
+      "answer_list": ["Không được vượt.", "Được vượt khi đang đi trên cầu.", "Được phép vượt khi đi qua nơi giao nhau có ít phương tiện cùng tham gia giao thông.", "Được vượt khi đảm bảo an toàn."],
+      "answer_index": 3,
+      "is_dead_point": false,
+      "comment": "Được vượt khi xe không phát tín hiệu ưu tiên"
+    },
+    {
+      "id": 39,
+      "chapter_id": 1,
+      "question_text": "Bạn đang lái xe phía trước có một xe cứu thương đang phát tín hiệu ưu tiên bạn có được phép vượt hay không?",
+      "question_image" : "",
+      "answer_list": ["Không được vượt.", "Được vượt khi đang đi trên cầu.", "Được phép vượt khi đi qua nơi giao nhau có ít phương tiện cùng tham gia giao thông.", "Được vượt khi đảm bảo an toàn."],
+      "answer_index": 0,
+      "is_dead_point": false,
+      "comment": "Không được vượt khi xe đang phát tín hiệu ưu tiên"
+    },
+    {
+      "id": 40,
+      "chapter_id": 1,
+      "question_text": "Người lái xe không được quay đầu xe trong các trường hợp nào dưới đây?",
+      "question_image" : "",
+      "answer_list": ["Ở phần đường dành cho người đi bộ qua đường, trên cầu, đầu cầu, đường cao tốc, đường hẹp, đường dốc, tại nơi đường bộ giao nhau cùng mức với đường sắt.", "Ở phía trước hoặc phía sau của phần đường dành cho người đi bộ qua đường, trên đường quốc lộ, tại nơi đường bộ giao nhau không cùng mức với đường sắt.", "Cả ý 1 và ý 2."],
+      "answer_index": 0,
+      "is_dead_point": true,
+      "comment": "Không được phép quay đầu xe ở phần đường dành cho người đi bộ qua đường"
+    },
+    {
+      "id": 41,
+      "chapter_id": 1,
+      "question_text": "Bạn đang lái xe trong khu dân cư, có đông xe qua lại, nếu muốn quay đầu bạn cần làm gì để tránh ùn tắc và đảm bảo an toàn giao thông?",
+      "question_image" : "",
+      "answer_list": ["Đi tiếp đến điểm giao cắt gần nhất hoặc nơi có biển báo cho phép quay đầu xe.", "Bấm đèn khẩn cấp và quay đầu xe từ từ bảo đảm an toàn.", "Bấm còi liên tục khi quay đầu để cảnh báo các xe khác.", "Nhờ một người ra hiệu giao thông trên đường chậm lại trước khi quay đầu."],
+      "answer_index": 0,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 42,
+      "chapter_id": 1,
+      "question_text": "Người lái xe không được lùi xe ở những khu vực nào dưới đây?",
+      "question_image" : "",
+      "answer_list": ["Ở khu vực cho phép đỗ xe", "Ở khu vực cấm dừng và trên phần đường dành cho người đi bộ qua đường.", "Nơi đường bộ giao nhau, đường bộ giao nhau cùng mức với đường sắt, nơi tầm nhìn bị che khuất, trong hầm đường bộ, đường cao tốc.", "Cả ý 2 và ý 3."],
+      "answer_index": 3,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 43,
+      "chapter_id": 1,
+      "question_text": "Người điều khiển phương tiện giao thông trên đường phố có được dừng xe, đỗ xe trên miệng cống thoát nước, miệng hầm của đường điện thoại, điện cao thế, chỗ dành riêng cho xe chữa cháy lấy nước hay không?",
+      "question_image" : "",
+      "answer_list": ["Được dừng xe, đỗ xe trong trường hợp cần thiết.", "Không được dừng xe, đỗ xe.", "Được dừng xe, không được đỗ xe."],
+      "answer_index": 1,
+      "is_dead_point": true,
+      "comment": ""
+    },
+    {
+      "id": 44,
+      "chapter_id": 1,
+      "question_text": "Khi xe đã kéo 1 xe hoặc xe đã kéo 1 rơ moóc, bạn có được phép kéo thêm xe (kể cả xe thô sơ) hoặc rơ moóc thứ hai hay không?",
+      "question_image" : "",
+      "answer_list": ["Chỉ được thực hiện trên quốc lộ có hai làn xe một chiều.", "Chỉ được thực hiện trên cao tốc.", "Không được thực hiện vào ban ngày.", "Không được phép."],
+      "answer_index": 3,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 45,
+      "chapter_id": 1,
+      "question_text": "Người điều khiển xe mô tô hai bánh, ba bánh, xe gắn máy có được phép sử dụng xe để kéo hoặc đẩy các phương tiện khác khi tham gia giao thông không?",
+      "question_image" : "",
+      "answer_list": ["Được phép.", "Nếu phương tiện được kéo, đẩy có khối lượng nhỏ hơn phương tiện của mình.", "Tuỳ trường hợp.", "Không được phép."],
+      "answer_index": 3,
+      "is_dead_point": true,
+      "comment": ""
+    },
+    {
+      "id": 46,
+      "chapter_id": 1,
+      "question_text": "Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống của xe quệt xuống đường khi xe đang chạy có được phép hay không?",
+      "question_image" : "",
+      "answer_list": ["Được phép.", "Tuỳ trường hợp.", "Không được phép."],
+      "answer_index": 2,
+      "is_dead_point": true,
+      "comment": ""
+    },
+    {
+      "id": 47,
+      "chapter_id": 1,
+      "question_text": "Khi điều khiển xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy, những hành vi nào không được phép?",
+      "question_image" : "",
+      "answer_list": ["Buông cả hai tay; sử dụng xe để kéo, đẩy xe khác, vật khác; sử dụng chân chống của xe quệt xuống đường khi xe đang chạy.", "Buông một tay; sử dụng xe để chở người hoặc hàng hoá; để chân chạm xuống đất khi khởi hành.", "Đội mũ bảo hiểm; chạy xe đúng tốc độ quy định và chấp hành đúng quy tắc giao thông đường bộ.", "Chở người ngồi sau dưới 16 tuổi."],
+      "answer_index": 0,
+      "is_dead_point": true,
+      "comment": ""
+    },
+    {
+      "id": 48,
+      "chapter_id": 1,
+      "question_text": "Người ngồi trên xe mô tô hai bánh, ba bánh, xe gắn máy khi tham gia giao thông có được mang, vác vật cồng kềnh hay không?",
+      "question_image" : "",
+      "answer_list": ["Được mang, vác tuỳ trường hợp cụ thể.", "Không được mang, vác.", "Được mang, vác nhưng phải đảm bảo an toàn.", "Được mang, vác tùy theo sức khỏe của bản thân."],
+      "answer_index": 1,
+      "is_dead_point": true,
+      "comment": ""
+    },
+    {
+      "id": 49,
+      "chapter_id": 1,
+      "question_text": "Người ngồi trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy khi tham gia giao thông có được bám, kéo hoặc đẩy các phương tiện khác không?",
+      "question_image" : "",
+      "answer_list": ["Được phép.", "Được bám trong trường hợp phương tiện của mình bị hỏng.", "Được kéo, đẩy trong trường hợp phương tiện khác bị hỏng.", "Không được phép."],
+      "answer_index": 3,
+      "is_dead_point": true,
+      "comment": ""
+    },
+    {
+      "id": 50,
+      "chapter_id": 1,
+      "question_text": "Người ngồi trên xe mô tô hai bánh, xe mô tô ba bánh, xe gắn máy khi tham gia giao thông có được sử dụng ô khi trời mưa hay không?",
+      "question_image" : "",
+      "answer_list": ["Được sử dụng.", "Chỉ người ngồi sau được sử dụng.", "Không được sử dụng.", "Được sử dụng nếu không có áo mưa."],
+      "answer_index": 2,
+      "is_dead_point": true,
+      "comment": ""
+    },
+    {
+      "id": 51,
+      "chapter_id": 1,
+      "question_text": "Khi đang lên dốc người ngồi trên xe mô tô có được kéo theo người đang điều khiển xe đạp hay không?",
+      "question_image" : "",
+      "answer_list": ["Chỉ được phép nếu cả hai đội mũ bảo hiểm.", "Không được phép.", "Chỉ được thực hiện trên đường thật vắng.", "Chỉ được phép khi người đi xe đạp đã quá mệt."],
+      "answer_index": 1,
+      "is_dead_point": true,
+      "comment": ""
+    },
+    {
+      "id": 52,
+      "chapter_id": 1,
+      "question_text": "Hành vi sử dụng xe mô tô để kéo, đẩy xe mô tô khác bị hết xăng đến trạm mua xăng có được phép hay không?",
+      "question_image" : "",
+      "answer_list": ["Chỉ được kéo nếu đã nhìn thấy trạm xăng.", "Chỉ được thực hiện trên đường vắng phương tiện cùng tham gia giao thông.", "Không được phép."],
+      "answer_index": 2,
+      "is_dead_point": true,
+      "comment": ""
+    },
+    {
+      "id": 53,
+      "chapter_id": 1,
+      "question_text": "Hành vi vận chuyển đồ vật cồng kềnh bằng xe mô tô, xe gắn máy khi tham gia giao thông có được phép hay không?",
+      "question_image" : "",
+      "answer_list": ["Không được vận chuyển.", "Chỉ được vận chuyển khi đã chằng buộc cẩn thận.", "Chỉ được vận chuyển vật cồng kềnh trên xe máy nếu khoảng cách về nhà ngắn hơn 2km."],
+      "answer_index": 0,
+      "is_dead_point": true,
+      "comment": ""
+    },
+    {
+      "id": 54,
+      "chapter_id": 1,
+      "question_text": "Người đủ bao nhiêu tuổi trở lên thì được điều khiển xe ô tô tải, máy kéo có trọng tải từ 3,5 tấn trở lên; xe hạng B2 kéo rơ moóc (FB2)?",
+      "question_image" : "",
+      "answer_list": ["19 tuổi.", "21 tuổi.", "20 tuổi."],
+      "answer_index": 1,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 55,
+      "chapter_id": 1,
+      "question_text": "Người đủ bao nhiêu tuổi trở lên thì được điều khiển xe mô tô hai bánh, xe mô tô ba bánh có dung tích xi lanh từ 50 cm3 trở lên và các loại xe có kết cấu tương tự; xe ô tô tải, máy kéo có trọng tải dưới 3,5 tấn; xe ô tô chở người đến 9 chỗ ngồi?",
+      "question_image" : "",
+      "answer_list": ["16 tuổi.", "18 tuổi.", "17 tuổi."],
+      "answer_index": 1,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 56,
+      "chapter_id": 1,
+      "question_text": " Người lái xe ô tô chở người trên 30 chỗ ngồi (hạng E), lái xe hạng D kéo rơ moóc (FD) phải đủ bao nhiêu tuổi trở lên?",
+      "question_image" : "",
+      "answer_list": ["23 tuổi.", "24 tuổi.", "27 tuổi.", "30 tuổi."],
+      "answer_index": 2,
+      "is_dead_point": false,
+      "comment": ""
+    },{
+      "id": 57,
+      "chapter_id": 1,
+      "question_text": "Tuổi tối đa của người lái xe ô tô chở người trên 30 chỗ ngồi (hạng E) là bao nhiêu tuổi?",
+      "question_image" : "",
+      "answer_list": ["55 tuổi đối với nam và 50 tuổi đối với nữ.", "55 tuổi đối với nam và nữ.", "60 tuổi đối với nam và 55 tuổi đối với nữ.", "45 tuổi với nam và 40 tuổi với nữ."],
+      "answer_index": 0,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 58,
+      "chapter_id": 1,
+      "question_text": "Người lái xe chở người từ 10 đến 30 chỗ ngồi (hạng D), lái xe hạng C kéo rơ moóc (FC) phải đủ bao nhiêu tuổi trở lên?",
+      "question_image" : "",
+      "answer_list": ["23 tuổi.", "24 tuổi.", "22 tuổi.", "18 tuổi."],
+      "answer_index": 1,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 59,
+      "chapter_id": 1,
+      "question_text": "Người đủ 16 tuổi được điều khiển các loại xe nào dưới đây?",
+      "question_image" : "",
+      "answer_list": ["Xe mô tô 2 bánh có dung tích xi-lanh từ 50 cm3 trở lên.", "Xe gắn máy có dung tích xi-lanh dưới 50 cm3.", "Xe ô tô tải dưới 3,5 tấn; xe chở người đến 9 chỗ ngồi.", "Tất cả các ý nêu trên."],
+      "answer_index": 1,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 60,
+      "chapter_id": 1,
+      "question_text": "Người có GPLX mô tô hạng A1 không được phép điều khiển loại xe nào dưới đây?",
+      "question_image" : "",
+      "answer_list": ["Xe mô tô có dung tích xi-lanh 125 cm3.", "Xe mô tô có dung tích xi-lanh từ 175 cm3 trở lên.", "Xe mô tô có dung tích xi-lanh 100 cm3."],
+      "answer_index": 1,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 61,
+      "chapter_id": 1,
+      "question_text": "Người có GPLX mô tô hạng A1 được phép điều khiển loại xe nào dưới đây?",
+      "question_image" : "",
+      "answer_list": ["Xe mô tô hai bánh có dung tích xi-lanh từ 50 cm3 đến dưới 175 cm3.", "Xe mô tô ba bánh dùng cho người khuyết tật.", "Cả ý 1 và ý 2."],
+      "answer_index": 2,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 62,
+      "chapter_id": 1,
+      "question_text": "Người có GPLX mô tô hạng A2 được phép điều khiển loại xe nào dưới đây?",
+      "question_image" : "",
+      "answer_list": ["Xe mô tô ba bánh.", "Xe mô tô hai bánh có dung tích xi-lanh từ 175 cm3 trở lên và các loại xe quy định cho giấy phép lái xe hạng A1.", "Các loại máy kéo nhỏ có trọng tải đến 1.000 kg."],
+      "answer_index": 1,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 63,
+      "chapter_id": 1,
+      "question_text": "Người có GPLX mô tô hạng A3 được phép điều khiển loại xe nào dưới đây?",
+      "question_image" : "",
+      "answer_list": ["Xe mô tô ba bánh.", "Xe mô tô hai bánh có dung tích xi-lanh từ 175 cm3 trở lên.", "Các loại máy kéo nhỏ có trọng tải đến 1.000 kg."],
+      "answer_index": 0,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 64,
+      "chapter_id": 1,
+      "question_text": "Người có giấy phép lái xe hạng B1 số tự động được điều khiển loại xe nào?",
+      "question_image" : "",
+      "answer_list": ["Ô tô số tự động chở người đến 9 chỗ ngồi, kể cả chỗ ngồi cho người lái xe; ô tô tải, kể cả ô tô tải chuyên dùng số tự động có trọng tải thiết kế dưới 3.500 kg; ô tô dùng cho người khuyết tật. Không được hành nghề lái xe.", "Ô tô số tự động chở người đến 9 chỗ ngồi, kể cả chỗ ngồi cho người lái xe; ô tô tải, kể cả ô tô tải chuyên dùng số tự động có trọng tải thiết kế dưới 3.500 kg; ô tô dùng cho người khuyết tật. Được hành nghề lái xe kinh doanh vận tải.", "Ô tô chở người đến 9 chỗ ngồi, kể cả chỗ ngồi cho người lái xe; ô tô tải, kể cả ô tô tải chuyên dùng có trọng tải thiết kế dưới 3.500 kg; ô tô dùng cho người khuyết tật."],
+      "answer_index": 0,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 65,
+      "chapter_id": 1,
+      "question_text": "Người có giấy phép lái xe hạng B1 được điều khiển loại xe nào?",
+      "question_image" : "",
+      "answer_list": ["Ô tô chở người đến 9 chỗ ngồi, kể cả chỗ ngồi cho người lái xe; ô tô tải, kể cả ô tô tải chuyên dùng có trọng tải thiết kế dưới 3.500 kg; máy kéo kéo một rơ moóc có trọng tải thiết kế dưới 3.500 kg. Được hành nghề lái xe.", "Ô tô chở người đến 9 chỗ ngồi, kể cả chỗ ngồi cho người lái xe; ô tô tải, kể cả ô tô tải chuyên dùng có trọng tải thiết kế dưới 3.500 kg; máy kéo kéo một rơ moóc có trọng tải thiết kế dưới 3.500 kg. Không hành nghề lái xe.", "Ô tô số tự động chở người đến 9 chỗ ngồi, kể cả chỗ ngồi cho người lái xe; ô tô tải, kể cả ô tô tải chuyên dùng số tự động có trọng tải thiết kế trên 3.500 kg; ô tô dùng cho người khuyết tật."],
+      "answer_index": 1,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 66,
+      "chapter_id": 1,
+      "question_text": "Người có giấy phép lái xe hạng B2 được điều khiển loại xe nào dưới đây?",
+      "question_image" : "",
+      "answer_list": ["Xe ô tô chở người trên 9 chỗ ngồi; xe ô tô tải, máy kéo có trọng tải trên 3,5 tấn.", "Xe ô tô chở người đến 9 chỗ ngồi; xe ô tô tải, máy kéo có trọng tải dưới 3,5 tấn.", "Xe ô tô chở người từ 10 đến 30 chỗ ngồi; xe ô tô tải, máy kéo có trọng tải trên 3,5 tấn."],
+      "answer_index": 1,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 67,
+      "chapter_id": 1,
+      "question_text": "Người có giấy phép lái xe hạng C được điều khiển loại xe nào dưới đây?",
+      "question_image" : "",
+      "answer_list": ["Xe ô tô chở người trên 9 chỗ ngồi; xe ô tô tải, máy kéo có trọng tải trên 3,5 tấn.", "Xe ô tô chở người từ 10 đến 30 chỗ ngồi; xe ô tô tải, máy kéo có trọng tải trên 3,5 tấn.", "Xe ô tô chở người đến 9 chỗ ngồi; xe ô tô tải, máy kéo có trọng tải trên 3,5 tấn."],
+      "answer_index": 2,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 68,
+      "chapter_id": 1,
+      "question_text": "Người có giấy phép lái xe hạng D được điều khiển loại xe nào dưới đây?",
+      "question_image" : "",
+      "answer_list": ["Ô tô chở người đến 30 chỗ ngồi, kể cả chỗ ngồi cho người lái xe; xe ô tô tải, máy kéo có trọng tải trên 3,5 tấn.", "Xe ô tô chở người trên 30 chỗ ngồi; xe ô tô tải, máy kéo có trọng tải trên 3,5 tấn.", "Xe kéo rơ moóc, ô tô đầu kéo kéo sơ mi rơ moóc và được điều khiển các loại xe quy định cho giấy phép lái xe hạng B1, B2, C và FB2."],
+      "answer_index": 0,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 69,
+      "chapter_id": 1,
+      "question_text": "Người có giấy phép lái xe hạng E được điều khiển loại xe nào dưới đây?",
+      "question_image" : "",
+      "answer_list": ["Xe kéo rơ moóc, ô tô đầu kéo kéo sơ mi rơ moóc và được điều khiển các loại xe quy định cho giấy phép lái xe hạng B1, B2, C và FB2.", "Ô tô chở người trên 30 chỗ ngồi; xe ô tô tải, máy kéo có trọng tải trên 3,5 tấn.", "Xe kéo rơ moóc và được điều khiển các loại xe: ô tô chở khách nối toa và các loại xe quy định cho giấy phép lái xe hạng B1, B2, C, D, FB2, FD."],
+      "answer_index": 1,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 70,
+      "chapter_id": 1,
+      "question_text": "Người có giấy phép lái xe hạng FC được điểu khiển các loại xe nào dưới đây?",
+      "question_image" : "",
+      "answer_list": ["Các loại xe được quy định tại giấy phép lái xe hạng C có kéo rơ moóc, ô tô đầu kéo kéo sơ mi rơ moóc, ô tô chở khách nối toa và được điều khiển các loại xe quy định cho giấy phép lái xe hạng B1, B2 và FB2.", "Các loại xe được quy định tại giấy phép lái xe hạng C có kéo rơ moóc, ô tô đầu kéo kéo sơ mi rơ moóc và được điều khiển các loại xe quy định cho giấy phép lái xe hạng B1, B2, C và FB2.", "Mô tô hai bánh, các loại xe được quy định tại giấy phép lái xe hạng C có kéo rơ moóc, ô tô đầu kéo kéo sơ mi rơ moóc và được điều khiển các loại xe quy định cho giấy phép lái xe hạng B1, B2, C và FB2.", "Tất cả các loại xe nêu trên."],
+      "answer_index": 1,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 71,
+      "chapter_id": 1,
+      "question_text": "Người có giấy phép lái xe hạng FE được điểu khiển các loại xe nào dưới đây?",
+      "question_image" : "",
+      "answer_list": ["Các loại xe được quy định tại giấy phép lái xe hạng E có kéo rơ moóc và được điều khiển các loại xe: ô tô chở khách nối toa và các loại xe quy định cho giấy phép lái xe hạng B1, B2, C, D, FB2, FD.", "Các loại xe được quy định tại giấy phép lái xe hạng E có kéo rơ moóc, đầu kéo kéo sơ mi rơ moóc và được điều khiển các loại xe: ô tô chở khách nối toa và các loại xe quy định cho giấy phép lái xe hạng B1, B2, C, D, FB2, FD.", "Tất cả các loại xe nêu trên."],
+      "answer_index": 0,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 72,
+      "chapter_id": 1,
+      "question_text": "",
+      "question_image" : "cau72",
+      "answer_list": ["Biển báo nguy hiểm", "Biển báo cấm", "Biển báo hiệu lệnh", "Biển báo chỉ dẫn"],
+      "answer_index": 1,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 73,
+      "chapter_id": 1,
+      "question_text": "",
+      "question_image" : "cau73",
+      "answer_list": ["Biển báo nguy hiểm", "Biển báo cấm", "Biển báo hiệu lệnh", "Biển báo chỉ dẫn"],
+      "answer_index": 0,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 74,
+      "chapter_id": 1,
+      "question_text": "",
+      "question_image" : "cau74",
+      "answer_list": ["Biển báo nguy hiểm", "Biển báo cấm", "Biển báo hiệu lệnh phải thi hành", "Biển báo chỉ dẫn"],
+      "answer_index": 2,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 75,
+      "chapter_id": 1,
+      "question_text": "",
+      "question_image" : "cau75",
+      "answer_list": ["Biển báo nguy hiểm", "Biển báo cấm", "Biển báo hiệu lệnh phải thi hành", "Biển báo chỉ dẫn"],
+      "answer_index": 3,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 76,
+      "chapter_id": 1,
+      "question_text": "Khi tập lái xe ô tô, người tập lái xe phải thực hiện các điều kiện gì dưới đây?",
+      "question_image" : "",
+      "answer_list": ["Phải thực hành lái xe trên xe tập lái và có giáo viên bảo trợ tay lái.", "Phải mang theo phù hiệu “học viên tập lái xe”;", "Phải mang theo giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường còn hiệu lực, giấy phép vận chuyển (nếu loại xe đó cần phải có).", "Cả ý 1 và ý 2."],
+      "answer_index": 3,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 77,
+      "chapter_id": 1,
+      "question_text": "Khi dạy thực hành lái xe, giáo viên phải mang theo các giấy tờ gì dưới đây?",
+      "question_image" : "",
+      "answer_list": ["Phải mang theo phù hiệu “Giáo viên dạy lái xe”, giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường còn hiệu lực, giấy phép xe tập lái do cơ quan có thẩm quyền cấp còn hiệu lực.", "Phải mang theo phù hiệu “học viên tập lái xe” và kế hoạch học tập của khóa học;", "Phải mang theo giấy chứng nhận Giáo viên dạy thực hành lái xe, biên lai thu phí bảo trì đường bộ."],
+      "answer_index": 0,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 78,
+      "chapter_id": 1,
+      "question_text": "Xe ô tô tập lái phải đảm bảo các điều kiện gì dưới đây?",
+      "question_image" : "",
+      "answer_list": ["Gắn 02 biển “TẬP LÁI” trước và sau xe, có hệ thống phanh phụ được lắp đặt bảo đảm hiệu quả phanh, được bố trí bên ghế ngồi của giáo viên dạy thực hành lái xe.", "Xe tập lái loại tải thùng có mui che mưa, che nắng, ghế ngồi cho học viên, có giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường phương tiện giao thông cơ giới đường bộ còn hiệu lực.", "Cả ý 1 và ý 2."],
+      "answer_index": 2,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 79,
+      "chapter_id": 1,
+      "question_text": "Việc sát hạch cấp giấy phép lái xe ô tô phải thực hiện ở đâu và như thế nào?",
+      "question_image" : "",
+      "answer_list": ["Tại các cơ sở đào tạo lái xe có đủ điều kiện và phải bảo đảm công khai minh bạch.", "Tại sân tập lái của cơ sở đào tạo lái xe và phải đảm bảo công khai, minh bạch.", "Tại các trung tâm sát hạch lái xe có đủ điều kiện hoạt động và phải bảo đảm công khai minh bạch."],
+      "answer_index": 2,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 80,
+      "chapter_id": 1,
+      "question_text": "Khi điều khiển xe chạy trên đường, người lái xe phải mang theo các loại giấy tờ gì?",
+      "question_image" : "",
+      "answer_list": ["Giấy chứng nhận tốt nghiệp khoá đào tạo của hạng xe đang điều khiển, đăng ký xe, giấy phép lưu hành xe.", "Giấy phép lái xe phù hợp với loại xe đó; lệnh vận chuyển, đăng ký xe, giấy chứng nhận kiểm tra chất lượng an toàn kỹ thuật và bảo vệ môi trường của xe cơ giới sau khi cải tạo; giấy phép vận chuyển (nếu loại xe đó cần phải có).", "Giấy phép lái xe phù hợp với loại xe đó, đăng ký xe, giấy chứng nhận kiểm định kỹ thuật và bảo vệ môi trường, giấy chứng nhận bảo hiểm trách nhiệm dân sự của chủ xe cơ giới và giấy phép vận chuyển (nếu loại xe đó cần phải có), các giấy tờ phải còn giá trị sử dụng."],
+      "answer_index": 2,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 81,
+      "chapter_id": 1,
+      "question_text": "Khi sử dụng giấy phép lái xe đã khai báo mất để điều khiển phương tiện cơ giới đường bộ, ngoài việc bị thu hồi giấy phép lái xe, chịu trách nhiệm trước pháp luật, người lái xe không được cấp giấy phép lái xe trong thời gian bao nhiêu năm?",
+      "question_image" : "",
+      "answer_list": ["02 năm.", "03 năm.", "05 năm.", "04 năm."],
+      "answer_index": 2,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 82,
+      "chapter_id": 1,
+      "question_text": " Khi gặp hiệu lệnh như dưới đây của cảnh sát giao thông thì người tham gia giao thông phải đi như thế nào là đúng quy tắc giao thông?",
+      "question_image" : "cau82",
+      "answer_list": ["Người tham gia giao thông ở các hướng phải dừng lại.", "Người tham gia giao thông ở các hướng được đi theo chiều gậy chỉ của cảnh sát giao thông.", "Người tham gia giao thông ở phía trước và phía sau người điều khiển được đi tất cả các hướng; người tham gia giao thông ở phía bên phải và phía bên trái người điều khiển phải dừng lại.", "Người tham gia giao thông ở phía trước và phía sau người điều khiển phải dừng lại; người tham gia giao thông ở phía bên phải và phía bên trái người điều khiển được đi tất cả các hướng."],
+      "answer_index": 3,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 83,
+      "chapter_id": 1,
+      "question_text": "Khi gặp hiệu lệnh như dưới đây của cảnh sát giao thông thì người tham gia giao thông phải đi như thế nào là đúng quy tắc giao thông?",
+      "question_image" : "cau83",
+      "answer_list": ["Người tham gia giao thông ở hướng đối diện cảnh sát giao thông được đi, các hướng khác phải dừng lại.", "Người tham gia giao thông được rẽ phải theo chiều mũi tên màu xanh ở bục cảnh sát giao thông.", "Người tham gia giao thông ở các hướng đều phải dừng lại trừ các xe đã ở trong khu vực giao nhau.", "Người ở hướng đối diện cảnh sát giao thông phải dừng lại, các hướng khác được đi trong đó có bạn."],
+      "answer_index": 2,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 84,
+      "chapter_id": 1,
+      "question_text": "Trên đường giao thông, khi hiệu lệnh của người điều khiển giao thông trái với hiệu lệnh của đèn hoặc biển báo hiệu thì người tham gia giao thông phải chấp hành theo hiệu lệnh nào?",
+      "question_image" : "",
+      "answer_list": ["Hiệu lệnh của người điều khiển giao thông.", "Hiệu lệnh của đèn điều khiển giao thông.", "Hiệu lệnh của biển báo hiệu đường bộ.", "Theo quyết định của người tham gia giao thông nhưng phải bảo đảm an toàn."],
+      "answer_index": 0,
+      "is_dead_point": true,
+      "comment": ""
+    },
+    {
+      "id": 85,
+      "chapter_id": 1,
+      "question_text": "Tại nơi có biển báo hiệu cố định lại có báo hiệu tạm thời thì người tham gia giao thông phải chấp hành hiệu lệnh của báo hiệu nào?",
+      "question_image" : "",
+      "answer_list": ["Biển báo hiệu cố định."],
+      "answer_index": 1,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 8,
+      "chapter_id": 1,
+      "question_text": "",
+      "question_image" : "",
+      "answer_list": [],
+      "answer_index": 1,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 8,
+      "chapter_id": 1,
+      "question_text": "",
+      "question_image" : "",
+      "answer_list": [],
+      "answer_index": 1,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 8,
+      "chapter_id": 1,
+      "question_text": "",
+      "question_image" : "",
+      "answer_list": [],
+      "answer_index": 1,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 8,
+      "chapter_id": 1,
+      "question_text": "",
+      "question_image" : "",
+      "answer_list": [],
+      "answer_index": 1,
+      "is_dead_point": false,
+      "comment": ""
+    },
+    {
+      "id": 8,
+      "chapter_id": 1,
+      "question_text": "",
+      "question_image" : "",
+      "answer_list": [],
+      "answer_index": 1,
+      "is_dead_point": false,
+      "comment": ""
+    },
+
+  ]
+
+}

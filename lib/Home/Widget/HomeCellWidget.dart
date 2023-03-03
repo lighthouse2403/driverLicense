@@ -16,21 +16,25 @@ class HomeCellWidget extends StatelessWidget {
             onTap: () {
               gotoDetail(context);
             },
-            child: Container(
-                      decoration: const BoxDecoration(
-                                    color: Colors.green,
-                                    borderRadius: BorderRadius.all(Radius.circular(10))),
+            child: Card(
+                      shape: RoundedRectangleBorder(
+                        side: const BorderSide(
+                          color: Colors.white10,
+                          width: 1,
+                        ),
+                        borderRadius: BorderRadius.circular(10)
+                      ),
                       child: Column(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: <Widget>[
-                                          Center(child: Image.asset(icon, width: 40, height: 40,),), // <-- Icon
+                                          Center(child: Image.asset('assets/home/$icon', width: 50, height: 50,),), // <-- Icon
                                           const SizedBox(height: 10,),
                                           Text(
                                             text,
                                             style: const TextStyle(
-                                                    color: Colors.white,
-                                                    fontSize: 20,
-                                                    fontWeight: FontWeight.w600),
+                                                    color: Colors.green,
+                                                    fontSize: 18,
+                                                    fontWeight: FontWeight.w500),
                                             textAlign: TextAlign.center,
                                           ),
                                         ],
