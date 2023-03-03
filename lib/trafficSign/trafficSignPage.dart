@@ -1,5 +1,8 @@
+import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:license/trafficSign/trafficSignModel.dart';
 import 'package:license/trafficSign/trafficSignRow.dart';
+import 'package:flutter/services.dart';
 
 class TrafficSignPage extends StatefulWidget {
   const TrafficSignPage({super.key, required this.type});
@@ -10,13 +13,32 @@ class TrafficSignPage extends StatefulWidget {
 }
 
 class _TrafficSignPageState extends State<TrafficSignPage> {
+  List traficSignArray = [];
+
+  Future<void> loadTrafficSignData() async {
+    final String response = await rootBundle.loadString('assets/json/trafficSign.json');
+    final data = await json.decode(response);
+    print(data.toString());
+    setState(() {
+      traficSignArray = data["trafficSign"];
+    });
+    print(data.toString());
+  }
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    loadTrafficSignData();
+  }
 
   @override
   Widget build(BuildContext context) {
     return ListView.separated(
-      itemCount: 20,
+      itemCount: traficSignArray.length,
       itemBuilder: (BuildContext context, int index) {
-        return TrafficSignRow();
+        var model = TrafficSignModel.fromJson(traficSignArray[index]);
+        return TrafficSignRow(model: model);
       },
       separatorBuilder: (BuildContext context, int index) {
         return Container(height: 1, color: Colors.grey,);
