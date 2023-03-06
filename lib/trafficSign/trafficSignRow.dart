@@ -18,7 +18,7 @@ class _TrafficSignRowState extends State<TrafficSignRow> {
       onTap: () {
         Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => const TrafficSignDetail()));
+            MaterialPageRoute(builder: (context) => TrafficSignDetail(trafficSignModel: widget.model,)));
       },
       child: Row(
         children: [
@@ -39,7 +39,7 @@ class _TrafficSignRowState extends State<TrafficSignRow> {
                 Text(
                   widget.model.comment,
                   style: const TextStyle(fontSize: 14,
-                      fontWeight: FontWeight.w500,
+                      fontWeight: FontWeight.w400,
                       color: Colors.black),)
               ],
             ),
