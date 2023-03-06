@@ -1,31 +1,4 @@
 {
-  "chapers" : [
-    {
-      "id": 1,
-      "name": "Các khái niệm và quy tắc giao thông đường bộ"
-    },
-    {
-      "id": 2,
-      "name": "Nghiệp vụ vận tải"
-    },
-    {
-      "id": 3,
-      "name": "Văn hoá giao thông và đạo đức người lái xe"
-    },
-    {
-      "id": 4,
-      "name": "Kỹ thuật lái xe"
-    },
-    {
-      "id": 5,
-      "name": "Biển báo đường bộ"
-    },
-    {
-      "id": 6,
-      "name": "Sa hình"
-    },
-  ],
-
   "questions": [
     {
       "id": 1,
@@ -228,11 +201,11 @@
       "comment": "Có ma tuý bị nghiêm cấm"
     },
     {
-      "id": 21
+      "id": 21,
       "chapter_id": 1,
       "question_text": "Việc lái xe mô tô, ô tô, máy kéo ngay sau khi uống rượu, bia có được phép hay không?",
       "question_image" : "",
-      "answer_list": ["Không được phép.", "Chỉ được lái ở tốc độ chậm và quãng đường ngắn.". "Chỉ được lái nếu trong cơ thể có nồng độ cồn thấp."],
+      "answer_list": ["Không được phép.", "Chỉ được lái ở tốc độ chậm và quãng đường ngắn.", "Chỉ được lái nếu trong cơ thể có nồng độ cồn thấp."],
       "answer_index": 0,
       "is_dead_point": true,
       "comment": "Uống rượu bia thì không được lái xe"
@@ -925,8 +898,6 @@
       "answer_index": 1,
       "is_dead_point": false,
       "comment": ""
-    },
-
+    }
   ]
-
 }

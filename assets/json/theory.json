@@ -1,0 +1,49 @@
+{
+  "chapers" : [
+    {
+      "id": 0,
+      "name": "600 câu hỏi",
+      "comment": "Toàn bộ 600 câu hỏi của bộ đề ôn thi GPLX. Trong đó bao gồm 60 câu điểm liệt"
+    },
+    {
+      "id": 1,
+      "name": "Câu hỏi điểm liệt",
+      "comment": "Bắt buộc phải làm đúng các câu này (60 câu)"
+    },
+    {
+      "id": 2,
+      "name": "Sa hình",
+      "comment": "Từ câu 487 đến câu 600 (114 câu)"
+    },
+    {
+      "id": 3,
+      "name": "Biển báo đường bộ",
+      "comment": "Từ câu 305 đến câu 486 (182 câu)"
+    },
+    {
+      "id": 4,
+      "name": "Khái niệm và quy tắc giao thông",
+      "comment": "Từ câu 1 đến câu 166. Bao gồm 45 câu điểm liệt (166 câu)"
+    },
+    {
+      "id": 5,
+      "name": "Nghiệp vụ vận tải",
+      "comment": "Từ câu 167 đến câu 192 (26 câu)"
+    },
+    {
+      "id": 6,
+      "name": "Kỹ thuật lái xe",
+      "comment": "Từ câu 214 đến câu 269. Trong đó bao gồm 11 câu điểm liệt (56 câu)"
+    },
+    {
+      "id": 7,
+      "name": "Văn hoá lái xe",
+      "comment": "Từ câu 193 đến câu 213. Bao gồm 4 câu điểm liệt (21 câu)"
+    },
+    {
+      "id": 8,
+      "name": "Cấu tạo và sửa chữa",
+      "comment": "Từ câu 270 đến câu 304(35 câu)"
+    }
+  ]
+}

@@ -24,14 +24,22 @@ class _TrafficSignDetailState extends State<TrafficSignDetail> {
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             Text(widget.trafficSignModel.comment,
-              style: const TextStyle(fontSize: 20, color: Colors.green, fontWeight: FontWeight.w700),),
+              style: const TextStyle(
+                              fontSize: 20,
+                              color: Colors.green,
+                              fontWeight: FontWeight.w700),),
             Container(
-              child: Center(child: Image.asset('assets/trafficSign/${widget.trafficSignModel.image}',),)
+              child: Center(
+                child: Image.asset('assets/trafficSign/${widget.trafficSignModel.image}',),)
           ),
             Text(widget.trafficSignModel.description,
-              style: const TextStyle(fontSize: 14, color: Colors.black, fontWeight: FontWeight.w500))
-        ],),)
-
+              style: const TextStyle(
+                  fontSize: 14,
+                  color: Colors.black,
+                  fontWeight: FontWeight.w500))
+          ],
+        ),
+      )
     );
   }
 }

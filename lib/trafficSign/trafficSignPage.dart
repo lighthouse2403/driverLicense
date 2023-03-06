@@ -41,7 +41,7 @@ class _TrafficSignPageState extends State<TrafficSignPage> {
         return TrafficSignRow(model: model);
       },
       separatorBuilder: (BuildContext context, int index) {
-        return Container(height: 1, color: Colors.grey,);
+        return Container(height: 0.5, color: Colors.grey,);
       },
     );
   }
