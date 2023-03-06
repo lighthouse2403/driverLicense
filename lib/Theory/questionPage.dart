@@ -31,18 +31,12 @@ class _QuestionPageState extends State<QuestionPage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text('Biển báo'),
-        backgroundColor: Colors.green,
-      ),
-      body: PageView.builder(
-        itemCount: 10,
-        scrollDirection: Axis.horizontal,
-        itemBuilder: (BuildContext context, int index) {
-          return QuestionDetail(question: QuestionModel.fromJson(questionList[index]));
-        },
-      ),
+    return PageView.builder(
+      itemCount: 10,
+      scrollDirection: Axis.horizontal,
+      itemBuilder: (BuildContext context, int index) {
+        return QuestionDetail(question: QuestionModel.fromJson(questionList[index]));
+      },
     );
   }
 }
