@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:license/Theory/TheoryModel.dart';
-import 'package:license/Theory/theoryDetail.dart';
+import 'package:license/Theory/Model/TheoryModel.dart';
+import 'package:license/Theory/questionPage.dart';
 
 class TheoryRow extends StatelessWidget {
   const TheoryRow({super.key, required this.theory});
@@ -13,18 +13,44 @@ class TheoryRow extends StatelessWidget {
       onTap: () {
         Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => const TheoryDetail(type: 0,)));
+            MaterialPageRoute(builder: (context) => const QuestionPage()));
       },
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,
         children: [
           Container(
-            padding: const EdgeInsets.only(top: 10, bottom: 10, left: 10),
-            child: Image.asset('assets/home/tips.png', width: 50, height: 50,),
+            width: 60,
+            height: 60,
+            margin:  const EdgeInsets.all(10),
+            child: Stack(
+              children: [
+                Container(
+                  width: 60,
+                  height: 60,
+                  child:
+                  const CircularProgressIndicator(
+                      value: 0.5,
+                      strokeWidth: 3,
+                      backgroundColor:  Colors.blueGrey,
+                      valueColor: AlwaysStoppedAnimation(Colors.green)
+                  ),
+                ),
+                const Center(
+                  child: Text(
+                      '30/182',
+                      style: TextStyle(
+                          fontSize: 12,
+                          fontWeight: FontWeight.w500,
+                          color: Colors.green
+                      ),
+                  ),
+                )
+              ],
+            )
           ),
           Flexible(
               child: Container(
-                padding: EdgeInsets.all(10),
+                padding: const EdgeInsets.all(10),
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -38,10 +64,13 @@ class TheoryRow extends StatelessWidget {
                     ),
                     const SizedBox(height: 5,),
                     Container(
-                      padding: const EdgeInsets.only(right: 15.0),
+                      padding: const EdgeInsets.only(right: 2.0),
                       child: Text(
                           theory.comment,
-                          style: const TextStyle(fontWeight: FontWeight.w400, fontSize: 14),
+                          style: const TextStyle(
+                              fontWeight: FontWeight.w400,
+                              fontSize: 14,
+                              height: 1.3),
                           softWrap: true
                       ),
                     )

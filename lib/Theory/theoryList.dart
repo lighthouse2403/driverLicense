@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:license/Theory/TheoryModel.dart';
+import 'package:license/Theory/Model/TheoryModel.dart';
 import 'package:license/Theory/theoryRow.dart';
 import 'package:flutter/services.dart';
 
