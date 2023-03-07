@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:license/Theory/Model/QuestionModel.dart';
+import 'package:license/Theory/SelectionRow.dart';
 
 class QuestionDetail extends StatefulWidget {
   const QuestionDetail({super.key, required this.question});
@@ -9,6 +10,7 @@ class QuestionDetail extends StatefulWidget {
 }
 
 class _QuestionDetailState extends State<QuestionDetail> {
+  int selectedIndex = -1;
 
   @override
   Widget build(BuildContext context) {
@@ -18,33 +20,35 @@ class _QuestionDetailState extends State<QuestionDetail> {
           backgroundColor: Colors.green,
         ),
         body: Container(
-          padding: EdgeInsets.all(10),
-          child: Flexible(
-            child: Column(
-              children: [
-                Column(
-                  children: [
-                    Text(
-                      widget.question.questionText,
-                      style: const TextStyle(
-                          fontSize: 16,
-                          fontWeight: FontWeight.w700,
-                          color: Colors.black
-                      ),
-                    )
-                  ],
-                ),
-                ListView.separated(
-                  itemCount: widget.question.answerList.length,
-                  itemBuilder: (BuildContext context, int index) {
-                      return Text('Welcome');
-                  },
-                  separatorBuilder: (BuildContext context, int index) {
-                    return Container(height: 0.5, color: Colors.grey,);
-                  },
-                )
-              ],
-            ),
+          padding: const EdgeInsets.all(10),
+          child: ListView.separated(
+            itemCount: widget.question.answerList.length,
+            itemBuilder: (BuildContext context, int index) {
+              if (index == 0) {
+                return Container(
+                  padding: const EdgeInsets.only(left: 5, right: 2, top: 10, bottom: 20),
+                  child: Text(
+                    widget.question.questionText,
+                    style: const TextStyle(
+                        fontWeight: FontWeight.w600,
+                        fontSize: 18,
+                        color: Colors.black
+                    ),
+                  ),
+                );
+              }
+              return InkWell(
+                onTap: () {
+                  setState(() {
+                    selectedIndex = index - 1;
+                  });
+                },
+                child: SelectionRow(question: widget.question, index: index - 1, selectedIndex: selectedIndex),
+              );
+            },
+            separatorBuilder: (BuildContext context, int index) {
+              return Container(height: 0.5, color: Colors.greenAccent,);
+            },
           ),
         )
     );
