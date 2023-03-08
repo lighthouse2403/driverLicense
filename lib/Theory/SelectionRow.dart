@@ -1,25 +1,33 @@
 import 'package:flutter/material.dart';
 import 'package:license/Theory/Model/QuestionModel.dart';
+import '../Database/sqlHelper.dart';
 
-class SelectionRow extends StatefulWidget {
+class SelectionRow extends StatelessWidget{
   SelectionRow({super.key, required this.question, required this.index, required this.selectedIndex});
 
   QuestionModel question;
   int index = 0;
   int selectedIndex = -1;
-
-  @override
-  State<SelectionRow> createState() => SelectionRowState();
-}
-
-class SelectionRowState extends State<SelectionRow> {
+  bool isTesting = false;
 
   @override
   Widget build(BuildContext context) {
     Color answerTextColor = Colors.black;
-    bool isCorrect = widget.question.answerIndex == widget.selectedIndex;
-    answerTextColor = (widget.index == widget.selectedIndex) && isCorrect ? Colors.green : answerTextColor;
-    answerTextColor = (widget.index == widget.selectedIndex) && !isCorrect ? Colors.red : answerTextColor;
+    Color backgroundColor = Colors.white;
+    Color textColor = Colors.black;
+
+    bool isCorrect = question.answerIndex == selectedIndex;
+    List localQuestions = SQLHelper.getQuestion() as List;
+    if(localQuestions.any((localQuestion) => localQuestion.name == question.id)) {
+      isCorrect = true;
+    }
+
+    if (index == selectedIndex) {
+      answerTextColor = isCorrect ? Colors.green : Colors.red;
+      backgroundColor = answerTextColor;
+      textColor = Colors.white;
+    }
+    int numberOfAnswer = index + 1;
 
     return Container(
       padding: const EdgeInsets.only(left: 10, right: 5, top: 12, bottom: 12),
@@ -31,15 +39,23 @@ class SelectionRowState extends State<SelectionRow> {
             decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(15),
                 border: Border.all(
-                  color: widget.index == widget.selectedIndex ? Colors.green : Colors.grey,
-                  width: 2,
-                )
+                  color: answerTextColor.withOpacity(0.5),
+                  width: 1,
+                ),
+              color: backgroundColor,
+            ),
+            child: Center(
+              child: Text(
+                  '$numberOfAnswer',
+              style: TextStyle(
+                color: textColor
+              ),),
             ),
           ),
           const SizedBox(width: 10,),
           Flexible(
               child: Text(
-                widget.question.answerList[widget.index],
+                question.answerList[index],
                 style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w500,
@@ -52,3 +68,4 @@ class SelectionRowState extends State<SelectionRow> {
     );
   }
 }
+

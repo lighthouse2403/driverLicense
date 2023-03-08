@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:license/Database/sqlHelper.dart';
+import 'package:license/Theory/CommentRow.dart';
 import 'package:license/Theory/Model/QuestionModel.dart';
 import 'package:license/Theory/SelectionRow.dart';
+import 'QuestionRow.dart';
 
 class QuestionDetail extends StatefulWidget {
   const QuestionDetail({super.key, required this.question});
@@ -14,40 +17,36 @@ class _QuestionDetailState extends State<QuestionDetail> {
 
   @override
   Widget build(BuildContext context) {
+    final int answerCount = widget.question.answerList.length;
+
     return Scaffold(
         appBar: AppBar(
           title: Text('Câu hỏi số ${widget.question.id}'),
           backgroundColor: Colors.green,
         ),
         body: Container(
-          padding: const EdgeInsets.all(10),
+          padding: const EdgeInsets.only(top: 10, bottom: 10),
           child: ListView.separated(
-            itemCount: widget.question.answerList.length,
+            itemCount: answerCount + 2,
             itemBuilder: (BuildContext context, int index) {
-              if (index == 0) {
-                return Container(
-                  padding: const EdgeInsets.only(left: 5, right: 2, top: 10, bottom: 20),
-                  child: Text(
-                    widget.question.questionText,
-                    style: const TextStyle(
-                        fontWeight: FontWeight.w600,
-                        fontSize: 18,
-                        color: Colors.black
-                    ),
-                  ),
-                );
-              }
-              return InkWell(
-                onTap: () {
-                  setState(() {
-                    selectedIndex = index - 1;
-                  });
-                },
-                child: SelectionRow(question: widget.question, index: index - 1, selectedIndex: selectedIndex),
-              );
-            },
+                if (index == 0) {
+                  return QuestionRow(question: widget.question.questionText);
+                } else if (index == answerCount + 1)  {
+                  return CommentRow(comment: widget.question.comment);
+                } else {
+                  return InkWell(
+                    onTap: () {
+                      SQLHelper().insertQuestion(widget.question);
+                      setState(() {
+                        selectedIndex = index - 1;
+                      });
+                    },
+                    child: SelectionRow(question: widget.question, index: index - 1, selectedIndex: selectedIndex),
+                  );
+                }
+              },
             separatorBuilder: (BuildContext context, int index) {
-              return Container(height: 0.5, color: Colors.greenAccent,);
+              return Container(height: 0.5, color: Colors.grey.withOpacity(0.6),);
             },
           ),
         )
