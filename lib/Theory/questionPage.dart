@@ -3,11 +3,11 @@ import 'package:license/Theory/Model/QuestionModel.dart';
 import 'package:license/Theory/questionDetail.dart';
 
 class QuestionPage extends StatefulWidget {
-  QuestionPage({super.key, required this.questionList});
+  const QuestionPage({super.key, required this.questionList});
+  final List<QuestionModel> questionList;
+
   @override
   State<QuestionPage> createState() => _QuestionPageState();
-
-  List<QuestionModel> questionList = [];
 }
 
 class _QuestionPageState extends State<QuestionPage> {

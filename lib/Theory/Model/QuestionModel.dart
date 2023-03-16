@@ -10,7 +10,7 @@ class QuestionModel {
   List answerList = [];
   bool isDeadPoint = false;
   String comment = '';
-  bool isCorrect = true;
+  int selectedIndex = -1;
 
   QuestionModel({
     required this.id,
@@ -21,7 +21,7 @@ class QuestionModel {
     required this.answerList,
     required this.isDeadPoint,
     required this.comment,
-    required this.isCorrect,
+    required this.selectedIndex,
 
   });
 

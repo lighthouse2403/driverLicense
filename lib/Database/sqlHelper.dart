@@ -14,7 +14,7 @@ class SQLHelper {
   }
 
   static Future<void> createTables(sql.Database database) async {
-    await database.execute("CREATE TABLE question(id INTEGER PRIMARY KEY, chapterId INTEGER, questionText TEXT, answerIndex INTEGER, questionImage TEXT, answerList TEXT, comment TEXT)");
+    await database.execute("CREATE TABLE question(id INTEGER PRIMARY KEY, chapterId INTEGER, questionText TEXT, answerIndex INTEGER, questionImage TEXT, answerList TEXT, comment TEXT, selectedIndex INTEGER)");
   }
 
   Future<void> insertQuestion(QuestionModel question) async {
@@ -40,12 +40,8 @@ class SQLHelper {
   }
 
   // Update an item by id
-  static Future<void> updateQuestion(QuestionModel question) async {
+  Future<void> updateQuestion(QuestionModel question) async {
     final db = await SQLHelper.db();
-
-    final data = {
-      'isCorrect': question.isCorrect
-    };
 
     await db.update(
       'question',
