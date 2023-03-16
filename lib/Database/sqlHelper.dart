@@ -14,7 +14,7 @@ class SQLHelper {
   }
 
   static Future<void> createTables(sql.Database database) async {
-    await database.execute("CREATE TABLE question (id INTEGER PRIMARY KEY, chapterId INTEGER, questionText TEXT, isCorrect BOOLEAN, answerIndex INTEGER. questionImage TEXT, )");
+    await database.execute("CREATE TABLE question(id INTEGER PRIMARY KEY, chapterId INTEGER, questionText TEXT, answerIndex INTEGER, questionImage TEXT, answerList TEXT, comment TEXT)");
   }
 
   Future<void> insertQuestion(QuestionModel question) async {
@@ -33,12 +33,10 @@ class SQLHelper {
   }
 
   // Read all items (journals)
-  static Future<List<QuestionModel>> getQuestion() async {
+  static Future<QuestionModel> getQuestion(int id) async {
     final db = await SQLHelper.db();
-    final List<Map<String, dynamic>> maps = await db.query('question');
-    return List.generate(maps.length, (i) {
-      return QuestionModel.fromJson(maps[i]);
-    });
+    final List<Map<String, dynamic>> maps = await db.query('question', where: 'id = ?', whereArgs: [id]);
+    return QuestionModel.fromDatabase(maps.first);
   }
 
   // Update an item by id

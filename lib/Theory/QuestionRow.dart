@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// ignore: must_be_immutable
 class QuestionRow extends StatelessWidget{
   QuestionRow({super.key, required this.question});
 

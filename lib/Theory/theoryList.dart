@@ -1,6 +1,8 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:license/Theory/Model/QuestionModel.dart';
 import 'package:license/Theory/Model/TheoryModel.dart';
+import 'package:license/Theory/questionPage.dart';
 import 'package:license/Theory/theoryRow.dart';
 import 'package:flutter/services.dart';
 
@@ -12,6 +14,7 @@ class TheoryList extends StatefulWidget {
 
 class _TheoryListState extends State<TheoryList> {
   List chapterArray = [];
+  List<QuestionModel> questionList = [];
 
   Future<void> loadTheoryData() async {
     final String response = await rootBundle.loadString('assets/json/theory.json');
@@ -20,7 +23,12 @@ class _TheoryListState extends State<TheoryList> {
     setState(() {
       chapterArray = data["chapers"];
     });
-    print(data.toString());
+  }
+
+  Future<void> loadQuestionData() async {
+    final String response = await rootBundle.loadString('assets/json/question.json');
+    final data = await json.decode(response);
+    questionList = List<QuestionModel>.from(data["questions"].map((json) => QuestionModel.fromJson(json)));
   }
 
   @override
@@ -28,6 +36,17 @@ class _TheoryListState extends State<TheoryList> {
     // TODO: implement initState
     super.initState();
     loadTheoryData();
+    loadQuestionData();
+  }
+
+  void goToQuestionPage(int index) {
+    print('goToQuestionPage: ' + index.toString());
+
+    var questions =  questionList.where((element) => element.chapterId == index).toList();
+    print('question:' + questions.toString());
+    Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => QuestionPage(questionList: questions)));
   }
 
   @override
@@ -41,7 +60,8 @@ class _TheoryListState extends State<TheoryList> {
         itemCount: chapterArray.length,
         itemBuilder: (BuildContext context, int index) {
           var theoryModel = TheoryModel.fromJson(chapterArray[index]);
-          return TheoryRow(theory: theoryModel,);
+          var row = TheoryRow(theory: theoryModel, onTap: goToQuestionPage);
+          return row;
         },
         separatorBuilder: (BuildContext context, int index) {
           return Container(height: 0.5, color: Colors.grey,);

@@ -2,18 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:license/Theory/Model/TheoryModel.dart';
 import 'package:license/Theory/questionPage.dart';
 
-class TheoryRow extends StatelessWidget {
-  const TheoryRow({super.key, required this.theory});
+ class TheoryRow extends StatelessWidget {
+  TheoryRow({super.key, required this.theory, required this.onTap});
 
   final TheoryModel theory;
+  Function(int) onTap;
 
   @override
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => const QuestionPage()));
+        onTap(theory.id);
       },
       child: Row(
         mainAxisAlignment: MainAxisAlignment.start,

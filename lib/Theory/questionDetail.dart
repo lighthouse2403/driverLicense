@@ -27,7 +27,7 @@ class _QuestionDetailState extends State<QuestionDetail> {
         body: Container(
           padding: const EdgeInsets.only(top: 10, bottom: 10),
           child: ListView.separated(
-            itemCount: answerCount + 2,
+            itemCount: answerCount > 0 ? answerCount + 2 : 0,
             itemBuilder: (BuildContext context, int index) {
                 if (index == 0) {
                   return QuestionRow(question: widget.question.questionText);
@@ -36,6 +36,7 @@ class _QuestionDetailState extends State<QuestionDetail> {
                 } else {
                   return InkWell(
                     onTap: () {
+                      print("tapped to row");
                       SQLHelper().insertQuestion(widget.question);
                       setState(() {
                         selectedIndex = index - 1;

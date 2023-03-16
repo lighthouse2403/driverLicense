@@ -1,4 +1,6 @@
 
+import 'dart:ffi';
+
 class QuestionModel {
   int id = 0 ;
   int chapterId = 0;
@@ -32,7 +34,16 @@ class QuestionModel {
     answerList = json['answerList'];
     isDeadPoint = json['isDeadPoint'];
     comment = json['comment'];
-    isCorrect = json['isCorrect'];
+  }
+
+  QuestionModel.fromDatabase(Map<String, dynamic> json) {
+    id = json['id'];
+    chapterId = json['chapterId'];
+    questionText = json['questionText'];
+    answerIndex = json['answerIndex'];
+    questionImage = json['questionImage'];
+    answerList = json['answerList'].split(',');
+    comment = json['comment'];
   }
 
   Map<String, dynamic> toJson() {
@@ -42,10 +53,8 @@ class QuestionModel {
     data['questionText'] = questionText;
     data['answerIndex'] = answerIndex;
     data['questionImage'] = questionImage;
-    data['answerList'] = answerList;
-    data['isDeadPoint'] = isDeadPoint;
+    data['answerList'] = answerList.join(',');
     data['comment'] = comment;
-    data['isCorrect'] = isCorrect;
 
     return data;
   }
