@@ -19,38 +19,31 @@ class _QuestionDetailState extends State<QuestionDetail> {
   Widget build(BuildContext context) {
     final int answerCount = widget.question.answerList.length;
 
-    return Scaffold(
-        appBar: AppBar(
-          title: Text('Câu hỏi số ${widget.question.id}'),
-          backgroundColor: Colors.green,
-        ),
-        body: Container(
-          padding: const EdgeInsets.only(top: 10, bottom: 10),
-          child: ListView.separated(
-            itemCount: answerCount > 0 ? answerCount + 2 : 0,
-            itemBuilder: (BuildContext context, int index) {
-                if (index == 0) {
-                  return QuestionRow(question: widget.question.questionText);
-                } else if (index == answerCount + 1)  {
-                  return CommentRow(comment: widget.question.comment);
-                } else {
-                  return InkWell(
-                    onTap: () {
-                      print("tapped to row");
-                      SQLHelper().insertQuestion(widget.question);
-                      setState(() {
-                        selectedIndex = index - 1;
-                      });
-                    },
-                    child: SelectionRow(question: widget.question, index: index - 1, selectedIndex: selectedIndex),
-                  );
-                }
+    return Container(
+      padding: const EdgeInsets.only(top: 10, bottom: 10),
+      child: ListView.separated(
+        itemCount: answerCount > 0 ? answerCount + 2 : 0,
+        itemBuilder: (BuildContext context, int index) {
+          if (index == 0) {
+            return QuestionRow(question: widget.question.questionText);
+          } else if (index == answerCount + 1)  {
+            return CommentRow(comment: widget.question.comment);
+          } else {
+            return InkWell(
+              onTap: () {
+                SQLHelper().insertQuestion(widget.question);
+                setState(() {
+                  selectedIndex = index - 1;
+                });
               },
-            separatorBuilder: (BuildContext context, int index) {
-              return Container(height: 0.5, color: Colors.grey.withOpacity(0.6),);
-            },
-          ),
-        )
+              child: SelectionRow(question: widget.question, index: index - 1, selectedIndex: selectedIndex),
+            );
+          }
+        },
+        separatorBuilder: (BuildContext context, int index) {
+          return Container(height: 0.5, color: Colors.grey.withOpacity(0.6),);
+        },
+      ),
     );
   }
 }

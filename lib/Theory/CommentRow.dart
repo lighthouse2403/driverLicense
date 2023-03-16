@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 
 class CommentRow extends StatelessWidget{
   CommentRow({super.key, required this.comment});
-
   String comment;
 
   @override
