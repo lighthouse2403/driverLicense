@@ -11,7 +11,7 @@ class CommentRow extends StatelessWidget{
       child: Container(
         padding: const EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
         decoration: BoxDecoration(
-            borderRadius: BorderRadius.circular(10),
+            borderRadius: BorderRadius.circular(6),
             color: Colors.green.withOpacity(0.6)
         ),
         child: Text(

@@ -6,14 +6,13 @@ import 'package:license/Theory/AnswerRow.dart';
 import 'QuestionRow.dart';
 
 class QuestionDetail extends StatefulWidget {
-  const QuestionDetail({super.key, required this.question});
-  final QuestionModel question;
+  QuestionDetail({super.key, required this.question});
+  QuestionModel question;
   @override
   State<QuestionDetail> createState() => _QuestionDetailState();
 }
 
 class _QuestionDetailState extends State<QuestionDetail> {
-  var isShowComment = false;
 
   @override
   Widget build(BuildContext context) {
@@ -22,15 +21,17 @@ class _QuestionDetailState extends State<QuestionDetail> {
     return FutureBuilder(
         future: SQLHelper.getQuestion(widget.question.id),
         builder: (context, snapshot) {
-          isShowComment = (snapshot.data != null);
+          if (snapshot.data != null) {
+            widget.question = snapshot.data!;
+          }
           return Container(
             padding: const EdgeInsets.only(top: 10, bottom: 10),
             child: ListView.separated(
-              itemCount: isShowComment ? answerCount + 2 : answerCount + 1,
+              itemCount: (widget.question.selectedIndex != -1) ? answerCount + 2 : answerCount + 1,
               itemBuilder: (BuildContext context, int index) {
                 if (index == 0) {
                   return QuestionRow(question: widget.question.questionText);
-                } else if ((index == answerCount + 1) && isShowComment) {
+                } else if ((index == answerCount + 1) && (widget.question.selectedIndex != -1)) {
                   return CommentRow(comment: widget.question.comment);
                 } else {
                   return InkWell(

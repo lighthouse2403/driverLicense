@@ -42,8 +42,9 @@ class QuestionModel {
     questionText = json['questionText'];
     answerIndex = json['answerIndex'];
     questionImage = json['questionImage'];
-    answerList = json['answerList'].split(',');
+    answerList = json['answerList'].split('--');
     comment = json['comment'];
+    selectedIndex = json['selectedIndex'];
   }
 
   Map<String, dynamic> toJson() {
@@ -53,8 +54,9 @@ class QuestionModel {
     data['questionText'] = questionText;
     data['answerIndex'] = answerIndex;
     data['questionImage'] = questionImage;
-    data['answerList'] = answerList.join(',');
+    data['answerList'] = answerList.join('--');
     data['comment'] = comment;
+    data['selectedIndex'] = selectedIndex;
 
     return data;
   }
