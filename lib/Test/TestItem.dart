@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:license/CustomWidget/CircularCountdownWidget.dart';
 
 class TestRow extends StatelessWidget {
   TestRow({super.key});
@@ -12,11 +13,8 @@ class TestRow extends StatelessWidget {
         child: Stack(
           children: [
             Positioned.fill(
-              child: CircularProgressIndicator(
-                strokeWidth: 10,
-                value: 0.6,
-                color: Colors.green,
-                backgroundColor: Colors.grey.withOpacity(0.3),
+              child: CustomPaint(
+                painter: CircularCountdownWidget(percentage: 0.9),
               ),
             ),
             Center(

@@ -1,83 +1,69 @@
-import 'dart:math' as math;
-
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:vector_math/vector_math.dart' as vmath;
 
-class CircularCountdownWidget extends StatefulWidget {
-  final AnimationController? animationController;
-
-  const CircularCountdownWidget({Key? key, this.animationController})
-      : super(key: key);
-
-  @override
-  CircularCountdownWidgetState createState() => CircularCountdownWidgetState();
-}
-
-class CircularCountdownWidgetState extends State<CircularCountdownWidget>
-    with TickerProviderStateMixin {
-  AnimationController? controller;
-
-  String timerString() {
-    Duration duration = controller!.duration! * controller!.value;
-    return '${duration.inMinutes.toString().padLeft(2, '0')}:${(duration.inSeconds % 60).toString().padLeft(2, '0')}';
-  }
-
-  @override
-  void initState() {
-    controller = widget.animationController;
-    super.initState();
-  }
-
-  @override
-  void dispose() {
-    super.dispose();
-  }
-
-  @override
-  Widget build(BuildContext context) {
-    return AnimatedBuilder(
-        animation: controller!,
-        builder: (context, child) {
-          return SizedBox(
-            child: CustomPaint(
-              painter: CountDownCirclePainter(animation: controller),
-              child: Center(
-                child: Text(
-                  timerString(),
-                  style: const TextStyle(
-                    color: Colors.blue,
-                    fontSize: 30,
-                    fontWeight: FontWeight.bold,
-                  ),
-                ),
-              ),
-            ),
-          );
-        });
-  }
-}
-
-class CountDownCirclePainter extends CustomPainter {
-  CountDownCirclePainter({
-    this.animation,
-  }) : super(repaint: animation);
-  final Animation<double>? animation;
+class CircularCountdownWidget extends CustomPainter {
+  final double percentage;
+  const CircularCountdownWidget({
+    required this.percentage,
+  });
 
   @override
   void paint(Canvas canvas, Size size) {
-    Paint paint = Paint()
-      ..color = Colors.grey.withOpacity(.2)
-      ..strokeWidth = 10
-      ..strokeCap = StrokeCap.round
-      ..style = PaintingStyle.stroke;
-    canvas.drawCircle(size.center(Offset.zero), size.width / 2.0, paint);
-    paint.color = Colors.blue;
-    paint.strokeWidth = 30;
-    double progress = (0 + animation!.value) * 2 * math.pi;
-    canvas.drawArc(Offset.zero & size, math.pi * 1.5, progress, false, paint);
+    // Get the center of the canvas
+    final center = Offset(size.width / 2, size.height / 2);
+
+    // Draw the gray background seen on the progress indicator
+    // This will act as the background layer.
+    canvas.drawCircle(
+      center,
+      85,
+      Paint()
+        ..style = PaintingStyle.stroke
+        ..color = Colors.black12
+        ..strokeWidth = 12,
+    );
+
+    // Create a new layer where we will be painting the
+    // actual progress indicator
+    canvas.saveLayer(
+      Rect.fromCenter(center: center, width: 200, height: 200),
+      Paint(),
+    );
+
+    // Draw the light green portion of the progress indicator
+    canvas.drawArc(
+      Rect.fromCenter(center: center, width: 170, height: 170),
+      vmath.radians(-90),
+      vmath.radians(percentage*360),
+      false,
+      Paint()
+        ..style = PaintingStyle.stroke
+        ..strokeCap = StrokeCap.round
+        ..color = Colors.green
+        ..strokeWidth = 12,
+    );
+
+    // Draw the dark green portion of the progress indicator
+    // Basically, this covers the entire progress indicator circle.
+    // But because we have set the blending mode to srouce-in (BlendMode.srcIn),
+    // only the segment that is overlapping with the lighter portion will be visible.
+    canvas.drawArc(
+      Rect.fromCenter(center: center, width: 155, height: 155),
+      vmath.radians(0),
+      vmath.radians(360),
+      false,
+      Paint()
+        ..style = PaintingStyle.stroke
+        ..strokeCap = StrokeCap.round
+        ..color = Colors.green
+        ..strokeWidth = 12
+        ..blendMode = BlendMode.srcIn,
+    );
+    // we fatten the layer
+    canvas.restore();
   }
 
   @override
-  bool shouldRepaint(CountDownCirclePainter oldDelegate) {
-    return animation!.value != oldDelegate.animation!.value;
-  }
+  bool shouldRepaint(covariant CustomPainter oldDelegate) => false;
 }

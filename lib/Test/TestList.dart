@@ -63,7 +63,7 @@ class _TestListState extends State<TestList> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: const Text('Lý thuyết'),
+          title: const Text('Thi thử'),
           backgroundColor: Colors.green,
         ),
         body: FutureBuilder(
