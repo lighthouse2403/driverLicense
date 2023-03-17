@@ -1,0 +1,71 @@
+Flutter crash report.
+Please report a bug at https://github.com/flutter/flutter/issues.
+
+## command
+
+flutter --no-color run --machine --device-id=00008110-001039882EE2401E --start-paused --profile --dart-define=flutter.inspector.structuredErrors=true lib/main.dart
+
+## exception
+
+String: failed to connect to http://127.0.0.1:53050/6kQQdC0XvTk=/
+
+```
+#0      DartDevelopmentServiceImpl.startService (package:dds/src/dds_impl.dart:133:7)
+<asynchronous suspension>
+#1      DartDevelopmentService.startDartDevelopmentService (package:dds/dds.dart:97:5)
+<asynchronous suspension>
+#2      DartDevelopmentService.startDartDevelopmentService (package:flutter_tools/src/base/dds.dart:55:22)
+<asynchronous suspension>
+#3      FlutterDevice.connect.<anonymous closure> (package:flutter_tools/src/resident_runner.dart:280:11)
+<asynchronous suspension>
+```
+
+## flutter doctor
+
+```
+[!] Flutter (Channel stable, 3.7.5, on macOS 12.5 21G72 darwin-arm64, locale en-VN)
+    • Flutter version 3.7.5 on channel stable at /Users/dangnguyen/Downloads/flutter
+    ! The flutter binary is not on your path. Consider adding /Users/dangnguyen/Downloads/flutter/bin to your path.
+    ! The dart binary is not on your path. Consider adding /Users/dangnguyen/Downloads/flutter/bin to your path.
+    • Upstream repository https://github.com/flutter/flutter.git
+    • Framework revision c07f788888 (3 weeks ago), 2023-02-22 17:52:33 -0600
+    • Engine revision 0f359063c4
+    • Dart version 2.19.2
+    • DevTools version 2.20.1
+    • If those were intentional, you can disregard the above warnings; however it is recommended to use "git" directly to perform update checks and upgrades.
+
+[!] Android toolchain - develop for Android devices (Android SDK version 33.0.2)
+    • Android SDK at /Users/dangnguyen/Library/Android/sdk
+    ✗ cmdline-tools component is missing
+      Run `path/to/sdkmanager --install "cmdline-tools;latest"`
+      See https://developer.android.com/studio/command-line for more details.
+    ✗ Android license status unknown.
+      Run `flutter doctor --android-licenses` to accept the SDK licenses.
+      See https://flutter.dev/docs/get-started/install/macos#android-setup for more details.
+
+[✓] Xcode - develop for iOS and macOS (Xcode 14.2)
+    • Xcode at /Applications/Xcode.app/Contents/Developer
+    • Build 14C18
+    • CocoaPods version 1.12.0
+
+[✗] Chrome - develop for the web (Cannot find Chrome executable at /Applications/Google Chrome.app/Contents/MacOS/Google Chrome)
+    ! Cannot find Chrome. Try setting CHROME_EXECUTABLE to a Chrome executable.
+
+[!] Android Studio (not installed)
+    • Android Studio not found; download from https://developer.android.com/studio/index.html
+      (or visit https://flutter.dev/docs/get-started/install/macos#android-setup for detailed instructions).
+
+[✓] IntelliJ IDEA Community Edition (version 2022.3.2)
+    • IntelliJ at /Applications/IntelliJ IDEA CE.app
+    • Flutter plugin version 72.1.4
+    • Dart plugin version 223.8617.8
+
+[✓] Connected device (2 available)
+    • Beacon’s iPhone 13 (mobile) • 00008110-001039882EE2401E • ios          • iOS 16.1 20B82
+    • macOS (desktop)             • macos                     • darwin-arm64 • macOS 12.5 21G72 darwin-arm64
+
+[✓] HTTP Host Availability
+    • All required HTTP hosts are available
+
+! Doctor found issues in 4 categories.
+```

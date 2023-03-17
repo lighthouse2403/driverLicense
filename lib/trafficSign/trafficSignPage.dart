@@ -18,7 +18,6 @@ class _TrafficSignPageState extends State<TrafficSignPage> {
   Future<void> loadTrafficSignData() async {
     final String response = await rootBundle.loadString('assets/json/trafficSign.json');
     final data = await json.decode(response);
-    print(data.toString());
     setState(() {
       traficSignArray = data["trafficSign"];
     });

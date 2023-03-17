@@ -16,7 +16,6 @@ class AnswerRow extends StatelessWidget {
     Color textColor = Colors.black;
     bool isCorrect = question.answerIndex == question.selectedIndex;
 
-    print(question.toJson());
     if (index == question.selectedIndex) {
       answerTextColor = isCorrect ? Colors.green : Colors.red;
       backgroundColor = answerTextColor;

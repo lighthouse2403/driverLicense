@@ -14,7 +14,7 @@ class _TrafficSignState extends State<TrafficSign> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Biển báo'),
+        title: const Text('Biển báo'),
         backgroundColor: Colors.green,
       ),
       body: PageView(

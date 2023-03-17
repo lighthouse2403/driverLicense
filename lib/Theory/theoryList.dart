@@ -56,7 +56,7 @@ class _TheoryListState extends State<TheoryList> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Lý thuyết'),
+        title: const Text('Lý thuyết'),
         backgroundColor: Colors.green,
       ),
       body: FutureBuilder(

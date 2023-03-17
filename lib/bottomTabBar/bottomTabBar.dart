@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:license/Setting/setting.dart';
+import 'package:license/Test/TestList.dart';
+import 'package:license/Theory/theoryList.dart';
 import '../Home/home.dart';
 
 class MainBottomTabBar extends StatefulWidget {
@@ -13,8 +15,8 @@ class _MainBottomTabBarState extends State<MainBottomTabBar> {
   int _selectedIndex = 0;
   static const List<Widget> _widgetOptions = <Widget>[
     HomeScreen(),
-    HomeScreen(),
-    HomeScreen(),
+    TheoryList(),
+    TestList(),
     SettingScreen(),
   ];
 
@@ -33,7 +35,7 @@ class _MainBottomTabBarState extends State<MainBottomTabBar> {
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.business),
-            label: 'Business',
+            label: 'Lý thuyết',
             backgroundColor: Colors.green,
           ),
           BottomNavigationBarItem(

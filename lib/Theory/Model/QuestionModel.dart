@@ -22,7 +22,6 @@ class QuestionModel {
     required this.isDeadPoint,
     required this.comment,
     required this.selectedIndex,
-
   });
 
   QuestionModel.fromJson(Map<String, dynamic> json) {
