@@ -9,10 +9,10 @@ class CommentRow extends StatelessWidget{
     return Padding(
       padding: const EdgeInsets.all(10),
       child: Container(
-        padding: const EdgeInsets.only(left: 10, right: 10, top: 10, bottom: 10),
+        padding: const EdgeInsets.only(left: 10, right: 10, top: 16, bottom: 16),
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(6),
-            color: Colors.green.withOpacity(0.6)
+            color: Colors.green.withOpacity(0.5)
         ),
         child: Text(
           comment,

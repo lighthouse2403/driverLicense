@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:license/Database/sqlHelper.dart';
 import 'package:license/Theory/Model/QuestionModel.dart';
 import 'package:license/Theory/Model/TheoryModel.dart';
 import 'package:license/Theory/questionPage.dart';
@@ -13,40 +14,42 @@ class TheoryList extends StatefulWidget {
 }
 
 class _TheoryListState extends State<TheoryList> {
-  List chapterArray = [];
+  List<TheoryModel> chapterArray = [];
   List<QuestionModel> questionList = [];
 
   Future<void> loadTheoryData() async {
-    final String response = await rootBundle.loadString('assets/json/theory.json');
-    final data = await json.decode(response);
-    print(data.toString());
-    setState(() {
-      chapterArray = data["chapers"];
+    var finishedQuestions = await SQLHelper.getAllQuestion();
+    final String theoryResponse = await rootBundle.loadString('assets/json/theory.json');
+    final theoryData = await json.decode(theoryResponse);
+
+    chapterArray = List<TheoryModel>.from(theoryData["chapters"].map((json) => TheoryModel.fromJson(json)));
+    for (var chapter in chapterArray) {
+      chapter.finishedCount = finishedQuestions.where((element) => element.chapterId == chapter.id).length;
+    }
+
+    final String questionResponse = await rootBundle.loadString('assets/json/question.json');
+    final questionData = await json.decode(questionResponse);
+    questionList = List<QuestionModel>.from(questionData["questions"].map((json) => QuestionModel.fromJson(json)));
+
+    questionList.forEach((element) {
+        var newElement = finishedQuestions.where((newElement) => newElement.id == element.id).first;
+        if (newElement != null) {
+          element.selectedIndex = newElement.selectedIndex;
+        }
     });
   }
 
-  Future<void> loadQuestionData() async {
-    final String response = await rootBundle.loadString('assets/json/question.json');
-    final data = await json.decode(response);
-    questionList = List<QuestionModel>.from(data["questions"].map((json) => QuestionModel.fromJson(json)));
-  }
-
-  @override
-  void initState() {
-    // TODO: implement initState
-    super.initState();
-    loadTheoryData();
-    loadQuestionData();
-  }
-
   void goToQuestionPage(int index) {
-    print('goToQuestionPage: ' + index.toString());
-
     var questions =  questionList.where((element) => element.chapterId == index).toList();
-    print('question:' + questions.toString());
+
     Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => QuestionPage(questionList: questions)));
+        MaterialPageRoute(builder: (context) => QuestionPage(questionList: questions))
+    ).then(onGoBack);
+  }
+
+  onGoBack(dynamic value) {
+    setState(() {});
   }
 
   @override
@@ -56,17 +59,21 @@ class _TheoryListState extends State<TheoryList> {
         title: Text('Lý thuyết'),
         backgroundColor: Colors.green,
       ),
-      body: ListView.separated(
-        itemCount: chapterArray.length,
-        itemBuilder: (BuildContext context, int index) {
-          var theoryModel = TheoryModel.fromJson(chapterArray[index]);
-          var row = TheoryRow(theory: theoryModel, onTap: goToQuestionPage);
-          return row;
+      body: FutureBuilder(
+        future: loadTheoryData(),
+        builder: (context, snapshot) {
+          return ListView.separated(
+            itemCount: chapterArray.length,
+            itemBuilder: (BuildContext context, int index) {
+              var row = TheoryRow(theory: chapterArray[index], onTap: goToQuestionPage);
+              return row;
+            },
+            separatorBuilder: (BuildContext context, int index) {
+              return Container(height: 0.5, color: Colors.grey,);
+            },
+          );
         },
-        separatorBuilder: (BuildContext context, int index) {
-          return Container(height: 0.5, color: Colors.grey,);
-        },
-      ),
+      )
     );
   }
 }

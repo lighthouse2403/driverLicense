@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:license/Theory/Model/TheoryModel.dart';
-import 'package:license/Theory/questionPage.dart';
 
  class TheoryRow extends StatelessWidget {
   TheoryRow({super.key, required this.theory, required this.onTap});
@@ -27,17 +26,17 @@ import 'package:license/Theory/questionPage.dart';
                   width: 60,
                   height: 60,
                   child:
-                  const CircularProgressIndicator(
-                      value: 0.5,
+                   CircularProgressIndicator(
+                      value: theory.finishedCount/theory.count,
                       strokeWidth: 3,
                       backgroundColor:  Colors.blueGrey,
-                      valueColor: AlwaysStoppedAnimation(Colors.green)
+                      valueColor: const AlwaysStoppedAnimation(Colors.green)
                   ),
                 ),
-                const Center(
+                Center(
                   child: Text(
-                      '30/182',
-                      style: TextStyle(
+                      '${theory.finishedCount}/${theory.count}',
+                      style: const TextStyle(
                           fontSize: 12,
                           fontWeight: FontWeight.w500,
                           color: Colors.green

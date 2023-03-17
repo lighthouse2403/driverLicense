@@ -39,6 +39,12 @@ class SQLHelper {
     return QuestionModel.fromDatabase(maps.first);
   }
 
+  static Future<List<QuestionModel>> getAllQuestion() async {
+    final db = await SQLHelper.db();
+    final List<Map<String, dynamic>> list = await db.query('question');
+    return list.map((e) => QuestionModel.fromDatabase(e)).toList();
+  }
+
   // Update an item by id
   Future<void> updateQuestion(QuestionModel question) async {
     final db = await SQLHelper.db();
