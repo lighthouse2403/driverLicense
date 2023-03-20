@@ -20,14 +20,27 @@ class TestRow extends StatelessWidget {
               ),
             ),
             Center(
-              child: Text(
+              child: Column(
+            children: [
+              Text(
                 'Đề số ${testModel.id + 1}',
                 style: const TextStyle(
                     fontSize: 12,
-                    fontWeight: FontWeight.w500,
+                    fontWeight: FontWeight.w600,
                     color: Colors.green
                 ),
               ),
+              Text(
+                '${testModel.finishedCount}/${testModel.total}',
+                style: const TextStyle(
+                    fontSize: 12,
+                    fontWeight: FontWeight.w500,
+                    color: Colors.black
+                ),
+              ),
+            ],
+            )
+
             )
           ],
         )
