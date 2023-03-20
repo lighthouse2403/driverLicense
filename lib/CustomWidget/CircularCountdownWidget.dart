@@ -4,6 +4,7 @@ import 'package:vector_math/vector_math.dart' as vmath;
 
 class CircularCountdownWidget extends CustomPainter {
   final double percentage;
+  final double borderWidth = 6;
   const CircularCountdownWidget({
     required this.percentage,
   });
@@ -17,11 +18,11 @@ class CircularCountdownWidget extends CustomPainter {
     // This will act as the background layer.
     canvas.drawCircle(
       center,
-      85,
+      size.width / 2,
       Paint()
         ..style = PaintingStyle.stroke
-        ..color = Colors.black12
-        ..strokeWidth = 12,
+        ..color = Colors.green.withOpacity(0.4)
+        ..strokeWidth = borderWidth,
     );
 
     // Create a new layer where we will be painting the
@@ -33,7 +34,7 @@ class CircularCountdownWidget extends CustomPainter {
 
     // Draw the light green portion of the progress indicator
     canvas.drawArc(
-      Rect.fromCenter(center: center, width: 170, height: 170),
+      Rect.fromCenter(center: center, width: size.width, height: size.height),
       vmath.radians(-90),
       vmath.radians(percentage*360),
       false,
@@ -41,7 +42,7 @@ class CircularCountdownWidget extends CustomPainter {
         ..style = PaintingStyle.stroke
         ..strokeCap = StrokeCap.round
         ..color = Colors.green
-        ..strokeWidth = 12,
+        ..strokeWidth = borderWidth,
     );
 
     // Draw the dark green portion of the progress indicator
@@ -49,7 +50,7 @@ class CircularCountdownWidget extends CustomPainter {
     // But because we have set the blending mode to srouce-in (BlendMode.srcIn),
     // only the segment that is overlapping with the lighter portion will be visible.
     canvas.drawArc(
-      Rect.fromCenter(center: center, width: 155, height: 155),
+      Rect.fromCenter(center: center, width: size.width, height: size.height),
       vmath.radians(0),
       vmath.radians(360),
       false,
@@ -57,7 +58,7 @@ class CircularCountdownWidget extends CustomPainter {
         ..style = PaintingStyle.stroke
         ..strokeCap = StrokeCap.round
         ..color = Colors.green
-        ..strokeWidth = 12
+        ..strokeWidth = borderWidth
         ..blendMode = BlendMode.srcIn,
     );
     // we fatten the layer

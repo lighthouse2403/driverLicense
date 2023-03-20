@@ -20,7 +20,7 @@ class _TestListState extends State<TestList> {
     final String testResponse = await rootBundle.loadString('assets/json/test.json');
     final testData = await json.decode(testResponse);
 
-    // chapterArray = List<TheoryModel>.from(theoryData["chapters"].map((json) => TheoryModel.fromJson(json)));
+    testArray = List<TestModel>.from(testData["test"].map((json) => TestModel.fromJson(json)));
     // for (var chapter in chapterArray) {
     //   chapter.finishedCount = finishedQuestions.where((element) => element.chapterId == chapter.id).length;
     // }
@@ -69,21 +69,21 @@ class _TestListState extends State<TestList> {
         body: FutureBuilder(
           future: loadTheoryData(),
           builder: (context, snapshot) {
-            return GridView.count(
-              primary: false,
-              padding: const EdgeInsets.all(16),
-              crossAxisSpacing: 16,
-              mainAxisSpacing: 16,
-              crossAxisCount: 2,
-              children: <Widget>[
-                InkWell(
-                  onTap: () {
-                    goToTestPage(0);
-                  },
-                  child: TestRow(),
-                )
-              ],
-            );
+            return GridView.builder(
+                itemCount: testArray.length,
+                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                    crossAxisCount: 2,
+                    mainAxisSpacing: 16,
+                    crossAxisSpacing: 16),
+                itemBuilder: (context, index) {
+
+                  return GestureDetector(
+                    onTap: () {
+                      goToTestPage(index);
+                    },
+                    child: TestRow(testModel: testArray[index]),
+                  );
+                });
           },
         )
     );

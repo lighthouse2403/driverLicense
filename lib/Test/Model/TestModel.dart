@@ -1,19 +1,18 @@
 
 class TestModel {
   int id = 0 ;
-  String status = '';
+  int status = 0;
   List questionIds = [];
   int finishedCount = 0;
   int total = 30;
   bool hasDeadthPoint = false;
 
-  TestModel({
+   TestModel({
     required this.id,
     required this.status,
     required this.finishedCount,
     required this.total,
     required this.hasDeadthPoint,
-
   });
 
   TestModel.fromJson(Map<String, dynamic> json) {
