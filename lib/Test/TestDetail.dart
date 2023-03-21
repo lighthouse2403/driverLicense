@@ -3,23 +3,23 @@ import 'package:license/Database/sqlHelper.dart';
 import 'package:license/Theory/CommentRow.dart';
 import 'package:license/Theory/Model/QuestionModel.dart';
 import 'package:license/Theory/AnswerRow.dart';
-import 'QuestionRow.dart';
+import '../Theory/QuestionRow.dart';
 
-class QuestionDetail extends StatefulWidget {
-  QuestionDetail({super.key, required this.question});
+class TestDetail extends StatefulWidget {
+  TestDetail({super.key, required this.question});
   QuestionModel question;
   @override
-  State<QuestionDetail> createState() => _QuestionDetailState();
+  State<TestDetail> createState() => _TestDetailState();
 }
 
-class _QuestionDetailState extends State<QuestionDetail> {
+class _TestDetailState extends State<TestDetail> {
 
   @override
   Widget build(BuildContext context) {
     final int answerCount = widget.question.answerList.length;
 
     return FutureBuilder(
-        future: SQLHelper.getQuestion(widget.question.id, 'questions'),
+        future: SQLHelper.getQuestion(widget.question.id, 'tests'),
         builder: (context, snapshot) {
           if (snapshot.data != null) {
             widget.question = snapshot.data!;
@@ -38,7 +38,7 @@ class _QuestionDetailState extends State<QuestionDetail> {
                     onTap: () {
                       bool isShouldUpdate = widget.question.selectedIndex != -1;
                       widget.question.selectedIndex = index - 1;
-                      const tableName = 'questions';
+                      const tableName = 'tests';
                       isShouldUpdate ? SQLHelper().updateQuestion(widget.question, tableName) : SQLHelper().insertQuestion(widget.question, tableName);
                       setState(() {
                       });

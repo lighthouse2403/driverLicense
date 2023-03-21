@@ -16,29 +16,31 @@ class TestRow extends StatelessWidget {
           children: [
             Positioned.fill(
               child: CustomPaint(
-                painter: CircularCountdownWidget(percentage: 0.9),
+                painter: CircularCountdownWidget(percentage: testModel.finishedCount/testModel.questionIds.length),
               ),
             ),
             Center(
               child: Column(
-            children: [
-              Text(
-                'Đề số ${testModel.id + 1}',
-                style: const TextStyle(
-                    fontSize: 12,
+                mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                Text(
+                  'Đề số ${testModel.id + 1}',
+                  style: const TextStyle(
+                    fontSize: 16,
                     fontWeight: FontWeight.w600,
                     color: Colors.green
+                  ),
                 ),
-              ),
-              Text(
-                '${testModel.finishedCount}/${testModel.total}',
-                style: const TextStyle(
-                    fontSize: 12,
+                const SizedBox(height: 3,),
+                Text(
+                  '${testModel.finishedCount}/${testModel.questionIds.length}',
+                  style: const TextStyle(
+                    fontSize: 14,
                     fontWeight: FontWeight.w500,
                     color: Colors.black
+                  ),
                 ),
-              ),
-            ],
+              ],
             )
 
             )

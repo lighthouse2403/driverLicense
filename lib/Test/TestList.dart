@@ -1,10 +1,12 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:license/Database/sqlHelper.dart';
 import 'package:license/Test/Model/TestModel.dart';
 import 'package:flutter/services.dart';
 import 'package:license/Test/TestItem.dart';
 import 'package:license/Test/TestPage.dart';
+import 'package:license/Theory/Model/QuestionModel.dart';
+
+import '../Database/sqlHelper.dart';
 
 class TestList extends StatefulWidget {
   const TestList({super.key});
@@ -14,18 +16,19 @@ class TestList extends StatefulWidget {
 
 class _TestListState extends State<TestList> {
   List<TestModel> testArray = [];
+  List<QuestionModel> finishedQuestions = [];
 
   Future<void> loadTheoryData() async {
-    var finishedQuestions = await SQLHelper.getAllQuestion();
-    final String testResponse = await rootBundle.loadString('assets/json/test.json');
+    finishedQuestions = await SQLHelper.getAllQuestion('tests');
+    final String testResponse = await rootBundle.loadString('assets/json/tests.json');
     final testData = await json.decode(testResponse);
+    testArray = List<TestModel>.from(testData["tests"].map((json) => TestModel.fromJson(json)));
 
-    testArray = List<TestModel>.from(testData["test"].map((json) => TestModel.fromJson(json)));
-    // for (var chapter in chapterArray) {
-    //   chapter.finishedCount = finishedQuestions.where((element) => element.chapterId == chapter.id).length;
-    // }
+    for (var test in testArray) {
+      test.finishedCount = finishedQuestions.where((element) => element.testId == test.id).length;
+    }
     //
-    // final String questionResponse = await rootBundle.loadString('assets/json/question.json');
+    // final String questionResponse = await rootBundle.loadString('assets/json/questions.json');
     // final questionData = await json.decode(questionResponse);
     // questionList = List<QuestionModel>.from(questionData["questions"].map((json) => QuestionModel.fromJson(json)));
     //
@@ -51,7 +54,7 @@ class _TestListState extends State<TestList> {
   void goToTestPage(int index) {
     Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => TestPage())
+        MaterialPageRoute(builder: (context) => TestPage(test: testArray[index],))
     ).then(onGoBack);
   }
 

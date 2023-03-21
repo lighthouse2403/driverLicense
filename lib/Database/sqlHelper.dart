@@ -3,7 +3,7 @@ import 'package:license/Theory/Model/QuestionModel.dart';
 import 'package:sqflite/sqflite.dart' as sql;
 
 class SQLHelper {
-  static Future<sql.Database> db() async {
+  static Future<sql.Database> db(String tableName) async {
     return sql.openDatabase(
       'driverLicense.db',
       version: 1,
@@ -14,43 +14,51 @@ class SQLHelper {
   }
 
   static Future<void> createTables(sql.Database database) async {
-    await database.execute("CREATE TABLE question(id INTEGER PRIMARY KEY, chapterId INTEGER, questionText TEXT, answerIndex INTEGER, questionImage TEXT, answerList TEXT, comment TEXT, selectedIndex INTEGER)");
+    await database.execute("CREATE TABLE questions(id INTEGER PRIMARY KEY, chapterId INTEGER, questionText TEXT, answerIndex INTEGER, questionImage TEXT, answerList TEXT, comment TEXT, selectedIndex INTEGER, testId INTEGER)");
+    await database.execute("CREATE TABLE tests(id INTEGER PRIMARY KEY, chapterId INTEGER, questionText TEXT, answerIndex INTEGER, questionImage TEXT, answerList TEXT, comment TEXT, selectedIndex INTEGER, testId INTEGER)");
   }
 
-  Future<void> insertQuestion(QuestionModel question) async {
+  Future<void> insertQuestion(QuestionModel question, String tableName) async {
     // Get a reference to the database.
-    final db = await SQLHelper.db();
+    final db = await SQLHelper.db(tableName);
 
     // Insert the Dog into the correct table. You might also specify the
     // `conflictAlgorithm` to use in case the same dog is inserted twice.
     //
     // In this case, replace any previous data.
     await db.insert(
-      'question',
+      tableName,
       question.toJson(),
       conflictAlgorithm: sql.ConflictAlgorithm.replace,
     );
   }
 
   // Read all items (journals)
-  static Future<QuestionModel> getQuestion(int id) async {
-    final db = await SQLHelper.db();
-    final List<Map<String, dynamic>> maps = await db.query('question', where: 'id = ?', whereArgs: [id]);
+  static Future<QuestionModel> getQuestion(int id, String tableName) async {
+    final db = await SQLHelper.db(tableName);
+    final List<Map<String, dynamic>> maps = await db.query(tableName, where: 'id = ?', whereArgs: [id]);
     return QuestionModel.fromDatabase(maps.first);
   }
 
-  static Future<List<QuestionModel>> getAllQuestion() async {
-    final db = await SQLHelper.db();
-    final List<Map<String, dynamic>> list = await db.query('question');
+  static Future<QuestionModel> getQuestionOnTest(int testId) async {
+    const tableName = 'tests';
+    final db = await SQLHelper.db(tableName);
+    final List<Map<String, dynamic>> maps = await db.query(tableName, where: 'testId = ?', whereArgs: [testId]);
+    return QuestionModel.fromDatabase(maps.first);
+  }
+
+  static Future<List<QuestionModel>> getAllQuestion(String tableName) async {
+    final db = await SQLHelper.db(tableName);
+    final List<Map<String, dynamic>> list = await db.query(tableName);
     return list.map((e) => QuestionModel.fromDatabase(e)).toList();
   }
 
   // Update an item by id
-  Future<void> updateQuestion(QuestionModel question) async {
-    final db = await SQLHelper.db();
+  Future<void> updateQuestion(QuestionModel question, String tableName) async {
+    final db = await SQLHelper.db(tableName);
 
     await db.update(
-      'question',
+      tableName,
       question.toJson(),
       // Ensure that the Dog has a matching id.
       where: 'id = ?',
@@ -60,11 +68,11 @@ class SQLHelper {
   }
 
   // Delete
-  static Future<void> deleteQuestion(int id) async {
-    final db = await SQLHelper.db();
+  static Future<void> deleteQuestion(int id, String tableName) async {
+    final db = await SQLHelper.db(tableName);
     try {
       await db.delete(
-          "question",
+          tableName,
           where: "id = ?",
           whereArgs: [id]);
     } catch (err) {

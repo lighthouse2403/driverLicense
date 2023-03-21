@@ -11,6 +11,7 @@ class QuestionModel {
   bool isDeadPoint = false;
   String comment = '';
   int selectedIndex = -1;
+  int testId = -1;
 
   QuestionModel({
     required this.id,
@@ -22,9 +23,10 @@ class QuestionModel {
     required this.isDeadPoint,
     required this.comment,
     required this.selectedIndex,
+    required this.testId,
   });
 
-  QuestionModel.fromJson(Map<String, dynamic> json) {
+  QuestionModel.fromJson(Map<String, dynamic> json, int? testId) {
     id = json['id'];
     chapterId = json['chapterId'];
     questionText = json['questionText'];
@@ -33,6 +35,9 @@ class QuestionModel {
     answerList = json['answerList'];
     isDeadPoint = json['isDeadPoint'];
     comment = json['comment'];
+    if (testId != null) {
+      this.testId = testId;
+    }
   }
 
   QuestionModel.fromDatabase(Map<String, dynamic> json) {
@@ -44,6 +49,9 @@ class QuestionModel {
     answerList = json['answerList'].split('--');
     comment = json['comment'];
     selectedIndex = json['selectedIndex'];
+    if (json['testId'] != null) {
+      testId = json['testId'];
+    }
   }
 
   Map<String, dynamic> toJson() {
@@ -56,7 +64,7 @@ class QuestionModel {
     data['answerList'] = answerList.join('--');
     data['comment'] = comment;
     data['selectedIndex'] = selectedIndex;
-
+    data['testId'] = testId;
     return data;
   }
 }
