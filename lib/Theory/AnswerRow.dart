@@ -7,7 +7,6 @@ class AnswerRow extends StatelessWidget {
 
   QuestionModel question;
   int index = 0;
-  bool isTesting = false;
 
   @override
   Widget build(BuildContext context) {
@@ -16,12 +15,14 @@ class AnswerRow extends StatelessWidget {
     Color textColor = Colors.black;
     bool isCorrect = question.answerIndex == question.selectedIndex;
 
-    if (index == question.selectedIndex) {
+    print('Answer row: selectedId: ${question.selectedIndex}');
+    int numberOfAnswer = index + 1;
+
+    if (index == question.selectedIndex)  {
       answerTextColor = isCorrect ? Colors.green : Colors.red;
       backgroundColor = answerTextColor;
       textColor = Colors.white;
     }
-    int numberOfAnswer = index + 1;
 
     return Container(
       padding: const EdgeInsets.only(left: 10, right: 5, top: 12, bottom: 12),

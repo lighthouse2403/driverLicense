@@ -43,7 +43,7 @@ class _QuestionDetailState extends State<QuestionDetail> {
                       setState(() {
                       });
                     },
-                    child: AnswerRow(question: widget.question, index: index - 1),
+                    child: AnswerRow(question: widget.question, index: index - 1,),
                   );
                 }
               },

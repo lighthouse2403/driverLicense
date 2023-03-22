@@ -12,6 +12,7 @@ class QuestionModel {
   String comment = '';
   int selectedIndex = -1;
   int testId = -1;
+  String questionOnTestId = '';
 
   QuestionModel({
     required this.id,
@@ -24,6 +25,7 @@ class QuestionModel {
     required this.comment,
     required this.selectedIndex,
     required this.testId,
+    required this.questionOnTestId,
   });
 
   QuestionModel.fromJson(Map<String, dynamic> json, int? testId) {
@@ -52,6 +54,10 @@ class QuestionModel {
     if (json['testId'] != null) {
       testId = json['testId'];
     }
+
+    if (json['questionOnTestId'] != null) {
+      this.questionOnTestId = json['questionOnTestId'];
+    }
   }
 
   Map<String, dynamic> toJson() {
@@ -65,6 +71,8 @@ class QuestionModel {
     data['comment'] = comment;
     data['selectedIndex'] = selectedIndex;
     data['testId'] = testId;
+    data['questionOnTestId'] = questionOnTestId;
+
     return data;
   }
 }
