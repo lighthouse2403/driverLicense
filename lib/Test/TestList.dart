@@ -20,9 +20,11 @@ class _TestListState extends State<TestList> {
 
   Future<void> loadTheoryData() async {
     finishedQuestions = await SQLHelper.getAllQuestion('tests');
+    print('finished ${finishedQuestions.length}');
     final String testResponse = await rootBundle.loadString('assets/json/tests.json');
     final testData = await json.decode(testResponse);
     testArray = List<TestModel>.from(testData["tests"].map((json) => TestModel.fromJson(json)));
+    print('testArray ${testArray.length}');
 
     for (var test in testArray) {
       test.finishedCount = finishedQuestions.where((element) => element.testId == test.id).length;
@@ -54,7 +56,10 @@ class _TestListState extends State<TestList> {
   void goToTestPage(int index) {
     Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => TestPage(test: testArray[index],))
+        MaterialPageRoute(
+            builder: (context) => TestPage(
+                                    test: testArray[index],
+                                    questionList: finishedQuestions.where((element) => element.testId == index).toList(),))
     ).then(onGoBack);
   }
 
@@ -72,6 +77,9 @@ class _TestListState extends State<TestList> {
         body: FutureBuilder(
           future: loadTheoryData(),
           builder: (context, snapshot) {
+            if (snapshot.hasData == null) {
+              return Text('Loading');
+            }
             return GridView.builder(
                 itemCount: testArray.length,
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -79,7 +87,6 @@ class _TestListState extends State<TestList> {
                     mainAxisSpacing: 16,
                     crossAxisSpacing: 16),
                 itemBuilder: (context, index) {
-
                   return GestureDetector(
                     onTap: () {
                       goToTestPage(index);
