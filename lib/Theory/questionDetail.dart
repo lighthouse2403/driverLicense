@@ -39,7 +39,7 @@ class _QuestionDetailState extends State<QuestionDetail> {
                       bool isShouldUpdate = widget.question.selectedIndex != -1;
                       widget.question.selectedIndex = index - 1;
                       const tableName = 'questions';
-                      isShouldUpdate ? SQLHelper().updateQuestion(widget.question, tableName) : SQLHelper().insertQuestion(widget.question, tableName);
+                      SQLHelper().insertQuestion(widget.question, tableName);
                       setState(() {
                       });
                     },

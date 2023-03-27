@@ -51,8 +51,9 @@ class QuestionModel {
     answerList = json['answerList'].split('--');
     comment = json['comment'];
     selectedIndex = json['selectedIndex'];
-    questionOnTestId = json['questionOnTestId'];
-
+    if (json['questionOnTestId'] != null) {
+      questionOnTestId = json['questionOnTestId'];
+    }
     if (json['testId'] != null) {
       testId = json['testId'];
     }
@@ -70,7 +71,9 @@ class QuestionModel {
     data['comment'] = comment;
     data['selectedIndex'] = selectedIndex;
     data['testId'] = testId;
-    data['questionOnTestId'] = questionOnTestId;
+    if (questionOnTestId.isNotEmpty) {
+      data['questionOnTestId'] = questionOnTestId;
+    }
 
     return data;
   }

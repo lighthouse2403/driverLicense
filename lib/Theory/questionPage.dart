@@ -28,7 +28,7 @@ class _QuestionPageState extends State<QuestionPage> {
         body: Container(
           color: Colors.white,
           child: PageView.builder(
-            itemCount: 10,
+            itemCount: widget.questionList.length,
             scrollDirection: Axis.horizontal,
             onPageChanged: onPageChanged,
             itemBuilder: (BuildContext context, int index) {

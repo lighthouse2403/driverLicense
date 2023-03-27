@@ -14,8 +14,8 @@ class MainBottomTabBar extends StatefulWidget {
 class _MainBottomTabBarState extends State<MainBottomTabBar> {
   int _selectedIndex = 0;
   static const List<Widget> _widgetOptions = <Widget>[
-    HomeScreen(),
     TheoryList(),
+    TestList(),
     TestList(),
     SettingScreen(),
   ];
@@ -30,12 +30,12 @@ class _MainBottomTabBarState extends State<MainBottomTabBar> {
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: 'Home',
+            label: 'Lý thuyết',
             backgroundColor: Colors.red,
           ),
           BottomNavigationBarItem(
             icon: Icon(Icons.business),
-            label: 'Lý thuyết',
+            label: 'Thi thử',
             backgroundColor: Colors.green,
           ),
           BottomNavigationBarItem(

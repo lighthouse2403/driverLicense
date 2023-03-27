@@ -13,7 +13,6 @@ class QuestionInTestRow extends StatelessWidget {
     Color backgroundColor = Colors.white;
     Color textColor = Colors.black;
     bool isCorrect = question.answerIndex == question.selectedIndex;
-    print('Question in test ${question.toJson().toString()}');
 
     if (index == question.selectedIndex) {
       answerTextColor = isCorrect ? Colors.green : Colors.red;

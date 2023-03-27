@@ -21,26 +21,22 @@ class _TheoryListState extends State<TheoryList> {
     var finishedQuestions = await SQLHelper.getAllQuestion('questions');
     final String theoryResponse = await rootBundle.loadString('assets/json/theory.json');
     final theoryData = await json.decode(theoryResponse);
-
     chapterArray = List<TheoryModel>.from(theoryData["chapters"].map((json) => TheoryModel.fromJson(json)));
     for (var chapter in chapterArray) {
       chapter.finishedCount = finishedQuestions.where((element) => element.chapterId == chapter.id).length;
     }
-    
+
     final String questionResponse = await rootBundle.loadString('assets/json/questions.json');
     final questionData = await json.decode(questionResponse);
     questionList = List<QuestionModel>.from(questionData["questions"].map((json) => QuestionModel.fromJson(json, null)));
-    questionList.forEach((element) {
+    for (var element in questionList) {
         var newElement = finishedQuestions.where((newElement) => newElement.id == element.id).first;
-        if (newElement != null) {
-          element.selectedIndex = newElement.selectedIndex;
-        }
-    });
+        element.selectedIndex = newElement.selectedIndex;
+    }
   }
 
-  void goToQuestionPage(int index) {
-    var questions =  questionList.where((element) => element.chapterId == index).toList();
-
+  void goToQuestionPage(int chapterId) {
+    var questions =  questionList.where((element) => element.chapterId == chapterId).toList();
     Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => QuestionPage(questionList: questions))

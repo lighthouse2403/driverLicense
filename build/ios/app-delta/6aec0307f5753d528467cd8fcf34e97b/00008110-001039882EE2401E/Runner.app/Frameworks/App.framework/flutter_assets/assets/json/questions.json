@@ -201,11 +201,11 @@
       "comment": "Có ma tuý bị nghiêm cấm"
     },
     {
-      "id": 21
+      "id": 21,
       "chapterId": 1,
       "questionText": "Việc lái xe mô tô, ô tô, máy kéo ngay sau khi uống rượu, bia có được phép hay không?",
       "questionImage" : "",
-      "answerList": ["Không được phép.", "Chỉ được lái ở tốc độ chậm và quãng đường ngắn.". "Chỉ được lái nếu trong cơ thể có nồng độ cồn thấp."],
+      "answerList": ["Không được phép.", "Chỉ được lái ở tốc độ chậm và quãng đường ngắn.", "Chỉ được lái nếu trong cơ thể có nồng độ cồn thấp."],
       "answerIndex": 0,
       "isDeadPoint": true,
       "comment": "Uống rượu bia thì không được lái xe"
@@ -231,7 +231,7 @@
       "comment": "Sử dụng rượu, bia khi lái xe bị xử phạt hành chính hoặc xử lý hình sự"
     },
     {
-      "id": 24
+      "id": 24,
       "chapterId": 1,
       "questionText": "Theo Luật phòng chống tác hại của rượu, bia, đối tượng nào dưới đây bị cấm sử dụng rượu bia khi tham gia giao thông?",
       "questionImage" : "",

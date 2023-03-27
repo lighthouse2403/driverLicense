@@ -14,8 +14,6 @@ class AnswerRow extends StatelessWidget {
     Color backgroundColor = Colors.white;
     Color textColor = Colors.black;
     bool isCorrect = question.answerIndex == question.selectedIndex;
-
-    print('Answer row: selectedId: ${question.selectedIndex}');
     int numberOfAnswer = index + 1;
 
     if (index == question.selectedIndex)  {

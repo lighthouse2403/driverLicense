@@ -29,7 +29,7 @@ import 'package:license/Theory/Model/TheoryModel.dart';
                    CircularProgressIndicator(
                       value: theory.finishedCount/theory.count,
                       strokeWidth: 3,
-                      backgroundColor:  Colors.blueGrey,
+                      backgroundColor:  Colors.grey.withOpacity(0.3),
                       valueColor: const AlwaysStoppedAnimation(Colors.green)
                   ),
                 ),
