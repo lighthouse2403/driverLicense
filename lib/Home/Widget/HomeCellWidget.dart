@@ -1,4 +1,3 @@
-import 'dart:ffi';
 
 import 'package:flutter/material.dart';
 import 'package:license/Theory/theoryList.dart';
@@ -63,7 +62,7 @@ class HomeCellWidget extends StatelessWidget {
       case 2: {
         Navigator.push(
           context,
-          MaterialPageRoute(builder: (context) => const TheoryList()),
+          MaterialPageRoute(builder: (context) => const TrafficSign()),
         );
       }
       break;

@@ -8,14 +8,15 @@ import 'package:license/Theory/theoryRow.dart';
 import 'package:flutter/services.dart';
 
 class TheoryList extends StatefulWidget {
-  const TheoryList({super.key});
+  TheoryList({super.key, required this.questionList});
+
   @override
   State<TheoryList> createState() => _TheoryListState();
+  List<QuestionModel> questionList = [];
 }
 
 class _TheoryListState extends State<TheoryList> {
   List<TheoryModel> chapterArray = [];
-  List<QuestionModel> questionList = [];
 
   Future<void> loadTheoryData() async {
     var finishedQuestions = await SQLHelper.getAllQuestion('questions');
@@ -26,17 +27,14 @@ class _TheoryListState extends State<TheoryList> {
       chapter.finishedCount = finishedQuestions.where((element) => element.chapterId == chapter.id).length;
     }
 
-    final String questionResponse = await rootBundle.loadString('assets/json/questions.json');
-    final questionData = await json.decode(questionResponse);
-    questionList = List<QuestionModel>.from(questionData["questions"].map((json) => QuestionModel.fromJson(json, null)));
-    for (var element in questionList) {
+    for (var element in widget.questionList) {
         var newElement = finishedQuestions.where((newElement) => newElement.id == element.id).first;
         element.selectedIndex = newElement.selectedIndex;
     }
   }
 
   void goToQuestionPage(int chapterId) {
-    var questions =  questionList.where((element) => element.chapterId == chapterId).toList();
+    var questions =  widget.questionList.where((element) => element.chapterId == chapterId).toList();
     Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => QuestionPage(questionList: questions))
