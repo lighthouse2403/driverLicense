@@ -15,7 +15,7 @@ class SQLHelper {
 
   static Future<void> createTables(sql.Database database) async {
     await database.execute("CREATE TABLE questions(id INTEGER PRIMARY KEY, chapterId INTEGER, questionText TEXT, answerIndex INTEGER, questionImage TEXT, answerList TEXT, comment TEXT, selectedIndex INTEGER, testId INTEGER)");
-    await database.execute("CREATE TABLE tests(questionOnTestId INTEGER PRIMARY KEY, id INTEGER chapterId INTEGER, questionText TEXT, answerIndex INTEGER, questionImage TEXT, answerList TEXT, comment TEXT, selectedIndex INTEGER, testId INTEGER)");
+    await database.execute("CREATE TABLE tests(questionOnTestId TEXT PRIMARY KEY, id INTEGER, chapterId INTEGER, questionText TEXT, answerIndex INTEGER, questionImage TEXT, answerList TEXT, comment TEXT, selectedIndex INTEGER, testId INTEGER)");
   }
 
   Future<void> insertQuestion(QuestionModel question, String tableName) async {
@@ -47,10 +47,10 @@ class SQLHelper {
     return QuestionModel.fromDatabase(maps.first);
   }
 
-  static Future<QuestionModel> getQuestionOnTest(int testId, int questionId) async {
+  static Future<QuestionModel> getQuestionOnTest(String questionOnTestId) async {
     const tableName = 'tests';
     final db = await SQLHelper.db(tableName);
-    final List<Map<String, dynamic>> maps = await db.query(tableName, where: 'testId = ? and id = ?', whereArgs: [testId, questionId]);
+    final List<Map<String, dynamic>> maps = await db.query(tableName, where: 'questionOnTestId = ?', whereArgs: [questionOnTestId]);
     return QuestionModel.fromDatabase(maps.first);
   }
 

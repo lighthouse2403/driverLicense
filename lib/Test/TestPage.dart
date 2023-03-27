@@ -30,12 +30,11 @@ class _TestPageState extends State<TestPage> {
     final String questionResponse = await rootBundle.loadString('assets/json/questions.json');
     final questionData = await json.decode(questionResponse);
     questionList = List<QuestionModel>.from(questionData["questions"].map((json) => QuestionModel.fromJson(json, null))).where((element) => widget.test.questionIds.contains(element.id)).toList();
-    print("finished question is: ${widget.finishedQuestionList.length}");
 
     for (var question in questionList) {
       if (widget.finishedQuestionList.where((element) => (element.id == question.id) && element.testId == widget.test.id ).isNotEmpty) {
           question = widget.finishedQuestionList.where((element) => element.id == question.id).first;
-        }
+      }
     }
   }
 

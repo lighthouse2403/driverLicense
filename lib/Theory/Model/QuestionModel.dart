@@ -51,13 +51,12 @@ class QuestionModel {
     answerList = json['answerList'].split('--');
     comment = json['comment'];
     selectedIndex = json['selectedIndex'];
+    questionOnTestId = json['questionOnTestId'];
+
     if (json['testId'] != null) {
       testId = json['testId'];
     }
 
-    if (json['questionOnTestId'] != null) {
-      this.questionOnTestId = json['questionOnTestId'];
-    }
   }
 
   Map<String, dynamic> toJson() {

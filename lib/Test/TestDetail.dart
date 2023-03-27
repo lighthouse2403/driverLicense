@@ -21,7 +21,7 @@ class _TestDetailState extends State<TestDetail> {
   Widget build(BuildContext context) {
     final int answerCount = widget.question.answerList.length;
     return FutureBuilder(
-        future: SQLHelper.getQuestionOnTest(widget.test.id, widget.question.id),
+        future: SQLHelper.getQuestionOnTest(widget.question.questionOnTestId),
         builder: (context, snapshot) {
           if (snapshot.data != null) {
             widget.question = snapshot.data!;
