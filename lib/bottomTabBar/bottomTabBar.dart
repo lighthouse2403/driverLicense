@@ -60,6 +60,11 @@ class _MainBottomTabBarState extends State<MainBottomTabBar> {
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.settings),
+                  label: 'Giao lưu',
+                  backgroundColor: Colors.pink,
+                ),
+                BottomNavigationBarItem(
+                  icon: Icon(Icons.settings),
                   label: 'Settings',
                   backgroundColor: Colors.pink,
                 ),
