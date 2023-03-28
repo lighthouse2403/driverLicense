@@ -166,58 +166,55 @@ class _TestPageState extends State<TestPage> {
                 child: Text(
                   testStatus,
                   style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w500, color: Colors.white),
-                ))
+                )
+            )
           ],
-          title: Column(
-                  children: [
-                    Stack(
-                      children: [
-                        Center(
-                          child: Text(
-                            ':',
-                            style: TextStyle(
-                                color: ((testingDuration.inSeconds % 2) == 0) ? Colors.white : Colors.white.withOpacity(0.8),
-                                fontWeight: FontWeight.w800,
-                                fontSize: 20),
-                          ),
-                        ),
-                        Center(
-                          child: Container(
-                            padding: const EdgeInsets.only(right: 38, top: 2),
-                            child: Text(
-                              minutes,
-                              style: TextStyle(
-                                  color: ((testingDuration.inSeconds % 2) == 0) ? Colors.white : Colors.white.withOpacity(0.8),
-                                  fontWeight: FontWeight.w800,
-                                  fontSize: 20),
-                            ),
-                          ),
-                        ),
-                        Center(
-                          child: Container(
-                            padding: const EdgeInsets.only(left: 38, top: 2),
-                            child: Text(
-                              seconds,
-                              style: TextStyle(
-                                  color: ((testingDuration.inSeconds % 2) == 0) ? Colors.white : Colors.white.withOpacity(0.8),
-                                  fontWeight: FontWeight.w800,
-                                  fontSize: 20),
-                            ),
-                          ),
-                        )
-                      ],
+          title: Container(
+            height: 36,
+            color: Colors.white.withOpacity(0.4),
+            decoration: const BoxDecoration(
+              borderRadius: BorderRadius.all(Radius.circular(18))
+            ),
+            child: Stack(
+              children: [
+                Center(
+                  child: Text(
+                    ':',
+                    style: TextStyle(
+                        color: ((testingDuration.inSeconds % 2) == 0) ? Colors.white : Colors.white.withOpacity(0.8),
+                        fontWeight: FontWeight.w800,
+                        fontSize: 20),
+                  ),
+                ),
+                Center(
+                  child: Container(
+                    padding: const EdgeInsets.only(right: 38, top: 2),
+                    child: Text(
+                      minutes,
+                      style: TextStyle(
+                          color: ((testingDuration.inSeconds % 2) == 0) ? Colors.white : Colors.white.withOpacity(0.8),
+                          fontWeight: FontWeight.w800,
+                          fontSize: 20),
                     ),
-                    const SizedBox(height: 5,),
-                    Text(
-                      'Câu $pageTitle',
-                      style: const TextStyle(
-                          fontWeight: FontWeight.w500,
-                          fontSize: 14),
-                    )
-                  ],
+                  ),
+                ),
+                Center(
+                  child: Container(
+                    padding: const EdgeInsets.only(left: 38, top: 2),
+                    child: Text(
+                      seconds,
+                      style: TextStyle(
+                          color: ((testingDuration.inSeconds % 2) == 0) ? Colors.white : Colors.white.withOpacity(0.8),
+                          fontWeight: FontWeight.w800,
+                          fontSize: 20),
+                    ),
+                  ),
+                )
+              ],
+            )
+          ),
           ) ,
-          backgroundColor: Colors.green,
-        ),
+        backgroundColor: Colors.green,
         body: FutureBuilder(
           future: getQuestionList(),
           builder: (context, snapshot) {
