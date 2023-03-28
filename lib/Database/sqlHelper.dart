@@ -74,6 +74,19 @@ class SQLHelper {
     );
   }
 
+  Future<void> updateQuestionOnTest(QuestionModel question, String tableName) async {
+    final db = await SQLHelper.db(tableName);
+
+    await db.update(
+      tableName,
+      question.toJson(),
+      // Ensure that the Dog has a matching id.
+      where: 'questionOnTestId = ?',
+      // Pass the Dog's id as a whereArg to prevent SQL injection.
+      whereArgs: [question.questionOnTestId],
+    );
+  }
+
   // Delete
   static Future<void> deleteQuestion(int id, String tableName) async {
     final db = await SQLHelper.db(tableName);
@@ -82,6 +95,19 @@ class SQLHelper {
           tableName,
           where: "id = ?",
           whereArgs: [id]);
+    } catch (err) {
+      debugPrint("Something went wrong when deleting an item: $err");
+    }
+  }
+
+  static Future<void> deleteAllQuestionOnTest(int testId) async {
+    const tableName = 'tests';
+    final db = await SQLHelper.db(tableName);
+    try {
+      await db.delete(
+          tableName,
+          where: "testId = ?",
+          whereArgs: [testId]);
     } catch (err) {
       debugPrint("Something went wrong when deleting an item: $err");
     }

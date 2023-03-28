@@ -1,15 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:license/Database/sqlHelper.dart';
 import 'package:license/Test/QuestionInTestRow.dart';
+import 'package:license/Test/TestPage.dart';
 import 'package:license/Theory/CommentRow.dart';
 import 'package:license/Theory/Model/QuestionModel.dart';
 import '../Theory/QuestionRow.dart';
 import 'Model/TestModel.dart';
 
 class TestDetail extends StatefulWidget {
-  TestDetail({super.key, required this.question, required this.test});
+  TestDetail({super.key, required this.question, required this.test, required this.testStatus});
   QuestionModel question;
   TestModel test;
+  TestStatus testStatus;
 
   @override
   State<TestDetail> createState() => _TestDetailState();
@@ -29,26 +31,29 @@ class _TestDetailState extends State<TestDetail> {
           return Container(
             padding: const EdgeInsets.only(top: 10, bottom: 10),
             child: ListView.separated(
-              itemCount: (widget.question.selectedIndex != -1) ? answerCount + 2 : answerCount + 1,
+              itemCount: ((widget.question.selectedIndex != -1) && widget.testStatus == TestStatus.done) ? answerCount + 2 : answerCount + 1,
               itemBuilder: (BuildContext context, int index) {
 
                 if (index == 0) {
                   return QuestionRow(question: widget.question.questionText);
                 } else if (index == answerCount + 1) {
-                  if ((widget.question.selectedIndex != -1) && (widget.question.testId == widget.test.id)) {
+                  if ((widget.question.selectedIndex != -1) && (widget.question.testId == widget.test.id) && widget.testStatus == TestStatus.done) {
                     return CommentRow(comment: widget.question.comment);
                   }
                   return Container();
                 } else {
                   return InkWell(
                     onTap: () {
+                      if (widget.testStatus != TestStatus.testing) {
+                        return;
+                      }
                       bool isShouldUpdate = (widget.question.selectedIndex != -1);
                       widget.question.selectedIndex = index - 1;
                       widget.question.testId = widget.test.id;
                       widget.question.questionOnTestId = '${widget.test.id}-${widget.question.id}';
 
                       const tableName = 'tests';
-                      isShouldUpdate ? SQLHelper().updateQuestion(widget.question, tableName) : SQLHelper().insertQuestion(widget.question, tableName);
+                      isShouldUpdate ? SQLHelper().updateQuestionOnTest(widget.question, tableName) : SQLHelper().insertQuestion(widget.question, tableName);
                       setState(() {
                       });
                     },
