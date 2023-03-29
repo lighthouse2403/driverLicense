@@ -1,11 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:license/Theory/Model/QuestionModel.dart';
+import 'TestPage.dart';
 
 class QuestionInTestRow extends StatelessWidget {
-  QuestionInTestRow({super.key, required this.question, required this.index});
+  QuestionInTestRow({super.key, required this.question, required this.index, required this.testStatus});
 
   QuestionModel question;
   int index = 0;
+  TestStatus testStatus;
 
   @override
   Widget build(BuildContext context) {
@@ -13,13 +15,16 @@ class QuestionInTestRow extends StatelessWidget {
     Color backgroundColor = Colors.white;
     Color textColor = Colors.black;
     bool isCorrect = question.answerIndex == question.selectedIndex;
+    bool isSelected = index == question.selectedIndex;
+    int numberOfAnswer = index + 1;
+    bool isTesting = testStatus == TestStatus.testing;
 
-    if (index == question.selectedIndex) {
+    if (isSelected) {
       answerTextColor = isCorrect ? Colors.green : Colors.red;
+      answerTextColor = isTesting ? Colors.orangeAccent: answerTextColor;
       backgroundColor = answerTextColor;
       textColor = Colors.white;
     }
-    int numberOfAnswer = index + 1;
 
     return Container(
       padding: const EdgeInsets.only(left: 10, right: 5, top: 12, bottom: 12),

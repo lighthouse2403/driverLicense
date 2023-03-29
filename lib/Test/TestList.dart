@@ -27,29 +27,7 @@ class _TestListState extends State<TestList> {
     for (var test in testArray) {
       test.finishedCount = finishedQuestions.where((element) => element.testId == test.id).length;
     }
-    //
-    // final String questionResponse = await rootBundle.loadString('assets/json/questions.json');
-    // final questionData = await json.decode(questionResponse);
-    // questionList = List<QuestionModel>.from(questionData["questions"].map((json) => QuestionModel.fromJson(json)));
-    //
-    // questionList.forEach((element) {
-    //   var newElement = finishedQuestions.where((newElement) => newElement.id == element.id).first;
-    //   if (newElement != null) {
-    //     element.selectedIndex = newElement.selectedIndex;
-    //   }
-    // });
   }
-
-  // void goToQuestionPage(int index) {
-  //   var questions =  questionList.where((element) => element.chapterId == index).toList();
-  //
-  //   Navigator.push(
-  //       context,
-  //       MaterialPageRoute(builder: (context) => QuestionPage(questionList: questions))
-  //   ).then(onGoBack);
-  // }
-
-
 
   void goToTestPage(int index) {
     var finishedQuestion = finishedQuestions.where((element) => element.testId == index) ?? [];

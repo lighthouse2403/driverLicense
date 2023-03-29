@@ -142,79 +142,82 @@ class _TestPageState extends State<TestPage> {
     return Scaffold(
         appBar: AppBar(
           actions: [
-            TextButton(
-                onPressed: () {
-                  switch (status) {
-                    case TestStatus.none:
-                      status = TestStatus.testing;
-                      startTimer();
-                      break;
-                    case TestStatus.testing:
-                      status = TestStatus.done;
-                      stopTimer();
-                      break;
-                    case TestStatus.done:
-                      status = TestStatus.none;
-                      stopTimer();
-                      reTest();
-                      break;
-                    default:
-                      stopTimer();
-                      break;
-                  }
-                },
-                child: Text(
-                  testStatus,
-                  style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w500, color: Colors.white),
-                )
+            Center(
+              child:  Container(
+                margin: const EdgeInsets.only(right: 10),
+                height: 36,
+                decoration: BoxDecoration(
+                  color: ((testingDuration.inSeconds % 2) == 0) ? Colors.orangeAccent.withOpacity(0.5) : Colors.orangeAccent.withOpacity(0.8),
+                  borderRadius: const BorderRadius.all(Radius.circular(6))
+                ),
+                child: TextButton(
+                    onPressed: () {
+                      switch (status) {
+                        case TestStatus.none:
+                          status = TestStatus.testing;
+                          startTimer();
+                          break;
+                        case TestStatus.testing:
+                          status = TestStatus.done;
+                          stopTimer();
+                          break;
+                        case TestStatus.done:
+                          status = TestStatus.none;
+                          stopTimer();
+                          reTest();
+                          break;
+                        default:
+                          stopTimer();
+                          break;
+                      }
+                    },
+                    child: Text(
+                      testStatus,
+                      style: const TextStyle(fontSize: 15, fontWeight: FontWeight.w500, color: Colors.white),
+                    )
+                ),
+              )
             )
           ],
-          title: Container(
-            height: 36,
-            color: Colors.white.withOpacity(0.4),
-            decoration: const BoxDecoration(
-              borderRadius: BorderRadius.all(Radius.circular(18))
-            ),
-            child: Stack(
-              children: [
-                Center(
+          title: Stack(
+            children: [
+              const Center(
+                child: Text(
+                  ':',
+                  style: TextStyle(
+                      color: Colors.white,
+                      fontWeight: FontWeight.w800,
+                      fontSize: 20),
+                ),
+              ),
+              Center(
+                child: Container(
+                  padding: const EdgeInsets.only(right: 38, top: 2),
                   child: Text(
-                    ':',
-                    style: TextStyle(
-                        color: ((testingDuration.inSeconds % 2) == 0) ? Colors.white : Colors.white.withOpacity(0.8),
+                    minutes,
+                    style: const TextStyle(
+                        color: Colors.white,
                         fontWeight: FontWeight.w800,
                         fontSize: 20),
                   ),
                 ),
-                Center(
-                  child: Container(
-                    padding: const EdgeInsets.only(right: 38, top: 2),
-                    child: Text(
-                      minutes,
-                      style: TextStyle(
-                          color: ((testingDuration.inSeconds % 2) == 0) ? Colors.white : Colors.white.withOpacity(0.8),
-                          fontWeight: FontWeight.w800,
-                          fontSize: 20),
-                    ),
+              ),
+              Center(
+                child: Container(
+                  padding: const EdgeInsets.only(left: 38, top: 2),
+                  child: Text(
+                    seconds,
+                    style: const TextStyle(
+                        color: Colors.white,
+                        fontWeight: FontWeight.w800,
+                        fontSize: 20),
                   ),
                 ),
-                Center(
-                  child: Container(
-                    padding: const EdgeInsets.only(left: 38, top: 2),
-                    child: Text(
-                      seconds,
-                      style: TextStyle(
-                          color: ((testingDuration.inSeconds % 2) == 0) ? Colors.white : Colors.white.withOpacity(0.8),
-                          fontWeight: FontWeight.w800,
-                          fontSize: 20),
-                    ),
-                  ),
-                )
-              ],
-            )
+              )
+            ],
           ),
-          ) ,
-        backgroundColor: Colors.green,
+          backgroundColor: Colors.green,
+        ) ,
         body: FutureBuilder(
           future: getQuestionList(),
           builder: (context, snapshot) {
@@ -241,9 +244,9 @@ class _TestPageState extends State<TestPage> {
                             child: Text(
                                     'Câu ${index + 1}',
                                     style: TextStyle(
-                                        fontSize: shouldHightLight ? 18 : 15,
+                                        fontSize: shouldHightLight ? 18 : 14,
                                         fontWeight: shouldHightLight ? FontWeight.w700 : FontWeight.w500,
-                                        color: shouldHightLight ? Colors.green : Colors.black
+                                        color: shouldHightLight ? Colors.green : Colors.black.withOpacity(0.2)
                                     ),
                                     textAlign: TextAlign.center,
                             ),

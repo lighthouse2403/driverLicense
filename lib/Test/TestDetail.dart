@@ -57,7 +57,7 @@ class _TestDetailState extends State<TestDetail> {
                       setState(() {
                       });
                     },
-                    child: QuestionInTestRow(question: widget.question, index: index - 1),
+                    child: QuestionInTestRow(question: widget.question, index: index - 1, testStatus: widget.testStatus,),
                   );
                 }
               },
