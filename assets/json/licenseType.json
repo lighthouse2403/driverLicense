@@ -1,0 +1,40 @@
+{
+  "licenseTypes" : [
+    {
+      "id": 1,
+      "name": "B1",
+      "comment": "Không được hành nghề lái xe, xe chở người đến 9 chỗ, trọng tải dứoi 3500 Kg.",
+      "count": 20
+    },
+    {
+      "id": 2,
+      "name": "B2",
+      "comment": "Cho phép hành nghề lái xe, xe chở người đến 9 chỗ, trọng tải dứoi 3500 Kg.",
+      "count": 18
+    },
+    {
+      "id": 3,
+      "name": "C",
+      "comment": "Ô tô tải trên 3500 Kg.",
+      "count": 15
+    },
+    {
+      "id": 4,
+      "name": "D",
+      "comment": "Ô tô chở người từ 10 đến 30 chỗ.",
+      "count": 14
+    },
+    {
+      "id": 5,
+      "name": "E",
+      "comment": "Ô tô chở người trên 30 chỗ.",
+      "count": 14
+    },
+    {
+      "id": 6,
+      "name": "F",
+      "comment": "Điều khiển các loại xe kéo rơ moóc",
+      "count": 14
+    }
+  ]
+}
