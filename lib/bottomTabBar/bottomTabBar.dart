@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:license/DeathQuestion/DeathQuestion.dart';
+import 'package:license/Forum/ForumWidget.dart';
 import 'package:license/Setting/setting.dart';
 import 'package:license/Test/TestList.dart';
 import 'package:license/Theory/theoryList.dart';
@@ -35,6 +36,7 @@ class _MainBottomTabBarState extends State<MainBottomTabBar> {
         widgetOptions = [TheoryList(questionList: questionList,),
                           const TestList(),
                           DeathQuestionPage(questionList: deathQuestions),
+                          const ForumWidget(),
                           const SettingScreen()];
 
           return Scaffold(
@@ -46,7 +48,8 @@ class _MainBottomTabBarState extends State<MainBottomTabBar> {
                 BottomNavigationBarItem(
                   icon: Icon(Icons.home),
                   label: 'Lý thuyết',
-                  backgroundColor: Colors.red,
+                  backgroundColor: Colors.green,
+
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.business),
@@ -56,21 +59,21 @@ class _MainBottomTabBarState extends State<MainBottomTabBar> {
                 BottomNavigationBarItem(
                   icon: Icon(Icons.school),
                   label: 'Câu liệt',
-                  backgroundColor: Colors.purple,
+                  backgroundColor: Colors.green,
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.settings),
                   label: 'Giao lưu',
-                  backgroundColor: Colors.pink,
+                  backgroundColor: Colors.green,
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.settings),
-                  label: 'Settings',
-                  backgroundColor: Colors.pink,
+                  label: 'Cài đặt',
+                  backgroundColor: Colors.green,
                 ),
               ],
               currentIndex: _selectedIndex,
-              selectedItemColor: Colors.lime[800],
+              selectedItemColor: Colors.orangeAccent,
               onTap: _onItemTapped,
             ),
           );

@@ -11,31 +11,35 @@ class HorizontalTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-
-    return ListView.builder(
-        controller: tabController,
-        itemCount: length,
-        scrollDirection: Axis.horizontal,
-        itemBuilder: (context, index) {
-          bool shouldHightLight = (index + 1) == currentPage;
-          return SizedBox(
-            width: width,
-            child: GestureDetector(
-              onTap: () {
-                callback(index);
-              },
-              child: Text(
-                'Câu ${index + 1}',
-                style: TextStyle(
-                    fontSize: shouldHightLight ? 18 : 14,
-                    fontWeight: shouldHightLight ? FontWeight.w700 : FontWeight.w500,
-                    color: shouldHightLight ? Colors.green : Colors.black.withOpacity(0.2)
-                ),
-                textAlign: TextAlign.center,
+    return Container(
+      height: 50,
+      child: ListView.builder(
+          controller: tabController,
+          itemCount: length,
+          scrollDirection: Axis.horizontal,
+          itemBuilder: (context, index) {
+            bool shouldHightLight = (index + 1) == currentPage;
+            return SizedBox(
+              width: width,
+              child: GestureDetector(
+                onTap: () {
+                  callback(index);
+                },
+                child: Center(
+                  child: Text(
+                    'Câu ${index + 1}',
+                    style: TextStyle(
+                        fontSize: shouldHightLight ? 18 : 14,
+                        fontWeight: shouldHightLight ? FontWeight.w700 : FontWeight.w500,
+                        color: shouldHightLight ? Colors.green : Colors.black.withOpacity(0.2)
+                    ),
+                    textAlign: TextAlign.center,
+                  ),
+                )
               ),
-            ),
-          );
-        }
+            );
+          }
+      ),
     );
   }
 }

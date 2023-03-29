@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:license/Theory/Model/QuestionModel.dart';
 import 'package:license/Theory/questionDetail.dart';
 
+import '../Test/HorizontalTab.dart';
+
 class DeathQuestionPage extends StatefulWidget {
   const DeathQuestionPage({super.key, required this.questionList});
   final List<QuestionModel> questionList;
@@ -11,11 +13,21 @@ class DeathQuestionPage extends StatefulWidget {
 }
 
 class _DeathQuestionPageState extends State<DeathQuestionPage> {
-  var pageTitle = '1';
+  var currentPage = 1;
+  double screenWidth = WidgetsBinding.instance.window.physicalSize.width/WidgetsBinding.instance.window.devicePixelRatio;
+  PageController pageController = PageController(
+    initialPage: 0,
+    keepPage: true,
+  );
+
   void onPageChanged(int index) {
     setState(() {
-      pageTitle = '${index + 1}';
+      currentPage = index + 1;
     });
+  }
+
+  void jumToIndex(int index) {
+    pageController.jumpToPage(index);
   }
 
   @override
@@ -25,16 +37,28 @@ class _DeathQuestionPageState extends State<DeathQuestionPage> {
           title: Text('${widget.questionList.length} Câu điểm liệt'),
           backgroundColor: Colors.green,
         ),
-        body: Container(
-          color: Colors.white,
-          child: PageView.builder(
-            itemCount: widget.questionList.length,
-            scrollDirection: Axis.horizontal,
-            onPageChanged: onPageChanged,
-            itemBuilder: (BuildContext context, int index) {
-              return QuestionDetail(question: widget.questionList[index]);
-            },
-          ),
+        body: Column(
+          children: [
+            HorizontalTab(
+                length: widget.questionList.length,
+                currentPage: currentPage,
+                callback: jumToIndex,
+                width: screenWidth/4),
+            Container(height: 0.5, color: Colors.green,),
+            Expanded(
+                child: Container(
+                  color: Colors.white,
+                  child: PageView.builder(
+                    itemCount: widget.questionList.length,
+                    scrollDirection: Axis.horizontal,
+                    onPageChanged: onPageChanged,
+                    itemBuilder: (BuildContext context, int index) {
+                      return QuestionDetail(question: widget.questionList[index]);
+                    },
+                  ),
+                )
+            )
+          ],
         )
     );
   }

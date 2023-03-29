@@ -209,9 +209,6 @@ class _TestPageState extends State<TestPage> {
           builder: (context, snapshot) {
             return Column(
               children: [
-                const SizedBox(
-                  height: 15,
-                ),
                 HorizontalTab(
                     length: widget.test.questionIds.length,
                     currentPage: currentPage,
@@ -220,7 +217,6 @@ class _TestPageState extends State<TestPage> {
                 Container(height: 0.5, color: Colors.green,),
                 Expanded(
                     child: Container(
-                      height: 200,
                       color: Colors.white,
                       child: PageView.builder(
                         controller: pageController,
