@@ -3,6 +3,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:license/Database/sqlHelper.dart';
+import 'package:license/Test/HorizontalTab.dart';
 import 'package:license/Test/Model/TestModel.dart';
 import 'package:license/Test/TimeWidget.dart';
 import '../Theory/Model/QuestionModel.dart';
@@ -66,6 +67,10 @@ class _TestPageState extends State<TestPage> {
     setState(() {
       currentPage = index + 1;
     });
+  }
+
+  void jumToIndex(int index) {
+    pageController.jumpToPage(index);
   }
 
   void startTimer() {
@@ -207,35 +212,11 @@ class _TestPageState extends State<TestPage> {
                 const SizedBox(
                   height: 15,
                 ),
-                SizedBox(
-                  height: 35,
-                  child: ListView.builder(
-                    controller: tabController,
-                      itemCount: widget.test.questionIds.length,
-                      scrollDirection: Axis.horizontal,
-                      itemBuilder: (context, index) {
-                        bool shouldHightLight = (index + 1) == currentPage;
-                        return SizedBox(
-
-                          width: screenWidth/4,
-                          child: GestureDetector(
-                            onTap: () {
-                              pageController.jumpToPage(index);
-                            },
-                            child: Text(
-                                    'Câu ${index + 1}',
-                                    style: TextStyle(
-                                        fontSize: shouldHightLight ? 18 : 14,
-                                        fontWeight: shouldHightLight ? FontWeight.w700 : FontWeight.w500,
-                                        color: shouldHightLight ? Colors.green : Colors.black.withOpacity(0.2)
-                                    ),
-                                    textAlign: TextAlign.center,
-                            ),
-                          ),
-                        );
-                      }
-                      ),
-                ),
+                HorizontalTab(
+                    length: widget.test.questionIds.length,
+                    currentPage: currentPage,
+                    callback: jumToIndex,
+                    width: screenWidth/4),
                 Container(height: 0.5, color: Colors.green,),
                 Expanded(
                     child: Container(

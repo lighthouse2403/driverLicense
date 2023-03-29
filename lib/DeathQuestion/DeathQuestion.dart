@@ -22,7 +22,7 @@ class _DeathQuestionPageState extends State<DeathQuestionPage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text('Câu hỏi số $pageTitle'),
+          title: Text('${widget.questionList.length} Câu điểm liệt'),
           backgroundColor: Colors.green,
         ),
         body: Container(
