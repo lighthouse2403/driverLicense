@@ -5,6 +5,7 @@ import 'package:flutter/services.dart';
 import 'package:license/Test/TestItem.dart';
 import 'package:license/Test/TestPage.dart';
 import 'package:license/Theory/Model/QuestionModel.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 import '../Database/sqlHelper.dart';
 
@@ -22,7 +23,9 @@ class _TestListState extends State<TestList> {
     finishedQuestions = await SQLHelper.getAllQuestion('questions_in_test');
     final String testResponse = await rootBundle.loadString('assets/json/tests.json');
     final testData = await json.decode(testResponse);
-    testArray = List<TestModel>.from(testData["tests"].map((json) => TestModel.fromJson(json)));
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    int licenseId = prefs.getInt('licenseType') ?? 2;
+    testArray = List<TestModel>.from(testData['$licenseId'].map((json) => TestModel.fromJson(json)));
 
     for (var test in testArray) {
       test.finishedCount = finishedQuestions.where((element) => element.testId == test.id).length;
