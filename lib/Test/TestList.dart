@@ -19,13 +19,14 @@ class _TestListState extends State<TestList> {
   List<QuestionModel> finishedQuestions = [];
 
   Future<void> loadTheoryData() async {
-    finishedQuestions = await SQLHelper.getAllQuestion('tests');
+    finishedQuestions = await SQLHelper.getAllQuestion('questions_in_test');
     final String testResponse = await rootBundle.loadString('assets/json/tests.json');
     final testData = await json.decode(testResponse);
     testArray = List<TestModel>.from(testData["tests"].map((json) => TestModel.fromJson(json)));
 
     for (var test in testArray) {
       test.finishedCount = finishedQuestions.where((element) => element.testId == test.id).length;
+      test.exactCount = finishedQuestions.where((element) => (element.testId == test.id) && (element.selectedIndex == element.answerIndex)).length;
     }
   }
 
@@ -54,9 +55,6 @@ class _TestListState extends State<TestList> {
         body: FutureBuilder(
           future: loadTheoryData(),
           builder: (context, snapshot) {
-            if (snapshot.hasData == null) {
-              return const Text('Loading');
-            }
             return GridView.builder(
                 itemCount: testArray.length,
                 gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(

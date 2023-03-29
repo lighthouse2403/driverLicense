@@ -57,7 +57,6 @@ class QuestionModel {
     if (json['testId'] != null) {
       testId = json['testId'];
     }
-
   }
 
   Map<String, dynamic> toJson() {

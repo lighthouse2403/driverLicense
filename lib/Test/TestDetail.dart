@@ -23,7 +23,7 @@ class _TestDetailState extends State<TestDetail> {
   Widget build(BuildContext context) {
     final int answerCount = widget.question.answerList.length;
     return FutureBuilder(
-        future: SQLHelper.getQuestionOnTest(widget.question.questionOnTestId),
+        future: SQLHelper().getQuestionOnTest(widget.question.questionOnTestId),
         builder: (context, snapshot) {
           if (snapshot.data != null) {
             widget.question = snapshot.data!;
@@ -52,7 +52,7 @@ class _TestDetailState extends State<TestDetail> {
                       widget.question.testId = widget.test.id;
                       widget.question.questionOnTestId = '${widget.test.id}-${widget.question.id}';
 
-                      const tableName = 'tests';
+                      const tableName = 'questions_in_test';
                       isShouldUpdate ? SQLHelper().updateQuestionOnTest(widget.question, tableName) : SQLHelper().insertQuestion(widget.question, tableName);
                       setState(() {
                       });

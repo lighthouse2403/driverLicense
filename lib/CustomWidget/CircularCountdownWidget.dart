@@ -4,9 +4,11 @@ import 'package:vector_math/vector_math.dart' as vmath;
 
 class CircularCountdownWidget extends CustomPainter {
   final double percentage;
-  final double borderWidth = 6;
+  final double borderWidth = 4;
+  final Color strokeColor;
+
   const CircularCountdownWidget({
-    required this.percentage,
+    required this.percentage, required this.strokeColor
   });
 
   @override
@@ -21,7 +23,7 @@ class CircularCountdownWidget extends CustomPainter {
       size.width / 2,
       Paint()
         ..style = PaintingStyle.stroke
-        ..color = Colors.green.withOpacity(0.4)
+        ..color = strokeColor.withOpacity(0.2)
         ..strokeWidth = borderWidth,
     );
 
@@ -41,7 +43,7 @@ class CircularCountdownWidget extends CustomPainter {
       Paint()
         ..style = PaintingStyle.stroke
         ..strokeCap = StrokeCap.round
-        ..color = Colors.green
+        ..color = strokeColor
         ..strokeWidth = borderWidth,
     );
 
@@ -57,7 +59,7 @@ class CircularCountdownWidget extends CustomPainter {
       Paint()
         ..style = PaintingStyle.stroke
         ..strokeCap = StrokeCap.round
-        ..color = Colors.green
+        ..color = strokeColor
         ..strokeWidth = borderWidth
         ..blendMode = BlendMode.srcIn,
     );

@@ -9,14 +9,17 @@ class TestRow extends StatelessWidget {
   // final TestModel test;
   @override
   Widget build(BuildContext context) {
+    Color strokeColor = testModel.exactCount >= (testModel.questionIds.length - 2) ? Colors.green : Colors.red;
+    String status = testModel.exactCount >= (testModel.questionIds.length - 2) ? 'Đạt' : 'Trượt';
+
     return Container(
-        margin:  const EdgeInsets.all(10),
-        padding: const EdgeInsets.all(8),
+        margin:  const EdgeInsets.all(16),
+        padding: const EdgeInsets.all(4),
         child: Stack(
           children: [
             Positioned.fill(
               child: CustomPaint(
-                painter: CircularCountdownWidget(percentage: testModel.finishedCount/testModel.questionIds.length),
+                painter: CircularCountdownWidget(percentage: testModel.exactCount/testModel.questionIds.length, strokeColor: strokeColor),
               ),
             ),
             Center(
@@ -25,19 +28,28 @@ class TestRow extends StatelessWidget {
               children: [
                 Text(
                   'Đề số ${testModel.id + 1}',
-                  style: const TextStyle(
+                  style: TextStyle(
                     fontSize: 16,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.green
+                    fontWeight: FontWeight.w500,
+                    color: strokeColor
                   ),
                 ),
-                const SizedBox(height: 3,),
+                const SizedBox(height: 6,),
                 Text(
-                  '${testModel.finishedCount}/${testModel.questionIds.length}',
-                  style: const TextStyle(
+                  status,
+                  style: TextStyle(
+                      fontSize: 20,
+                      fontWeight: FontWeight.w600,
+                      color: strokeColor,
+                  ),
+                ),
+                const SizedBox(height: 6,),
+                Text(
+                  '${testModel.exactCount}/${testModel.questionIds.length}',
+                  style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w500,
-                    color: Colors.black
+                    color: strokeColor
                   ),
                 ),
               ],

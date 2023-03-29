@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:license/Database/sqlHelper.dart';
 import 'package:license/Test/Model/TestModel.dart';
+import 'package:license/Test/TimeWidget.dart';
 import '../Theory/Model/QuestionModel.dart';
 import 'TestDetail.dart';
 
@@ -24,16 +25,16 @@ class TestPage extends StatefulWidget {
 }
 
 class _TestPageState extends State<TestPage> {
-  var pageTitle = '1';
+  var currentPage = 1;
+  String result = 'Đạt';
   List<QuestionModel> questionList = [];
   Timer? countdownTimer;
-  Duration testingDuration = const Duration(minutes: 22);
+  Duration testingDuration = const Duration(minutes: 1);
   TestStatus status = TestStatus.none;
   PageController pageController = PageController(
     initialPage: 0,
     keepPage: true,
   );
-
   ScrollController tabController = ScrollController();
   double screenWidth = WidgetsBinding.instance.window.physicalSize.width/WidgetsBinding.instance.window.devicePixelRatio;
 
@@ -63,12 +64,12 @@ class _TestPageState extends State<TestPage> {
   void onPageChanged(int index) {
     animateToIndex(index);
     setState(() {
-      pageTitle = '${index + 1}';
+      currentPage = index + 1;
     });
   }
 
   void startTimer() {
-    testingDuration = const Duration(minutes: 22);
+    testingDuration = const Duration(minutes: 1);
     setState(() {
       countdownTimer = Timer.periodic(const Duration(seconds: 1), (_) => setCountDown());
     });
@@ -89,22 +90,42 @@ class _TestPageState extends State<TestPage> {
     setState(() {
       final seconds = testingDuration.inSeconds - reduceSecondsBy;
       if (seconds < 0) {
-        countdownTimer!.cancel();
+        finishedTesting();
       } else {
         testingDuration = Duration(seconds: seconds);
       }
     });
   }
 
+  void startTesting() {
+    status = TestStatus.testing;
+    startTimer();
+  }
+
   void reTest() async {
+    status = TestStatus.none;
+    stopTimer();
     SQLHelper.deleteAllQuestionOnTest(widget.test.id);
     await getQuestionList();
     status = TestStatus.testing;
-    pageTitle = '1';
+    currentPage = 1;
     pageController.jumpToPage(0);
     startTimer();
   }
-  
+
+  Future<void> finishedTesting() async {
+    status = TestStatus.done;
+    SQLHelper().insertTest(widget.test);
+    widget.finishedQuestionList = await SQLHelper().getAllQuestionOnTest(widget.test.id);
+    for (var element in widget.finishedQuestionList) {
+        if (!widget.test.questionIds.contains(element.id) || (element.selectedIndex != element.answerIndex)) {
+          result = 'Trượt';
+          break;
+        }
+    }
+    stopTimer();
+  }
+
   Future<void> getQuestionList() async {
     if (status != TestStatus.none) {
       return;
@@ -154,16 +175,12 @@ class _TestPageState extends State<TestPage> {
                     onPressed: () {
                       switch (status) {
                         case TestStatus.none:
-                          status = TestStatus.testing;
-                          startTimer();
+                          startTesting();
                           break;
                         case TestStatus.testing:
-                          status = TestStatus.done;
-                          stopTimer();
+                          finishedTesting();
                           break;
                         case TestStatus.done:
-                          status = TestStatus.none;
-                          stopTimer();
                           reTest();
                           break;
                         default:
@@ -179,43 +196,7 @@ class _TestPageState extends State<TestPage> {
               )
             )
           ],
-          title: Stack(
-            children: [
-              const Center(
-                child: Text(
-                  ':',
-                  style: TextStyle(
-                      color: Colors.white,
-                      fontWeight: FontWeight.w800,
-                      fontSize: 20),
-                ),
-              ),
-              Center(
-                child: Container(
-                  padding: const EdgeInsets.only(right: 38, top: 2),
-                  child: Text(
-                    minutes,
-                    style: const TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w800,
-                        fontSize: 20),
-                  ),
-                ),
-              ),
-              Center(
-                child: Container(
-                  padding: const EdgeInsets.only(left: 38, top: 2),
-                  child: Text(
-                    seconds,
-                    style: const TextStyle(
-                        color: Colors.white,
-                        fontWeight: FontWeight.w800,
-                        fontSize: 20),
-                  ),
-                ),
-              )
-            ],
-          ),
+          title: status == TestStatus.done ? Text(result, style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 20),) : TimeWidget(minutes: minutes,seconds: seconds,),
           backgroundColor: Colors.green,
         ) ,
         body: FutureBuilder(
@@ -233,7 +214,7 @@ class _TestPageState extends State<TestPage> {
                       itemCount: widget.test.questionIds.length,
                       scrollDirection: Axis.horizontal,
                       itemBuilder: (context, index) {
-                        bool shouldHightLight = (index + 1) == int.parse(pageTitle);
+                        bool shouldHightLight = (index + 1) == currentPage;
                         return SizedBox(
 
                           width: screenWidth/4,
