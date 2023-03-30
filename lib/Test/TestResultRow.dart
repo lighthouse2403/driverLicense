@@ -14,7 +14,7 @@ class TestResultRow extends StatelessWidget {
     questionColor = question.isDeadPoint ? Colors.red.withOpacity(0.6) : questionColor;
     return Container(
         decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(Radius.circular(6)),
+          borderRadius: const BorderRadius.all(Radius.circular(6)),
           color: questionColor
         ),
         child: Center (
