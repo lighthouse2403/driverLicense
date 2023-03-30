@@ -3109,7 +3109,7 @@
       "isDeadPoint": false,
       "comment": ""
     },
-    {
+    {cac
       "id": 312,
       "chapterId": 6,
       "questionText": "Biển nào cho phép ô tô con được vượt?",
@@ -3432,7 +3432,7 @@
     {
       "id": 344,
       "chapterId": 6,
-      "questionText": "Biển nào cấm máy kéo kéo theo rơ mooc?",
+      "questionText": "Biển nào cấm máy kéo kéo theo rơ moóc?",
       "questionImage" : "cau344",
       "answerList": ["Biển 1.", "Biển 2.", "Cả hai biển."],
       "answerIndex": 2,
@@ -3612,7 +3612,7 @@
     {
       "id": 362,
       "chapterId": 6,
-      "questionText": "Biển này có ý nghĩa gì?",
+      "questionText": "Biển này có ý nghĩa gì?",
       "questionImage" : "cau362",
       "answerList": ["Cấm ô tô buýt.", "Cấm ô tô chở khách.", "Cấm ô tô con."],
       "answerIndex": 1,
@@ -3792,7 +3792,7 @@
     {
       "id": 380,
       "chapterId": 6,
-      "questionText": "Biến nào báo hiệu “Cửa chui”?",
+      "questionText": "Biển nào báo hiệu “Cửa chui”?",
       "questionImage" : "cau380",
       "answerList": ["Biển 1.", "Biển 2.", "Biển 3."],
       "answerIndex": 1,
@@ -4152,7 +4152,7 @@
     {
       "id": 416,
       "chapterId": 6,
-      "questionText": "Biển nào chỉ dẫn nới bắt đầu đoạn đường dành cho người đi bộ?",
+      "questionText": "Biển nào chỉ dẫn nơi bắt đầu đoạn đường dành cho người đi bộ?",
       "questionImage" : "cau416",
       "answerList": ["Biển 1", "Biển 2", "Biển 3"],
       "answerIndex": 1,
@@ -4332,7 +4332,7 @@
     {
       "id": 434,
       "chapterId": 6,
-      "questionText": "Khi gặp biển  nào thì các phương tiện không được đi vào trừ xe ô tô và mô tô?",
+      "questionText": "Khi gặp biển nào thì các phương tiện không được đi vào, trừ ô tô và mô tô?",
       "questionImage" : "cau434",
       "answerList": ["Biển 1", "Biển 2"],
       "answerIndex": 0,
@@ -4691,7 +4691,7 @@
     {
       "id": 470,
       "chapterId": 6,
-      "questionText": "Biển này có ý nghĩa gì?",
+      "questionText": "Biển này có ý nghĩa gì?",
       "questionImage" : "cau470",
       "answerList": ["Bắt đầu đường cao tốc.", " Chỉ dẫn địa giới đường cao tốc, chiều dài đường cao tốc.", "Tên và ký hiệu đường cao tốc, tốc độ tối đa và tối thiểu khi di chuyển trên cao tốc.", "Cả ý 1 và ý 3"],
       "answerIndex": 3,
@@ -4871,7 +4871,7 @@
     {
       "id": 488,
       "chapterId": 7,
-      "questionText": "Thứ tự đi như thế nào là đúng quy tắc giao thông?",
+      "questionText": "Thứ tự các xe đi như thế nào là đúng quy tắc giao thông?",
       "questionImage" : "cau488",
       "answerList": ["Xe công an, xe con, xe tải, xe khách.", "Xe công an, xe khách, xe con, xe tải.", "Xe công an, xe tải, xe khách, xe con.", "Xe con, xe công an, xe tải, xe khách."],
       "answerIndex": 0,
@@ -5981,7 +5981,7 @@
     {
       "id": 599,
       "chapterId": 7,
-      "questionText": "Trong tình huống dưới đay, xe con màu vàng vượt xe con màu đỏ là đúng quy tắc giao thông hay không?",
+      "questionText": "Trong tình huống dưới đây, xe con màu vàng vượt xe con màu đỏ là đúng quy tắc giao thông hay không?",
       "questionImage" : "cau599",
       "answerList": ["Đúng.", "Không Đúng."],
       "answerIndex": 0,
