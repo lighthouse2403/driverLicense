@@ -22,11 +22,11 @@ class _SettingScreenState extends State<SettingScreen> {
     final testData = await json.decode(testResponse);
     licenseTypes = List<LicenseTypeModel>.from(testData["licenseTypes"].map((json) => LicenseTypeModel.fromJson(json)));
     SharedPreferences prefs = await SharedPreferences.getInstance();
-    selectedLicenseId = prefs.getInt('licenseType') ?? 3;
     // Set B2 like default license
     if (prefs.getInt('licenseType') == null) {
       prefs.setInt('licenseType', 2);
     }
+    selectedLicenseId = prefs.getInt('licenseType') ?? 2;
   }
 
   void selectedLicense(LicenseTypeModel license) async {

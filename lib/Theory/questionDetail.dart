@@ -21,9 +21,10 @@ class _QuestionDetailState extends State<QuestionDetail> {
     return FutureBuilder(
         future: SQLHelper.getQuestion(widget.question.id, 'questions'),
         builder: (context, snapshot) {
-          if (snapshot.data != null) {
+          if (snapshot.hasData) {
             widget.question = snapshot.data!;
           }
+
           return Container(
             padding: const EdgeInsets.only(top: 10, bottom: 10),
             child: ListView.separated(

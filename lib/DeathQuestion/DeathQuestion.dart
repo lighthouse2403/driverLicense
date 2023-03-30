@@ -43,7 +43,8 @@ class _DeathQuestionPageState extends State<DeathQuestionPage> {
                 length: widget.questionList.length,
                 currentPage: currentPage,
                 callback: jumToIndex,
-                width: screenWidth/4),
+                width: screenWidth/4,
+            ),
             Container(height: 0.5, color: Colors.green,),
             Expanded(
                 child: Container(

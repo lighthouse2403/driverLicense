@@ -22,25 +22,25 @@
       "id": 4,
       "name": "Kỹ thuật lái xe",
       "comment": "Từ câu 214 đến câu 269. (11 câu điểm liệt)",
-      "count": 56
+      "count": 54
     },
     {
       "id": 5,
-      "name": "Biển báo đường bộ",
-      "comment": "Từ câu 305 đến câu 486 (182 câu)",
-      "count": 182
+      "name": "Cấu tạo và sửa chữa xe",
+      "comment": "Gồm 35 câu, từ câu 270 đến câu 304.",
+      "count": 35
     },
     {
       "id": 6,
-      "name": "Sa hình",
-      "comment": "Từ câu 487 đến câu 600 (114 câu)",
-      "count": 114
+      "name": "Biển báo hiệu đường bộ",
+      "comment": "Gồm 182 câu, từ câu 305 đến câu 486.",
+      "count": 182
     },
     {
       "id": 7,
-      "name": "Cấu tạo và sửa chữa",
-      "comment": "Từ câu 270 đến câu 304(35 câu)",
-      "count": 35
+      "name": "Sa hình",
+      "comment": "Gồm 114 câu, từ câu 487 đến câu 600.",
+      "count": 114
     }
   ]
 }

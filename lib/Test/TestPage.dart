@@ -8,6 +8,7 @@ import 'package:license/Test/Model/TestModel.dart';
 import 'package:license/Test/TimeWidget.dart';
 import '../Theory/Model/QuestionModel.dart';
 import 'TestDetail.dart';
+import 'TestResult.dart';
 
 enum TestStatus {
   none,
@@ -30,14 +31,14 @@ class _TestPageState extends State<TestPage> {
   String result = 'Đạt';
   List<QuestionModel> questionList = [];
   Timer? countdownTimer;
-  Duration testingDuration = const Duration(minutes: 1);
+  Duration testingDuration = const Duration(minutes: 22);
   TestStatus status = TestStatus.none;
   PageController pageController = PageController(
     initialPage: 0,
     keepPage: true,
   );
-  ScrollController tabController = ScrollController();
   double screenWidth = WidgetsBinding.instance.window.physicalSize.width/WidgetsBinding.instance.window.devicePixelRatio;
+  HorizontalTab? horizontalTab;
 
   @override
   void dispose() {
@@ -48,22 +49,8 @@ class _TestPageState extends State<TestPage> {
     super.dispose();
   }
 
-  void animateToIndex(int index) {
-    var tabItemWidth = screenWidth/4;
-    Duration duration = const Duration(milliseconds: 500);
-    if ((index > 1) && ((index + 2) < widget.test.questionIds.length)) {
-      tabController.animateTo((index - 1.5) * tabItemWidth, duration: duration, curve: Curves.easeOut);
-    } else if (index >= widget.test.questionIds.length - 1) {
-      tabController.animateTo((index - 3) * tabItemWidth, duration: duration, curve: Curves.easeOut);
-    } else if (index == 0) {
-      tabController.animateTo(0, duration: duration, curve: Curves.easeOut);
-    } else if ((index == widget.test.questionIds.length - 2)) {
-      tabController.animateTo((index - 2) * tabItemWidth, duration: duration, curve: Curves.easeOut);
-    }
-  }
-
   void onPageChanged(int index) {
-    animateToIndex(index);
+    horizontalTab?.animateToIndex(index);
     setState(() {
       currentPage = index + 1;
     });
@@ -71,10 +58,11 @@ class _TestPageState extends State<TestPage> {
 
   void jumToIndex(int index) {
     pageController.jumpToPage(index);
+    print('jumToIndex');
   }
 
   void startTimer() {
-    testingDuration = const Duration(minutes: 1);
+    testingDuration = const Duration(minutes: 22);
     setState(() {
       countdownTimer = Timer.periodic(const Duration(seconds: 1), (_) => setCountDown());
     });
@@ -147,6 +135,16 @@ class _TestPageState extends State<TestPage> {
     }
   }
 
+  void gotoTestResult() {
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (context) => TestResult(
+              questions: questionList,
+              test: widget.test))
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     String strDigits(int n) => n.toString().padLeft(2, '0');
@@ -184,6 +182,7 @@ class _TestPageState extends State<TestPage> {
                           break;
                         case TestStatus.testing:
                           finishedTesting();
+                          gotoTestResult();
                           break;
                         case TestStatus.done:
                           reTest();
@@ -207,13 +206,15 @@ class _TestPageState extends State<TestPage> {
         body: FutureBuilder(
           future: getQuestionList(),
           builder: (context, snapshot) {
+            horizontalTab = HorizontalTab(
+              length: widget.test.questionIds.length,
+              currentPage: currentPage,
+              callback: jumToIndex,
+              width: screenWidth/4,
+            );
             return Column(
               children: [
-                HorizontalTab(
-                    length: widget.test.questionIds.length,
-                    currentPage: currentPage,
-                    callback: jumToIndex,
-                    width: screenWidth/4),
+                Container(child: horizontalTab),
                 Container(height: 0.5, color: Colors.green,),
                 Expanded(
                     child: Container(

@@ -5,7 +5,7 @@ import 'package:license/DeathQuestion/DeathQuestion.dart';
 import 'package:license/Forum/ForumWidget.dart';
 import 'package:license/Setting/setting.dart';
 import 'package:license/Test/TestList.dart';
-import 'package:license/Theory/theoryList.dart';
+import 'package:license/Theory/ChapterList.dart';
 import '../Theory/Model/QuestionModel.dart';
 
 class MainBottomTabBar extends StatefulWidget {
@@ -25,6 +25,7 @@ class _MainBottomTabBarState extends State<MainBottomTabBar> {
     final questionData = await json.decode(questionResponse);
     questionList = List<QuestionModel>.from(questionData["questions"].map((json) => QuestionModel.fromJson(json, null)));
   }
+
   @override
   Widget build(BuildContext context) {
 
@@ -33,7 +34,7 @@ class _MainBottomTabBarState extends State<MainBottomTabBar> {
         builder: (context, item) {
         List<QuestionModel> deathQuestions = questionList.where((element) => element.isDeadPoint).toList();
 
-        widgetOptions = [TheoryList(questionList: questionList,),
+        widgetOptions = [ChapterList(questionList: questionList,),
                           const TestList(),
                           DeathQuestionPage(questionList: deathQuestions),
                           const ForumWidget(),
