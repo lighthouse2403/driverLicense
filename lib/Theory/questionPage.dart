@@ -20,6 +20,8 @@ class _QuestionPageState extends State<QuestionPage> {
 
   @override
   Widget build(BuildContext context) {
+    print('${widget.questionList.toString()}');
+
     return Scaffold(
         appBar: AppBar(
           title: Text('Câu hỏi số $pageTitle'),

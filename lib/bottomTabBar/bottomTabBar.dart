@@ -23,6 +23,8 @@ class _MainBottomTabBarState extends State<MainBottomTabBar> {
   Future<void> getAllQuestion() async {
     final String questionResponse = await rootBundle.loadString('assets/json/questions.json');
     final questionData = await json.decode(questionResponse);
+    print('question list: ${questionData.toString()}');
+
     questionList = List<QuestionModel>.from(questionData["questions"].map((json) => QuestionModel.fromJson(json, null)));
   }
   @override
