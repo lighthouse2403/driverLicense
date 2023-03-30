@@ -8,6 +8,7 @@ import 'package:license/Test/Model/TestModel.dart';
 import 'package:license/Test/TimeWidget.dart';
 import '../Theory/Model/QuestionModel.dart';
 import 'TestDetail.dart';
+import 'TestResult.dart';
 
 enum TestStatus {
   none,
@@ -134,6 +135,16 @@ class _TestPageState extends State<TestPage> {
     }
   }
 
+  void gotoTestResult() {
+    Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (context) => TestResult(
+              questions: questionList,
+              test: widget.test))
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     String strDigits(int n) => n.toString().padLeft(2, '0');
@@ -171,6 +182,7 @@ class _TestPageState extends State<TestPage> {
                           break;
                         case TestStatus.testing:
                           finishedTesting();
+                          gotoTestResult();
                           break;
                         case TestStatus.done:
                           reTest();
