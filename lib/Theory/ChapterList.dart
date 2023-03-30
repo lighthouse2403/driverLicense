@@ -2,27 +2,27 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:license/Database/sqlHelper.dart';
 import 'package:license/Theory/Model/QuestionModel.dart';
-import 'package:license/Theory/Model/TheoryModel.dart';
+import 'package:license/Theory/Model/ChapterModel.dart';
 import 'package:license/Theory/questionPage.dart';
 import 'package:license/Theory/theoryRow.dart';
 import 'package:flutter/services.dart';
 
-class TheoryList extends StatefulWidget {
-  TheoryList({super.key, required this.questionList});
+class ChapterList extends StatefulWidget {
+  ChapterList({super.key, required this.questionList});
 
   @override
-  State<TheoryList> createState() => _TheoryListState();
+  State<ChapterList> createState() => _ChapterListState();
   List<QuestionModel> questionList = [];
 }
 
-class _TheoryListState extends State<TheoryList> {
-  List<TheoryModel> chapterArray = [];
+class _ChapterListState extends State<ChapterList> {
+  List<ChapterModel> chapterArray = [];
 
   Future<void> loadTheoryData() async {
     var finishedQuestions = await SQLHelper.getAllQuestion('questions');
     final String theoryResponse = await rootBundle.loadString('assets/json/theory.json');
     final theoryData = await json.decode(theoryResponse);
-    chapterArray = List<TheoryModel>.from(theoryData["chapters"].map((json) => TheoryModel.fromJson(json)));
+    chapterArray = List<ChapterModel>.from(theoryData["chapters"].map((json) => ChapterModel.fromJson(json)));
     for (var chapter in chapterArray) {
       chapter.finishedCount = finishedQuestions.where((element) => element.chapterId == chapter.id).length;
     }
@@ -35,9 +35,10 @@ class _TheoryListState extends State<TheoryList> {
 
   void goToQuestionPage(int chapterId) {
     var questions =  widget.questionList.where((element) => element.chapterId == chapterId).toList();
+    ChapterModel chapter = chapterArray.where((element) => element.id == chapterId).first;
     Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => QuestionPage(questionList: questions))
+        MaterialPageRoute(builder: (context) => QuestionPage(questionList: questions, chapter: chapter,))
     ).then(onGoBack);
   }
 

@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 class HorizontalTab extends StatelessWidget {
+
   HorizontalTab({super.key, required this.length, required this.currentPage, required this.callback, required this.width});
 
   int currentPage = 0;
@@ -8,6 +9,21 @@ class HorizontalTab extends StatelessWidget {
 
   ScrollController tabController = ScrollController();
   Function(int) callback;
+
+  void animateToIndex(int index) {
+    double screenWidth = WidgetsBinding.instance.window.physicalSize.width/WidgetsBinding.instance.window.devicePixelRatio;
+    var tabItemWidth = screenWidth/4;
+    Duration duration = const Duration(milliseconds: 500);
+    if ((index > 1) && ((index + 2) < length)) {
+      tabController.animateTo((index - 1.5) * tabItemWidth, duration: duration, curve: Curves.easeOut);
+    } else if (index >= (length - 1)) {
+      tabController.animateTo((index - 3) * tabItemWidth, duration: duration, curve: Curves.easeOut);
+    } else if (index == 0) {
+      tabController.animateTo(0, duration: duration, curve: Curves.easeOut);
+    } else if (index == (length - 2)) {
+      tabController.animateTo((index - 2) * tabItemWidth, duration: duration, curve: Curves.easeOut);
+    }
+  }
 
   @override
   Widget build(BuildContext context) {

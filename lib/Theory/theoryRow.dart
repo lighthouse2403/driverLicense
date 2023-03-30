@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:license/Theory/Model/TheoryModel.dart';
+import 'package:license/Theory/Model/ChapterModel.dart';
 
  class TheoryRow extends StatelessWidget {
   TheoryRow({super.key, required this.theory, required this.onTap});
 
-  final TheoryModel theory;
+  final ChapterModel theory;
   Function(int) onTap;
 
   @override

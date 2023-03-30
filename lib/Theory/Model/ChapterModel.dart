@@ -1,12 +1,12 @@
 
-class TheoryModel {
+class ChapterModel {
   int id = 0 ;
   String name = '';
   String comment = '';
   int count = 0;
   int finishedCount = 0;
 
-  TheoryModel({
+  ChapterModel({
     required this.id,
     required this.name,
     required this.comment,
@@ -15,7 +15,7 @@ class TheoryModel {
 
   });
 
-  TheoryModel.fromJson(Map<String, dynamic> json) {
+  ChapterModel.fromJson(Map<String, dynamic> json) {
     id = json['id'];
     name = json['name'];
     comment = json['comment'];
