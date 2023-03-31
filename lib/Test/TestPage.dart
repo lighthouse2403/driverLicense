@@ -7,6 +7,7 @@ import 'package:license/Test/HorizontalTab.dart';
 import 'package:license/Test/Model/TestModel.dart';
 import 'package:license/Test/TimeWidget.dart';
 import '../Theory/Model/QuestionModel.dart';
+import 'ResultButton.dart';
 import 'TestDetail.dart';
 import 'TestResult.dart';
 
@@ -28,7 +29,6 @@ class TestPage extends StatefulWidget {
 
 class _TestPageState extends State<TestPage> {
   var currentPage = 1;
-  String result = 'Đạt';
   List<QuestionModel> questionList = [];
   Timer? countdownTimer;
   Duration testingDuration = const Duration(minutes: 22);
@@ -50,7 +50,6 @@ class _TestPageState extends State<TestPage> {
   }
 
   void onPageChanged(int index) {
-    print('onPageChanged');
     horizontalTab?.animateToIndex(index);
     setState(() {
       currentPage = index + 1;
@@ -59,7 +58,6 @@ class _TestPageState extends State<TestPage> {
 
   void jumToIndex(int index) {
     pageController.jumpToPage(index);
-    print('jumToIndex');
   }
 
   void backFromResult(int index) {
@@ -124,13 +122,6 @@ class _TestPageState extends State<TestPage> {
   Future<void> finishedTesting() async {
     status = TestStatus.done;
     SQLHelper().insertTest(widget.test);
-    widget.finishedQuestionList = await SQLHelper().getAllQuestionOnTest(widget.test.id);
-    for (var element in widget.finishedQuestionList) {
-        if (!widget.test.questionIds.contains(element.id) || (element.selectedIndex != element.answerIndex)) {
-          result = 'Trượt';
-          break;
-        }
-    }
     stopTimer();
   }
 
@@ -216,7 +207,14 @@ class _TestPageState extends State<TestPage> {
               )
             )
           ],
-          title: status == TestStatus.done ? Text(result, style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 20),) : TimeWidget(minutes: minutes,seconds: seconds,),
+          title: GestureDetector(
+            onTap: () {
+              if (status == TestStatus.done) {
+                gotoTestResult();
+              }
+            },
+            child: status == TestStatus.done ? ResultButton() : TimeWidget(minutes: minutes,seconds: seconds,)
+          ),
           backgroundColor: Colors.green,
         ) ,
         body: FutureBuilder(

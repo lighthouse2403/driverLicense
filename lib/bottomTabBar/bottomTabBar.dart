@@ -34,11 +34,12 @@ class _MainBottomTabBarState extends State<MainBottomTabBar> {
         builder: (context, item) {
         List<QuestionModel> deathQuestions = questionList.where((element) => element.isDeadPoint).toList();
 
-        widgetOptions = [ChapterList(questionList: questionList,),
-                          const TestList(),
-                          DeathQuestionPage(questionList: deathQuestions),
-                          const ForumWidget(),
-                          const SettingScreen()];
+        widgetOptions = [
+          ChapterList(questionList: questionList,),
+          const TestList(),
+          DeathQuestionPage(questionList: deathQuestions),
+          const ForumWidget(),
+          const SettingScreen()];
 
           return Scaffold(
             body: Center(
@@ -53,17 +54,17 @@ class _MainBottomTabBarState extends State<MainBottomTabBar> {
 
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(Icons.business),
+                  icon: Icon(Icons.school),
                   label: 'Thi thử',
                   backgroundColor: Colors.green,
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(Icons.school),
+                  icon: Icon(Icons.warning),
                   label: 'Câu liệt',
                   backgroundColor: Colors.green,
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(Icons.settings),
+                  icon: Icon(Icons.forum),
                   label: 'Giao lưu',
                   backgroundColor: Colors.green,
                 ),
@@ -74,7 +75,7 @@ class _MainBottomTabBarState extends State<MainBottomTabBar> {
                 ),
               ],
               currentIndex: _selectedIndex,
-              selectedItemColor: Colors.orangeAccent,
+              selectedItemColor: Colors.white,
               onTap: _onItemTapped,
             ),
           );
