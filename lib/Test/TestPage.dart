@@ -18,10 +18,11 @@ enum TestStatus {
 }
 
 class TestPage extends StatefulWidget {
-  TestPage({super.key, required this.test, required this.finishedQuestionList});
+  TestPage({super.key, required this.test, required this.finishedQuestionList, required this.questionList});
   // final TestModel test;
   TestModel test;
   List<QuestionModel> finishedQuestionList = [];
+  List<QuestionModel> questionList = [];
 
   @override
   State<TestPage> createState() => _TestPageState();
@@ -29,7 +30,6 @@ class TestPage extends StatefulWidget {
 
 class _TestPageState extends State<TestPage> {
   var currentPage = 1;
-  List<QuestionModel> questionList = [];
   Timer? countdownTimer;
   Duration testingDuration = const Duration(minutes: 22);
   TestStatus status = TestStatus.none;
@@ -111,7 +111,7 @@ class _TestPageState extends State<TestPage> {
   }
 
   void updateQuestion(QuestionModel question) {
-    for (var element in questionList) {
+    for (var element in widget.questionList) {
         if (element.id == question.id) {
           element = question;
           break;
@@ -121,7 +121,7 @@ class _TestPageState extends State<TestPage> {
 
   Future<void> finishedTesting() async {
     status = TestStatus.done;
-    SQLHelper().insertTest(widget.test);
+    SQLHelper().insertTest(widget.test, 'tests');
     stopTimer();
   }
 
@@ -130,11 +130,7 @@ class _TestPageState extends State<TestPage> {
       return;
     }
 
-    final String questionResponse = await rootBundle.loadString('assets/json/questions.json');
-    final questionData = await json.decode(questionResponse);
-    questionList = List<QuestionModel>.from(questionData["questions"].map((json) => QuestionModel.fromJson(json, null))).where((element) => widget.test.questionIds.contains(element.id)).toList();
-
-    for (var question in questionList) {
+    for (var question in widget.questionList) {
       if (widget.finishedQuestionList.where((element) => (element.id == question.id) && element.testId == widget.test.id ).isNotEmpty) {
           question = widget.finishedQuestionList.where((element) => element.id == question.id).first;
       }
@@ -146,7 +142,7 @@ class _TestPageState extends State<TestPage> {
         context,
         MaterialPageRoute(
             builder: (context) => TestResult(
-              questions: questionList,
+              questions: widget.questionList,
               test: widget.test)
         )
     ).then((index) => backFromResult(index));
@@ -239,7 +235,7 @@ class _TestPageState extends State<TestPage> {
                         scrollDirection: Axis.horizontal,
                         onPageChanged: onPageChanged,
                         itemBuilder: (BuildContext context, int index) {
-                          return TestDetail(question: questionList[index], test: widget.test, testStatus: status, updateQuestion: updateQuestion);
+                          return TestDetail(question: widget.questionList[index], test: widget.test, testStatus: status, updateQuestion: updateQuestion);
                         },
                       ),
                     )

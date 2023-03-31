@@ -18,7 +18,7 @@ class _SettingScreenState extends State<SettingScreen> {
   int selectedLicenseId = 2;
 
   Future<void> getLicenseType() async {
-    final String testResponse = await rootBundle.loadString('assets/json/licenseType.json');
+    final String testResponse = await rootBundle.loadString('assets/json/licenseTypes.json');
     final testData = await json.decode(testResponse);
     licenseTypes = List<LicenseTypeModel>.from(testData["licenseTypes"].map((json) => LicenseTypeModel.fromJson(json)));
     SharedPreferences prefs = await SharedPreferences.getInstance();
