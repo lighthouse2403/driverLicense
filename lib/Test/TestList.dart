@@ -36,21 +36,25 @@ class _TestListState extends State<TestList> {
     List<int> architectureArray = architecture[currentLicenseTypeId - 1];
 
     List<QuestionModel> randomQuestion = [];
-    randomQuestion.addAll(questionList.where((element) => element.isDeadPoint).toList());
+    List<QuestionModel> deathQuestions = questionList.where((element) => element.isDeadPoint).toList();
 
+    randomQuestion.addAll(getRandomTests(deathQuestions,1));
+    print('random question: ${randomQuestion.length}');
     // Get defineQuestion
-    for (var i = 0; i < 6; i++) {
+    for (var i = 0; i < 7; i++) {
+      print('for loop: ${i}');
 
       List<QuestionModel> question = questionList.where((element) => (element.chapterId == (i + 1)) && !element.isDeadPoint).toList();
       List<QuestionModel> selectedQuestion = getRandomTests(question,architectureArray[i]);
       randomQuestion.addAll(selectedQuestion);
+      print('random question: ${randomQuestion.length}');
+
     }
 
     int newRandomId = testArray.length;
     TestModel newRandomTest = TestModel(id: newRandomId, status: 0, finishedCount: 0, total: 35, hasDeadthPoint: true);
 
     newRandomTest.questionIds = randomQuestion.map((e) => e.id).toList();
-    print('for loop: ${newRandomTest.toString()}');
 
     await SQLHelper().insertTest(newRandomTest, 'random_tests');
 
@@ -61,23 +65,31 @@ class _TestListState extends State<TestList> {
   }
 
   Future<void> loadTheoryData() async {
-    finishedQuestions = await SQLHelper.getAllQuestion('questions_in_test');
-    List<TestModel> randomTests = await SQLHelper().getAllRandomTest();
-    final String testResponse = await rootBundle.loadString('assets/json/tests.json');
-    final testData = await json.decode(testResponse);
+    // Detect license type like B1, B2, C,D, E, F
     SharedPreferences prefs = await SharedPreferences.getInstance();
     int licenseId = prefs.getInt('licenseType') ?? 2;
+
+    // Get finished question to show it in finished test
+    finishedQuestions = await SQLHelper.getAllQuestion('questions_in_test');
+
+    // Get random test by license type
+    List<TestModel> randomTests = await SQLHelper().getAllRandomTest(licenseId);
+    final String testResponse = await rootBundle.loadString('assets/json/tests.json');
+    final testData = await json.decode(testResponse);
     testArray = List<TestModel>.from(testData['$licenseId'].map((json) => TestModel.fromJson(json)));
     testArray.addAll(randomTests);
 
+    // Get all license type to import to test
     final String licenseResponse = await rootBundle.loadString('assets/json/licenseTypes.json');
     final licenseData = await json.decode(licenseResponse);
     List<LicenseTypeModel> licenseTypes = List<LicenseTypeModel>.from(licenseData["licenseTypes"].map((json) => LicenseTypeModel.fromJson(json)));
 
+    // Get all question to show in test and make random test
     final String questionResponse = await rootBundle.loadString('assets/json/questions.json');
     final questionData = await json.decode(questionResponse);
     questionList = List<QuestionModel>.from(questionData["questions"].map((json) => QuestionModel.fromJson(json, null)));
 
+    // Update question information in the test
     for (var test in testArray) {
       test.finishedCount = finishedQuestions.where((element) => element.testId == test.id).length;
       test.exactCount = finishedQuestions.where((element) => (element.testId == test.id) && (element.selectedIndex == element.answerIndex)).length;
@@ -113,7 +125,7 @@ class _TestListState extends State<TestList> {
             Container(
               margin: const EdgeInsets.all(10),
               decoration: BoxDecoration(
-                color: Colors.white.withOpacity(0.4),
+                color: Colors.white.withOpacity(0.2),
                 borderRadius: const BorderRadius.all(Radius.circular(6))
               ),
               child: TextButton(
@@ -121,10 +133,11 @@ class _TestListState extends State<TestList> {
                     generateRandomTest();
                   },
                   child: const Text(
-                    'Ngẫu nhiên',
+                    'Thêm đề',
                     style: TextStyle(
-                        fontWeight: FontWeight.w500,
-                        fontSize: 14
+                        fontWeight: FontWeight.w400,
+                        fontSize: 15,
+                        color: Colors.white
                     ),
                   )
               )
