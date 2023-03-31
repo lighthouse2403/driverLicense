@@ -10,7 +10,7 @@ class TestResultRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Color questionColor = question.isDeadPoint ? Colors.red.withOpacity(0.6) : Colors.grey.withOpacity(0.6);
+    Color questionColor = question.isDeadPoint ? Colors.red.withOpacity(0.8) : Colors.grey.withOpacity(0.8);
     questionColor = question.selectedIndex == question.answerIndex ? Colors.green : questionColor;
     return Container(
         decoration: BoxDecoration(
@@ -22,7 +22,7 @@ class TestResultRow extends StatelessWidget {
             '${index + 1}',
             style: const TextStyle(
                 fontSize: 18,
-                fontWeight: FontWeight.w700,
+                fontWeight: FontWeight.w500,
                 color:  Colors.white
             ),
           ),

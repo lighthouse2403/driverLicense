@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/rendering.dart';
 import 'package:license/Test/Model/TestModel.dart';
 import 'package:license/Theory/Model/QuestionModel.dart';
 import 'TestResultRow.dart';
@@ -22,9 +23,9 @@ class _TestResultState extends State<TestResult> {
   Widget build(BuildContext context) {
     int numberOfTruth = widget.questions.where((element) => element.selectedIndex == element.answerIndex).length;
     bool passed = (numberOfTruth >= (widget.test.licenseType?.require ?? 45));
-    Color resultColor = passed ? Colors.green : Colors.red.withOpacity(0.6);
+    Color resultColor = passed ? Colors.green : Colors.red;
+    String resultString = passed ? 'Đạt': 'Không đạt';
 
-    print('Dat: $numberOfTruth');
     return Scaffold(
         appBar: AppBar(
           title: Text(
@@ -42,20 +43,24 @@ class _TestResultState extends State<TestResult> {
               height: 50,
               margin: const EdgeInsets.all(16),
               decoration: BoxDecoration(
+                color: resultColor.withOpacity(0.2),
                 borderRadius: const BorderRadius.all(Radius.circular(6)),
                 border: Border.all(
                   color: resultColor
                 )
               ),
-              child: Center(
-                child: Text(
-                  passed ? 'Đạt': 'Trươt',
-                  style: TextStyle(
-                    fontWeight: FontWeight.w700,
-                    fontSize: 20,
-                    color: resultColor
-                  ),
-                ),
+              child: Container(
+                margin: const EdgeInsets.all(10),
+                child: Center(
+                  child: Text(
+                    '$resultString: $numberOfTruth/${widget.test.total} ',
+                    style: const TextStyle(
+                        fontWeight: FontWeight.w600,
+                        fontSize: 22,
+                        color: Colors.red
+                    ),
+                  )
+                )
               )
             ),
             Expanded(
@@ -65,11 +70,12 @@ class _TestResultState extends State<TestResult> {
                       itemCount: widget.questions.length,
                       gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
                           crossAxisCount: 5,
-                          mainAxisSpacing: 8,
-                          crossAxisSpacing: 8),
+                          mainAxisSpacing: 10,
+                          crossAxisSpacing: 10),
                       itemBuilder: (context, index) {
                         return GestureDetector(
                           onTap: () {
+                            Navigator.pop(context, index);
                           },
                           child: TestResultRow(question: widget.questions[index], index: index,),
                         );

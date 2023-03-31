@@ -50,6 +50,7 @@ class _TestPageState extends State<TestPage> {
   }
 
   void onPageChanged(int index) {
+    print('onPageChanged');
     horizontalTab?.animateToIndex(index);
     setState(() {
       currentPage = index + 1;
@@ -59,6 +60,11 @@ class _TestPageState extends State<TestPage> {
   void jumToIndex(int index) {
     pageController.jumpToPage(index);
     print('jumToIndex');
+  }
+
+  void backFromResult(int index) {
+    jumToIndex(index);
+    onPageChanged(index);
   }
 
   void startTimer() {
@@ -144,14 +150,15 @@ class _TestPageState extends State<TestPage> {
     }
   }
 
-  void gotoTestResult() {
-    Navigator.push(
+  void gotoTestResult() async {
+    await Navigator.push(
         context,
         MaterialPageRoute(
             builder: (context) => TestResult(
               questions: questionList,
-              test: widget.test))
-    );
+              test: widget.test)
+        )
+    ).then((index) => backFromResult(index));
   }
 
   @override
