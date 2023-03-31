@@ -22,6 +22,7 @@ class _TestListState extends State<TestList> {
   List<QuestionModel> finishedQuestions = [];
   List<QuestionModel> questionList = [];
   final random = Random();
+  List<LicenseTypeModel>? licenseTypes;
 
   List<QuestionModel> getRandomTests(List<QuestionModel> parentQuestions, int count) {
 
@@ -42,17 +43,15 @@ class _TestListState extends State<TestList> {
     print('random question: ${randomQuestion.length}');
     // Get defineQuestion
     for (var i = 0; i < 7; i++) {
-      print('for loop: ${i}');
-
       List<QuestionModel> question = questionList.where((element) => (element.chapterId == (i + 1)) && !element.isDeadPoint).toList();
       List<QuestionModel> selectedQuestion = getRandomTests(question,architectureArray[i]);
       randomQuestion.addAll(selectedQuestion);
-      print('random question: ${randomQuestion.length}');
-
     }
 
     int newRandomId = testArray.length;
     TestModel newRandomTest = TestModel(id: newRandomId, status: 0, finishedCount: 0, total: 35, hasDeadthPoint: true);
+    newRandomTest.licenseType = licenseTypes?.where((element) => element.id == currentLicenseTypeId).first;
+    print('random test id: ${newRandomId}');
 
     newRandomTest.questionIds = randomQuestion.map((e) => e.id).toList();
 
@@ -82,7 +81,7 @@ class _TestListState extends State<TestList> {
     // Get all license type to import to test
     final String licenseResponse = await rootBundle.loadString('assets/json/licenseTypes.json');
     final licenseData = await json.decode(licenseResponse);
-    List<LicenseTypeModel> licenseTypes = List<LicenseTypeModel>.from(licenseData["licenseTypes"].map((json) => LicenseTypeModel.fromJson(json)));
+    licenseTypes = List<LicenseTypeModel>.from(licenseData["licenseTypes"].map((json) => LicenseTypeModel.fromJson(json)));
 
     // Get all question to show in test and make random test
     final String questionResponse = await rootBundle.loadString('assets/json/questions.json');
@@ -93,7 +92,7 @@ class _TestListState extends State<TestList> {
     for (var test in testArray) {
       test.finishedCount = finishedQuestions.where((element) => element.testId == test.id).length;
       test.exactCount = finishedQuestions.where((element) => (element.testId == test.id) && (element.selectedIndex == element.answerIndex)).length;
-      test.licenseType = licenseTypes.where((element) => element.id == licenseId).first;
+      test.licenseType = licenseTypes?.where((element) => element.id == licenseId).first;
     }
   }
 
