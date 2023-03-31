@@ -1,5 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
+import 'package:license/Setting/Model/LicenseTypeModel.dart';
 import 'package:license/Test/Model/TestModel.dart';
 import 'package:flutter/services.dart';
 import 'package:license/Test/TestRow.dart';
@@ -27,9 +28,14 @@ class _TestListState extends State<TestList> {
     int licenseId = prefs.getInt('licenseType') ?? 2;
     testArray = List<TestModel>.from(testData['$licenseId'].map((json) => TestModel.fromJson(json)));
 
+    final String licenseTypeString = await rootBundle.loadString('assets/json/licenseTypes.json');
+    final licenseTypeData = await json.decode(licenseTypeString);
+    List<LicenseTypeModel> licenses = List<LicenseTypeModel>.from(licenseTypeData['licenseTypes'].map((json) => LicenseTypeModel.fromJson(json)));
+
     for (var test in testArray) {
       test.finishedCount = finishedQuestions.where((element) => element.testId == test.id).length;
       test.exactCount = finishedQuestions.where((element) => (element.testId == test.id) && (element.selectedIndex == element.answerIndex)).length;
+      test.licenseType = licenses.where((element) => element.id == licenseId).first;
     }
   }
 

@@ -20,6 +20,11 @@ class _TestResultState extends State<TestResult> {
 
   @override
   Widget build(BuildContext context) {
+    int numberOfTruth = widget.questions.where((element) => element.selectedIndex == element.answerIndex).length;
+    bool passed = (numberOfTruth >= (widget.test.licenseType?.require ?? 45));
+    Color resultColor = passed ? Colors.green : Colors.red.withOpacity(0.6);
+
+    print('Dat: $numberOfTruth');
     return Scaffold(
         appBar: AppBar(
           title: Text(
@@ -37,13 +42,20 @@ class _TestResultState extends State<TestResult> {
               height: 50,
               margin: const EdgeInsets.all(16),
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.all(Radius.circular(6)),
+                borderRadius: const BorderRadius.all(Radius.circular(6)),
                 border: Border.all(
-                  color: Colors.green
+                  color: resultColor
                 )
               ),
               child: Center(
-                child: Text('Trươt'),
+                child: Text(
+                  passed ? 'Đạt': 'Trươt',
+                  style: TextStyle(
+                    fontWeight: FontWeight.w700,
+                    fontSize: 20,
+                    color: resultColor
+                  ),
+                ),
               )
             ),
             Expanded(

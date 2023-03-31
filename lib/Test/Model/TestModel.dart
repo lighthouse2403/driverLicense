@@ -1,4 +1,6 @@
 
+import 'package:license/Setting/Model/LicenseTypeModel.dart';
+
 class TestModel {
   int id = 0 ;
   int status = 0;
@@ -7,6 +9,7 @@ class TestModel {
   int exactCount = 0;
   int total = 30;
   bool hasDeadthPoint = false;
+  LicenseTypeModel? licenseType;
 
    TestModel({
     required this.id,
@@ -23,6 +26,7 @@ class TestModel {
     finishedCount = json['finishedCount'];
     total = json['total'];
     hasDeadthPoint = json['hasDeadthPoint'];
+
     if (json['exactCount'] != null) {
       exactCount = json['exactCount'];
     }
@@ -49,6 +53,7 @@ class TestModel {
     data['hasDeadthPoint'] = hasDeadthPoint ? 1 : 0;
     data['exactCount'] = exactCount;
     data['questionIds'] = questionIds.join('--');
+    data['licenseId'] = licenseType?.id;
 
     return data;
   }

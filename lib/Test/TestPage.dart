@@ -106,6 +106,15 @@ class _TestPageState extends State<TestPage> {
     startTimer();
   }
 
+  void updateQuestion(QuestionModel question) {
+    for (var element in questionList) {
+        if (element.id == question.id) {
+          element = question;
+          break;
+        }
+    }
+  }
+
   Future<void> finishedTesting() async {
     status = TestStatus.done;
     SQLHelper().insertTest(widget.test);
@@ -225,7 +234,7 @@ class _TestPageState extends State<TestPage> {
                         scrollDirection: Axis.horizontal,
                         onPageChanged: onPageChanged,
                         itemBuilder: (BuildContext context, int index) {
-                          return TestDetail(question: questionList[index], test: widget.test, testStatus: status,);
+                          return TestDetail(question: questionList[index], test: widget.test, testStatus: status, updateQuestion: updateQuestion);
                         },
                       ),
                     )
