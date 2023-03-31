@@ -8,10 +8,11 @@ import '../Theory/QuestionRow.dart';
 import 'Model/TestModel.dart';
 
 class TestDetail extends StatefulWidget {
-  TestDetail({super.key, required this.question, required this.test, required this.testStatus});
+  TestDetail({super.key, required this.question, required this.test, required this.testStatus, required this.updateQuestion});
   QuestionModel question;
   TestModel test;
   TestStatus testStatus;
+  Function(QuestionModel) updateQuestion;
 
   @override
   State<TestDetail> createState() => _TestDetailState();
@@ -51,7 +52,7 @@ class _TestDetailState extends State<TestDetail> {
                       widget.question.selectedIndex = index - 1;
                       widget.question.testId = widget.test.id;
                       widget.question.questionOnTestId = '${widget.test.id}-${widget.question.id}';
-
+                      widget.updateQuestion(widget.question);
                       const tableName = 'questions_in_test';
                       isShouldUpdate ? SQLHelper().updateQuestionOnTest(widget.question, tableName) : SQLHelper().insertQuestion(widget.question, tableName);
                       setState(() {

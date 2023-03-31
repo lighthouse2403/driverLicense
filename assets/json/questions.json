@@ -844,7 +844,7 @@
       "chapterId": 1,
       "questionText": "Tại nơi có biển báo hiệu cố định lại có báo hiệu tạm thời thì người tham gia giao thông phải chấp hành hiệu lệnh của báo hiệu nào?",
       "questionImage" : "",
-      "answerList": ["Biển báo hiệu cố định.", "Báo hiệu tạm thời"],
+      "answerList": ["Biển báo hiệu cố định.","Biển báo hiệu tạm thời."],
       "answerIndex": 1,
       "isDeadPoint": false,
       "comment": "Ưu tiên biển báo tạm thời."

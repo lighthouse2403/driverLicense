@@ -18,6 +18,7 @@ class SQLHelper {
     await database.execute("CREATE TABLE questions(id INTEGER PRIMARY KEY, chapterId INTEGER, questionText TEXT, answerIndex INTEGER, questionImage TEXT, answerList TEXT, comment TEXT, selectedIndex INTEGER, testId INTEGER)");
     await database.execute("CREATE TABLE questions_in_test(questionOnTestId TEXT PRIMARY KEY, id INTEGER, chapterId INTEGER, questionText TEXT, answerIndex INTEGER, questionImage TEXT, answerList TEXT, comment TEXT, selectedIndex INTEGER, testId INTEGER)");
     await database.execute("CREATE TABLE tests(id INTEGER PRIMARY KEY, status INTEGER, questionIds TEXT, finishedCount INTEGER, exactCount INTEGER, total INTEGER, hasDeadthPoint BOLEAN)");
+    await database.execute("CREATE TABLE random_tests(id INTEGER PRIMARY KEY, status INTEGER, questionIds TEXT, finishedCount INTEGER, exactCount INTEGER, total INTEGER, hasDeadthPoint BOLEAN, licenseId INTEGER)");
   }
 
   Future<void> insertQuestion(QuestionModel question, String tableName) async {
@@ -35,8 +36,7 @@ class SQLHelper {
     );
   }
 
-  Future<void> insertTest(TestModel test) async {
-    String tableName = 'tests';
+  Future<void> insertTest(TestModel test, String tableName) async {
     // Get a reference to the database.
     final db = await SQLHelper.db(tableName);
 
@@ -76,6 +76,14 @@ class SQLHelper {
     final db = await SQLHelper.db(tableName);
     final List<Map<String, dynamic>> list = await db.query(tableName);
     return list.map((e) => QuestionModel.fromDatabase(e)).toList();
+  }
+
+  Future<List<TestModel>> getAllRandomTest(int licenseId) async {
+    final db = await SQLHelper.db('random_tests');
+    final List<Map<String, dynamic>> list = await db.query('random_tests', where: 'licenseId', whereArgs: [licenseId]);
+    List<TestModel> testArray = list.map((e) => TestModel.fromDatabase(e)).toList();
+    testArray.sort((a,b) => a.id.compareTo(b.id));
+    return testArray;
   }
 
   // Update an item by id

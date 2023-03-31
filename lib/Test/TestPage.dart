@@ -7,6 +7,7 @@ import 'package:license/Test/HorizontalTab.dart';
 import 'package:license/Test/Model/TestModel.dart';
 import 'package:license/Test/TimeWidget.dart';
 import '../Theory/Model/QuestionModel.dart';
+import 'ResultButton.dart';
 import 'TestDetail.dart';
 import 'TestResult.dart';
 
@@ -17,10 +18,11 @@ enum TestStatus {
 }
 
 class TestPage extends StatefulWidget {
-  TestPage({super.key, required this.test, required this.finishedQuestionList});
+  TestPage({super.key, required this.test, required this.finishedQuestionList, required this.questionList});
   // final TestModel test;
   TestModel test;
   List<QuestionModel> finishedQuestionList = [];
+  List<QuestionModel> questionList = [];
 
   @override
   State<TestPage> createState() => _TestPageState();
@@ -28,8 +30,6 @@ class TestPage extends StatefulWidget {
 
 class _TestPageState extends State<TestPage> {
   var currentPage = 1;
-  String result = 'Đạt';
-  List<QuestionModel> questionList = [];
   Timer? countdownTimer;
   Duration testingDuration = const Duration(minutes: 22);
   TestStatus status = TestStatus.none;
@@ -58,7 +58,11 @@ class _TestPageState extends State<TestPage> {
 
   void jumToIndex(int index) {
     pageController.jumpToPage(index);
-    print('jumToIndex');
+  }
+
+  void backFromResult(int index) {
+    jumToIndex(index);
+    onPageChanged(index);
   }
 
   void startTimer() {
@@ -106,16 +110,18 @@ class _TestPageState extends State<TestPage> {
     startTimer();
   }
 
-  Future<void> finishedTesting() async {
-    status = TestStatus.done;
-    SQLHelper().insertTest(widget.test);
-    widget.finishedQuestionList = await SQLHelper().getAllQuestionOnTest(widget.test.id);
-    for (var element in widget.finishedQuestionList) {
-        if (!widget.test.questionIds.contains(element.id) || (element.selectedIndex != element.answerIndex)) {
-          result = 'Trượt';
+  void updateQuestion(QuestionModel question) {
+    for (var element in widget.questionList) {
+        if (element.id == question.id) {
+          element = question;
           break;
         }
     }
+  }
+
+  Future<void> finishedTesting() async {
+    status = TestStatus.done;
+    SQLHelper().insertTest(widget.test, 'tests');
     stopTimer();
   }
 
@@ -124,25 +130,22 @@ class _TestPageState extends State<TestPage> {
       return;
     }
 
-    final String questionResponse = await rootBundle.loadString('assets/json/questions.json');
-    final questionData = await json.decode(questionResponse);
-    questionList = List<QuestionModel>.from(questionData["questions"].map((json) => QuestionModel.fromJson(json, null))).where((element) => widget.test.questionIds.contains(element.id)).toList();
-
-    for (var question in questionList) {
+    for (var question in widget.questionList) {
       if (widget.finishedQuestionList.where((element) => (element.id == question.id) && element.testId == widget.test.id ).isNotEmpty) {
           question = widget.finishedQuestionList.where((element) => element.id == question.id).first;
       }
     }
   }
 
-  void gotoTestResult() {
-    Navigator.push(
+  void gotoTestResult() async {
+    await Navigator.push(
         context,
         MaterialPageRoute(
             builder: (context) => TestResult(
-              questions: questionList,
-              test: widget.test))
-    );
+              questions: widget.questionList,
+              test: widget.test)
+        )
+    ).then((index) => backFromResult(index));
   }
 
   @override
@@ -200,7 +203,14 @@ class _TestPageState extends State<TestPage> {
               )
             )
           ],
-          title: status == TestStatus.done ? Text(result, style: const TextStyle(fontWeight: FontWeight.w600, fontSize: 20),) : TimeWidget(minutes: minutes,seconds: seconds,),
+          title: GestureDetector(
+            onTap: () {
+              if (status == TestStatus.done) {
+                gotoTestResult();
+              }
+            },
+            child: status == TestStatus.done ? ResultButton() : TimeWidget(minutes: minutes,seconds: seconds,)
+          ),
           backgroundColor: Colors.green,
         ) ,
         body: FutureBuilder(
@@ -225,7 +235,7 @@ class _TestPageState extends State<TestPage> {
                         scrollDirection: Axis.horizontal,
                         onPageChanged: onPageChanged,
                         itemBuilder: (BuildContext context, int index) {
-                          return TestDetail(question: questionList[index], test: widget.test, testStatus: status,);
+                          return TestDetail(question: widget.questionList[index], test: widget.test, testStatus: status, updateQuestion: updateQuestion);
                         },
                       ),
                     )
