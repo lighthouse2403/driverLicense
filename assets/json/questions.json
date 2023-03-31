@@ -188,7 +188,7 @@
       "answerList": ["Diễn ra trên đường phố không có người qua lại.", "Được người dân ủng hộ.", "Được cơ quan có thẩm quyền cấp phép."],
       "answerIndex": 2,
       "isDeadPoint": true,
-      "comment": ""
+      "comment": "Cuộc đua xe cần cấp phép."
     },
     {
       "id": 20,
@@ -238,7 +238,7 @@
       "answerList": ["Người điều khiển: Xe ô tô, xe mô tô, xe đạp, xe gắn máy.", "Người ngồi phía sau người điều khiển xe cơ giới.", "Người đi bộ.", "Cả ý 1 và ý 2."],
       "answerIndex": 0,
       "isDeadPoint": true,
-      "comment": ""
+      "comment": "Người điều khiển bị cấm sử dụng rượu bia khi tham gia giao thông."
     },
     {
       "id": 25,
@@ -408,7 +408,7 @@
       "answerList": ["Đi tiếp đến điểm giao cắt gần nhất hoặc nơi có biển báo cho phép quay đầu xe.", "Bấm đèn khẩn cấp và quay đầu xe từ từ bảo đảm an toàn.", "Bấm còi liên tục khi quay đầu để cảnh báo các xe khác.", "Nhờ một người ra hiệu giao thông trên đường chậm lại trước khi quay đầu."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Chỉ quay đầu xe ở điểm giao cắt hoặc nơi có biển báo cho phép quay đầu."
     },
     {
       "id": 42,
@@ -418,7 +418,7 @@
       "answerList": ["Ở khu vực cho phép đỗ xe", "Ở khu vực cấm dừng và trên phần đường dành cho người đi bộ qua đường.", "Nơi đường bộ giao nhau, đường bộ giao nhau cùng mức với đường sắt, nơi tầm nhìn bị che khuất, trong hầm đường bộ, đường cao tốc.", "Cả ý 2 và ý 3."],
       "answerIndex": 3,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Cấm lùi xe ở khu vực cấm dừng và nơi đường bộ giao nhau"
     },
     {
       "id": 43,
@@ -428,7 +428,7 @@
       "answerList": ["Được dừng xe, đỗ xe trong trường hợp cần thiết.", "Không được dừng xe, đỗ xe.", "Được dừng xe, không được đỗ xe."],
       "answerIndex": 1,
       "isDeadPoint": true,
-      "comment": ""
+      "comment": "Không được dừng, đỗ xe trên miệng cống thoát nước."
     },
     {
       "id": 44,
@@ -438,7 +438,7 @@
       "answerList": ["Chỉ được thực hiện trên quốc lộ có hai làn xe một chiều.", "Chỉ được thực hiện trên cao tốc.", "Không được thực hiện vào ban ngày.", "Không được phép."],
       "answerIndex": 3,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe đã kéo rơ moóc không được kéo thêm xe."
     },
     {
       "id": 45,
@@ -448,7 +448,7 @@
       "answerList": ["Được phép.", "Nếu phương tiện được kéo, đẩy có khối lượng nhỏ hơn phương tiện của mình.", "Tuỳ trường hợp.", "Không được phép."],
       "answerIndex": 3,
       "isDeadPoint": true,
-      "comment": ""
+      "comment": "Xe mô tô không được kéo xe khác."
     },
     {
       "id": 46,
@@ -478,7 +478,7 @@
       "answerList": ["Được mang, vác tuỳ trường hợp cụ thể.", "Không được mang, vác.", "Được mang, vác nhưng phải đảm bảo an toàn.", "Được mang, vác tùy theo sức khỏe của bản thân."],
       "answerIndex": 1,
       "isDeadPoint": true,
-      "comment": ""
+      "comment": "Xe mô tô không được mang vác vật cồng kềnh."
     },
     {
       "id": 49,
@@ -488,7 +488,7 @@
       "answerList": ["Được phép.", "Được bám trong trường hợp phương tiện của mình bị hỏng.", "Được kéo, đẩy trong trường hợp phương tiện khác bị hỏng.", "Không được phép."],
       "answerIndex": 3,
       "isDeadPoint": true,
-      "comment": ""
+      "comment": "Xe mô tô không được kéo xe khác."
     },
     {
       "id": 50,
@@ -498,7 +498,7 @@
       "answerList": ["Được sử dụng.", "Chỉ người ngồi sau được sử dụng.", "Không được sử dụng.", "Được sử dụng nếu không có áo mưa."],
       "answerIndex": 2,
       "isDeadPoint": true,
-      "comment": ""
+      "comment": "Không được sử dụng ô."
     },
     {
       "id": 51,
@@ -508,7 +508,7 @@
       "answerList": ["Chỉ được phép nếu cả hai đội mũ bảo hiểm.", "Không được phép.", "Chỉ được thực hiện trên đường thật vắng.", "Chỉ được phép khi người đi xe đạp đã quá mệt."],
       "answerIndex": 1,
       "isDeadPoint": true,
-      "comment": ""
+      "comment": "Xe mô tô không được kéo xe khác."
     },
     {
       "id": 52,
@@ -518,7 +518,7 @@
       "answerList": ["Chỉ được kéo nếu đã nhìn thấy trạm xăng.", "Chỉ được thực hiện trên đường vắng phương tiện cùng tham gia giao thông.", "Không được phép."],
       "answerIndex": 2,
       "isDeadPoint": true,
-      "comment": ""
+      "comment": "Xe mô tô không được kéo xe khác."
     },
     {
       "id": 53,
@@ -528,7 +528,7 @@
       "answerList": ["Không được vận chuyển.", "Chỉ được vận chuyển khi đã chằng buộc cẩn thận.", "Chỉ được vận chuyển vật cồng kềnh trên xe máy nếu khoảng cách về nhà ngắn hơn 2km."],
       "answerIndex": 0,
       "isDeadPoint": true,
-      "comment": ""
+      "comment": "Xe mô tô không được mang vác vật cồng kềnh."
     },
     {
       "id": 54,
@@ -538,7 +538,7 @@
       "answerList": ["19 tuổi.", "21 tuổi.", "20 tuổi."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Độ tuổi lấy bằng theo hạng (cách nhau 3 tuổi):\n16: Xe dưới 50 cm3.\n18: Hạng A, B1, B2.\n21: Hạng C, FB.\n24: Hạng D, FC.\n27: Hạng E, FD."
     },
     {
       "id": 55,
@@ -548,7 +548,7 @@
       "answerList": ["16 tuổi.", "18 tuổi.", "17 tuổi."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Độ tuổi lấy bằng theo hạng (cách nhau 3 tuổi):\n16: Xe dưới 50 cm3.\n18: Hạng A, B1, B2.\n21: Hạng C, FB.\n24: Hạng D, FC.\n27: Hạng E, FD."
     },
     {
       "id": 56,
@@ -558,7 +558,7 @@
       "answerList": ["23 tuổi.", "24 tuổi.", "27 tuổi.", "30 tuổi."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Độ tuổi lấy bằng theo hạng (cách nhau 3 tuổi):\n16: Xe dưới 50 cm3.\n18: Hạng A, B1, B2.\n21: Hạng C, FB.\n24: Hạng D, FC.\n27: Hạng E, FD."
     },{
       "id": 57,
       "chapterId": 1,
@@ -567,7 +567,7 @@
       "answerList": ["55 tuổi đối với nam và 50 tuổi đối với nữ.", "55 tuổi đối với nam và nữ.", "60 tuổi đối với nam và 55 tuổi đối với nữ.", "45 tuổi với nam và 40 tuổi với nữ."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Độ tuổi tối đa người lái xe ô tô hạng E: Nam 55 tuổi và nữ 50 tuổi."
     },
     {
       "id": 58,
@@ -577,7 +577,7 @@
       "answerList": ["23 tuổi.", "24 tuổi.", "22 tuổi.", "18 tuổi."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Độ tuổi lấy bằng theo hạng (cách nhau 3 tuổi):\n16: Xe dưới 50 cm3.\n18: Hạng A, B1, B2.\n21: Hạng C, FB.\n24: Hạng D, FC.\n27: Hạng E, FD."
     },
     {
       "id": 59,
@@ -587,7 +587,7 @@
       "answerList": ["Xe mô tô 2 bánh có dung tích xi-lanh từ 50 cm3 trở lên.", "Xe gắn máy có dung tích xi-lanh dưới 50 cm3.", "Xe ô tô tải dưới 3,5 tấn; xe chở người đến 9 chỗ ngồi.", "Tất cả các ý nêu trên."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Độ tuổi lấy bằng theo hạng (cách nhau 3 tuổi):\n16: Xe dưới 50 cm3.\n18: Hạng A, B1, B2.\n21: Hạng C, FB.\n24: Hạng D, FC.\n27: Hạng E, FD."
     },
     {
       "id": 60,
@@ -597,7 +597,7 @@
       "answerList": ["Xe mô tô có dung tích xi-lanh 125 cm3.", "Xe mô tô có dung tích xi-lanh từ 175 cm3 trở lên.", "Xe mô tô có dung tích xi-lanh 100 cm3."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "A1 mô tô dưới 175 cm3 và xe ba bánh của người khuyết tật.\nA2 mô tô 175 cm3 trở lên.\nA3 xe 3 bánh."
     },
     {
       "id": 61,
@@ -607,7 +607,7 @@
       "answerList": ["Xe mô tô hai bánh có dung tích xi-lanh từ 50 cm3 đến dưới 175 cm3.", "Xe mô tô ba bánh dùng cho người khuyết tật.", "Cả ý 1 và ý 2."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "A1 mô tô dưới 175 cm3 và xe ba bánh của người khuyết tật.\nA2 mô tô 175 cm3 trở lên.\nA3 xe 3 bánh."
     },
     {
       "id": 62,
@@ -617,7 +617,7 @@
       "answerList": ["Xe mô tô ba bánh.", "Xe mô tô hai bánh có dung tích xi-lanh từ 175 cm3 trở lên và các loại xe quy định cho giấy phép lái xe hạng A1.", "Các loại máy kéo nhỏ có trọng tải đến 1.000 kg."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "A1 mô tô dưới 175 cm3 và xe ba bánh của người khuyết tật.\nA2 mô tô 175 cm3 trở lên.\nA3 xe 3 bánh."
     },
     {
       "id": 63,
@@ -627,7 +627,7 @@
       "answerList": ["Xe mô tô ba bánh.", "Xe mô tô hai bánh có dung tích xi-lanh từ 175 cm3 trở lên.", "Các loại máy kéo nhỏ có trọng tải đến 1.000 kg."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "A1 mô tô dưới 175 cm3 và xe ba bánh của người khuyết tật.\nA2 mô tô 175 cm3 trở lên.\nA3 xe 3 bánh."
     },
     {
       "id": 64,
@@ -637,7 +637,7 @@
       "answerList": ["Ô tô số tự động chở người đến 9 chỗ ngồi, kể cả chỗ ngồi cho người lái xe; ô tô tải, kể cả ô tô tải chuyên dùng số tự động có trọng tải thiết kế dưới 3.500 kg; ô tô dùng cho người khuyết tật. Không được hành nghề lái xe.", "Ô tô số tự động chở người đến 9 chỗ ngồi, kể cả chỗ ngồi cho người lái xe; ô tô tải, kể cả ô tô tải chuyên dùng số tự động có trọng tải thiết kế dưới 3.500 kg; ô tô dùng cho người khuyết tật. Được hành nghề lái xe kinh doanh vận tải.", "Ô tô chở người đến 9 chỗ ngồi, kể cả chỗ ngồi cho người lái xe; ô tô tải, kể cả ô tô tải chuyên dùng có trọng tải thiết kế dưới 3.500 kg; ô tô dùng cho người khuyết tật."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "B1, B2 đến 9 chỗ ngồi, xe tải dưới 3.500kg. B1 không hành nghề lái xe."
     },
     {
       "id": 65,
@@ -647,7 +647,7 @@
       "answerList": ["Ô tô chở người đến 9 chỗ ngồi, kể cả chỗ ngồi cho người lái xe; ô tô tải, kể cả ô tô tải chuyên dùng có trọng tải thiết kế dưới 3.500 kg; máy kéo kéo một rơ moóc có trọng tải thiết kế dưới 3.500 kg. Được hành nghề lái xe.", "Ô tô chở người đến 9 chỗ ngồi, kể cả chỗ ngồi cho người lái xe; ô tô tải, kể cả ô tô tải chuyên dùng có trọng tải thiết kế dưới 3.500 kg; máy kéo kéo một rơ moóc có trọng tải thiết kế dưới 3.500 kg. Không hành nghề lái xe.", "Ô tô số tự động chở người đến 9 chỗ ngồi, kể cả chỗ ngồi cho người lái xe; ô tô tải, kể cả ô tô tải chuyên dùng số tự động có trọng tải thiết kế trên 3.500 kg; ô tô dùng cho người khuyết tật."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "B1, B2 đến 9 chỗ ngồi, xe tải dưới 3.500kg. B1 không hành nghề lái xe."
     },
     {
       "id": 66,
@@ -657,7 +657,7 @@
       "answerList": ["Xe ô tô chở người trên 9 chỗ ngồi; xe ô tô tải, máy kéo có trọng tải trên 3,5 tấn.", "Xe ô tô chở người đến 9 chỗ ngồi; xe ô tô tải, máy kéo có trọng tải dưới 3,5 tấn.", "Xe ô tô chở người từ 10 đến 30 chỗ ngồi; xe ô tô tải, máy kéo có trọng tải trên 3,5 tấn."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "B2 đến 9 chỗ ngồi, xe tải dưới 3.500 kg."
     },
     {
       "id": 67,
@@ -667,7 +667,7 @@
       "answerList": ["Xe ô tô chở người trên 9 chỗ ngồi; xe ô tô tải, máy kéo có trọng tải trên 3,5 tấn.", "Xe ô tô chở người từ 10 đến 30 chỗ ngồi; xe ô tô tải, máy kéo có trọng tải trên 3,5 tấn.", "Xe ô tô chở người đến 9 chỗ ngồi; xe ô tô tải, máy kéo có trọng tải trên 3,5 tấn."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "C đến 9 chỗ ngồi, xe trên 3.500 kg."
     },
     {
       "id": 68,
@@ -677,7 +677,7 @@
       "answerList": ["Ô tô chở người đến 30 chỗ ngồi, kể cả chỗ ngồi cho người lái xe; xe ô tô tải, máy kéo có trọng tải trên 3,5 tấn.", "Xe ô tô chở người trên 30 chỗ ngồi; xe ô tô tải, máy kéo có trọng tải trên 3,5 tấn.", "Xe kéo rơ moóc, ô tô đầu kéo kéo sơ mi rơ moóc và được điều khiển các loại xe quy định cho giấy phép lái xe hạng B1, B2, C và FB2."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "D chở đến 30 người."
     },
     {
       "id": 69,
@@ -687,7 +687,7 @@
       "answerList": ["Xe kéo rơ moóc, ô tô đầu kéo kéo sơ mi rơ moóc và được điều khiển các loại xe quy định cho giấy phép lái xe hạng B1, B2, C và FB2.", "Ô tô chở người trên 30 chỗ ngồi; xe ô tô tải, máy kéo có trọng tải trên 3,5 tấn.", "Xe kéo rơ moóc và được điều khiển các loại xe: ô tô chở khách nối toa và các loại xe quy định cho giấy phép lái xe hạng B1, B2, C, D, FB2, FD."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "E chở trên 30 người."
     },
     {
       "id": 70,
@@ -697,7 +697,7 @@
       "answerList": ["Các loại xe được quy định tại giấy phép lái xe hạng C có kéo rơ moóc, ô tô đầu kéo kéo sơ mi rơ moóc, ô tô chở khách nối toa và được điều khiển các loại xe quy định cho giấy phép lái xe hạng B1, B2 và FB2.", "Các loại xe được quy định tại giấy phép lái xe hạng C có kéo rơ moóc, ô tô đầu kéo kéo sơ mi rơ moóc và được điều khiển các loại xe quy định cho giấy phép lái xe hạng B1, B2, C và FB2.", "Mô tô hai bánh, các loại xe được quy định tại giấy phép lái xe hạng C có kéo rơ moóc, ô tô đầu kéo kéo sơ mi rơ moóc và được điều khiển các loại xe quy định cho giấy phép lái xe hạng B1, B2, C và FB2.", "Tất cả các loại xe nêu trên."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "FC: C + kéo (ô tô đầu kéo, kéo sơ mi rơ moóc)\nFE: E + kéo (ô tô chở khách nối toa)"
     },
     {
       "id": 71,
@@ -707,7 +707,7 @@
       "answerList": ["Các loại xe được quy định tại giấy phép lái xe hạng E có kéo rơ moóc và được điều khiển các loại xe: ô tô chở khách nối toa và các loại xe quy định cho giấy phép lái xe hạng B1, B2, C, D, FB2, FD.", "Các loại xe được quy định tại giấy phép lái xe hạng E có kéo rơ moóc, đầu kéo kéo sơ mi rơ moóc và được điều khiển các loại xe: ô tô chở khách nối toa và các loại xe quy định cho giấy phép lái xe hạng B1, B2, C, D, FB2, FD.", "Tất cả các loại xe nêu trên."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "FC: C + kéo (ô tô đầu kéo, kéo sơ mi rơ moóc)\nFE: E + kéo (ô tô chở khách nối toa)"
     },
     {
       "id": 72,
@@ -717,7 +717,7 @@
       "answerList": ["Biển báo nguy hiểm", "Biển báo cấm", "Biển báo hiệu lệnh", "Biển báo chỉ dẫn"],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển cấm: Vòng tròn đỏ."
     },
     {
       "id": 73,
@@ -727,7 +727,7 @@
       "answerList": ["Biển báo nguy hiểm", "Biển báo cấm", "Biển báo hiệu lệnh", "Biển báo chỉ dẫn"],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển nguy hiểm: Hình tam giác vàng."
     },
     {
       "id": 74,
@@ -737,7 +737,7 @@
       "answerList": ["Biển báo nguy hiểm", "Biển báo cấm", "Biển báo hiệu lệnh phải thi hành", "Biển báo chỉ dẫn"],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển hiệu lệnh: Vòng tròn xanh."
     },
     {
       "id": 75,
@@ -747,7 +747,7 @@
       "answerList": ["Biển báo nguy hiểm", "Biển báo cấm", "Biển báo hiệu lệnh phải thi hành", "Biển báo chỉ dẫn"],
       "answerIndex": 3,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển chỉ dẫn: Hình vuông hoặc hình chữ nhật xanh."
     },
     {
       "id": 76,
@@ -757,7 +757,7 @@
       "answerList": ["Phải thực hành lái xe trên xe tập lái và có giáo viên bảo trợ tay lái.", "Phải mang theo phù hiệu “học viên tập lái xe”;", "Phải mang theo giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường còn hiệu lực, giấy phép vận chuyển (nếu loại xe đó cần phải có).", "Cả ý 1 và ý 2."],
       "answerIndex": 3,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Khi tập lái cần có giáo viên và phù hiệu."
     },
     {
       "id": 77,
@@ -767,7 +767,7 @@
       "answerList": ["Phải mang theo phù hiệu “Giáo viên dạy lái xe”, giấy chứng nhận kiểm định an toàn kỹ thuật và bảo vệ môi trường còn hiệu lực, giấy phép xe tập lái do cơ quan có thẩm quyền cấp còn hiệu lực.", "Phải mang theo phù hiệu “học viên tập lái xe” và kế hoạch học tập của khóa học;", "Phải mang theo giấy chứng nhận Giáo viên dạy thực hành lái xe, biên lai thu phí bảo trì đường bộ."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Giáo viên phải mang giấy phép xe tập lái."
     },
     {
       "id": 78,
@@ -807,7 +807,7 @@
       "answerList": ["02 năm.", "03 năm.", "05 năm.", "04 năm."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "5 năm không cấp lại nếu sử dụng bằng lái đã khai báo mất."
     },
     {
       "id": 82,
@@ -817,7 +817,7 @@
       "answerList": ["Người tham gia giao thông ở các hướng phải dừng lại.", "Người tham gia giao thông ở các hướng được đi theo chiều gậy chỉ của cảnh sát giao thông.", "Người tham gia giao thông ở phía trước và phía sau người điều khiển được đi tất cả các hướng; người tham gia giao thông ở phía bên phải và phía bên trái người điều khiển phải dừng lại.", "Người tham gia giao thông ở phía trước và phía sau người điều khiển phải dừng lại; người tham gia giao thông ở phía bên phải và phía bên trái người điều khiển được đi tất cả các hướng."],
       "answerIndex": 3,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Người điều khiển giao thông tay giang ngang thì trước mặt và sau lưng dừng lại."
     },
     {
       "id": 83,
@@ -827,7 +827,7 @@
       "answerList": ["Người tham gia giao thông ở hướng đối diện cảnh sát giao thông được đi, các hướng khác phải dừng lại.", "Người tham gia giao thông được rẽ phải theo chiều mũi tên màu xanh ở bục cảnh sát giao thông.", "Người tham gia giao thông ở các hướng đều phải dừng lại trừ các xe đã ở trong khu vực giao nhau.", "Người ở hướng đối diện cảnh sát giao thông phải dừng lại, các hướng khác được đi trong đó có bạn."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Người điều khiển giao thông giơ tay thẳng đứng thì ở các hướng phải dừng lại."
     },
     {
       "id": 84,
@@ -837,7 +837,7 @@
       "answerList": ["Hiệu lệnh của người điều khiển giao thông.", "Hiệu lệnh của đèn điều khiển giao thông.", "Hiệu lệnh của biển báo hiệu đường bộ.", "Theo quyết định của người tham gia giao thông nhưng phải bảo đảm an toàn."],
       "answerIndex": 0,
       "isDeadPoint": true,
-      "comment": ""
+      "comment": "ưu tiên hiệu lệnh của người điều khiển giao thông."
     },
     {
       "id": 85,
@@ -847,7 +847,7 @@
       "answerList": ["Biển báo hiệu cố định.","Biển báo hiệu tạm thời."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Ưu tiên biển báo tạm thời."
     },
     {
       "id": 86,
@@ -857,7 +857,7 @@
       "answerList": ["Cho xe đi trên bất kỳ làn đường nào hoặc giữa 02 làn đường nếu không có xe phía trước; khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn.", "Phải cho xe đi trong một làn đường và chỉ được chuyển làn đường ở những nơi cho phép; khi chuyển làn phải có tín hiệu báo trước và phải bảo đảm an toàn.", "Phải cho xe đi trong một làn đường, khi cần thiết phải chuyển làn đường, người lái xe phải quan sát xe phía trước để bảo đảm an toàn."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Chuyển làn đường phải có tín hiệu báo trước."
     },
     {
       "id": 87,
@@ -867,7 +867,7 @@
       "answerList": ["Xe thô sơ phải đi trên làn đường bên trái trong cùng, xe cơ giới, xe máy chuyên dùng đi trên làn đường bên phải.", "Xe thô sơ phải đi trên làn đường bên phải trong cùng; xe cơ giới, xe máy chuyên dùng đi trên làn đường bên trái.", "Xe thô sơ đi trên làn đường phù hợp không gây cản trở giao thông, xe cơ giới, xe máy chuyên dùng đi trên làn đường bên phải."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe thô sơ phải đi làn đường bên phải trong cùng."
     },
     {
       "id": 88,
@@ -877,7 +877,7 @@
       "answerList": ["Phải báo hiệu bằng đèn hoặc còi;", "Chỉ được báo hiệu bằng còi.", "Phải báo hiệu bằng cả còi và đèn.", "Chỉ được báo hiệu bằng đèn."],
       "answerIndex": 3,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Chỉ sử dụng còi từ 5 giờ sáng đến 22 giờ tối. Nên phải sử dụng đèn để báo hiệu."
     },
     {
       "id": 89,
@@ -897,7 +897,7 @@
       "answerList": ["Ở nơi đường giao nhau và nơi có biển báo cho phép quay đầu xe.", "Ở nơi có đường rộng để cho các loại xe chạy một chiều.", "Ở bất kỳ nơi nào."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Quay xe ở nơi giao nhau và có biển báo cho quay xe."
     },
     {
       "id": 91,
@@ -907,7 +907,7 @@
       "answerList": ["Không được quay đầu xe.", "Lợi dụng chỗ rộng và phải có người làm tín hiệu sau xe để bảo đảm an toàn.", "Lợi dụng chỗ rộng có thể quay đầu được để quay đầu xe cho an toàn."],
       "answerIndex": 0,
       "isDeadPoint": true,
-      "comment": ""
+      "comment": "Không được quay trên cầu."
     },
     {
       "id": 92,
@@ -917,7 +917,7 @@
       "answerList": ["Quan sát gương, ra tín hiệu, quan sát an toàn và chuyển hướng.", "Quan sát gương, giảm tốc độ, ra tín hiệu chuyển hướng, quan sát an toàn và chuyển hướng.", "Quan sát gương, tăng tốc độ, ra tín hiệu và chuyển hướng."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Chuyển hướng phải giảm tốc độ."
     },
     {
       "id": 93,
@@ -927,7 +927,7 @@
       "answerList": ["Quan sát phía trước và cho lùi xe ở tốc độ chậm.", "Lợi dụng nơi đường giao nhau đủ chiều rộng để lùi.", "Phải quan sát phía sau, có tín hiệu cần thiết và chỉ khi nào thấy không nguy hiểm mới được lùi."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Lùi xe phải quan sát phía sau."
     },
     {
       "id": 94,
@@ -937,7 +937,7 @@
       "answerList": ["Đang phanh.", "Đang bật đèn sương mù.", "Đang chuẩn bị lùi hoặc đang lùi.", "Đang bị hỏng động cơ."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Đèn sau màu sáng trắng là đang lùi xe."
     },
     {
       "id": 95,
@@ -947,7 +947,7 @@
       "answerList": ["Nơi đường hẹp chỉ đủ cho một xe chạy và có chỗ tránh xe thì xe nào ở gần chỗ tránh hơn phải vào vị trí tránh, nhường đường cho xe kia đi.", "Xe xuống dốc phải nhường đường cho xe đang lên dốc; xe nào có chướng ngại vật phía trước phải nhường đường cho xe không có chướng ngại vật đi trước.", "Xe lên dốc phải nhường đường cho xe xuống dốc; xe nào không có chướng ngại vật phía trước phải nhường đường cho xe có chướng ngại vật đi trước.", "Cả ý 1 và ý 2."],
       "answerIndex": 3,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Tránh xe ngược chiều thì nhường đường qua đường hẹp và nhường xe lên dốc."
     },
     {
       "id": 96,
@@ -957,7 +957,7 @@
       "answerList": ["Tiếp tục đi vì xe lên dốc phải nhường đường cho mình.", "Nhường đường cho xe lên dốc.", "Chỉ nhường đường khi xe lên dốc nháy đèn."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Nhường đường cho xe lên dốc."
     },
     {
       "id": 97,
@@ -967,7 +967,7 @@
       "answerList": ["Nhường đường cho xe đi ở bên phải mình tới.", "Nhường đường cho xe đi ở bên trái mình tới.", "Nhường đường cho xe đi trên đường ưu tiên hoặc đường chính từ bất kỳ hướng nào tới."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Đường không ưu tiên nhường đường cho xe trên đường ưu tiên."
     },
     {
       "id": 98,
@@ -977,7 +977,7 @@
       "answerList": ["Phải nhường đường cho xe đi đến từ bên phải.", "Xe báo hiệu xin đường trước xe đó được đi trước.", "Phải nhường đường cho xe đi đến từ bên trái."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Giao nhau không có vòng xuyến thì nhường xe đến từ bên phải."
     },
     {
       "id": 99,
@@ -997,7 +997,7 @@
       "answerList": ["5 mét.", "3 mét.", "4 mét."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Đứng cách ray đường sắt 5m."
     },
     {
       "id": 101,
@@ -1007,7 +1007,7 @@
       "answerList": ["Phải có tín hiệu xin vào và phải nhường đường cho xe đang chạy trên đường; khi thấy an toàn mới cho xe nhập vào dòng xe ở làn đường sát mép ngoài; nếu có làn đường tăng tốc thì phải cho xe chạy trên làn đường đó trước khi vào làn đường của đường cao tốc.", "Phải có tín hiệu xin vào và phải nhanh chóng vượt xe đang chạy trên đường để nhập vào dòng xe ở làn đường sát mép ngoài; nếu có làn đường tăng tốc thì phải cho xe chạy qua làn đường đó để vào làn đường của đường cao tốc."],
       "answerIndex": 0,
       "isDeadPoint": true,
-      "comment": ""
+      "comment": "Vào cao tốc phải nhường đường cho xe đang chạy trên đường."
     },
     {
       "id": 102,
@@ -1017,7 +1017,7 @@
       "answerList": ["Không được dừng xe, đỗ xe hoặc chỉ được dừng xe, đỗ xe ở nơi đường rộng, nếu dừng, đỗ xe ở nơi đường hẹp phải sử dụng còi báo hiệu để người lái xe khác biết.", "Chỉ được dừng xe, đỗ xe ở nơi quy định, trường hợp buộc phải dừng xe, đỗ xe không đúng nơi quy định thì người lái xe phải đưa xe ra khỏi phần đường xe chạy, nếu không thể được thì phải báo hiệu để người lái xe khác biết.", "Chỉ được dừng xe, đỗ xe ở nơi đường rộng; trường hợp dừng xe, đỗ xe tại nơi đường hẹp phải đặt các chướng ngại vật trên đường để yêu cầu người lái xe khác giảm tốc độ để bảo đảm an toàn."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Trên cao tốc chỉ dừng đỗ ở nơi quy định."
     },
     {
       "id": 103,
@@ -1027,7 +1027,7 @@
       "answerList": ["Người đi bộ, xe thô sơ, xe gắn máy, xe mô tô và máy kéo; xe máy chuyên dùng có tốc độ thiết kế nhỏ hơn 70km/h.", "Xe mô tô và xe máy chuyên dùng có tốc độ thiết kế lớn hơn 70km/h.", "Người đi bộ, xe thô sơ, xe gắn máy và xe ô tô."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe thiết kế nhỏ hơn 70km/h không được vào cao tốc."
     },
     {
       "id": 104,
@@ -1037,7 +1037,7 @@
       "answerList": ["Xe cơ giới, xe máy chuyên dùng phải bật đèn; xe thô sơ phải bật đèn hoặc có vật phát sáng báo hiệu; chỉ được dừng xe, đỗ xe ở nơi quy định.", "Xe cơ giới phải bật đèn ngay cả khi đường hầm sáng; phải cho xe chạy trên một làn đường và chỉ chuyển làn ở nơi được phép; được quay đầu xe, lùi xe khi cần thiết.", "Xe máy chuyên dùng phải bật đèn ngay cả khi đường hầm sáng; phải cho xe chạy trên một làn đường và chỉ chuyển làn ở nơi được phép; được quay đầu xe, lùi xe khi cần thiết."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Trong hầm chỉ được dừng xe, đỗ xe ở nơi quy định."
     },
     {
       "id": 105,
@@ -1047,7 +1047,7 @@
       "answerList": ["Phải được cơ quan quản lý đường bộ có thẩm quyền cấp phép và phải thực hiện các biện pháp bắt buộc để bảo vệ đường bộ, bảo đảm an toàn giao thông.", "Chủ phương tiện và lái xe chỉ cần thực hiện biện pháp để hạn chế việc gây hư hại đường bộ.", "Được tham gia giao thông trên đường rộng.", "Chỉ được tham gia giao thông vào ban đêm."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe quá tải trọng phải do cơ quan quản lý đường bộ cấp phép."
     },
     {
       "id": 106,
@@ -1057,7 +1057,7 @@
       "answerList": ["Dùng dây cáp có độ dài 10 mét.", "Dùng dây cáp có độ dài 5 mét.", "Dùng thanh nối cứng."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Kéo xe không hệ thống hãm phải dùng thanh nối cứng."
     },
     {
       "id": 107,
@@ -1067,7 +1067,7 @@
       "answerList": ["Phải có tổng trọng lượng lớn hơn tổng trọng lượng của rơ moóc hoặc phải có hệ thống hãm có hiệu lực cho rơ moóc.", "Phải có tổng trọng lượng tương đương tổng trọng lượng của rơ moóc hoặc phải có hệ thống hãm có hiệu lực cho xe kéo rơ moóc.", "Phải được lắp phanh phụ theo quy định để đảm bảo an toàn."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Trọng lượng xe kéo rơ moóc phải lớn hơn rơ moóc."
     },
     {
       "id": 108,
@@ -1077,7 +1077,7 @@
       "answerList": ["Được kéo theo một xe ô tô hoặc xe máy chuyên dùng khác khi xe này không tự chạy được và phải đảm bảo an toàn; xe được kéo phải có người điều khiển và hệ thống lái của xe đó phải còn hiệu lực; trường hợp hệ thống hãm của xe được kéo không còn hiệu lực thì xe kéo nhau phải nối bằng thanh nối cứng.", "Được kéo theo một xe ô tô và xe máy chuyên dùng khác khi xe này không tự chạy được và phải đảm bảo an toàn; xe được kéo phải có người ngồi trên xe để kịp thời phát hiện các trường hợp mất an toàn.", "Được kéo theo một xe ô tô và xe máy chuyên dùng khác khi xe này không tự chạy được và hệ thống phanh bị hỏng, xe kéo nhau phải nối bằng dây cáp có độ dài phù hợp."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Kéo xe không hệ thống hãm phải dùng thanh nối cứng."
     },
     {
       "id": 109,
@@ -1107,7 +1107,7 @@
       "answerList": ["Đi vào phần đường dành cho người đi bộ và phương tiện khác; sử dụng ô, điện thoại di động, thiết bị âm thanh (trừ thiết bị trợ thính), đi xe dàn hàng ngang.", "Chở 02 người; trong đó, có người bệnh đi cấp cứu hoặc trẻ em dưới 14 tuổi hoặc áp giải người có hành vi vi phạm pháp luật.", "Điều khiển phương tiện tham gia giao thông trên đường tỉnh lộ hoặc quốc lộ."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe mô tô hai bánh không được đi vào phần đường dành cho người đi bộ."
     },
     {
       "id": 112,
@@ -1147,7 +1147,7 @@
       "answerList": ["Nhường đường cho người đi bộ đang đi trên phần đường dành cho người đi bộ sang đường; nhường đường cho xe đi trên đường ưu tiên, đường chính từ bất kỳ hướng nào tới; nhường đường cho xe ưu tiên, xe đi từ bên phải đến.", "Nhường đường cho người đi bộ đang đứng chờ đi qua phần đường dành cho người đi bộ sang đường; nhường đường cho xe đi trên đường ngược chiều, đường nhánh từ bất kỳ hướng nào tới; nhường đường cho xe đi từ bên trái đến", "Không phải nhường đường."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "người lái xe phải nhường đường cho xe ưu tiên."
     },
     {
       "id": 116,
@@ -1157,7 +1157,7 @@
       "answerList": ["Khi cho xe chạy thẳng.", "Trước khi thay đổi làn đường.", "Sau khi thay đổi làn đường."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Phải bật đèn tín hiệu rẽ trước khi thay đổi làn đường."
     },
     {
       "id": 117,
@@ -1167,7 +1167,7 @@
       "answerList": ["Xe bị vượt bất ngờ tăng tốc độ và cố tình không nhường đường."],
       "answerIndex": 3,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Không được vượt khi xe bị vượt bất ngờ tăng tốc hoặc phát hiện có xe đi ngược chiều."
     },
     {
       "id": 118,
@@ -1187,7 +1187,7 @@
       "answerList": ["Quay xe, chạy trên lề đường bên phải và rẽ khỏi đường cao tốc.", "Lùi xe sát lề đường bên phải và rẽ khỏi đường cao tốc.", "Tiếp tục chạy đến lối ra tiếp theo."],
       "answerIndex": 2,
       "isDeadPoint": true,
-      "comment": ""
+      "comment": "Trên cao tốc vượt quá lối rẽ thì chạy đến lối ra tiếp theo."
     },
     {
       "id": 120,
@@ -1197,7 +1197,7 @@
       "answerList": ["Nếu đủ điều kiện an toàn, người lái xe phải giảm tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua, không được gây trở ngại đối với xe xin vượt.", "Lái xe vào lề đường bên trái và giảm tốc độ để xe phía sau vượt qua, không được gây trở ngại đối với xe xin vượt.", "Nếu đủ điều kiện an toàn, người lái xe phải tăng tốc độ, đi sát về bên phải của phần đường xe chạy cho đến khi xe sau đã vượt qua."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xử lý cho xe sau vượt thì giảm tốc độ và đi về bên phải."
     },
     {
       "id": 121,
@@ -1207,7 +1207,7 @@
       "answerList": ["Nhanh chóng đặt báo hiệu trên đường sắt cách tối thiểu 500 mét về hai phía để báo cho người điều khiển phương tiện đường sắt và tìm cách báo cho người quản lý đường sắt, nhà ga nơi gần nhất, đồng thời phải bằng mọi biện pháp nhanh chóng đưa ô tô hỏng ra khỏi phạm vi an toàn đường sắt.", "Nhanh chóng đặt biển cảnh báo nguy hiểm tại vị trí xe ô tô bị hỏng để đoàn tàu dừng lại.", "Liên hệ ngay với đơn vị cứu hộ để đưa ô tô hỏng ra khỏi phạm vi an toàn đường sắt."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe hỏng tại vị trí giao nhau với đường sắt thì đặt báo hiệu trên đường sắt tối thiểu 500m về hai phía."
     },
     {
       "id": 122,
@@ -1227,7 +1227,7 @@
       "answerList": ["Là đoạn đường nằm trong khu công nghiệp có đông người và phương tiện tham gia giao thông và được xác định cụ thể bằng biển chỉ dẫn địa giới.", "Là đoạn đường bộ nằm trong khu vực nội thành phố, nội thị xã, nội thị trấn và những đoạn đường có đông dân cư sinh sống sát dọc theo đường, có các hoạt động ảnh hưởng đến an toàn giao thông; được xác định bằng biển báo hiệu là đường khu đông dân cư.", "Là đoạn đường nằm ngoài khu vực nội thành phố, nội thị xã có đông người và phương tiện tham gia giao thông và được xác định cụ thể bằng biển chỉ dẫn địa giới."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Đường bộ trong khu vực đông dân cư được xác định bằng biển báo."
     },
     {
       "id": 124,
@@ -1237,7 +1237,7 @@
       "answerList": ["50 km/h.", "40 km/h.", "60 km/h."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe gắn máy tối đa 40 km/h."
     },
     {
       "id": 125,
@@ -1247,7 +1247,7 @@
       "answerList": ["60 km/h.", "50 km/h.", "40 km/h."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Có giải phân cách giữa thì được xem là đường đôi. Trong khu vực đông dân cư, đường đôi, đường một chiều có từ hai làn xe cơ giới trở lên: 60 km/h."
     },
     {
       "id": 126,
@@ -1257,7 +1257,7 @@
       "answerList": ["60 km/h.", "50 km/h.", "40 km/h."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Trong khu vực đông dân cư, đường hai chiều, đường một chiều có một làn xe cơ giới: 50 km/h"
     },
     {
       "id": 127,
@@ -1267,7 +1267,7 @@
       "answerList": ["Ô tô con, ô tô tải, ô tô chở người trên 30 chỗ.", "Xe gắn máy, xe máy chuyên dùng.", "Cả ý 1 và ý 2."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe cơ giới không bao gồm xe gắn máy. Trong khu vực đông dân cư, đường hai chiều, đường một chiều có một làn xe cơ giới: 50 km/h."
     },
     {
       "id": 128,
@@ -1277,7 +1277,7 @@
       "answerList": ["Ô tô con, ô tô tải, ô tô chở người trên 30 chỗ.", "Xe gắn máy, xe máy chuyên dùng.", "Cả ý 1 và ý 2."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe cơ giới không bao gồm xe gắn máy. Trong khu vực đông dân cư, đường đôi, đường một chiều có từ hai làn xe cơ giới trở lên: 60 km/h."
     },
     {
       "id": 129,
@@ -1287,7 +1287,7 @@
       "answerList": ["Ô tô chở người trên 30 chỗ (trừ ô tô buýt), ô tô tải có trọng tải trên 3,5 tấn.", "Xe ô tô con, xe ô tô chở người đến 30 chỗ (trừ ô tô buýt), ô tô tải có trọng tải đến 3,5 tấn.", "Ô tô buýt, ô tô đầu kéo kéo sơ mi rơ moóc, ô tô chuyên dùng, xe mô tô."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Đường có giải phân cách được xem là đường đôi.\nNgoài khu vực dân cư; đường đôi; đường một chiều có hai làn xe cơ giới trở lên: \nÔ tô kéo rơ moóc: 60 km/h; \nMô tô, xe buýt, ô tô đầu kéo: 70km/h; \nXe trên 30 chỗ, xe tải trên 3.5 tấn: 80 km/h;\nXe con, xe đến 30 chỗ, tải dưới 3.5 tấn: 90 km/h."
     },
     {
       "id": 130,
