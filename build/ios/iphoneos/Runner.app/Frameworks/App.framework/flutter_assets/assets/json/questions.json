@@ -1147,7 +1147,7 @@
       "answerList": ["Nhường đường cho người đi bộ đang đi trên phần đường dành cho người đi bộ sang đường; nhường đường cho xe đi trên đường ưu tiên, đường chính từ bất kỳ hướng nào tới; nhường đường cho xe ưu tiên, xe đi từ bên phải đến.", "Nhường đường cho người đi bộ đang đứng chờ đi qua phần đường dành cho người đi bộ sang đường; nhường đường cho xe đi trên đường ngược chiều, đường nhánh từ bất kỳ hướng nào tới; nhường đường cho xe đi từ bên trái đến", "Không phải nhường đường."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": "người lái xe phải nhường đường cho xe ưu tiên."
+      "comment": "Người lái xe phải nhường đường cho xe ưu tiên."
     },
     {
       "id": 116,
@@ -1297,7 +1297,7 @@
       "answerList": ["Ô tô buýt; ô tô đầu kéo kéo sơ mi rơ moóc; ô tô chuyên dùng; xe mô tô.", "Ô tô chở người trên 30 chỗ (trừ ô tô buýt), ô tô tải có trọng tải trên 3,5 tấn (trừ ô tô xi téc).", "Ô tô kéo rơ moóc, ô tô kéo xe khác, xe gắn máy.", "Xe ô tô con, xe ô tô chở người đến 30 chỗ (trừ ô tô buýt), ô tô tải có trọng tải đến 3,5 tấn."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Đường có giải phân cách được xem là đường đôi.\nNgoài khu vực dân cư; đường đôi; đường một chiều có hai làn xe cơ giới trở lên: \nÔ tô kéo rơ moóc: 60 km/h; \nMô tô, xe buýt, ô tô đầu kéo: 70km/h; \nXe trên 30 chỗ, xe tải trên 3.5 tấn: 80 km/h;\nXe con, xe đến 30 chỗ, tải dưới 3.5 tấn: 90 km/h."
     },
     {
       "id": 131,
@@ -1307,7 +1307,7 @@
       "answerList": ["Ô tô buýt; ô tô đầu kéo kéo sơ mi rơ moóc; xe mô tô; ô tô chuyên dùng (trừ ô tô trộn vữa, ô tô trộn bê tông).", "Ô tô kéo rơ moóc, ô tô kéo xe khác, xe gắn máy.", "Ô tô chở người trên 30 chỗ (trừ ô tô buýt), ô tô tải có trọng tải trên 3,5 tấn.", "Xe ô tô con, xe ô tô chở người đến 30 chỗ (trừ ô tô buýt), ô tô tải có trọng tải đến 3,5 tấn."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Đường có giải phân cách được xem là đường đôi.\nNgoài khu vực dân cư; đường đôi; đường một chiều có hai làn xe cơ giới trở lên: \nÔ tô kéo rơ moóc: 60 km/h; \nMô tô, xe buýt, ô tô đầu kéo: 70km/h; \nXe trên 30 chỗ, xe tải trên 3.5 tấn: 80 km/h;\nXe con, xe đến 30 chỗ, tải dưới 3.5 tấn: 90 km/h"
     },
     {
       "id": 132,
@@ -1317,7 +1317,7 @@
       "answerList": ["Ô tô kéo rơ moóc, ô tô kéo xe khác, ô tô trộn vữa, ô tô trộn bê tông, ô tô xi téc.", "Ô tô chở người trên 30 chỗ (trừ ô tô buýt), ô tô tải có trọng tải trên 3,5 tấn.", "Xe ô tô con, xe ô tô chở người đến 30 chỗ (trừ xe buýt), ô tô tải có trọng tải nhỏ hơn hoặc bằng 3,5 tấn."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Đường có giải phân cách được xem là đường đôi.\nNgoài khu vực dân cư; đường đôi; đường một chiều có hai làn xe cơ giới trở lên: \nÔ tô kéo rơ moóc: 60 km/h; \nMô tô, xe buýt, ô tô đầu kéo: 70km/h; \nXe trên 30 chỗ, xe tải trên 3.5 tấn: 80 km/h;\nXe con, xe đến 30 chỗ, tải dưới 3.5 tấn: 90 km/h"
     },
     {
       "id": 133,
@@ -1327,7 +1327,7 @@
       "answerList": ["Ô tô kéo rơ moóc, ô tô kéo xe khác, xe gắn máy.", "Ô tô chở người trên 30 chỗ (trừ ô tô buýt), ô tô tải có trọng tải trên 3,5 tấn.", "Xe ô tô con, xe ô tô chở người đến 30 chỗ (trừ xe buýt), ô tô tải có trọng tải nhỏ hơn hoặc bằng 3,5 tấn."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Ngoài khu vực dân cư; đường hai chiều; đường một chiều có một làn xe:\nÔ tô kéo rơ moóc: 50 km/h\nMô tô, xe buýt, ô tô đầu kéo: 60 km/h\nXe trên 30 chỗ, xe tải trên 3.5 tấn: 70 km/h\nXe con, xe đến 30 chỗ, xe tải dướng 3.5 tấn: 80km/h"
     },
     {
       "id": 134,
@@ -1337,7 +1337,7 @@
       "answerList": ["Ô tô kéo rơ moóc, ô tô kéo xe khác, xe gắn máy.", "Ô tô chở người trên 30 chỗ (trừ ô tô buýt), ô tô tải có trọng tải trên 3,5 tấn (trừ ô tô xi téc).", "Xe ô tô con, xe ô tô chở người đến 30 chỗ (trừ xe buýt), ô tô tải có trọng tải nhỏ hơn hoặc bằng 3,5 tấn."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Ngoài khu vực dân cư; đường hai chiều; đường một chiều có một làn xe:\nÔ tô kéo rơ moóc: 50 km/h\nMô tô, xe buýt, ô tô đầu kéo: 60 km/h\nXe trên 30 chỗ, xe tải trên 3.5 tấn: 70 km/h\nXe con, xe đến 30 chỗ, xe tải dướng 3.5 tấn: 80km/h"
     },
     {
       "id": 135,
@@ -1347,7 +1347,7 @@
       "answerList": ["Ô tô kéo rơ moóc, ô tô kéo xe khác, xe gắn máy.", "Ô tô chở người trên 30 chỗ (trừ ô tô buýt), ô tô tải có trọng tải trên 3,5 tấn.", "Ô tô buýt, ô tô đầu kéo kéo sơ mi rơ moóc, xe mô tô, ô tô chuyên dùng (trừ ô tô trộn vữa, ô tô trộn bê tông)."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Ngoài khu vực dân cư; đường hai chiều; đường một chiều có một làn xe:\nÔ tô kéo rơ moóc: 50 km/h\nMô tô, xe buýt, ô tô đầu kéo: 60 km/h\nXe trên 30 chỗ, xe tải trên 3.5 tấn: 70 km/h\nXe con, xe đến 30 chỗ, xe tải dướng 3.5 tấn: 80km/h"
     },
     {
       "id": 136,
@@ -1357,7 +1357,7 @@
       "answerList": ["Ô tô kéo rơ moóc, ô tô kéo xe khác, xe gắn máy.", "Ô tô chở người trên 30 chỗ (trừ ô tô buýt), ô tô tải có trọng tải trên 3,5 tấn.", "Ô tô kéo rơ moóc, ô tô kéo xe khác, ô tô trộn vữa, ô tô trộn bê tông, ô tô xi téc."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Ngoài khu vực dân cư; đường hai chiều; đường một chiều có một làn xe:\nÔ tô kéo rơ moóc: 50 km/h\nMô tô, xe buýt, ô tô đầu kéo: 60 km/h\nXe trên 30 chỗ, xe tải trên 3.5 tấn: 70 km/h\nXe con, xe đến 30 chỗ, xe tải dướng 3.5 tấn: 80km/h"
     },
     {
       "id": 137,
@@ -1367,7 +1367,7 @@
       "answerList": ["35 m.", "55 m.", "70 m."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Khoảng cách an toàn:\n60 km/h: 35m.\n60 đến 80 km/h: 55m\n80 đến 100 km/h: 70m\n100 đến 120 km/h: 100m"
     },
     {
       "id": 138,
@@ -1377,7 +1377,7 @@
       "answerList": ["35 m.", "55 m.", "70 m."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Khoảng cách an toàn:\n60 km/h: 35m.\n60 đến 80 km/h: 55m\n80 đến 100 km/h: 70m\n100 đến 120 km/h: 100m"
     },
     {
       "id": 139,
@@ -1387,7 +1387,7 @@
       "answerList": ["55 m.", "70 m.", "100 m."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Khoảng cách an toàn:\n60 km/h: 35m.\n60 đến 80 km/h: 55m\n80 đến 100 km/h: 70m\n100 đến 120 km/h: 100m"
     },
     {
       "id": 140,
@@ -1397,7 +1397,7 @@
       "answerList": ["Chủ động giữ khoảng cách an toàn phù hợp với xe chạy liền trước xe của mình.", "Đảm bảo khoảng cách an toàn theo mật độ phương tiện, tình hình giao thông thực tế.", "Cả ý 1 và ý 2."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Khoảng cách an toàn dưới 60 km/h: Chủ động và đảm bảo khoảng cách."
     },
     {
       "id": 141,
@@ -1407,7 +1407,7 @@
       "answerList": ["Gặp biển báo nguy hiểm trên đường.", "Gặp biển chỉ dẫn trên đường.", "Gặp biển báo hết mọi lệnh cấm.", "Gặp biển báo hết hạn chế tốc độ tối đa cho phép."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Giảm tốc độ, chú ý quan sát khi gặp biển báo nguy hiểm."
     },
     {
       "id": 142,
@@ -1417,7 +1417,7 @@
       "answerList": ["Khi vượt xe khác.", "Khi vượt xe khác tại đoạn đường được phép vượt.", "Khi xe sau xin vượt và đảm bảo an toàn.", "Khi xe sau có tín hiệu vượt bên phải."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Giảm tốc độ, đi sát về bên phải khi xe sau xin vượt."
     },
     {
       "id": 143,
@@ -1427,7 +1427,7 @@
       "answerList": ["Xe cứu hỏa.", "Xe cứu thương.", "Phương tiện giao thông đường sắt.", "Ô tô, mô tô và xe máy chuyên dùng."],
       "answerIndex": 2,
       "isDeadPoint": true,
-      "comment": ""
+      "comment": "Điểm giao cắt đường sắt thì ưu tiên đường sắt."
     },
     {
       "id": 144,
@@ -1477,7 +1477,7 @@
       "answerList": ["Xe chữa cháy, xe quân sự, xe công an, xe cứu thương, xe hộ đê sau khi thực hiện nhiệm vụ khẩn cấp, không có tín hiệu còi, cờ, đèn theo quy định của pháp luật.", "Xe chữa cháy, xe quân sự, xe công an, xe cứu thương, xe hộ đê đi làm nhiệm vụ khẩn cấp có tín hiệu còi, cờ, đèn theo quy định của pháp luật.", "Xe ô tô, xe máy, đoàn xe đang diễu hành có tổ chức có báo tín hiệu xin vượt bằng còi và đèn."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Nhường đường cho xe ưu tiên có tín hiệu còi, cờ, đèn."
     },
     {
       "id": 149,
@@ -1487,7 +1487,7 @@
       "answerList": ["Tăng tốc độ qua đường giao nhau để đi trước xe đi trên đường ưu tiên.", "Giảm tốc độ qua đường giao nhau để đi trước xe đi trên đường ưu tiên.", "Nhường đường cho xe đi trên đường ưu tiên từ bất kỳ hướng nào tới."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe trên đường không ưu tiên nhường đường cho xe trên đường ưu tiên."
     },
     {
       "id": 150,
@@ -1497,7 +1497,7 @@
       "answerList": ["Giảm tốc độ cho xe vượt qua đường sắt.", "Nhanh chóng cho xe vượt qua đường sắt trước khi tàu hỏa tới.", "Giảm tốc độ cho xe vượt qua đường sắt trước khi tàu hỏa tới.", "Cho xe dừng ngay lại và giữ khoảng cách tối thiểu 5 mét tính từ ray gấn nhất."],
       "answerIndex": 3,
       "isDeadPoint": true,
-      "comment": ""
+      "comment": "Đứng cách ray đường sắt 5m."
     },
     {
       "id": 151,
@@ -1507,7 +1507,7 @@
       "answerList": ["Đi đúng làn đường, đúng tốc độ quy định, không được vượt xe khác.", "Đi sang làn đường của xe ngược chiều để mở rộng tầm nhìn và vượt xe khác.", "Cho xe đi sát bên phải làn đường, bật tín hiệu báo hiệu để vượt bên phải xe khác."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Không vượt xe khác trên đường vòng, khuất tầm nhìn."
     },
     {
       "id": 152,
@@ -1517,7 +1517,7 @@
       "answerList": ["Giảm tốc độ, đi từ từ để vượt qua trước người đi bộ.", "Giảm tốc độ, có thể dừng lại nếu cần thiết trước vạch dừng xe để nhường đường cho người đi bộ qua đường.", "Tăng tốc độ để vượt qua trước người đi bộ"],
       "answerIndex": 1,
       "isDeadPoint": true,
-      "comment": ""
+      "comment": "Nơi có vạch kẻ đường dành cho người đi bộ thì phải nhường đường."
     },
     {
       "id": 153,
@@ -1527,7 +1527,7 @@
       "answerList": ["Phải lùi thật chậm.", "Có thể được lùi xe nhưng phải mở cửa xe.", "Không được lùi xe.", "Bấm còi 3 lần liên tiếp trước khi lùi."],
       "answerIndex": 2,
       "isDeadPoint": true,
-      "comment": ""
+      "comment": "Không quan sát được phía sau thì không lùi xe."
     },
     {
       "id": 154,
@@ -1537,7 +1537,7 @@
       "answerList": ["Khi có người đi bộ, xe lăn của người khuyết tật qua đường; đến gần bến xe buýt, điểm dừng đỗ xe có khách đang lên, xuống xe.", "Khi điều khiển phương tiện đi qua khu vực trạm kiểm soát tải trọng xe, trạm cảnh sát giao thông, trạm giao dịch thanh toán đối với các phương tiện sử dụng đường bộ.", "Cả ý 1 và ý 2."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Giảm tốc độ khi có người đi bộ qua đường và qua trạm cảnh sát giao thông."
     },
     {
       "id": 155,
@@ -1547,7 +1547,7 @@
       "answerList": ["Người điều khiển phương tiện tham gia giao thông không hạn chế tốc độ và khoảng cách an toàn tối thiểu giữa hai xe.", "Người điều khiển phương tiện tham gia giao thông không hạn chế tốc độ và khoảng cách an toàn tối thiểu giữa hai xe vào ban đêm.", "Người điều khiển phương tiện tham gia giao thông phải nghiêm chỉnh chấp hành quy định về tốc độ, khoảng cách an toàn tối thiểu giữa hai xe."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Nghiêm chỉnh chấp hành quy định về tốc độ và khoảng cách an toàn."
     },
     {
       "id": 156,
@@ -1557,7 +1557,7 @@
       "answerList": ["Tuân thủ tốc độ tối đa, tốc độ tối thiểu ghi trên biển báo hiệu đường bộ, sơn kẻ mặt đường trên các làn xe.", "Tuân thủ tốc độ tối đa, tốc độ tối thiểu ghi trên biển báo hiệu đường bộ, sơn kẻ mặt đường trên các làn xe chỉ vào ban ngày.", "Tuân thủ tốc độ tối đa, tốc độ tối thiểu ghi trên biển báo hiệu đường bộ, sơn kẻ mặt đường trên các làn xe chỉ vào ban đêm."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Trên cao tốc tuân thủ tốc độ tối thiểu, tối đa và sơn kẻ mặt đường."
     },
     {
       "id": 157,
@@ -1577,7 +1577,7 @@
       "answerList": ["Giảm tốc độ, chú ý quan sát, nhường đường cho người đi bộ và cho xe đi qua khu vực giao cắt khi thấy an toàn.", "Phải dừng lại trước nút giao, sau đó tăng tốc cho xe đi qua.", "Tăng tốc vượt qua nút giao."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Đèn vàng dừng lại trước vạch dừng hoặc nhấp nháy thì đi chậm."
     },
     {
       "id": 159,
@@ -1587,7 +1587,7 @@
       "answerList": ["Ra tín hiệu bằng tay rồi cho xe vượt qua.", "Tăng ga mạnh để gây sự chú ý rồi cho xe vượt qua.", "Bạn phải có tín hiệu bằng đèn hoặc còi."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Muốn vượt xe thì phải báo hiệu bằng đèn hoặc còi."
     },
     {
       "id": 160,
@@ -1597,7 +1597,7 @@
       "answerList": ["Được dừng, đỗ.", "Không được dừng, đỗ.", "Được dừng, đỗ nhưng phải đảm bảo an toàn."],
       "answerIndex": 1,
       "isDeadPoint": true,
-      "comment": ""
+      "comment": "Không được dừng, đỗ trên làn xe chạy đường cao tốc."
     },
     {
       "id": 161,
@@ -1607,7 +1607,7 @@
       "answerList": ["Bật đèn tín hiệu khẩn cấp, dừng xe ngay lập tức và đặt biển báo hiệu nguy hiểm để cánh báo cho các xe khác.", "Bật tín hiệu khẩn cấp, lập tức đưa xe vào làn đường xe chạy bên phải trong cùng, đặt biển báo hiệu nguy hiểm để cánh báo cho các xe khác.", "Bật đèn tín hiệu khẩn cấp, khi đủ điều kiện an toàn nhanh chóng đưa xe vào làn dừng đỗ khẩn cấp, đặt biển báo hiệu nguy hiểm để cánh báo cho các xe khác."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Khi gặp sự cố khi đủ điều kiện an toàn đưa xe vào làn dừng đỗ khẩn cấp."
     },
     {
       "id": 162,
@@ -1617,7 +1617,7 @@
       "answerList": ["0,25 mét.", "0,3 mét.", "0,4 mét.", "0,5 mét."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Dừng xe, đỗ xe cách lề đường, hè phố không quá 0.25 mét."
     },
     {
       "id": 163,
@@ -1627,7 +1627,7 @@
       "answerList": ["5 mét.", "10 mét.", "15 mét.", "20 mét."],
       "answerIndex": 3,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Dừng xe, đỗ xe trên đường hẹp cách xe khác 20 mét."
     },
     {
       "id": 164,
@@ -1637,7 +1637,7 @@
       "answerList": ["Được phép.", "Không được phép.", "Chỉ được phép dừng, đỗ khi đường vắng."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Không được dừng, đỗ xe song song với xe khác trên đường."
     },
     {
       "id": 165,
@@ -1647,7 +1647,7 @@
       "answerList": ["Đường ướt, đường có sỏi cát trên nền đường.", "Đường hẹp có nhiều điểm giao cắt từ hai phía.", "Đường đèo dốc, vòng liên tục.", "Tất cả các ý nêu trên."],
       "answerIndex": 3,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Giảm tốc độ trên đường ướt, đường hẹp và đèo dốc."
     },
     {
       "id": 166,
@@ -1657,7 +1657,7 @@
       "answerList": ["Tăng tốc độ để nhanh chóng vượt qua bến đỗ.", "Giảm tốc độ đến mức an toàn có thể và quan sát người qua đường và từ từ vượt qua xe buýt.", "Yêu cầu phải dừng lại phía sau xe buýt chờ xe rời bến mới đi tiếp."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe buýt đang dừng đón trả khách thì giảm tốc độ và từ từ vượt qua xe buýt."
     },
     {
       "id": 167,
@@ -1937,7 +1937,7 @@
       "answerList": ["Thực hiện nghiêm chỉnh những nội dung hợp đồng giữa chủ phương tiện với chủ hàng trong việc vận chuyển và bảo quản hàng hóa trong quá trình vận chuyển; không chở hàng cấm, không xếp hàng quá trọng tải của xe, quá trọng tải cho phép của cầu, đường; khi vận chuyển hàng quá khổ, quá tải, hàng nguy hiểm, hàng siêu trường, siêu trọng phải có giấy phép.", "Thực hiện nghiêm chỉnh những nội dung hợp đồng giữa chủ hàng với khách hàng trong việc vận chuyển và bảo quản hàng hóa trong quá trình vận chuyển; trong trường hợp cần thiết có thể xếp hàng quá trọng tải của xe, quá trọng tải cho phép của cầu theo yêu cầu của chủ hàng; khi vận chuyển hàng quá khổ, quá tải, hàng nguy hiểm, hàng siêu trường, siêu trọng phải được chủ hàng cho phép."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Nhiệm vụ không chở hàng cấm."
     },
     {
       "id": 195,
@@ -2137,7 +2137,7 @@
       "answerList": ["Giữ tay ga ở mức độ phù hợp, sử dụng phanh trước và phanh sau để giảm tốc độ.", "Nhả hết tay ga, tắt động cơ, sử dụng phanh trước và phanh sau để giảm tốc độ.", "Sử dụng phanh trước để giảm tốc độ kết hợp với tắt chìa khóa điện của xe."],
       "answerIndex": 0,
       "isDeadPoint": true,
-      "comment": ""
+      "comment": "Xe mô tô xuống dốc dài cần sử dụng cả phanh trước và phanh sau để giảm tốc độ."
     },
     {
       "id": 215,
@@ -2177,7 +2177,7 @@
       "answerList": ["Quan sát biển báo hiệu để biết nơi được phép quay đầu; quan sát kỹ địa hình nơi chọn để quay đầu; lựa chọn quỹ đạo quay đầu xe cho thích hợp; quay đầu xe với tốc độ thấp; thường xuyên báo tín hiệu để người, các phương tiện xung quanh được biết; nếu quay đầu xe ở nơi nguy hiểm thì đưa đầu xe về phía nguy hiểm đưa đuôi xe về phía an toàn.", "Quan sát biển báo hiệu để biết nơi được phép quay đầu; quan sát kỹ địa hình nơi chọn để quay đầu; lựa chọn quỹ đạo quay đầu xe; quay đầu xe với tốc độ tối đa; thường xuyên báo tín hiệu để người, các phương tiện xung quanh được biết; nếu quay đầu xe ở nơi nguy hiểm thì đưa đuôi xe về phía nguy hiểm và đầu xe về phía an toàn."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Đưa đầu xe về phía nguy hiểm, đuôi xe về phía an toàn."
     },
     {
       "id": 219,
@@ -2187,7 +2187,7 @@
       "answerList": ["Không nên đi cố vào đường hẹp; xe đi ở sườn núi nên dừng lại trước để nhường đường; khi dừng xe nhường đường phải đỗ ngay ngắn.", "Trong khi tránh nhau không nên đổi số; khi tránh nhau ban đêm, phải tắt đèn pha bật đèn cốt.", "Khi tránh nhau ban đêm, phải thường xuyên bật đèn pha tắt đèn cốt.", "Cả ý 1 và ý 2."],
       "answerIndex": 3,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Cả ý 1 và ý 2 đều đúng, ý 3 tranh nhau ban đêm bật đèn pha là sai."
     },
     {
       "id": 220,
@@ -2227,7 +2227,7 @@
       "answerList": ["Quan sát cẩn thận các chướng ngại vật và báo hiệu bằng còi, đèn; giảm tốc độ tới mức cần thiết, về số thấp và thực hiện quay vòng với tốc độ phù hợp với bán kính cong của đường vòng.", "Quan sát cẩn thận các chướng ngại vật và báo hiệu bằng còi, đèn; tăng tốc để nhanh chóng qua đường vòng, đạp ly hợp (côn) và giảm tốc độ sau khi qua đường vòng."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Điều khiển xe trên đường vòng cần giảm tốc độ."
     },
     {
       "id": 224,
@@ -2407,7 +2407,7 @@
       "answerList": ["Bảo dưỡng xe theo định kỳ và có kế hoạch lộ trình trước khi chạy xe.", "Kiểm tra áp suất lốp theo quy định và chạy xe với tốc độ phù hợp với tình trạng mặt đường và mật độ giao thông trên đường.", "Cả ý 1 và ý 2."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Để tiết kiệm nhiên liệu thì cần bảo dưỡng định kỳ và kiểm tra áp suất lốp."
     },
     {
       "id": 242,
@@ -2477,7 +2477,7 @@
       "answerList": ["Tăng tốc độ, chạy gần xe trước, nhìn đèn hậu để định hướng.", "Giảm tốc độ, chạy cách xa xe trước với khoảng cách an toàn, bật đèn sương mù và đèn chiếu gần.", "Tăng tốc độ, bật đèn pha vượt qua xe chạy trước."],
       "answerIndex": 1,
       "isDeadPoint": true,
-      "comment": ""
+      "comment": "Tầm nhìn bị hạn chế thì giảm tốc độ."
     },
     {
       "id": 249,
@@ -2487,7 +2487,7 @@
       "answerList": ["Giảm tốc độ, nếu cần thiết có thể dừng xe lại.", "Bật đèn pha chiếu xa và giữ nguyên tốc độ.", "Tăng tốc độ, bật đèn pha đối diện xe phía trước."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Đèn pha xe ngược chiều gây chói mắt thì giảm tốc độ."
     },
     {
       "id": 250,
@@ -2497,7 +2497,7 @@
       "answerList": ["Sử dụng phanh trước.", "Sử dụng phanh sau.", "Giảm hết ga; sử dụng đồng thời cả phanh sau và phanh trước."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Khi phanh xe mô tô thì giảm hết ga."
     },
     {
       "id": 251,
@@ -2607,7 +2607,7 @@
       "answerList": ["Giảm tốc độ, nhường đường cho xe trên đường chính từ bất kì hướng nào tới.", "Nháy đèn, bấm còi để xe đi trên đường chính biết và tăng tốc độ cho xe đi ra đường chính.", "Quan sát xe đang đi trên đường chính, nếu là xe có kích thước lớn hơn thì nhường đường, xe có kích thước nhỏ hơn thì tăng tốc độ cho xe đi ra đường chính."],
       "answerIndex": 0,
       "isDeadPoint": true,
-      "comment": ""
+      "comment": "Đi từ đường nhánh ra đường chính thì giảm tốc độ, nhường đường cho xe trên đường chính."
     },
     {
       "id": 262,
@@ -2617,7 +2617,7 @@
       "answerList": ["Giảm tốc độ để đảm bảo an toàn với xe phía trước và sử dụng điện thoại để liên lạc.", "Giảm tốc độ để dừng xe ở nơi cho phép dừng xe sau đó sử dụng điện thoại để liên lạc.", "Tăng tốc độ để cách xa xe phía sau và sử dụng điện thoại để liên lạc."],
       "answerIndex": 1,
       "isDeadPoint": true,
-      "comment": ""
+      "comment": "Khi cần nghe điện thoại thì giảm tốc độ và dừng xe ở nơi cho phép dừng xe."
     },
     {
       "id": 263,
@@ -2627,7 +2627,7 @@
       "answerList": ["Sử dụng còi.", "Phanh đồng thời cả phanh trước và phanh sau.", "Chỉ sử dụng phanh trước."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe mô tô tay ga chỉ sử dụng phanh trước thì rất nguy hiểm."
     },
     {
       "id": 264,
@@ -3067,7 +3067,7 @@
       "answerList": ["Biển 1.", "Biển 2 và 3.", "Biển 1 và 3.", "Cả ba biển."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 2: P.106 'Cấm xe ô tô tải' sẽ cấm cả máy kéo và các xe máy chuyên dùng.\nBiển 3: P.109 'Cấm máy kéo' nên Biển 2 và Biển 3 là đáp án đúng."
     },
     {
       "id": 308,
@@ -3077,7 +3077,7 @@
       "answerList": ["Biển 1 và 2.", "Biển 1 và 3.", "Biển 2 và 3."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: P.104 'Cấm mô tô' thì cấm cả mô tô ba bánh. \nBiển 2: P.103a 'Cấm ô tô' thì cấm cả ô tô và cả phương tiện ba bánh đi vào."
     },
     {
       "id": 309,
@@ -3087,7 +3087,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Cả hai biển."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: P.104 'Cấm mô tô'\nBiển 2: P.103a 'Cấm ô tô' không cấm xe gắn máy (Không phải mô tô).\nNên cả hai biển đều cho phép xe gắn máy đi vào."
     },
     {
       "id": 310,
@@ -3117,7 +3117,7 @@
       "answerList": ["Biển 1 và 2.", "Biển 2.", "Biển 1 và 3.", "Biển 2 và 3."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: P.133 'Hết cấm vượt'\n Biển 2: P.125 'Cấm vượt'\n Biển 3: P.126 'Cấm ô tô tải vượt' \n Chỉ có biển 2 cấm ô tô con vượt nên đáp án đúng là Biển 1 và biển 3."
     },
     {
       "id": 313,
@@ -3127,7 +3127,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Biển 3."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: P.133 'Hết cấm vượt'\n Biển 2: P.125 'Cấm vượt'\n Biển 3: P.126 'Cấm ô tô tải vượt' \n Chỉ có biển 2 cấm ô tô con vượt nên đáp án đúng là Biển 2"
     },
     {
       "id": 314,
@@ -3137,7 +3137,7 @@
       "answerList": ["Biển 1.", "Biển 1 và 2.", "Biển 1 và 3.", "Biển 2 và 3."],
       "answerIndex": 3,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: P.133 'Hết cấm vượt'\n Biển 2: P.125 'Cấm vượt'\n Biển 3: P.126 'Cấm ô tô tải vượt'"
     },
     {
       "id": 315,
@@ -3167,7 +3167,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Không biển nào.", "Cả hai biển."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: P.123a 'Cấm rẽ trái' không cấm quay đầu xe.\n Biển 2: P.124a 'Cấm quay đầu xe' không cấm rẽ trái.\n Nên Biển 2 là đáp án đúng"
     },
     {
       "id": 318,
@@ -3177,7 +3177,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Cả hai biển."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: P.123a 'Cấm rẽ trái' không cấm quay đầu xe.\n Biển 2: P.124a 'Cấm quay đầu xe' không cấm rẽ trái.\n Nên Biển 1 là đáp án đúng"
     },
     {
       "id": 319,
@@ -3187,7 +3187,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Không biển nào."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: P.123a 'Cấm rẽ trái' không cấm quay đầu xe.\n Biển 2: P.124a 'Cấm quay đầu xe' không cấm rẽ trái.\n Nên Biển 2 là đáp án đúng"
     },
     {
       "id": 320,
@@ -3197,7 +3197,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Cả hai biển."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: P.123a 'Cấm rẽ trái' không cấm quay đầu xe.\n Biển 2: P.124e 'Cấm ô tô rẽ trái và quay đầu xe'.\n Nên cả hai biển đều cấm rẽ trái"
     },
     {
       "id": 321,
@@ -3207,7 +3207,7 @@
       "answerList": ["Biển 1 và 2.", "Biển 1 và 3.", "Biển 2 và 3.", "Cả ba biển."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: P.123b 'Cấm rẽ phải'\n Biển 2: P.124d 'Cấm rẽ phải và quay xe'\n Biển 3: P.124f 'Cấm ô tô rẽ phải và quay xe'.\n Nên biển 3 chỉ cấm xe ô tô, còn biển 1 và biển 2 cấm toàn bộ phương tiện rẽ phải."
     },
     {
       "id": 322,
@@ -3217,7 +3217,7 @@
       "answerList": ["Biển 1 và 2.", "Biển 1 và 3.", "Biển 2 và 3.", "Cả ba biển."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: P.123a 'Cấm rẽ trái' \n Biển 2: P.124c 'Cấm rẽ trái và quay xe' \n Biển 3: 'Cấm ô tô rẽ trái và quay xe'. \n Nên biển 3 chỉ cấm xe ô tô, còn biển 1 và biển 2 cấm toàn bộ phương tiện rẽ trái."
     },
     {
       "id": 323,
@@ -3227,7 +3227,7 @@
       "answerList": ["Biển 1 và 2.", "Biển 1 và 3.", "Biển 2 và 3.", "Không biển nào."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: P.124b 'Cấm ô tô quay đầu xe' \n Biển 2: P.124e 'Cấm ô tô rẽ trái và quay xe' \n Biển 3: P.103b 'Cấm ô tô rẽ phải' - Biển này không cấm quay đầu."
     },
     {
       "id": 324,
@@ -3237,7 +3237,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Biển 3.", "Biển 1 và 3."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: P.124b 'Cấm ô tô quay đầu xe' \n Biển 2: P.124e 'Cấm ô tô rẽ trái và quay xe' \n Biển 3: P.124f 'Cấm ô tô rẽ phải và quay xe'"
     },
     {
       "id": 325,
@@ -3257,7 +3257,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Không biển nào."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Theo QCVN41:2019 thì Biển 2: I.410 'Khu vực quay xe' chỉ dẫn khu vực được phép quay đầu xe. Biển này thuộc nhóm biển chỉ dẫn nên KHÔNG cấm rẽ trái. Do đó đáp án đúng là câu 2"
     },
     {
       "id": 327,
@@ -3267,7 +3267,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Cả hai biển."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: P.123a 'Cấm rẽ trái' không cấm quay đầu xe. \n Biển 2: I.410 'Khu vực quay xe'. \n Nên cả hai biển đều cho phép quay đầu xe là đáp án đúng."
     },
     {
       "id": 328,
@@ -3277,7 +3277,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Cả hai biển."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: P.123a 'Cấm rẽ trái' nhưng không cấm quay đầu xe. \n Biển 2: R.301e đặt trước ngã ba ngã tư chỉ được rẽ trái ở phạm vi ngã ba, ngã tư phía sau mặt biển nên không thể quay đầu xe."
     },
     {
       "id": 329,
@@ -3287,7 +3287,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Cả ba biển."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: P.101 'Đường cấm' \n Biển 2: P.102 'Cấm đi ngược chiều' \n Biển 3: P.301a 'Cấm đỗ xe'. \n Nên biển 2 là cấm đi ngược chiều."
     },
     {
       "id": 330,
@@ -3297,7 +3297,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Biển 1 và 2."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: P.101 'Đường cấm' \n Biển 2: P.102 'Cấm đi ngược chiều' cấmm đi vào theo chiều đặt biển \n Biển 3: P.301a 'Cấm đỗ xe' \n nên biển 1 và biển 2 là cấm các phương tiện không được phép đi vào."
     },
     {
       "id": 331,
@@ -3307,7 +3307,7 @@
       "answerList": ["Biển 1.", "Biển 1 và 3.", "Biển 2 và 3.", "Biển 3."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: P.301a 'Cấm đỗ xe' bất kỳ ngày nào \n Biển 2: P.301b 'Cấm đỗ xe' vào ngày lẻ \n Biển 3: P.301c 'Cấm đỗ xe' vào ngày chẵn \n Nên biển 1 và biển 3 là cấm đỗ xe ngày chẵn."
     },
     {
       "id": 332,
@@ -3317,7 +3317,7 @@
       "answerList": ["Biển 1 và 2.", "Biển 2.", "Biển 2 và 3.", "Biển 3."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: P.301a 'Cấm đỗ xe' bất kỳ ngày nào \n Biển 2: P.301b 'Cấm đỗ xe' vào ngày lẻ \n Biển 3: P.301c 'Cấm đỗ xe' vào ngày chẵn \n Nên biển 1 và biển 2 là cấm đỗ xe ngày lẻ."
     },
     {
       "id": 333,
@@ -3327,7 +3327,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Cả ba biển."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: P.101 'Đường cấm' không cấm xe ưu tiên \n Biển 2: R.122 'Dừng lại' áp dụng với cả xe ưu tiên \n Biển 3: P.102 'Cấm đi ngược chiều' không áp dụng với xe ưu tiên \n Nên biển 2 là đáp án đúng, áp dụng với cả xe ưu tiên."
     },
     {
       "id": 334,
@@ -3337,7 +3337,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Cả hai biển."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: P.101 'Đường cấm' không cấm xe ưu tiên \n Biển 2: R.122 'Dừng lại' áp dụng với cả xe ưu tiên \n Nên Biển 1 là đáp án đúng."
     },
     {
       "id": 335,
@@ -3347,7 +3347,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Biển 3."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: P.106a 'Cấm xe tải' \n Biển 2: P.106b 'Cấm xe tải có khối lượng chuyên chở lớn hơn 2.5 tấn' \n Biển 3: P.106c: 'Cấm xe chở hàng nguy hiểm'"
     },
     {
       "id": 336,
@@ -3437,7 +3437,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Cả hai biển."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: P.108 'Cấm ô tô kéo moóc' \n Biển 2: P.109 'Cấm máy kéo' \n Đáp án đúng là cả hai biển."
     },
     {
       "id": 345,
@@ -3447,7 +3447,7 @@
       "answerList": ["Được đi vào.", "Không được đi vào."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: P.108 'Cấm ô tô kéo moóc' không áp dụng với xe ô tô tải (không kéo theo rơ moóc)."
     },
     {
       "id": 346,
@@ -3467,7 +3467,7 @@
       "answerList": ["Biển 1 và 2.", "Biển 1 và 3.", "Biển 2 và 3.", "Cả ba biển."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: P.108 'Cấm ô tô kéo moóc' \n Biển 2: P.109 'Cấm máy kéo' \n Biển 3: P.106a 'Cấm ô tô tải' thì cấm máy kéo \n Nên đáp án đúng là biển 2 và biển 3."
     },
     {
       "id": 348,

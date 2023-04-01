@@ -3,12 +3,12 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:license/Ads/adsHelper.dart';
 import 'package:license/DeathQuestion/DeathQuestion.dart';
-import 'package:license/Forum/ForumWidget.dart';
 import 'package:license/Setting/setting.dart';
 import 'package:license/Test/TestList.dart';
 import 'package:license/Theory/ChapterList.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../Theory/Model/QuestionModel.dart';
+import '../trafficSign/trafficSIgn.dart';
 
 class MainBottomTabBar extends StatefulWidget {
   const MainBottomTabBar({super.key});
@@ -56,7 +56,7 @@ class MainBottomTabBarState extends State<MainBottomTabBar> {
           ChapterList(questionList: questionList,),
           const TestList(),
           DeathQuestionPage(questionList: deathQuestions),
-          const ForumWidget(),
+          const TrafficSign(),
           const SettingScreen()];
 
           return Scaffold(
