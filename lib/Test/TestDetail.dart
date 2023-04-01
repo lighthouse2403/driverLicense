@@ -32,7 +32,7 @@ class _TestDetailState extends State<TestDetail> {
           return Container(
             padding: const EdgeInsets.only(top: 10, bottom: 10),
             child: ListView.separated(
-              itemCount: ((widget.question.selectedIndex != -1) && widget.testStatus == TestStatus.done) ? answerCount + 2 : answerCount + 1,
+              itemCount: ((widget.question.selectedIndex != -1) && (widget.testStatus == TestStatus.done) && widget.question.comment.isNotEmpty) ? answerCount + 2 : answerCount + 1,
               itemBuilder: (BuildContext context, int index) {
 
                 if (index == 0) {

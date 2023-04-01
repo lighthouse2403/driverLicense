@@ -40,7 +40,6 @@ class _TestListState extends State<TestList> {
     List<QuestionModel> deathQuestions = questionList.where((element) => element.isDeadPoint).toList();
 
     randomQuestion.addAll(getRandomTests(deathQuestions,1));
-    print('random question: ${randomQuestion.length}');
     // Get defineQuestion
     for (var i = 0; i < 7; i++) {
       List<QuestionModel> question = questionList.where((element) => (element.chapterId == (i + 1)) && !element.isDeadPoint).toList();
@@ -51,7 +50,6 @@ class _TestListState extends State<TestList> {
     int newRandomId = testArray.length;
     TestModel newRandomTest = TestModel(id: newRandomId, status: 0, finishedCount: 0, total: 35, hasDeadthPoint: true);
     newRandomTest.licenseType = licenseTypes?.where((element) => element.id == currentLicenseTypeId).first;
-    print('random test id: ${newRandomId}');
 
     newRandomTest.questionIds = randomQuestion.map((e) => e.id).toList();
 
@@ -70,12 +68,15 @@ class _TestListState extends State<TestList> {
 
     // Get finished question to show it in finished test
     finishedQuestions = await SQLHelper.getAllQuestion('questions_in_test');
+    List<TestModel> finishedTest = await SQLHelper().getAllTest(licenseId);
 
     // Get random test by license type
     List<TestModel> randomTests = await SQLHelper().getAllRandomTest(licenseId);
+
     final String testResponse = await rootBundle.loadString('assets/json/tests.json');
     final testData = await json.decode(testResponse);
     testArray = List<TestModel>.from(testData['$licenseId'].map((json) => TestModel.fromJson(json)));
+
     testArray.addAll(randomTests);
 
     // Get all license type to import to test
@@ -93,6 +94,9 @@ class _TestListState extends State<TestList> {
       test.finishedCount = finishedQuestions.where((element) => element.testId == test.id).length;
       test.exactCount = finishedQuestions.where((element) => (element.testId == test.id) && (element.selectedIndex == element.answerIndex)).length;
       test.licenseType = licenseTypes?.where((element) => element.id == licenseId).first;
+      if (finishedTest.map((e) => e.id).contains(test.id)) {
+        test.status = 1;
+      }
     }
   }
 
@@ -146,20 +150,24 @@ class _TestListState extends State<TestList> {
         body: FutureBuilder(
           future: loadTheoryData(),
           builder: (context, snapshot) {
-            return GridView.builder(
-                itemCount: testArray.length,
-                gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                    crossAxisCount: 2,
-                    mainAxisSpacing: 16,
-                    crossAxisSpacing: 16),
-                itemBuilder: (context, index) {
-                  return GestureDetector(
-                    onTap: () {
-                      goToTestPage(index);
-                    },
-                    child: TestRow(testModel: testArray[index]),
-                  );
-                });
+            return Container(
+              margin: const EdgeInsets.only(top: 10, bottom: 10),
+              child: GridView.builder(
+                  itemCount: testArray.length,
+                  gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                      crossAxisCount: 3,
+                      mainAxisSpacing: 6,
+                      crossAxisSpacing: 6),
+                  itemBuilder: (context, index) {
+                    return GestureDetector(
+                      onTap: () {
+                        goToTestPage(index);
+                      },
+                      child: TestRow(testModel: testArray[index]),
+                    );
+                  }
+                  )
+            );
           },
         )
     );

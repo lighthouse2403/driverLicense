@@ -13,8 +13,8 @@ class QuestionRow extends StatelessWidget{
       child: Text(
         question,
         style: const TextStyle(
-            fontWeight: FontWeight.w600,
-            fontSize: 18,
+            fontWeight: FontWeight.w500,
+            fontSize: 17,
             color: Colors.black
         ),
       ),

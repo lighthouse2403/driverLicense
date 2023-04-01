@@ -1,7 +1,7 @@
 import 'dart:async';
-import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:license/Ads/adsHelper.dart';
 import 'package:license/Database/sqlHelper.dart';
 import 'package:license/Test/HorizontalTab.dart';
 import 'package:license/Test/Model/TestModel.dart';
@@ -25,10 +25,10 @@ class TestPage extends StatefulWidget {
   List<QuestionModel> questionList = [];
 
   @override
-  State<TestPage> createState() => _TestPageState();
+  State<TestPage> createState() => TestPageState();
 }
 
-class _TestPageState extends State<TestPage> {
+class TestPageState extends State<TestPage> {
   var currentPage = 1;
   Timer? countdownTimer;
   Duration testingDuration = const Duration(minutes: 22);
@@ -39,6 +39,13 @@ class _TestPageState extends State<TestPage> {
   );
   double screenWidth = WidgetsBinding.instance.window.physicalSize.width/WidgetsBinding.instance.window.devicePixelRatio;
   HorizontalTab? horizontalTab;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    AdHelper.showAds();
+  }
 
   @override
   void dispose() {
@@ -60,9 +67,9 @@ class _TestPageState extends State<TestPage> {
     pageController.jumpToPage(index);
   }
 
-  void backFromResult(int index) {
-    jumToIndex(index);
-    onPageChanged(index);
+  void backFromResult(int? index) {
+    jumToIndex(index ?? 0);
+    onPageChanged(index ?? 0);
   }
 
   void startTimer() {

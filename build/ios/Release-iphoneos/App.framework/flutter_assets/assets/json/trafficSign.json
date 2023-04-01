@@ -1,0 +1,36 @@
+{
+  "trafficSign": [
+    {
+      "id": 0,
+      "type": 0,
+      "name": "P.101",
+      "comment": "Đường cấm",
+      "description": "Cấm tất cả các loại phương tiện tham gia giao thông trừ xe ưu tiên theo luâth định đi vào theo cả hai hướng",
+      "image": "p101.png"
+    },
+    {
+      "id": 1,
+      "type": 0,
+      "name": "P.102",
+      "comment": "Cấm đi ngược chiều",
+      "description": "Cấm tất cả các loại phương tiện tham gia giao thông trừ xe ưu tiên theo luâth định đi vào theo chiều đặt biển báo",
+      "image": "p102.png"
+    },
+    {
+      "id": 3,
+      "type": 0,
+      "name": "P.103a",
+      "comment": "Cấm ô tô",
+      "description": "Cấm tất cả các loại phương tiện tham gia giao thông trừ xe ưu tiên theo luâth định đi vào theo cả hai hướng",
+      "image": "p103a.png"
+    },
+    {
+      "id": 4,
+      "type": 0,
+      "name": "P.103b",
+      "comment": "Cấm đi ngược chiều",
+      "description": "Cấm tất cả các loại phương tiện tham gia giao thông trừ xe ưu tiên theo luâth định đi vào theo chiều đặt biển báo",
+      "image": "p103b.png"
+    }
+  ]
+}

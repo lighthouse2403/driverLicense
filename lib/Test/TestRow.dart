@@ -9,11 +9,16 @@ class TestRow extends StatelessWidget {
   // final TestModel test;
   @override
   Widget build(BuildContext context) {
-    Color strokeColor = testModel.exactCount >= (testModel.questionIds.length - 2) ? Colors.green : Colors.red;
-    String status = testModel.exactCount >= (testModel.questionIds.length - 2) ? 'Đạt' : 'Trượt';
+    Color strokeColor = Colors.grey;
+    String status = 'LÀM BÀI';
+
+    if (testModel.status == 1) {
+      status = testModel.exactCount >= (testModel.questionIds.length - 2) ? 'ĐẠT' : 'TRƯỢT';
+      strokeColor = testModel.exactCount < (testModel.licenseType?.require ?? 45) ? Colors.red : strokeColor;
+    }
 
     return Container(
-        margin:  const EdgeInsets.all(16),
+        margin:  const EdgeInsets.all(2),
         padding: const EdgeInsets.all(4),
         child: Stack(
           children: [
@@ -29,7 +34,7 @@ class TestRow extends StatelessWidget {
                 Text(
                   'Đề số ${testModel.id + 1}',
                   style: TextStyle(
-                    fontSize: 16,
+                    fontSize: 14,
                     fontWeight: FontWeight.w500,
                     color: strokeColor
                   ),
@@ -38,12 +43,12 @@ class TestRow extends StatelessWidget {
                 Text(
                   status,
                   style: TextStyle(
-                      fontSize: 20,
+                      fontSize: 17,
                       fontWeight: FontWeight.w600,
                       color: strokeColor,
                   ),
                 ),
-                const SizedBox(height: 6,),
+                const SizedBox(height: 6),
                 Text(
                   '${testModel.exactCount}/${testModel.questionIds.length}',
                   style: TextStyle(

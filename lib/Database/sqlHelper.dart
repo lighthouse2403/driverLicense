@@ -17,7 +17,7 @@ class SQLHelper {
   static Future<void> createTables(sql.Database database) async {
     await database.execute("CREATE TABLE questions(id INTEGER PRIMARY KEY, chapterId INTEGER, questionText TEXT, answerIndex INTEGER, questionImage TEXT, answerList TEXT, comment TEXT, selectedIndex INTEGER, testId INTEGER)");
     await database.execute("CREATE TABLE questions_in_test(questionOnTestId TEXT PRIMARY KEY, id INTEGER, chapterId INTEGER, questionText TEXT, answerIndex INTEGER, questionImage TEXT, answerList TEXT, comment TEXT, selectedIndex INTEGER, testId INTEGER)");
-    await database.execute("CREATE TABLE tests(id INTEGER PRIMARY KEY, status INTEGER, questionIds TEXT, finishedCount INTEGER, exactCount INTEGER, total INTEGER, hasDeadthPoint BOLEAN)");
+    await database.execute("CREATE TABLE tests(id INTEGER PRIMARY KEY, status INTEGER, questionIds TEXT, finishedCount INTEGER, exactCount INTEGER, total INTEGER, hasDeadthPoint BOLEAN, licenseId INTEGER)");
     await database.execute("CREATE TABLE random_tests(id INTEGER PRIMARY KEY, status INTEGER, questionIds TEXT, finishedCount INTEGER, exactCount INTEGER, total INTEGER, hasDeadthPoint BOLEAN, licenseId INTEGER)");
   }
 
@@ -40,6 +40,7 @@ class SQLHelper {
     // Get a reference to the database.
     final db = await SQLHelper.db(tableName);
 
+    print('insert test: ${test.toJson().toString()}');
     // Insert the Dog into the correct table. You might also specify the
     // `conflictAlgorithm` to use in case the same dog is inserted twice.
     //
@@ -80,7 +81,16 @@ class SQLHelper {
 
   Future<List<TestModel>> getAllRandomTest(int licenseId) async {
     final db = await SQLHelper.db('random_tests');
-    final List<Map<String, dynamic>> list = await db.query('random_tests', where: 'licenseId', whereArgs: [licenseId]);
+    final List<Map<String, dynamic>> list = await db.query('random_tests', where: 'licenseId = ?', whereArgs: [licenseId]);
+
+    List<TestModel> testArray = list.map((e) => TestModel.fromDatabase(e)).toList();
+    testArray.sort((a,b) => a.id.compareTo(b.id));
+    return testArray;
+  }
+
+  Future<List<TestModel>> getAllTest(int licenseId) async {
+    final db = await SQLHelper.db('tests');
+    final List<Map<String, dynamic>> list = await db.query('tests', where: 'licenseId = ?', whereArgs: [licenseId]);
     List<TestModel> testArray = list.map((e) => TestModel.fromDatabase(e)).toList();
     testArray.sort((a,b) => a.id.compareTo(b.id));
     return testArray;

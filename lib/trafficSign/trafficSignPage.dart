@@ -4,6 +4,8 @@ import 'package:license/trafficSign/trafficSignModel.dart';
 import 'package:license/trafficSign/trafficSignRow.dart';
 import 'package:flutter/services.dart';
 
+import '../Ads/adsHelper.dart';
+
 class TrafficSignPage extends StatefulWidget {
   const TrafficSignPage({super.key, required this.type});
   final int type;
@@ -29,6 +31,8 @@ class _TrafficSignPageState extends State<TrafficSignPage> {
     // TODO: implement initState
     super.initState();
     loadTrafficSignData();
+
+    AdHelper.showAds();
   }
 
   @override
