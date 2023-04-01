@@ -11,10 +11,12 @@ class AdHelper {
   }
 
   static showAds() {
-    double currentTime = DateTime.now().microsecondsSinceEpoch/1000;
-    if ((AdHelper.interstitialAd != null) && (currentTime- 1800) > lastDisplayingTime) {
+    double currentTime = DateTime.now().microsecondsSinceEpoch/1000000;
+    print('current: $currentTime last: ${AdHelper.lastDisplayingTime} ');
+
+    if ((AdHelper.interstitialAd != null) && (currentTime- 18000) > lastDisplayingTime) {
       AdHelper.interstitialAd?.show();
-      lastDisplayingTime = DateTime.now().microsecondsSinceEpoch/1000;
+      AdHelper.lastDisplayingTime = DateTime.now().microsecondsSinceEpoch/1000000;
       AdHelper().loadInterstitialAd();
     }
   }
