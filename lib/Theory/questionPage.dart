@@ -49,7 +49,10 @@ class _QuestionPageState extends State<QuestionPage> {
       length: widget.questionList.length,
       currentPage: currentPage,
       callback: jumToIndex,
-      width: screenWidth/4,
+      screenRate: 4,
+      title: widget.questionList.asMap().entries.map((e) {
+        return 'Câu ${e.key}';
+      }).toList(),
     );
     return Scaffold(
         appBar: AppBar(
