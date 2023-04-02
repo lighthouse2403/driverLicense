@@ -23,7 +23,6 @@ class _TrafficSignPageState extends State<TrafficSignPage> {
     setState(() {
       traficSignArray = data["trafficSign"];
     });
-    print(data.toString());
   }
 
   @override

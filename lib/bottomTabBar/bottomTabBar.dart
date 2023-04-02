@@ -82,8 +82,8 @@ class MainBottomTabBarState extends State<MainBottomTabBar> {
                   backgroundColor: Colors.green,
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(Icons.forum),
-                  label: 'Giao lưu',
+                  icon: Icon(Icons.traffic),
+                  label: 'Biển báo',
                   backgroundColor: Colors.green,
                 ),
                 BottomNavigationBarItem(
