@@ -1,8 +1,9 @@
 import 'dart:async';
-import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:license/Ads/adsHelper.dart';
 import 'package:license/Database/sqlHelper.dart';
+import 'package:license/Extension/ListExtension.dart';
 import 'package:license/Test/HorizontalTab.dart';
 import 'package:license/Test/Model/TestModel.dart';
 import 'package:license/Test/TimeWidget.dart';
@@ -25,10 +26,10 @@ class TestPage extends StatefulWidget {
   List<QuestionModel> questionList = [];
 
   @override
-  State<TestPage> createState() => _TestPageState();
+  State<TestPage> createState() => TestPageState();
 }
 
-class _TestPageState extends State<TestPage> {
+class TestPageState extends State<TestPage> {
   var currentPage = 1;
   Timer? countdownTimer;
   Duration testingDuration = const Duration(minutes: 22);
@@ -39,6 +40,13 @@ class _TestPageState extends State<TestPage> {
   );
   double screenWidth = WidgetsBinding.instance.window.physicalSize.width/WidgetsBinding.instance.window.devicePixelRatio;
   HorizontalTab? horizontalTab;
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    AdHelper.showAds();
+  }
 
   @override
   void dispose() {
@@ -60,9 +68,9 @@ class _TestPageState extends State<TestPage> {
     pageController.jumpToPage(index);
   }
 
-  void backFromResult(int index) {
-    jumToIndex(index);
-    onPageChanged(index);
+  void backFromResult(int? index) {
+    jumToIndex(index ?? 0);
+    onPageChanged(index ?? 0);
   }
 
   void startTimer() {
@@ -166,6 +174,7 @@ class _TestPageState extends State<TestPage> {
         testStatus = 'Bắt đầu';
         break;
     }
+
     return Scaffold(
         appBar: AppBar(
           actions: [
@@ -220,7 +229,10 @@ class _TestPageState extends State<TestPage> {
               length: widget.test.questionIds.length,
               currentPage: currentPage,
               callback: jumToIndex,
-              width: screenWidth/4,
+              screenRate: 4,
+              title: widget.test.questionIds.asMap().entries.map((e) {
+                return 'Câu ${e.key}';
+              }).toList(),
             );
             return Column(
               children: [

@@ -1,23 +1,24 @@
 import 'package:flutter/material.dart';
 class HorizontalTab extends StatelessWidget {
 
-  HorizontalTab({super.key, required this.length, required this.currentPage, required this.callback, required this.width});
+  HorizontalTab({super.key, required this.length, required this.currentPage, required this.callback, required this.title, required this.screenRate});
 
   int currentPage = 0;
   int length = 0;
-  double width = 0;
+  int screenRate = 4;
+  List<String> title = [];
 
   ScrollController tabController = ScrollController();
   Function(int) callback;
+  double screenWidth = WidgetsBinding.instance.window.physicalSize.width/WidgetsBinding.instance.window.devicePixelRatio;
 
   void animateToIndex(int index) {
-    double screenWidth = WidgetsBinding.instance.window.physicalSize.width/WidgetsBinding.instance.window.devicePixelRatio;
-    var tabItemWidth = screenWidth/4;
+    double tabItemWidth = screenWidth/screenRate;
     Duration duration = const Duration(milliseconds: 500);
     if ((index > 1) && ((index + 2) < length)) {
       tabController.animateTo((index - 1.5) * tabItemWidth, duration: duration, curve: Curves.easeOut);
     } else if (index >= (length - 1)) {
-      tabController.animateTo((index - 3) * tabItemWidth, duration: duration, curve: Curves.easeOut);
+      tabController.animateTo((index - (screenRate - 1)) * tabItemWidth, duration: duration, curve: Curves.easeOut);
     } else if (index == 0) {
       tabController.animateTo(0, duration: duration, curve: Curves.easeOut);
     } else if (index == (length - 2)) {
@@ -27,6 +28,8 @@ class HorizontalTab extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double tabItemWidth = screenWidth/screenRate;
+
     return Container(
       height: 50,
       child: ListView.builder(
@@ -36,14 +39,14 @@ class HorizontalTab extends StatelessWidget {
           itemBuilder: (context, index) {
             bool shouldHightLight = (index + 1) == currentPage;
             return SizedBox(
-              width: width,
+              width: tabItemWidth,
               child: GestureDetector(
                 onTap: () {
                   callback(index);
                 },
                 child: Center(
                   child: Text(
-                    'Câu ${index + 1}',
+                    title[index],
                     style: TextStyle(
                         fontSize: shouldHightLight ? 18 : 14,
                         fontWeight: shouldHightLight ? FontWeight.w700 : FontWeight.w500,

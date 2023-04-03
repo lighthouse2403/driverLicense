@@ -3,6 +3,7 @@ import 'package:license/Theory/Model/QuestionModel.dart';
 import 'package:license/Theory/Model/ChapterModel.dart';
 import 'package:license/Theory/questionDetail.dart';
 
+import '../Ads/adsHelper.dart';
 import '../Test/HorizontalTab.dart';
 
 class QuestionPage extends StatefulWidget {
@@ -24,6 +25,13 @@ class _QuestionPageState extends State<QuestionPage> {
     keepPage: true,
   );
 
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+    AdHelper.showAds();
+  }
+
   void onPageChanged(int index) {
     horizontalTab?.animateToIndex(index);
     setState(() {
@@ -41,7 +49,10 @@ class _QuestionPageState extends State<QuestionPage> {
       length: widget.questionList.length,
       currentPage: currentPage,
       callback: jumToIndex,
-      width: screenWidth/4,
+      screenRate: 4,
+      title: widget.questionList.asMap().entries.map((e) {
+        return 'Câu ${e.key}';
+      }).toList(),
     );
     return Scaffold(
         appBar: AppBar(

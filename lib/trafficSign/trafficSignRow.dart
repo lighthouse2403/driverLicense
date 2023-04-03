@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:license/trafficSign/trafficSignDetail.dart';
-import 'package:license/trafficSign/trafficSignModel.dart';
+import 'package:license/trafficSign/TrafficSignModel.dart';
 
 class TrafficSignRow extends StatefulWidget {
   TrafficSignRow({super.key, required this.model});

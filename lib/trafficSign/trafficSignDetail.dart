@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:license/trafficSign/trafficSignModel.dart';
+import 'package:license/trafficSign/TrafficSignModel.dart';
 
 class TrafficSignDetail extends StatefulWidget {
   const TrafficSignDetail({super.key, required this.trafficSignModel});

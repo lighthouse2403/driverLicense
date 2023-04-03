@@ -32,6 +32,12 @@
       "languageVersion": "2.12"
     },
     {
+      "name": "crypto",
+      "rootUri": "file:///Users/dangnguyen/.pub-cache/hosted/pub.dev/crypto-3.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
       "name": "cupertino_icons",
       "rootUri": "file:///Users/dangnguyen/.pub-cache/hosted/pub.dev/cupertino_icons-1.0.5",
       "packageUri": "lib/",
@@ -80,6 +86,30 @@
       "languageVersion": "2.17"
     },
     {
+      "name": "google_fonts",
+      "rootUri": "file:///Users/dangnguyen/.pub-cache/hosted/pub.dev/google_fonts-3.0.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "google_mobile_ads",
+      "rootUri": "file:///Users/dangnguyen/.pub-cache/hosted/pub.dev/google_mobile_ads-1.3.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
+      "name": "http",
+      "rootUri": "file:///Users/dangnguyen/.pub-cache/hosted/pub.dev/http-0.13.5",
+      "packageUri": "lib/",
+      "languageVersion": "2.14"
+    },
+    {
+      "name": "http_parser",
+      "rootUri": "file:///Users/dangnguyen/.pub-cache/hosted/pub.dev/http_parser-4.0.2",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "js",
       "rootUri": "file:///Users/dangnguyen/.pub-cache/hosted/pub.dev/js-0.6.5",
       "packageUri": "lib/",
@@ -114,6 +144,24 @@
       "rootUri": "file:///Users/dangnguyen/.pub-cache/hosted/pub.dev/path-1.8.2",
       "packageUri": "lib/",
       "languageVersion": "2.12"
+    },
+    {
+      "name": "path_provider",
+      "rootUri": "file:///Users/dangnguyen/.pub-cache/hosted/pub.dev/path_provider-2.0.14",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "path_provider_android",
+      "rootUri": "file:///Users/dangnguyen/.pub-cache/hosted/pub.dev/path_provider_android-2.0.24",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
+    },
+    {
+      "name": "path_provider_foundation",
+      "rootUri": "file:///Users/dangnguyen/.pub-cache/hosted/pub.dev/path_provider_foundation-2.2.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.17"
     },
     {
       "name": "path_provider_linux",
@@ -254,6 +302,12 @@
       "languageVersion": "2.18"
     },
     {
+      "name": "typed_data",
+      "rootUri": "file:///Users/dangnguyen/.pub-cache/hosted/pub.dev/typed_data-1.3.1",
+      "packageUri": "lib/",
+      "languageVersion": "2.12"
+    },
+    {
       "name": "vector_math",
       "rootUri": "file:///Users/dangnguyen/.pub-cache/hosted/pub.dev/vector_math-2.1.4",
       "packageUri": "lib/",
@@ -278,7 +332,7 @@
       "languageVersion": "2.19"
     }
   ],
-  "generated": "2023-03-14T08:33:57.726308Z",
+  "generated": "2023-04-01T09:34:33.092076Z",
   "generator": "pub",
-  "generatorVersion": "2.19.2"
+  "generatorVersion": "2.19.6"
 }
