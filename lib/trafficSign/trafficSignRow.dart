@@ -24,7 +24,7 @@ class _TrafficSignRowState extends State<TrafficSignRow> {
         children: [
           Container(
             padding: const EdgeInsets.only(top: 10, bottom: 10, left: 10),
-            child: Image.asset('assets/home/tips.png', width: 60, height: 60,),),
+            child: Image.asset('assets/icon/trafficSign/${widget.model.name}.png', width: 60, height: 60,),),
           Container(
             padding: const EdgeInsets.all(12),
             child: Column(

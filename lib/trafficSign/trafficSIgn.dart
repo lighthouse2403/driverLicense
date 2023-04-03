@@ -24,9 +24,15 @@ class _TrafficSignState extends State<TrafficSign> {
   List<TrafficSignModel> traficSignArray = [];
 
   Future<void> loadTrafficSignData() async {
+
     final String response = await rootBundle.loadString('assets/json/trafficSign.json');
+    print('loadTrafficSignData');
+
     final trafficSigndata = await json.decode(response);
+
     traficSignArray = List<TrafficSignModel>.from(trafficSigndata["trafficSign"].map((json) => TrafficSignModel.fromJson(json)));
+    print('image ${trafficSigndata.toString()}');
+
   }
 
   void onPageChanged(int index) {

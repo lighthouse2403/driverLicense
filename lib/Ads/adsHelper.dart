@@ -12,7 +12,6 @@ class AdHelper {
 
   static showAds() {
     double currentTime = DateTime.now().microsecondsSinceEpoch/1000000;
-    print('current: $currentTime last: ${AdHelper.lastDisplayingTime} ');
 
     if ((AdHelper.interstitialAd != null) && (currentTime- 18000) > lastDisplayingTime) {
       AdHelper.interstitialAd?.show();

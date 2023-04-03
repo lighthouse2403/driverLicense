@@ -30,7 +30,7 @@ class _TrafficSignDetailState extends State<TrafficSignDetail> {
                               fontWeight: FontWeight.w700),),
             Container(
               child: Center(
-                child: Image.asset('assets/trafficSign/${widget.trafficSignModel.image}',),)
+                child: Image.asset('assets/trafficSign/${widget.trafficSignModel.name}',),)
           ),
             Text(widget.trafficSignModel.description,
               style: const TextStyle(

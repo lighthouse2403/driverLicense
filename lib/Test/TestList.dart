@@ -62,6 +62,8 @@ class _TestListState extends State<TestList> {
   }
 
   Future<void> loadTheoryData() async {
+    print('TEST LIST');
+
     // Detect license type like B1, B2, C,D, E, F
     SharedPreferences prefs = await SharedPreferences.getInstance();
     int licenseId = prefs.getInt('licenseType') ?? 2;
