@@ -1,36 +1,1509 @@
 {
   "trafficSign": [
     {
-      "id": 0,
       "type": 0,
       "name": "P.101",
       "comment": "Đường cấm",
-      "description": "Cấm tất cả các loại phương tiện tham gia giao thông trừ xe ưu tiên theo luâth định đi vào theo cả hai hướng",
-      "image": "p101.png"
+      "description": "Cấm tất cả các phương tiện đi vào đường có gắn biển báo này, ngoại trừ xe ưu tiên theo quy định (cấm cả 2 chiều)."
     },
     {
-      "id": 1,
       "type": 0,
       "name": "P.102",
       "comment": "Cấm đi ngược chiều",
-      "description": "Cấm tất cả các loại phương tiện tham gia giao thông trừ xe ưu tiên theo luâth định đi vào theo chiều đặt biển báo",
-      "image": "p102.png"
+      "description": "Cấm các loại phương tiện đi vào chiều đường có đặt biển, ngoại trừ xe ưu tiên theo quy định."
     },
     {
-      "id": 3,
       "type": 0,
       "name": "P.103a",
       "comment": "Cấm ô tô",
-      "description": "Cấm tất cả các loại phương tiện tham gia giao thông trừ xe ưu tiên theo luâth định đi vào theo cả hai hướng",
-      "image": "p103a.png"
+      "description": "Cấm các loại xe cơ giới đi vào, trừ mô tô 2 bánh, xe gắn máy và xe ưu tiên theo quy định."
     },
     {
-      "id": 4,
       "type": 0,
       "name": "P.103b",
-      "comment": "Cấm đi ngược chiều",
-      "description": "Cấm tất cả các loại phương tiện tham gia giao thông trừ xe ưu tiên theo luâth định đi vào theo chiều đặt biển báo",
-      "image": "p103b.png"
-    }
+      "comment": "Cấm xe ô tô rẽ phải",
+      "description": "Cấm các loại xe cơ giới rẽ phải, trừ mô tô 2 bánh, xe gắn máy và xe ưu tiên theo quy định."
+    },
+    {
+      "type": 0,
+      "name": "P.103c",
+      "comment": "Cấm xe ô tô rẽ trái",
+      "description": "Cấm các loại xe cơ giới rẽ trái, trừ mô tô 2 bánh, xe gắn máy và xe ưu tiên theo quy định."
+    },
+    {
+      "type": 0,
+      "name": "P.104",
+      "comment": "Cấm mô tô",
+      "description": "Cấm các loại mô tô đi vào (ngoại trừ mô tô được ưu tiên theo quy định). Biển không áp dụng với người dắt mô tô."
+    },
+    {
+      "type": 0,
+      "name": "P.105",
+      "comment": "Cấm xe ô tô và mô tô",
+      "description": "Cấm các loại xe cơ giới và mô tô đi vào, ngoại trừ xe gắn máy và xe ưu tiên theo quy định."
+    },
+    {
+      "type": 0,
+      "name": "P.106",
+      "comment": "Cấm xe tải",
+      "description": "Cấm xe tải, mô tô kéo, các mô tô chuyên dùng đi vào (trừ xe ưu tiên theo quy định)."
+    },
+    {
+      "type": 0,
+      "name": "P.106a",
+      "comment": "Cấm xe tải theo trọng lượng",
+      "description": "Cấm xe tải có khối lượng chuyên chở lớn hơn giá trị ghi trong biển báo đi vào."
+    },
+    {
+      "type": 0,
+      "name": "P.106b",
+      "comment": "Cấm xe tải chở hàng nguy hiểm",
+      "description": "Cấm xe tải chở hàng nguy hiểm đi vào"
+    },
+    {
+      "type": 0,
+      "name": "P.107",
+      "comment": "Biển báo Cấm xe khách và xe tải",
+      "description": "Cấm các loại xe ô tô chở khách, xe tải, mô tô kéo, mô tô thi công chuyên dụng đi vào, trừ xe ưu tiên theo quy định."
+    },
+    {
+      "type": 0,
+      "name": "P.107a",
+      "comment": "Cấm xe khách",
+      "description": "Cấm các loại ô tô chở khách đi vào (trừ xe ưu tiên theo quy định). Không cấm xe buýt. Trong trường hợp cấm xe khách theo số chỗ ngồi sẽ có biển phụ bên dưới."
+    },
+    {
+      "type": 0,
+      "name": "P.107b",
+      "comment": "Cấm xe taxi",
+      "description": "Cấm xe taxi đi vào. Trường hợp cấm xe taxi theo giờ sẽ có biển phụ bên dưới."
+    },
+    {
+      "type": 0,
+      "name": "P.108",
+      "comment": "Cấm xe rơ-mooc",
+      "description": "Cấm các loại xe cơ giới kéo rơ-mooc, kể cả xe khách – máy kéo – mô tô kéo theo rơ-mooc đi vào, trừ loại ô tô sơ-mi-rơ-mooc và xe ưu tiên theo quy định."
+    },
+    {
+      "type": 0,
+      "name": "P.108a",
+      "comment": "Cấm xe sơ-mi-rơ-mooc",
+      "description": "Cấm các loại xe sơ-mi-rơ-mooc, xe kéo rơ-mooc đi vào (trừ xe ưu tiên theo quy định)."
+    },{
+        "type": 0,
+        "name": "P.109",
+        "comment": "Cấm máy kéo",
+        "description": "Cấm các loại máy kéo, máy kéo bánh xích/bánh hơi đi vào."
+      },
+    {
+      "type": 0,
+      "name": "P.110a",
+      "comment": "Cấm xe đạp",
+      "description": "Cấm xe đạp đi vào. Không áp dụng cấm người dẫn xe đạp."
+    },
+    {
+      "type": 0,
+      "name": "P.110b",
+      "comment": "Cấm xe đạp thồ",
+      "description": "Cấm xe đạp thô. Không áp dụng cấm người dẫn xe đạp thồ."
+    },
+    {
+      "type": 0,
+      "name": "P.111a",
+      "comment": "Cấm mô tô",
+      "description": "Cấm các loại mô tô, xe gắn máy đi vào. Không áp dụng cấm người đi xe đạp."
+    },
+    {
+        "type": 0,
+        "name": "P.111b",
+        "comment": "Cấm xe 3 bánh có gắn động cơ",
+        "description": "Cấm xe 3 bánh có gắn động cơ như xe xích lô, xe lam, xe lôi máy…"
+      },
+    {
+      "type": 0,
+      "name": "P.111c",
+      "comment": "Cấm xe 3 bánh không động cơ",
+      "description": "Cấm xe 3 bánh không gắn động cơ như xe xích lô, xe lôi đạp…"
+    },
+    {
+      "type": 0,
+      "name": "P.112",
+      "comment": "Cấm người đi bộ",
+      "description": "Cấm người đi bộ đi vào."
+    },
+    {
+      "type": 0,
+      "name": "P.113",
+      "comment": "Cấm xe người kéo/đẩy",
+      "description": "Cấm xe thô sơ, xe do người đẩy/kéo đi vào. Không áp dụng cấm xe nôi trẻ em, phương tiện chuyên dùng của người khuyết tật."
+    },
+    {
+        "type": 0,
+        "name": "P.114",
+        "comment": "Cấm xe súc vật kéo",
+        "description": "Cấm xe sử dụng súc vật kéo hay chở trên lưng đi vào."
+      },
+    {
+        "type": 0,
+        "name": "P.115",
+        "comment": "Hạn chế tải trọng trục xe",
+        "description": "Cấm các loại xe cơ giới/thô sơ (kể cả xe ưu tiên) có tải trọng toàn bộ xe phân bổ trên một trục xe vượt quá trị số ghi trên biển đi vào."
+      },
+    {
+        "type": 0,
+        "name": "P.117",
+        "comment": "Hạn chế chiều ngang xe",
+        "description": "Cấm các loại xe cơ giới/thô sơ (kể cả xe ưu tiên) có chiều ngang vượt quá trị số ghi trên biển đi vào."
+      },
+    {
+        "type": 0,
+        "name": "P.119",
+        "comment": "Hạn chế chiều dài xe",
+        "description": "Cấm các loại xe cơ giới/thô sơ (kể cả xe ưu tiên) có chiều dài vượt quá trị số ghi trên biển đi vào."
+      },
+    {
+        "type": 0,
+        "name": "P.120",
+        "comment": "Hạn chế chiều dài xe ô tô, máy kéo mooc hoặc sơ-mi-rơ-mooc",
+        "description": "Cấm các loại xe cơ giới kéo mooc, xe sơ-mi-rơ-mooc có chiều dài vượt quá trị số ghi trên biển (kể cả xe ưu tiên) đi vào."
+      },
+    {
+        "type": 0,
+        "name": "P.121",
+        "comment": "Cự ly tối thiểu giữa hai xe",
+        "description": "Các xe ô tô phải di chuyển cách nhau một khoảng tối thiểu ghi trên biển."
+      },
+    {
+        "type": 0,
+        "name": "P.122",
+        "comment": "Biến báo STOP",
+        "description": "Biển báo STOP cấm tất cả các loại xe, kể cả xe ưu tiên."
+      },
+    {
+        "type": 0,
+        "name": "P.123a",
+        "comment": "Cấm rẽ trái",
+        "description": "Cấm xe các loại xe cơ giới/thô sơ rẽ trái (trừ xe ưu tiên theo quy định). Không áp dụng cấm quay đầu xe."
+      },
+    {
+        "type": 0,
+        "name": "P.123b",
+        "comment": "Cấm rẽ phải",
+        "description": "Cấm xe các loại xe cơ giới/thô sơ rẽ phải (trừ xe ưu tiên theo quy định). Không áp dụng cấm quay đầu xe."
+      },
+    {
+        "type": 0,
+        "name": "P.124a",
+        "comment": "Cấm quay đầu xe",
+        "description": "Cấm các loại xe quay đầu kiểu chữ U theo chiều mũi tên trên biển."
+      },
+    {
+        "type": 0,
+        "name": "P.124b",
+        "comment": "Cấm xe ô tô quay đầu",
+        "description": "Cấm xe ô tô quay đầu kiểu chữ U theo chiều mũi tên trên biển."
+      },
+    {
+        "type": 0,
+        "name": "P.124c",
+        "comment": "Cấm rẽ trái và quay đầu xe",
+        "description": "Cấm các loại xe rẽ trái và quay đầu trái theo chiều mũi tên trên biển."
+      },
+    {
+        "type": 0,
+        "name": "P.124d",
+        "comment": "Cấm rẽ phải và quay đầu xe",
+        "description": "Cấm các loại xe rẽ phải và quay đầu phải theo chiều mũi tên trên biển."
+      },
+    {
+        "type": 0,
+        "name": "P.124e",
+        "comment": "Cấm ô tô rẽ trái và quay đầu xe",
+        "description": "Cấm ô tô rẽ trái và quay đầu trái theo chiều mũi tên trên biển."
+      },
+    {
+        "type": 0,
+        "name": "P.124f",
+        "comment": "Cấm ô tô rẽ phải và quay đầu xe",
+        "description": "Cấm ô tô rẽ phải và quay đầu phải theo chiều mũi tên trên biển."
+      },
+    {
+        "type": 0,
+        "name": "P.125",
+        "comment": "Cấm vượt",
+        "description": "Cấm các loại xe cơ giới vượt nhau (kể cả xe ưu tiên theo quy định), nhưng được phép vượt mô tô 2 bánh, xe gắn máy."
+      },
+    {
+        "type": 0,
+        "name": "P.126",
+        "comment": "Cấm xe tải vượt",
+        "description": "Cấm các loại xe tải vượt xe cơ giới khác, được phép vượt mô tô 2 bánh, xe gắn máy. Không áp dụng các loại xe cơ giới khác vượt xe nhau và vượt xe tải."
+      },
+    {
+        "type": 0,
+        "name": "P.127",
+        "comment": "Tốc độ tối đa cho phép",
+        "description": "Các xe cơ giới chạy không vượt quá tốc độ ghi trên biển (trừ xe ưu tiên theo quy định)."
+      },
+    {
+        "type": 0,
+        "name": "P.127a",
+        "comment": "Tốc độ tối đa cho phép về ban đêm",
+        "description": "Quy định tốc độ tối đa về ban đêm cho các phương tiện."
+      },
+    {
+        "type": 0,
+        "name": "P.127b",
+        "comment": "Biển ghép tốc độ tối đa cho phép trên từng làn đường.",
+        "description": "Quy định tốc độ tối đa cho phép trên từng làn đường. Xe chạy trên làn đường nào phải tuân thủ tốc độ tối đa cho phép trên làn đường đó."
+      },
+    {
+        "type": 0,
+        "name": "P.127d",
+        "comment": "Biển ghép hết hạn chế tốc độ tối đa cho phép trên từng làn đường.",
+        "description": "Hết đoạn đường hạn chế tốc độ tối đa cho phép."
+      },
+    {
+        "type": 0,
+        "name": "P.128",
+        "comment": "Cấm sử dụng còi",
+        "description": "Cấm các loại xe sử dụng còi."
+      },
+    {
+        "type": 0,
+        "name": "P.129",
+        "comment": "Kiểm tra",
+        "description": "Báo nơi đặt trạm kiểm tra, các loại xe vận tải đi qua phải dừng lại để kiểm tra theo quy định."
+      },
+    {
+        "type": 0,
+        "name": "P.130",
+        "comment": "Cấm dừng xe và đỗ xe",
+        "description": "Cấm các loại xe cơ giới dừng và đỗ xe phía đường có đặt biển (trừ xe ưu tiên theo quy định)."
+      },
+    {
+        "type": 0,
+        "name": "P.131a",
+        "comment": "Cấm đỗ xe",
+        "description": "Cấm các loại xe cơ giới đỗ xe phía đường có đặt biển (trừ xe ưu tiên)"
+      },
+    {
+        "type": 0,
+        "name": "P.131b",
+        "comment": "Cấm đỗ xe vào ngày lẻ",
+        "description": "Cấm các loại xe cơ giới đỗ xe vào ngày lẻ phía đường có đặt biển (trừ xe ưu tiên"
+      },
+    {
+        "type": 0,
+        "name": "P.131c",
+        "comment": "Cấm đỗ xe vào ngày chẵn",
+        "description": "Cấm các loại xe cơ giới đỗ xe vào ngày chẵn phía đường có đặt biển (trừ xe ưu tiên"
+      },
+    {
+        "type": 0,
+        "name": "P.132",
+        "comment": "Nhường đường cho xe cơ giới đi ngược chiều qua đường hẹp",
+        "description": "Các loại xe cơ giới/thô sơ, kể cả xe ưu tiên theo quy định,  phải nhường đường cho các loại xe cơ giới đang di chuyển chiều ngược lại."
+      },
+    {
+        "type": 0,
+        "name": "DP.133",
+        "comment": "Hết cấm vượt",
+        "description": "Biển thông báo hết đoạn đường cấm vượt."
+      },
+    {
+        "type": 0,
+        "name": "DP.134",
+        "comment": "Hết hạn chế tốc độ tối đa",
+        "description": "Biển thông báo hết đoạn đường hạn chế tốc độ tối đa."
+      },
+    {
+        "type": 0,
+        "name": "DP.135",
+        "comment": "Hết tất cả các lệnh cấm",
+        "description": "Biển thông báo hết đoạn đường áp dụng tất cả các lệnh cấm."
+      },
+    {
+        "type": 0,
+        "name": "P.136",
+        "comment": "Cấm đi thẳng",
+        "description": "Cấm các loại xe cơ giới/thô sơ đi thẳng vào đoạn đường phía trước."
+      },
+    {
+        "type": 0,
+        "name": "P.137",
+        "comment": "Cấm rẽ trái, rẽ phải",
+        "description": "Cấm các loại xe cơ giới rẽ trái, rẽ phải. Biển đặt ở những vị trí ngay trước nút giao đường. Trong trường hợp có quy định thời gian cấm sẽ có biển phụ ở dưới."
+      },
+    {
+        "type": 0,
+        "name": "P.138",
+        "comment": "Cấm đi thẳng, rẽ trái",
+        "description": "Cấm các loại xe cơ giới đi thẳng, rẽ trái. Biển đặt ở những vị trí ngay trước nút giao đường. Trong trường hợp có quy định thời gian cấm sẽ có biển phụ ở dưới."
+      },
+    {
+        "type": 0,
+        "name": "P.139",
+        "comment": "Cấm đi thẳng, rẽ phải",
+        "description": "Cầm các loại xe cơ giới đi thẳng, rẽ phải. Biển đặt ở những vị trí ngay trước nút giao đường. Trong trường hợp có quy định thời gian cấm sẽ có biển phụ ở dưới."
+      },
+    {
+        "type": 0,
+        "name": "P.140",
+        "comment": "Cấm xe công nông và các loại xe tương tự",
+        "description": "Cấm các loại xe công nông, xe tương tự công nông đi vào."
+      },
+    {
+        "type": 1,
+        "name": "R.122",
+        "comment": "Dừng lại",
+        "description": "Để báo các loại xe (cơ giới và thô sơ) dừng lại."
+      },
+    {
+        "type": 1,
+        "name": "R.301a",
+        "comment": "Các xe chỉ được đi thẳng",
+        "description": "Các xe chỉ được đi thẳng (trừ xe được quyền ưu tiên theo quy định)"
+      },
+    {
+        "type": 1,
+        "name": "R.301b",
+        "comment": "Các xe chỉ được rẽ phải",
+        "description": ""
+      },
+    {
+        "type": 1,
+        "name": "R.301c",
+        "comment": "Các xe chỉ được rẽ trái",
+        "description": ""
+      },
+    {
+        "type": 1,
+        "name": "R.301d",
+        "comment": "Các xe chỉ được rẽ phải",
+        "description": ""
+      },
+    {
+        "type": 1,
+        "name": "R.301e",
+        "comment": "Các xe chỉ được rẽ trái",
+        "description": ""
+      },
+    {
+        "type": 1,
+        "name": "R.301f",
+        "comment": "Các xe chỉ được đi thẳng và rẽ phải",
+        "description": ""
+      },
+    {
+        "type": 1,
+        "name": "R.301g",
+        "comment": "Các xe chỉ được đi thẳng và rẽ trái",
+        "description": ""
+      },
+    {
+        "type": 1,
+        "name": "R.301h",
+        "comment": "Các xe chỉ được rẽ trái và phải",
+        "description": ""
+      },
+    {
+        "type": 1,
+        "name": "R.302a",
+        "comment": "Hướng phải đi vòng chướng ngại vật",
+        "description": ""
+      },
+    {
+        "type": 1,
+        "name": "R.302b",
+        "comment": "Hướng phải đi vòng chướng ngại vật",
+        "description": ""
+      },{
+          "type": 1,
+          "name": "R.303",
+          "comment": "Nơi giao nhau chạy theo vòng xuyến",
+          "description": ""
+        },
+      {
+          "type": 1,
+          "name": "R.304",
+          "comment": "Đường dành cho xe thô sơ",
+          "description": ""
+        },
+      {
+          "type": 1,
+          "name": "R.305",
+          "comment": "Đường dành cho người đi bộ",
+          "description": ""
+        },
+      
+      {
+          "type": 1,
+          "name": "R.306",
+          "comment": "Tốc độ tối thiểu cho phép",
+          "description": ""
+        },
+      {
+          "type": 1,
+          "name": "R.307",
+          "comment": "Hết hạn chế tốc độ tối thiểu",
+          "description": ""
+        },
+      {
+          "type": 1,
+          "name": "R.308a",
+          "comment": "Tuyến đường cầu vượt cắt qua",
+          "description": ""
+        },
+      {
+          "type": 1,
+          "name": "R.308b",
+          "comment": "Tuyến đường cầu vượt cắt qua",
+          "description": ""
+        },
+      {
+          "type": 1,
+          "name": "R.309",
+          "comment": "Ấn còi",
+          "description": ""
+        },
+      {
+          "type": 1,
+          "name": "R.310a",
+          "comment": "Hướng đi phải theo cho xe chở hàng nguy hiểm. Xe bắt buộc phải rẽ trái",
+          "description": ""
+        },
+      {
+          "type": 1,
+          "name": "R.310b",
+          "comment": "Hướng đi phải theo cho xe chở hàng nguy hiểm. Xe bắt buộc phải rẽ phải",
+          "description": ""
+        },
+      {
+          "type": 1,
+          "name": "R.310c",
+          "comment": "Hướng đi phải theo cho xe chở hàng nguy hiểm. Xe bắt buộc phải đi thẳng",
+          "description": ""
+        },
+      {
+            "type": 1,
+            "name": "R.403a",
+            "comment": "Đường dành cho ô tô",
+            "description": ""
+        },
+      {
+            "type": 1,
+            "name": "R.403b",
+            "comment": "Đường dành cho ô tô, xe máy",
+            "description": ""
+        },
+      {
+            "type": 1,
+            "name": "R.404a",
+            "comment": "Hết đoạn đường dành cho ô tô",
+            "description": ""
+        },
+      {
+            "type": 1,
+            "name": "R.404b",
+            "comment": "Hết đoạn đường dành cho ô tô và xe máy",
+            "description": ""
+        },
+      {
+            "type": 1,
+            "name": "R.411",
+            "comment": "Hướng đi trên mỗi làn đường phải theo",
+            "description": ""
+        },
+      {
+            "type": 1,
+            "name": "R.412a",
+            "comment": "Làn đường dành cho xe khách",
+            "description": ""
+        },{
+            "type": 1,
+            "name": "R.412b",
+            "comment": "Làn đường dành cho xe con",
+            "description": ""
+        },
+        {
+              "type": 1,
+              "name": "R.412c",
+              "comment": "Làn đường dành cho xe tải",
+              "description": ""
+          },
+        {
+              "type": 1,
+              "name": "R.412d",
+              "comment": "Làn đường dành cho xe mô tô",
+              "description": ""
+          },
+        {
+              "type": 1,
+              "name": "R.412f",
+              "comment": "Làn đường dành cho xe ô tô",
+              "description": ""
+          },
+        {
+              "type": 1,
+              "name": "R.413i",
+              "comment": "Kết thúc làn đường dành cho xe khách",
+              "description": ""
+          },
+        {
+              "type": 1,
+              "name": "R.413j",
+              "comment": "Kết thúc làn đường dành cho xe con",
+              "description": ""
+          },
+        {
+              "type": 1,
+              "name": "R.413k",
+              "comment": "Kết thúc làn đường dành cho xe tải",
+              "description": ""
+          },
+        {
+              "type": 1,
+              "name": "R.413l",
+              "comment": "Kết thúc làn đường dành cho xe mô tô",
+              "description": ""
+          },
+        {
+              "type": 1,
+              "name": "R.413n",
+              "comment": "Kết thúc làn đường dành cho xe ô tô",
+              "description": ""
+          },
+        {
+              "type": 1,
+              "name": "R.415",
+              "comment": "Biển gộp làn đường theo phương tiện",
+              "description": ""
+          },
+        {
+              "type": 1,
+              "name": "R.420",
+              "comment": "Bắt đầu khu dân cư",
+              "description": ""
+          },
+        {
+              "type": 1,
+              "name": "R.421",
+              "comment": "Hết khu đông dân cư",
+              "description": ""
+          },
+        {
+              "type": 1,
+              "name": "R.E,9a",
+              "comment": "Cấm đỗ xe trong khu vực",
+              "description": ""
+          },
+        {
+              "type": 1,
+              "name": "R.E,9b",
+              "comment": "Cấm đỗ xe theo giờ trong khu vực",
+              "description": ""
+          },
+        {
+              "type": 1,
+              "name": "R.E,9c",
+              "comment": "Khu vực đỗ xe",
+              "description": ""
+          },
+        {
+              "type": 1,
+              "name": "R.E,9d",
+              "comment": "Hạn chế tốc độ tối đa trong khu vực",
+              "description": ""
+          },
+        {
+              "type": 1,
+              "name": "R.E,10a",
+              "comment": "Hết cấm đỗ xe trong khu vực",
+              "description": ""
+          },
+        {
+              "type": 1,
+              "name": "R.E,10b",
+              "comment": "Hết cấm đỗ xe theo giờ trong khu vực",
+              "description": ""
+          },
+        {
+              "type": 1,
+              "name": "R.E,10c",
+              "comment": "Hết khu vực đỗ xe",
+              "description": ""
+          },
+        {
+              "type": 1,
+              "name": "R.E,10d",
+              "comment": "Hết hạn chế tốc độ tối đa trong khu vực",
+              "description": ""
+          },
+        {
+              "type": 1,
+              "name": "R.E,11a",
+              "comment": "Đường hầm",
+              "description": ""
+          },
+        {
+              "type": 1,
+              "name": "R.E,11b",
+              "comment": "Kết thúc đường hầm",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.401",
+              "comment": "Bắt đầu đường ưu tiên",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.402",
+              "comment": "Hết đường ưu tiên",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.405a",
+              "comment": "Đường cụt",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.405b",
+              "comment": "Đường cụt",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.405c",
+              "comment": "Đường cụt",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.406",
+              "comment": "Được ưu tiên qua đường hẹp",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.407a",
+              "comment": "Đường một chiều",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.407b",
+              "comment": "Đường một chiều",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.407c",
+              "comment": "Đường một chiều",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.408",
+              "comment": "Nơi đỗ xe",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.408a",
+              "comment": "Nơi đỗ xe một phần trên hè phố",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.409",
+              "comment": "Chỗ quay xe",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.410",
+              "comment": "Khu vực quay xe",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.413a",
+              "comment": "Đường phía trước có làn đường dành cho ô tô khách",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.413b",
+              "comment": "Rẽ ra đường có làn dành cho xe khách",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.413c",
+              "comment": "Rẽ ra đường có làn dành cho xe khách",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.414a",
+              "comment": "Chỉ hướng đường",
+              "description": "Chỉ hướng đường đến các địa danh, khu dân cư"
+          },
+        {
+              "type": 2,
+              "name": "I.414b",
+              "comment": "Chỉ hướng đường",
+              "description": "Chỉ hướng đường đến các địa danh, khu dân cư"
+          },
+        {
+              "type": 2,
+              "name": "I.414c",
+              "comment": "Chỉ hướng đường",
+              "description": "Chỉ hướng đường đến các địa danh, khu dân cư"
+          },
+        {
+              "type": 2,
+              "name": "I.414d",
+              "comment": "Chỉ hướng đường",
+              "description": "Chỉ hướng đường đến các địa danh, khu dân cư"
+          },
+        {
+              "type": 2,
+              "name": "I.415",
+              "comment": "Mũi tên chỉ hướng đi",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.416",
+              "comment": "Đường tránh",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.417a",
+              "comment": "Chỉ hướng phải đi cho từng loại xe",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.417a",
+              "comment": "Chỉ hướng phải đi cho từng loại xe",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.417a",
+              "comment": "Chỉ hướng phải đi cho từng loại xe",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.418",
+              "comment": "Lối đi ở những chỗ cấm rẽ",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.419",
+              "comment": "Chỉ dẫn",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.422a",
+              "comment": "Di tích lịch sử",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.423a",
+              "comment": "Đường người đi bộ sang ngang",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.423b",
+              "comment": "Đường người đi bộ sang ngang",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.423c",
+              "comment": "Điểm bắt đầu đường đi bộ",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.424a",
+              "comment": "Cầu vượt qua đường cho người đi bộ",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.424b",
+              "comment": "Cầu vượt qua đường cho người đi bộ",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.424c",
+              "comment": "Hầm chui qua đường cho người đi bộ",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.424d",
+              "comment": "Hầm chui qua đường cho người đi bộ",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.425",
+              "comment": "Bệnh viện",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.426",
+              "comment": "Trạm cấp cứu",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.427a",
+              "comment": "Trạm",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.427b",
+              "comment": "Trạm kiểm tra tải trọng xe",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.428",
+              "comment": "Cửa hàng xăng dầu",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.429",
+              "comment": "Nơi rửa xe",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.430",
+              "comment": "Điện thoại",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.431",
+              "comment": "Trạm dừng nghỉ",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.432",
+              "comment": "Khách sạn",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.433a",
+              "comment": "Nơi nghỉ mát",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.433b",
+              "comment": "Nơi cắm trại",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.433c",
+              "comment": "Nơi dành cho nhà lưu động",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.433d",
+              "comment": "Nơi cắm trại và nhà lưu động",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.433e",
+              "comment": "Báo hiệu nhà trọ",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.434a",
+              "comment": "Bến xe buýt",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.434b",
+              "comment": "Bến xe tải",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.435",
+              "comment": "Bến xe điện",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.436",
+              "comment": "Trạm cảnh sát giao thông",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.437",
+              "comment": "Đường cao tốc",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.444",
+              "comment": "Xe kéo mooc",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.446",
+              "comment": "Nơi đỗ xe dành cho người tàn tật",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.447a",
+              "comment": "Cầu vượt liên thông",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.447b",
+              "comment": "Cầu vượt liên thông",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.448",
+              "comment": "Làn đường cứu nạn hay làn thoát xe khẩn cấp",
+              "description": ""
+          },
+        {
+              "type": 2,
+              "name": "I.449",
+              "comment": "Biển tên đường",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.201a",
+              "comment": "Chỗ ngoặt nguy hiểm bên trái",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.201b",
+              "comment": "Chỗ ngoặt nguy hiểm bên phải",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.201c",
+              "comment": "Chỗ ngoặt nguy hiểm có nguy cơ lật bên phải",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.201d",
+              "comment": "Chỗ ngoặt nguy hiểm có nguy cơ lật bên trái",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.202a",
+              "comment": "Nhiều chỗ ngoặt nguy hiểm liên tiếp",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.202b",
+              "comment": "Nhiều chỗ ngoặt nguy hiểm liên tiếp",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.203a",
+              "comment": "Đường bị hẹp cả hai bên",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.203b",
+              "comment": "Đường bị hẹp bên trái",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.203c",
+              "comment": "Đường bị hẹp bên phải",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.204",
+              "comment": "Đường hai chiều",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.205a",
+              "comment": "Nơi giao nhau của đường đồng cấp",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.205b",
+              "comment": "Nơi giao nhau của đường đồng cấp",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.205c",
+              "comment": "Nơi giao nhau của đường đồng cấp",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.205d",
+              "comment": "Nơi giao nhau của đường đồng cấp",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.205e",
+              "comment": "Nơi giao nhau của đường đồng cấp",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.206",
+              "comment": "Giao nhau chạy theo vòng xuyến",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.207a",
+              "comment": "Giao nhau với đường không ưu tiên",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.207b",
+              "comment": "Giao nhau với đường không ưu tiên",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.207c",
+              "comment": "Giao nhau với đường không ưu tiên",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.207d",
+              "comment": "Giao nhau với đường không ưu tiên",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.207e",
+              "comment": "Giao nhau với đường không ưu tiên",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.207f",
+              "comment": "Giao nhau với đường không ưu tiên",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.207g",
+              "comment": "Giao nhau với đường không ưu tiên",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.207h",
+              "comment": "Giao nhau với đường không ưu tiên",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.207i",
+              "comment": "Giao nhau với đường không ưu tiên",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.207k",
+              "comment": "Giao nhau với đường không ưu tiên",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.207l",
+              "comment": "Giao nhau với đường không ưu tiên",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.208",
+              "comment": "Giao nhau với đường ưu tiên",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "W.",
+              "comment": "",
+              "description": ""
+          },
+          
   ]
 }

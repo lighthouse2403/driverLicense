@@ -6,6 +6,6 @@ framework module shared_preferences_foundation {
 }
 
 module shared_preferences_foundation.Swift {
-  header "shared_preferences_foundation-Swift.h"
-  requires objc
+    header "shared_preferences_foundation-Swift.h"
+    requires objc
 }

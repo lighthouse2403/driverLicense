@@ -1,6 +1,5 @@
 
 class TrafficSignModel {
-  int id = 0 ;
   int type = 0;
   String name = '';
   String comment = '';
@@ -8,7 +7,6 @@ class TrafficSignModel {
   String image = '';
 
   TrafficSignModel({
-    required this.id,
     required this.type,
     required this.name,
     required this.comment,
@@ -17,7 +15,6 @@ class TrafficSignModel {
   });
 
   TrafficSignModel.fromJson(Map<String, dynamic> json) {
-    id = json['id'];
     type = json['type'];
     name = json['name'];
     comment = json['comment'];
@@ -27,7 +24,6 @@ class TrafficSignModel {
 
   Map<String, dynamic> toJson() {
     final Map<String, dynamic> data = <String, dynamic>{};
-    data['id'] = id;
     data['type'] = type;
     data['name'] = name;
     data['comment'] = comment;
