@@ -26,7 +26,6 @@ class HorizontalTab extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     double tabItemWidth = screenWidth/screenRate;
-    print(title.toString());
     return Container(
       height: 50,
       child: ListView.builder(
@@ -36,6 +35,7 @@ class HorizontalTab extends StatelessWidget {
           itemBuilder: (context, index) {
             bool shouldHightLight = (index + 1) == currentPage;
             return SizedBox(
+              height: 50,
               width: tabItemWidth,
               child: GestureDetector(
                 onTap: () {
