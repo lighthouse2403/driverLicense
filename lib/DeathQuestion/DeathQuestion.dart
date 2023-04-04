@@ -45,7 +45,7 @@ class _DeathQuestionPageState extends State<DeathQuestionPage> {
                 callback: jumToIndex,
                 screenRate: 4,
                 title: widget.questionList.asMap().entries.map((e) {
-                  return 'Câu ${e.key}';
+                  return 'Câu ${e.key + 1}';
                 }).toList(),
             ),
             Container(height: 0.5, color: Colors.green,),

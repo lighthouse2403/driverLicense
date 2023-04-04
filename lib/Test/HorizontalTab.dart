@@ -14,22 +14,19 @@ class HorizontalTab extends StatelessWidget {
 
   void animateToIndex(int index) {
     double tabItemWidth = screenWidth/screenRate;
-    Duration duration = const Duration(milliseconds: 500);
-    if ((index > 1) && ((index + 2) < length)) {
-      tabController.animateTo((index - 1.5) * tabItemWidth, duration: duration, curve: Curves.easeOut);
-    } else if (index >= (length - 1)) {
-      tabController.animateTo((index - (screenRate - 1)) * tabItemWidth, duration: duration, curve: Curves.easeOut);
-    } else if (index == 0) {
-      tabController.animateTo(0, duration: duration, curve: Curves.easeOut);
-    } else if (index == (length - 2)) {
-      tabController.animateTo((index - 2) * tabItemWidth, duration: duration, curve: Curves.easeOut);
+    if (index == (length - 1)) {
+      return;
     }
+
+    Duration duration = const Duration(milliseconds: 500);
+    int newIndex = (index - screenRate + 2) >= 0 ? (index - screenRate + 2) : 0;
+    tabController.animateTo(newIndex * tabItemWidth, duration: duration, curve: Curves.easeOut);
   }
 
   @override
   Widget build(BuildContext context) {
     double tabItemWidth = screenWidth/screenRate;
-
+    print(title.toString());
     return Container(
       height: 50,
       child: ListView.builder(
