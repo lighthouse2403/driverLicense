@@ -51,7 +51,7 @@ class _QuestionPageState extends State<QuestionPage> {
       callback: jumToIndex,
       screenRate: 4,
       title: widget.questionList.asMap().entries.map((e) {
-        return 'Câu ${e.key}';
+        return 'Câu ${e.key + 1}';
       }).toList(),
     );
     return Scaffold(

@@ -19,19 +19,31 @@ class _DeathQuestionPageState extends State<DeathQuestionPage> {
     initialPage: 0,
     keepPage: true,
   );
+  HorizontalTab? horizontalTab;
 
   void onPageChanged(int index) {
+    horizontalTab?.animateToIndex(index);
     setState(() {
       currentPage = index + 1;
     });
   }
 
   void jumToIndex(int index) {
+    print('jumToIndex ${index}');
     pageController.jumpToPage(index);
   }
 
   @override
   Widget build(BuildContext context) {
+    horizontalTab = HorizontalTab(
+      length: widget.questionList.length,
+      currentPage: currentPage,
+      callback: jumToIndex,
+      screenRate: 4,
+      title: widget.questionList.asMap().entries.map((e) {
+        return 'Câu ${e.key + 1}';
+      }).toList(),
+    );
     return Scaffold(
         appBar: AppBar(
           title: Text('${widget.questionList.length} Câu điểm liệt'),
@@ -39,20 +51,13 @@ class _DeathQuestionPageState extends State<DeathQuestionPage> {
         ),
         body: Column(
           children: [
-            HorizontalTab(
-                length: widget.questionList.length,
-                currentPage: currentPage,
-                callback: jumToIndex,
-                screenRate: 4,
-                title: widget.questionList.asMap().entries.map((e) {
-                  return 'Câu ${e.key}';
-                }).toList(),
-            ),
+            Container(child: horizontalTab),
             Container(height: 0.5, color: Colors.green,),
             Expanded(
                 child: Container(
                   color: Colors.white,
                   child: PageView.builder(
+                    controller: pageController,
                     itemCount: widget.questionList.length,
                     scrollDirection: Axis.horizontal,
                     onPageChanged: onPageChanged,

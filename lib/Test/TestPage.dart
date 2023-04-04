@@ -3,7 +3,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:license/Ads/adsHelper.dart';
 import 'package:license/Database/sqlHelper.dart';
-import 'package:license/Extension/ListExtension.dart';
 import 'package:license/Test/HorizontalTab.dart';
 import 'package:license/Test/Model/TestModel.dart';
 import 'package:license/Test/TimeWidget.dart';
@@ -231,7 +230,7 @@ class TestPageState extends State<TestPage> {
               callback: jumToIndex,
               screenRate: 4,
               title: widget.test.questionIds.asMap().entries.map((e) {
-                return 'Câu ${e.key}';
+                return 'Câu ${e.key + 1}';
               }).toList(),
             );
             return Column(

@@ -36,7 +36,7 @@ class _TestDetailState extends State<TestDetail> {
               itemBuilder: (BuildContext context, int index) {
 
                 if (index == 0) {
-                  return QuestionRow(question: widget.question.questionText);
+                  return QuestionRow(question: widget.question);
                 } else if (index == answerCount + 1) {
                   if ((widget.question.selectedIndex != -1) && (widget.question.testId == widget.test.id) && widget.testStatus == TestStatus.done) {
                     return CommentRow(comment: widget.question.comment);
