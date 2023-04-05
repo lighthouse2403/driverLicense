@@ -742,7 +742,7 @@
     {
       "id": 75,
       "chapterId": 1,
-      "questionText": "",
+      "questionText": "Biển báo hiệu hình chữ nhật hoặc hình vuông hoặc hình mũi tên nền xanh lam là loại biển gì dưới đây?",
       "questionImage" : "cau75",
       "answerList": ["Biển báo nguy hiểm", "Biển báo cấm", "Biển báo hiệu lệnh phải thi hành", "Biển báo chỉ dẫn"],
       "answerIndex": 3,
@@ -5961,7 +5961,7 @@
     {
       "id": 597,
       "chapterId": 7,
-      "questionText": "Trong tình huống dưới đây xe con màu đỏ nhập làn đường cao tốc theo hướng mũi tên là đúng hay sai?",
+      "questionText": "Trong tình huống dưới đây, xe con màu đỏ nhập làn đường cao tốc theo hướng mũi tên là đúng hay sai?",
       "questionImage" : "cau597",
       "answerList": ["Đúng.", "Sai."],
       "answerIndex": 1,
