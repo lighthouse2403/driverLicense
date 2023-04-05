@@ -4392,7 +4392,7 @@
     {
       "id": 440,
       "chapterId": 6,
-      "questionText": "Hiệu lực của biển “ Tốc độ tối đa cho phép” hết tác dụng khi gặp biển nào dưới đây?",
+      "questionText": "Hiệu lực của biển “ Tốc độ tối đa cho phép ”hết tác dụng khi gặp biển nào dưới đây?",
       "questionImage" : "cau440",
       "answerList": ["Biển 1", "Biển 2", "Biển 3", "Biển 1 và 2"],
       "answerIndex": 3,
@@ -4573,7 +4573,7 @@
       "chapterId": 6,
       "questionText": "Gặp biển báo này, người tham gia thông phải xử lý như thế nào?",
       "questionImage" : "cau458",
-      "answerList": ["Dừng xe tại khu vực có trạm Cảnh sát giao thông.", "Tiếp tục lưu thông với tốc độ bình thường", "Phải giảm tốc độ đến mức an toàn không được vượt khi đi qua khu vực này"],
+      "answerList": ["Dừng xe tại khu vực có trạm Cảnh sát giao thông.", "Tiếp tục lưu thông với tốc độ bình thường", "Phải giảm tốc độ đến mức an toàn và không được vượt khi đi qua khu vực này"],
       "answerIndex": 2,
       "isDeadPoint": false,
       "comment": ""
@@ -5653,7 +5653,7 @@
       "chapterId": 7,
       "questionText": "Trong hình dưới, những xe nào vi phạm quy tắc giao thông?",
       "questionImage" : "cau566",
-      "answerList": ["Xe con (A), xe con (B), xe tải (D).", "Xe tải (D), xe con (E), xe buýt (G).", "Xe tải ( D), xe con (B).", "Xe con (B), xe con (C)."],
+      "answerList": ["Xe con (A), xe con (B), xe tải (D).", "Xe tải (D), xe con (E), xe buýt (G).", "Xe tải (D), xe con (B).", "Xe con (B), xe con (C)."],
       "answerIndex": 2,
       "isDeadPoint": false,
       "comment": ""
