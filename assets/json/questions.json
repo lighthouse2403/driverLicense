@@ -1312,7 +1312,7 @@
     {
       "id": 132,
       "chapterId": 1,
-      "questionText": "rên đường bộ ngoài khu vực đông dân cư, đường đôi có dải phân cách giữa (trừ đường cao tốc), loại xe nào dưới đây tham gia giao thông với tốc độ tối đa cho phép là 60 km/h?",
+      "questionText": "Trên đường bộ ngoài khu vực đông dân cư, đường đôi có dải phân cách giữa (trừ đường cao tốc), loại xe nào dưới đây tham gia giao thông với tốc độ tối đa cho phép là 60 km/h?",
       "questionImage" : "",
       "answerList": ["Ô tô kéo rơ moóc, ô tô kéo xe khác, ô tô trộn vữa, ô tô trộn bê tông, ô tô xi téc.", "Ô tô chở người trên 30 chỗ (trừ ô tô buýt), ô tô tải có trọng tải trên 3,5 tấn.", "Xe ô tô con, xe ô tô chở người đến 30 chỗ (trừ xe buýt), ô tô tải có trọng tải nhỏ hơn hoặc bằng 3,5 tấn."],
       "answerIndex": 0,
@@ -3472,7 +3472,7 @@
     {
       "id": 348,
       "chapterId": 6,
-      "questionText": "Khi gặp biển này, xe mô tô ba bánh có được phép rẻ trái hoặc rẽ phải hay không?",
+      "questionText": "Khi gặp biển này, xe mô tô ba bánh có được phép rẽ trái hoặc rẽ phải không?",
       "questionImage" : "cau348",
       "answerList": ["Được phép.", "Không được phép."],
       "answerIndex": 1,
@@ -4182,7 +4182,7 @@
     {
       "id": 419,
       "chapterId": 6,
-      "questionText": "Biển nào sau đây là biển “ Dốc xuống nguy hiểm”?   ",
+      "questionText": "Biển nào sau đây là biển “Dốc xuống nguy hiểm”?   ",
       "questionImage" : "cau419",
       "answerList": ["Biển 1", "Biển 2"],
       "answerIndex": 0,
@@ -4192,7 +4192,7 @@
     {
       "id": 420,
       "chapterId": 6,
-      "questionText": "Biển nào sau đây là biển “ Dốc lên nguy hiểm”?",
+      "questionText": "Biển nào sau đây là biển “Dốc lên nguy hiểm”?",
       "questionImage" : "cau420",
       "answerList": ["Biển 1", "Biển 2"],
       "answerIndex": 1,
@@ -4202,7 +4202,7 @@
     {
       "id": 421,
       "chapterId": 6,
-      "questionText": "Biển Báo Này Có Ý Ngĩa Gì?",
+      "questionText": "Biển báo này có ý nghĩa gì?",
       "questionImage" : "cau421",
       "answerList": ["Chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải hi đường cong vòng sang trái", "Chỗ ngoặt nguy hiểm có nguy cơ lật xe bên trái khi đường cong vòng bên phải"],
       "answerIndex": 0,
@@ -4292,7 +4292,7 @@
     {
       "id": 430,
       "chapterId": 6,
-      "questionText": "Biển nào báo hiệu các phương tiện pải đi đúng làn đường quy định và tuân thủ tốc độ tối đa cho phép?",
+      "questionText": "Biển nào báo hiệu các phương tiện phải đi đúng làn đường quy định và tuân thủ tốc độ tối đa cho phép?",
       "questionImage" : "cau430",
       "answerList": ["Biển 1", "Biển 2", "Cả hai biển"],
       "answerIndex": 1,
@@ -4372,7 +4372,7 @@
     {
       "id": 438,
       "chapterId": 6,
-      "questionText": "Biển nào báo hiệu “ Đường một chiều”?",
+      "questionText": "Biển nào báo hiệu “Đường một chiều”?",
       "questionImage" : "cau438",
       "answerList": ["Biển 1", "Biển 2", "Cả hai biển"],
       "answerIndex": 1,
@@ -4382,7 +4382,7 @@
     {
       "id": 439,
       "chapterId": 6,
-      "questionText": "Trong các biển dưới đây biển nào là biển “ Hết tốc độ tối đa cho phép”?",
+      "questionText": "Trong các biển dưới đây biển nào là biển “Hết hạn chế tốc độ tối đa”?",
       "questionImage" : "cau439",
       "answerList": ["Biển 1", "Biển 2", "Biển 3", "Cả ba biển"],
       "answerIndex": 0,
@@ -4551,7 +4551,7 @@
     {
       "id": 456,
       "chapterId": 6,
-      "questionText": "Biển nào báo hiệu nơi đỗ xe cho người tàn tật?",
+      "questionText": "Biển nào báo hiệu nơi đỗ xe dành cho người tàn tật?",
       "questionImage" : "cau456",
       "answerList": ["Biển 1", "Biển 2", "Biển 3"],
       "answerIndex": 1,
@@ -4741,7 +4741,7 @@
     {
       "id": 475,
       "chapterId": 6,
-      "questionText": "Khi di chuyển trên đường cao tốc, gặp biển nào thì người lái xe đi được cả hai hướng (bên trái hoặc bên phải)  để tránh chướng ngại vật?",
+      "questionText": "Khi di chuyển trên đường cao tốc, gặp biển nào thì người lái xe đi được cả hai hướng (bên trái hoặc bên phải) để tránh chướng ngại vật?",
       "questionImage" : "cau475",
       "answerList": ["Biển 1", "Biển 2", "Biển 3"],
       "answerIndex": 1,
@@ -4924,7 +4924,7 @@
       "questionText": "Thứ tự các xe đi như thế nào là đúng quy tắc giao thông?",
       "questionImage" : "cau493",
       "answerList": ["Xe con (A), xe cứu thương, xe con (B).", "Xe cứu thương, xe con (B), xe con (A).", "Xe con (B), xe con (A), xe cứu thương."],
-      "answerIndex": 1,
+      "answerIndex": 0,
       "isDeadPoint": false,
       "comment": ""
     },
@@ -5091,7 +5091,7 @@
     {
       "id": 510,
       "chapterId": 7,
-      "questionText": "Xe tải kéo mô tô ba bánh như hình này có đúng quy tắc giao thông?",
+      "questionText": "Xe tải kéo mô tô ba bánh như hình này có đúng quy tắc giao thông không?",
       "questionImage" : "cau510",
       "answerList": ["Đúng.", "Không đúng."],
       "answerIndex": 1,
@@ -5441,7 +5441,7 @@
     {
       "id": 545,
       "chapterId": 7,
-      "questionText": "Người lái điều khiển xe chạy theo hướng nào là đúng quy tắc giao thông?",
+      "questionText": "Người lái xe điều khiển xe chạy theo hướng nào là đúng quy tắc giao thông?",
       "questionImage" : "cau545",
       "answerList": ["Chỉ hướng 2.", "Hướng 1 và 2.", "Tất cả các hướng trừ hướng 3.", "Tất cả các hướng trừ hướng 4."],
       "answerIndex": 1,
@@ -5821,7 +5821,7 @@
     {
       "id": 583,
       "chapterId": 7,
-      "questionText": "Các xe đi như thế nào là đúng quy tắc giao thông?",
+      "questionText": "Các xe đi theo thứ tự nào là đúng quy tắc giao thông đường bộ?",
       "questionImage" : "cau583",
       "answerList": ["Xe của bạn, mô tô, xe đạp.", "Xe mô tô, xe đạp, xe của bạn.", "Xe đạp, xe mô tô, xe của bạn."],
       "answerIndex": 2,
