@@ -1,2 +1,3 @@
-*.darktool
+*.dark_tool
 *.d
+*.build

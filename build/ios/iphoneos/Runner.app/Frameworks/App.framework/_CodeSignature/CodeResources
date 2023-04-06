@@ -10,11 +10,7 @@
 		</data>
 		<key>flutter_assets/AssetManifest.json</key>
 		<data>
-<<<<<<< HEAD
 		QmkABndKl+JqwGD/A6nPaner8WA=
-=======
-		uRD3+5ctZBoWVV8MwwGbmCu/g+s=
->>>>>>> 2464bfe191d0caa3432c76fd97ccaba481176437
 		</data>
 		<key>flutter_assets/FontManifest.json</key>
 		<data>
@@ -1719,517 +1715,6 @@
 		<key>flutter_assets/assets/icon/trafficSign/P.120.png</key>
 		<data>
 		sPOKiLZHhabp/07emH18cej+TqA=
-<<<<<<< HEAD
-=======
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/P.121.png</key>
-		<data>
-		k44aIUciNGfFz3li0k7nPOYP+VM=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/P.122.png</key>
-		<data>
-		qob3WhHNHoOKWFMFzjTwoeHXq3c=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/P.123a.png</key>
-		<data>
-		7WFerhWdBCZ+/J108TLHhvMtO9Q=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/P.123b.png</key>
-		<data>
-		5aF1AdSkw77/im8XQ4WE4cF8unE=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/P.124a.png</key>
-		<data>
-		DNw7+ZLP9/lAUACOKp8aH93LBPo=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/P.124b.png</key>
-		<data>
-		nX6kz/5JT7UUU3FJNkBdoPKpKuk=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/P.125.png</key>
-		<data>
-		URLKYKlwLN1CuvLRB2vyC8OVqnQ=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/P.126.png</key>
-		<data>
-		SZazlefR0HIvbVqVDYBuTdlaWcU=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/P.127.png</key>
-		<data>
-		D/ZiM+7KurqsBUk0UhgifxonVh8=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/P.128.png</key>
-		<data>
-		D0bbWRe6DUg+v3ltaj5qB0k9tjw=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/P.129.png</key>
-		<data>
-		qkaRLsbYRVh3bhhbfbOrdHzkUiI=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/P.130.png</key>
-		<data>
-		1l3T4pJdoGPlmynxezh/y08ayZg=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/P.131a.png</key>
-		<data>
-		DEibyXeMPbTKub5aL9UTHG4HXt8=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/P.131b.png</key>
-		<data>
-		fK8F5Eq4xLBj5Q1ywP1Ij2gu8uI=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/P.131c.png</key>
-		<data>
-		PhpKYygzOwNdjIO4ZFyuWQpPwhw=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/P.132.png</key>
-		<data>
-		KobpiHEab782fPfv/tSaSWvYX6I=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/P.133.png</key>
-		<data>
-		XwRDIOP/UPmXi5PspmhqKAhMgfs=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/P.134.png</key>
-		<data>
-		aYHlID7dyvUpYBYtho2XMYgRofA=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/P.135.png</key>
-		<data>
-		deHFFBQFClL23bWGHXm1DeJ9juY=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/P.136.png</key>
-		<data>
-		LIJ7bWkfAJvAUm89KVyxANeOKxA=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/P.137.png</key>
-		<data>
-		jh29myVVyNwfY3Sj3icp6iSlpCE=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/P.138.png</key>
-		<data>
-		+09C35UGdm7TPG+3rzpPctQS48s=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/P.139.png</key>
-		<data>
-		0nY41pr9Cxq4jKnWn/ZziRrKdCg=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/P.140.png</key>
-		<data>
-		CnI36rgLVnh/THlIroy5TC1md08=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/R.301a.png</key>
-		<data>
-		wfrx3Exq3C+T0OJ2961gnL6ku/I=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/R.301b.png</key>
-		<data>
-		f6KH5czviIR9ixTrWG3xC5zd4oM=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/R.301c.png</key>
-		<data>
-		aMWodlnWzEb6rgoJV3nufgKcVDQ=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/R.301f.png</key>
-		<data>
-		VrHF3LHtb2Jty8faObKwi8wKKWQ=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/R.301h.png</key>
-		<data>
-		HZ1g8QxuCOpyqNDKjwgpvx/MWE4=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/R.301i.png</key>
-		<data>
-		LxJXQpO26jnzv+ipKKWPmr8ZU9E=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/R.302a.png</key>
-		<data>
-		5weTYSoAMU2hAGHtqN8aqgzW760=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/R.302b.png</key>
-		<data>
-		MYOH2uRaUyEKAj4TRn3TVALueA0=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/R.303.png</key>
-		<data>
-		N1p29FKlDmVkuHU9T49rkMdYnJI=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/R.304.png</key>
-		<data>
-		SXZi2DN8jpMhPVIlE9rV378/aoo=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/R.305.png</key>
-		<data>
-		3uNdky+T0yzw/lrt9qw35gFC1qo=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/R.306.png</key>
-		<data>
-		hDZYjuWcmgEpDDYCujDQx5ZA27s=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/R.307.png</key>
-		<data>
-		XjqRa69uisaXUxFOfDBrsIMxOsw=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/R.308a.png</key>
-		<data>
-		zqQtICVFloaV/wVPk95gyGwgRuE=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/R.308b.png</key>
-		<data>
-		q5USYfZzd3ILDOsB4+Vbwg2yew8=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/R.309.png</key>
-		<data>
-		d0uPag/xYLKUnHUjy2rxlJ7SB0c=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/S.501.png</key>
-		<data>
-		+WfYgeWy0oyK95AqXz3XonJHHQs=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/S.502.png</key>
-		<data>
-		9SOWh1fPR8o0pHDdsjRO0+vmeEA=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/S.503a.png</key>
-		<data>
-		ZqD3AZ86hp9dWdTw9NY9dB7X3mI=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/S.503b.png</key>
-		<data>
-		ym3GCFd/BdrEP7dSnvXhePVGaSo=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/S.503c.png</key>
-		<data>
-		oNSZfa8PB2OWOldJJJGH4yS7jkc=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/S.503d.png</key>
-		<data>
-		QX9x2uOJ6vn3nlGF0dGzHPH2aVY=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/S.503e.png</key>
-		<data>
-		F0vdsgJhQtQ9ZzrVmw0DIjqWZ4U=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/S.503f.png</key>
-		<data>
-		WKvCr3T9A4p+ktaN22l9E9vHLS0=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/S.504.png</key>
-		<data>
-		H2kMV5FaR4WSMDCIvadi0MM39wc=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/S.506a.png</key>
-		<data>
-		rtD1hqgdFMdqfcHXn+fBjp4VZ+s=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/S.506b.png</key>
-		<data>
-		Xd1ja8cNbJELKgItS41B/Ob3puk=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.201a.png</key>
-		<data>
-		StrbTeW4x9/wRLICUj5H9npKFts=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.201b.png</key>
-		<data>
-		yXDRMD1sv/063jPxHVo/ThK3mok=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.202a.png</key>
-		<data>
-		5oedCEgGWGqCqs6WBgCe+lpxhJ4=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.202b.png</key>
-		<data>
-		EKnarHiBjuZf+LTlQQ0/by+poMo=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.203a.png</key>
-		<data>
-		vCOaKqmkKKftO/UWC43tNqyo6p4=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.203b.png</key>
-		<data>
-		B+shco3ZUsesr/hvAiyH/31rRuo=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.203c(1).png</key>
-		<data>
-		6Hvd7mFZ5VMivaH62+JZVob32os=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.204.png</key>
-		<data>
-		SXXSu7y21kEewzN58Ci7pIuY/Tg=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.205a.png</key>
-		<data>
-		+sbdja3S0bs8OMy0BsRVuHujDAQ=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.205b.png</key>
-		<data>
-		pIXGXd2u/dL4GbVJei9GuBYAavw=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.205c.png</key>
-		<data>
-		DRVMnj43Z7nHmkVnj1igYMhIIa0=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.205d.png</key>
-		<data>
-		gowDpZ0u+u8n7QxzHUqKX7Tm+Zo=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.205e.png</key>
-		<data>
-		u1pZKaLFOuYw9Pzw/j0njW33XA0=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.206.png</key>
-		<data>
-		6gBB3dD/lH/EAGMaQV5jBn6EcMQ=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.207a.png</key>
-		<data>
-		IMlaZKlyetTdYwepAVf0YjKbwvU=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.207b.png</key>
-		<data>
-		YTgjK4uYjMEzeHTSFS5ZtTO2Db8=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.207c.png</key>
-		<data>
-		YvRXIf4J9Ogt+dh1C0Uf6REV9ZQ=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.207d.png</key>
-		<data>
-		Yzp3oSkahl5xxN0lpAeLZYNye/c=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.207e.png</key>
-		<data>
-		K9SCMy4Lmkx2D4HRQ48sWUJBNDk=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.207f.png</key>
-		<data>
-		k76YHgM3jup47JZWTj8PymyCwTA=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.207g.png</key>
-		<data>
-		sELwDg82gk3TARcO2Dp2rsENj6c=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.207h.png</key>
-		<data>
-		+wrS4NFI3JcN6RRwsjgdxS6KxBE=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.207i.png</key>
-		<data>
-		GphoZ/jGYLcJu2oHW2l+5aSRbb0=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.207k.png</key>
-		<data>
-		moLJ4API0NYFqgd/5N7RyMD4Svk=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.208.png</key>
-		<data>
-		gGxwnfbKKkjSudjpIHP5mX/DlpI=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.209.png</key>
-		<data>
-		uz6GTDGT3ojhxJ7G18BBgg8q334=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.210.png</key>
-		<data>
-		KQpLVA3mVS1NRLAfhviuEmPn1a8=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.211a.png</key>
-		<data>
-		byW85mi5M72JyLFYSpLARj7fzSs=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.211b.png</key>
-		<data>
-		pTEX9pJsnMTcnKrpuayflRBaRc0=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.212.png</key>
-		<data>
-		m1mrDZplNAa1802ZXjyoaSiPcdY=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.213.png</key>
-		<data>
-		JOnuCbtwiLBxFYzJTOx0rjzuaiI=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.214.png</key>
-		<data>
-		HJH65NeSQlXh2NeUccseOWZ3bR8=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.215.png</key>
-		<data>
-		/1B12QXrhNDeUlRRXs0RbHX08lk=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.216.png</key>
-		<data>
-		bxZn/d3P/iAmtcKjIPvEBSZ5WLs=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.217.png</key>
-		<data>
-		lRCAe8Lg50+njf4LgNKlAJmGCj4=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.218.png</key>
-		<data>
-		eu/o/vE/jkKrbAO+IB8ah5oAly0=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.219.png</key>
-		<data>
-		RoSakJo5cIxK4r7cQs+Hc1US/cM=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.220.png</key>
-		<data>
-		/9V4JNWhZpJgfoBhfdDZZrCGasg=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.221a.png</key>
-		<data>
-		yl2Rkq308PCs67mHH16UQmVC8zE=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.221b.png</key>
-		<data>
-		nJaAJGsWy6fWtivxx84qcCUyGYc=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.222a.png</key>
-		<data>
-		r7VmdYsvCjNk3Tr2udhr/B3w0cs=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.222b.png</key>
-		<data>
-		WMLUoWjVmO/1vr1praBINC06lbg=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.223a.png</key>
-		<data>
-		LhinkdpP3Pd6og6sf0Hmav/vJ7M=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.223b.png</key>
-		<data>
-		Z4spFdgwS5D90eCSD7xdd0CrvQg=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.224.png</key>
-		<data>
-		AhIYhYNmLUQ6p7Nv23TgR57xDRU=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.225.png</key>
-		<data>
-		CRr9tT7GdZgJFaoHX6FWSRPzX/g=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.226.png</key>
-		<data>
-		ux8pxHlQgbvncYvx75bGaQv0cmw=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.227.png</key>
-		<data>
-		jj3BacQVJt1hAJezqGe12aTf0qw=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.228a.png</key>
-		<data>
-		B+7N2j17VYuNLcqMzESltl9qNl4=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.228b.png</key>
-		<data>
-		boRmEo6r/HxofVUmFmqVMiUanMY=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.228c.png</key>
-		<data>
-		JFNZ2gz1A/ypBuA/Kn7t3EjbYpY=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.229.png</key>
-		<data>
-		pneIsyGgWkQwShW4myTlko5iwQA=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.230.png</key>
-		<data>
-		88UmZ39Jq6wjR6GBtEx4UPQR2dA=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.231.png</key>
-		<data>
-		LkcR065X4L3eNxCyinQ3rRviKF4=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.232.png</key>
-		<data>
-		KP1uZiZwj4THhRM7KSOaX/g90bY=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.233.png</key>
-		<data>
-		B1CdwsDqvWgfm0ORnJ2/XKIeItE=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.234.png</key>
-		<data>
-		Ce4bSZTYDa9mknPL9EmQgYV5McY=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.235.png</key>
-		<data>
-		P3Amqii9XbwwvwNMGQeNZ7+chMU=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.236.png</key>
-		<data>
-		naEp7bJgnZue9BhStSUbt2bP4XM=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.237.png</key>
-		<data>
-		K1UwRE2/o6Zbt7yAzadJ0BSk77g=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.238.png</key>
-		<data>
-		243SYRM05Iu01g7BRx8e4T3TU3U=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.239.png</key>
-		<data>
-		vcJvJP6zyIaVPhhwrR71g2twBQw=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.240.png</key>
-		<data>
-		5LlKQH848kKYAG3wXc07eP7CoD0=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.241.png</key>
-		<data>
-		1AzCbpAbg+f/wxUMUs68tzy8uh8=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.242a.png</key>
-		<data>
-		1q8X9Mm6AQiPnlI1ASMos1FC8Ts=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.242b.png</key>
-		<data>
-		sTlGJ4W+V8YRS/NxoG9lpfrtHEE=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.243a.png</key>
-		<data>
-		G18j7yVNW2OtpfXLSrnqxLtYJIc=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.243b.png</key>
-		<data>
-		/n/m54ndGeRLrC7rLrpokmJLyJo=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.243c.png</key>
-		<data>
-		PPvPYB+VNOS0ZIJU0X9ICX41B9g=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.244.png</key>
-		<data>
-		KhZkyTyM1rXg3L2k1YYG2/+qgY4=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.245a.png</key>
-		<data>
-		r8e1AbYkS3FNBvjexIDc/zZlu58=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.245b.png</key>
-		<data>
-		KSqUOe8Eh4jdEobidschyDXRZR4=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.246a.png</key>
-		<data>
-		AEISTSh7FhRau706klINVJ6PpOY=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.246b.png</key>
-		<data>
-		HeuQEA7KoPkqOytri4FSsBN8noM=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.246c.png</key>
-		<data>
-		Q8ltZsMR7ksqRTdc5RVrZbC2kGo=
-		</data>
-		<key>flutter_assets/assets/icon/trafficSign/W.247.png</key>
-		<data>
-		xR65s1uVTT5ZDKpyxqQfQiSPjXQ=
->>>>>>> 2464bfe191d0caa3432c76fd97ccaba481176437
 		</data>
 		<key>flutter_assets/assets/icon/trafficSign/P.121.png</key>
 		<data>
@@ -2745,19 +2230,11 @@
 		</data>
 		<key>flutter_assets/assets/json/questions.json</key>
 		<data>
-<<<<<<< HEAD
-		rONibHaTCVJQqpyJUbtPYzxrYtg=
+		Lgtf3GBzOZ2ruFmu6QTyvkj90+Y=
 		</data>
 		<key>flutter_assets/assets/json/tests.json</key>
 		<data>
-		S26QLfWADzOuSSTUB118C+9X3mM=
-=======
-		+XBVqifJWJkllAIGL1Ez0sC2kz4=
-		</data>
-		<key>flutter_assets/assets/json/tests.json</key>
-		<data>
-		C95ez6QcwGxZ/nwGHJxH1z0ex14=
->>>>>>> 2464bfe191d0caa3432c76fd97ccaba481176437
+		ljvXqHki1K1grqMWluKJchboqFM=
 		</data>
 		<key>flutter_assets/assets/json/theory.json</key>
 		<data>
@@ -2765,11 +2242,7 @@
 		</data>
 		<key>flutter_assets/assets/json/trafficSign.json</key>
 		<data>
-<<<<<<< HEAD
-		a8R3H0OMN6fqyl5m7XNYOPNFPFo=
-=======
 		hn9UcA2ZFbjtjZLcXlG3owb7Rs0=
->>>>>>> 2464bfe191d0caa3432c76fd97ccaba481176437
 		</data>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
 		<data>
@@ -2781,11 +2254,7 @@
 		</data>
 		<key>flutter_assets/kernel_blob.bin</key>
 		<data>
-<<<<<<< HEAD
-		IdoTITlWxEcirtYeCbOGHGLH9B8=
-=======
-		iyT76WjiHcCT8OJDFZwGoM9ZL7I=
->>>>>>> 2464bfe191d0caa3432c76fd97ccaba481176437
+		BSjVcZ3hWwPqLkYzUm/xZmqhgrQ=
 		</data>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
 		<data>
@@ -2806,11 +2275,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
 			rAx0oa5h70BCdqtfpbH9TBVYp7MN7K06S+uoyhAAtMQ=
-=======
-			3iVDFoQ6B90WjZEglYenFSMNwGPmZaI3PCF+K/eTYp8=
->>>>>>> 2464bfe191d0caa3432c76fd97ccaba481176437
 			</data>
 		</dict>
 		<key>flutter_assets/FontManifest.json</key>
@@ -6695,22 +6160,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-			bs39LanZOJt9s01mwzjNFKdkhFinvaSVk2aMYEvQTmg=
-=======
-			sOysJkHHHDt4lKX6kwKl18CbplbZYHE5JA4g2rs21ww=
->>>>>>> 2464bfe191d0caa3432c76fd97ccaba481176437
+			wpmVG93DZq4lFunZWAFI9WS4S9jh3q8cJ4nxYgefl8w=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/json/tests.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-			D5I+MdLqCvpffijNfqQF6dpUo126AkmwRJopoahSpbg=
-=======
-			NYDuF4GD2Zpo7pnJjZ4UvU/XR5eO3INo3HZUu9Jkzic=
->>>>>>> 2464bfe191d0caa3432c76fd97ccaba481176437
+			eBLdb9D3ywQURATEV7wpd9VtDiAA7RucqVYlKT5htrg=
 			</data>
 		</dict>
 		<key>flutter_assets/assets/json/theory.json</key>
@@ -6724,11 +6181,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-			O27DlaoCsFXHQNhLYHv8hxSwQGn6Q1mQOEhpRVKOEA8=
-=======
 			rMx4o7IobjEnbAs1jYtODkMGALWe8aXk6i1dB7AqVvU=
->>>>>>> 2464bfe191d0caa3432c76fd97ccaba481176437
 			</data>
 		</dict>
 		<key>flutter_assets/fonts/MaterialIcons-Regular.otf</key>
@@ -6749,11 +6202,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-<<<<<<< HEAD
-			Gnsr0DWcWqhW2NrZH6F6GY9Nqr5XsQ8uM41H7tQb/cw=
-=======
-			vQOYR9JGPu1zcvGEHT4Bj+oEFCg5w1fcMuHdRGmn12c=
->>>>>>> 2464bfe191d0caa3432c76fd97ccaba481176437
+			15W0ibbKzDSESoxt9tX7qNnTiZtGWcuA2MCOWwZ5ggU=
 			</data>
 		</dict>
 		<key>flutter_assets/packages/cupertino_icons/assets/CupertinoIcons.ttf</key>
