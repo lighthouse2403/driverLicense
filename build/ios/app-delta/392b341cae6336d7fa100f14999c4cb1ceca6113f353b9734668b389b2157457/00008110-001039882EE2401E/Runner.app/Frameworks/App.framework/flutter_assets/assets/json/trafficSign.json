@@ -1182,327 +1182,460 @@
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.209",
+              "comment": "Giao nhau có tín hiệu đèn",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.210",
+              "comment": "Giao nhau với đường sắt có rào chắn",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.211a",
+              "comment": "Giao nhau với đường sắt không có rào chắn",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.211b",
+              "comment": "Giao nhau với đường tàu điện",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.212",
+              "comment": "Cầu hẹp",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.213",
+              "comment": "Cầu tạm",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.214",
+              "comment": "Cầu xoay - cầu cất",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.215a",
+              "comment": "Kè, vực sâu phía trước",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.215b",
+              "comment": "Kè, vực sâu bên đường phía bên phải",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.215c",
+              "comment": "Kè, vực sâu bên đường phía bên trái",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.216a",
+              "comment": "Đường ngầm",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.216b",
+              "comment": "Đường ngầm có nguy cơ lũ quét",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.217",
+              "comment": "Bến phà",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.218",
+              "comment": "Cửa chui",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.219",
+              "comment": "Dốc xuống nguy hiểm",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.220",
+              "comment": "Dốc lên nguy hiểm",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.221a",
+              "comment": "Đường ổ gà, sống trâu",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.221b",
+              "comment": "Đường có gồ giảm tốc",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.222a",
+              "comment": "Đường trơn",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.222b",
+              "comment": "Lề đường nguy hiểm",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.223a",
+              "comment": "Vách núi nguy hiểm",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.223b",
+              "comment": "Vách núi nguy hiểm",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.224",
+              "comment": "Đường người đi bộ cắt ngang",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.225",
+              "comment": "Trẻ em",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.226",
+              "comment": "Đường người đi xe đạp cắt ngang",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.227",
+              "comment": "Công trường",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.228a",
+              "comment": "Đá lở",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.228b",
+              "comment": "Đá lở",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.228c",
+              "comment": "Sỏi đá bắn lên",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.228d",
+              "comment": "Nền đường yếu",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.229",
+              "comment": "Dải máy bay lên xuống",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.230",
+              "comment": "Gia súc",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.231",
+              "comment": "Thú rừng vượt qua đường",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.232",
+              "comment": "Gió ngang",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.233",
+              "comment": "Nguy hiểm khác",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.234",
+              "comment": "Giao nhau với đường hai chiều",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.235",
+              "comment": "Đường đôi",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.236",
+              "comment": "Hết đường đôi",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.237",
+              "comment": "Đường có độ vòng lớn",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.238",
+              "comment": "Đường cao tốc phía rước",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.239",
+              "comment": "Đường cáp điện ở phía trên",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.240",
+              "comment": "Đường hầm phía trước",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.241",
+              "comment": "Ùn tắc giao thông",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.242a",
+              "comment": "Nơi đường sắt giao vuông góc với đường bộ",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.242b",
+              "comment": "Nơi hai đường sắt giao nhau với đường bộ",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.243a",
+              "comment": "Nơi đường sắt giao không vuông góc với đường bộ",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.243b",
+              "comment": "Nơi đường sắt giao không vuông góc với đường bộ",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.243c",
+              "comment": "Nơi đường sắt giao không vuông góc với đường bộ",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.244",
+              "comment": "Đoạn đường hay xảy ra tai nạn",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.245a",
+              "comment": "Đi chậm",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.245b",
+              "comment": "Đi chậm",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.246a",
+              "comment": "Chú ý chướng ngại vật. Vòng tránh sang hai bên",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.246b",
+              "comment": "Chú ý chướng ngại vật. Vòng tránh sang bên trái",
               "description": ""
           },
         {
               "type": 3,
-              "name": "W.",
-              "comment": "",
+              "name": "W.246c",
+              "comment": "Chú ý chướng ngại vật. Vòng tránh sang bên phải",
               "description": ""
-          }
+          },
+        {
+              "type": 3,
+              "name": "W.247",
+              "comment": "Chú ý xe đỗ",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "S.501",
+              "comment": "Phạm vi tác dụng của biển",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "S.502",
+              "comment": "Khoảng cách đến đối tượng báo hiệu",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "S.503a",
+              "comment": "Hướng tác dụng của biển",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "S.503b",
+              "comment": "Hướng tác dụng của biển",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "S.503c",
+              "comment": "Hướng tác dụng của biển",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "S.503d",
+              "comment": "Hướng tác dụng của biển",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "S.503e",
+              "comment": "Hướng tác dụng của biển",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "S.503f",
+              "comment": "Hướng tác dụng của biển",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "S.504",
+              "comment": "Làn đường",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "S.506a",
+              "comment": "Hướng đường ưu tiên",
+              "description": ""
+          },
+        {
+              "type": 3,
+              "name": "S.506b",
+              "comment": "Hướng đường ưu tiên",
+              "description": ""
+          },
+        {
+              "type": 4,
+              "name": "Vạch 1.1",
+              "comment": "Vạch phân chia hai chiều xe chạy (vạch tim đường), dạng vạch đơn, đứt nét",
+              "description": ""
+        },
+        {
+              "type": 4,
+              "name": "Vạch 1.2",
+              "comment": "Vạch phân chia hai chiều xe chạy (vạch tim đường), dạng vạch đơn, nét liền",
+              "description": ""
+        },
+        {
+              "type": 4,
+              "name": "Vạch 1.3",
+              "comment": "Vạch phân chia hai chiều xe chạy ngược chiều (vạch tim tường), dạng vạch đôi, nét liền",
+              "description": ""
+        },
+        {
+              "type": 4,
+              "name": "Vạch 1.4",
+              "comment": "Vạch phân chia hai chiều xe chạy, dạng vạch đôi gồm một vạch nét liền, một vạch nét đứt",
+              "description": ""
+        },
+        {
+              "type": 4,
+              "name": "Vạch 1.5",
+              "comment": "Vạch xác định ranh giới đường có thể thay đổi hướng xe chạy",
+              "description": ""
+        },
+        {
+              "type": 4,
+              "name": "Vạch 2.1",
+              "comment": "Vạch phân chia các làn xe cùng chiều, dạng vạch đơn, đứt nét",
+              "description": ""
+        },
+        {
+              "type": 4,
+              "name": "Vạch 2.2",
+              "comment": "Vạch phân chia các làn xe cùng chiều, dạng vạch đơn, liền nét",
+              "description": ""
+        },
+        {
+              "type": 4,
+              "name": "Vạch 7.6",
+              "comment": "Vạch chỉ dẫn sắp đến chỗ có bố trí vạch đi bộ qua đường",
+              "description": ""
+        },
+        {
+              "type": 4,
+              "name": "Vạch 7.8",
+              "comment": "Xác định khoảng cách xe trên đường",
+              "description": ""
+        },
+        {
+              "type": 4,
+              "name": "Vạch 9.2",
+              "comment": "Vạch quy định vị trí dừng đỗ của phương tiện giao thông công cộng trên đường",
+              "description": ""
+        }
+        
   ]
 }

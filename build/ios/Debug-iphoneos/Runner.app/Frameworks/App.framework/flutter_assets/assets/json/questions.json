@@ -742,7 +742,7 @@
     {
       "id": 75,
       "chapterId": 1,
-      "questionText": "",
+      "questionText": "Biển báo hiệu hình chữ nhật hoặc hình vuông hoặc hình mũi tên nền xanh lam là loại biển gì dưới đây?",
       "questionImage" : "cau75",
       "answerList": ["Biển báo nguy hiểm", "Biển báo cấm", "Biển báo hiệu lệnh phải thi hành", "Biển báo chỉ dẫn"],
       "answerIndex": 3,
@@ -2187,7 +2187,7 @@
       "answerList": ["Không nên đi cố vào đường hẹp; xe đi ở sườn núi nên dừng lại trước để nhường đường; khi dừng xe nhường đường phải đỗ ngay ngắn.", "Trong khi tránh nhau không nên đổi số; khi tránh nhau ban đêm, phải tắt đèn pha bật đèn cốt.", "Khi tránh nhau ban đêm, phải thường xuyên bật đèn pha tắt đèn cốt.", "Cả ý 1 và ý 2."],
       "answerIndex": 3,
       "isDeadPoint": false,
-      "comment": "Cả ý 1 và ý 2 đều đúng, ý 3 tranh nhau ban đêm bật đèn pha là sai."
+      "comment": "Cả ý 1 và ý 2 đều đúng, ý 3 tránh nhau ban đêm bật đèn pha là sai."
     },
     {
       "id": 220,
@@ -3507,7 +3507,7 @@
       "answerList": ["Báo khoảng cách đến nơi cấm bóp còi.", "Chiều dài đoạn đường cấm bóp còi từ nơi đặt biển.", "Báo cấm dung còi có độ vang xa 500 m."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển phụ là biển S.501 'Phạm vi tác dụng của biển'. Xác định chiều dài áp dụng biển chính từ nơi đặt biển."
     },
     {
       "id": 352,
@@ -3517,7 +3517,7 @@
       "answerList": ["Được phép.", "Không được phép."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển phụ là biển S.501 'Phạm vi tác dụng của biển'. Xác định chiều dài áp dụng biển chính từ nơi đặt biển."
     },
     {
       "id": 353,
@@ -3527,7 +3527,7 @@
       "answerList": ["Biển 1 và 2.", "Biển 1 và 3.", "Biển 2 và 3."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển chính là P.101 'Đường cấm', có biển phụ thì áp dụng cấm theo biển phụ. Nên Biển 1 và Biển 3 không áp dụng với xe mô tô là câu trả lời đúng."
     },
     {
       "id": 354,
@@ -3537,7 +3537,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Biển 3."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển chính là P.101 'Đường cấm', có biển phụ thì áp dụng cấm theo biển phụ. Nên Biển 2 áp dụng với xe mô tô là câu trả lời đúng"
     },
     {
       "id": 355,
@@ -3547,7 +3547,7 @@
       "answerList": ["Cấm các loại xe ở biển phụ đi vào.", "Cấm các loại xe cơ giới đi vào trừ loại xe ở biển phụ."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển chính là P.101 'Đường cấm', có biển phụ thì áp dụng cấm theo biển phụ."
     },
     {
       "id": 356,
@@ -3557,7 +3557,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Cả ba biển."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển phụ 1: S.501 'Phạm vi tác dụng của biển';\n Biển phụ 2: S.502 'Khoảng cách đến đối tượng báo hiệu'.\n Nên Biển phụ 1 là đáp án đúng."
     },
     {
       "id": 357,
@@ -3567,7 +3567,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Cả ba biển."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển phụ 1: S.501 'Phạm vi tác dụng của biển';\n Biển phụ 2: S.502 'Khoảng cách đến đối tượng báo hiệu'.\n Nên Biển phụ 2 là đáp án đúng."
     },
     {
       "id": 358,
@@ -3677,7 +3677,7 @@
       "answerList": ["Tốc độ tối đa các xe cơ giới được phép chạy.", "Tốc độ tối thiểu các xe cơ giới được phép chạy."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển số P.127 'Tốc độ tối đa cho phép'"
     },
     {
       "id": 369,
@@ -3697,7 +3697,7 @@
       "answerList": ["Báo hiệu tốc độ tối đa cho phép các xe cơ giới chạy.", "Báo hiệu tốc độ tối thiểu cho phép các xe cơ giới chạy."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển số R.306 'Tốc độ tối thiểu cho phép'"
     },
     {
       "id": 371,
@@ -4352,7 +4352,7 @@
     {
       "id": 436,
       "chapterId": 6,
-      "questionText": "Biển nào ( đặt trước ngã ba, ngã tư) co phép xe được rẽ sang dướng khác?",
+      "questionText": "Biển nào (đặt trước ngã ba, ngã tư) co phép xe được rẽ sang dướng khác?",
       "questionImage" : "cau436",
       "answerList": ["Biển 1", "Biển 2", "Không biển nào"],
       "answerIndex": 2,
@@ -5611,7 +5611,7 @@
     {
       "id": 562,
       "chapterId": 7,
-      "questionText": "Các xe đi theo hướng mũi tên xe nào vi phạm quy tắc giao thông?",
+      "questionText": "Các xe đi theo hướng mũi tên, xe nào vi phạm quy tắc giao thông?",
       "questionImage" : "cau562",
       "answerList": ["Xe con, xe tải, xe khách.", "Xe tải, xe khách, xe mô tô.", "Xe khách, xe mô tô, xe con.", "Cả bốn xe."],
       "answerIndex": 1,
@@ -5961,7 +5961,7 @@
     {
       "id": 597,
       "chapterId": 7,
-      "questionText": "Trong tình huống dưới đây xe con màu đỏ nhập làn đường cao tốc theo hướng mũi tên là đúng hay sai?",
+      "questionText": "Trong tình huống dưới đây, xe con màu đỏ nhập làn đường cao tốc theo hướng mũi tên là đúng hay sai?",
       "questionImage" : "cau597",
       "answerList": ["Đúng.", "Sai."],
       "answerIndex": 1,
