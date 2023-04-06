@@ -153,7 +153,7 @@
     {
       "id": 16,
       "chapterId": 1,
-      "questionText": "Khái niệm “đường cao tốc“ được hiểu như thế nào là đúng",
+      "questionText": "Khái niệm “đường cao tốc” được hiểu như thế nào là đúng",
       "questionImage" : "",
       "answerList": ["Đường dành riêng cho xe ô tô và một số loại xe chuyên dùng được phép đi vào theo quy định của Luật giao thông đường bộ.", "Có giải phân cách phân chia đường cho xe chạy hai chiều riêng biệt mà giải phân cách này xe không đi được lên trên; không giao nhau cùng mức với một hoặc một số đường khác.", "Được bố trí đầy đủ trang thiết bị phục vụ, bảo đảm giao thông liên tục, an toàn, rút ngắn thời gian hành trình và chỉ cho xe ra, vào ở những điểm nhất định.", "Tất cả các ý trên."],
       "answerIndex": 3,
@@ -1312,7 +1312,7 @@
     {
       "id": 132,
       "chapterId": 1,
-      "questionText": "rên đường bộ ngoài khu vực đông dân cư, đường đôi có dải phân cách giữa (trừ đường cao tốc), loại xe nào dưới đây tham gia giao thông với tốc độ tối đa cho phép là 60 km/h?",
+      "questionText": "Trên đường bộ ngoài khu vực đông dân cư, đường đôi có dải phân cách giữa (trừ đường cao tốc), loại xe nào dưới đây tham gia giao thông với tốc độ tối đa cho phép là 60 km/h?",
       "questionImage" : "",
       "answerList": ["Ô tô kéo rơ moóc, ô tô kéo xe khác, ô tô trộn vữa, ô tô trộn bê tông, ô tô xi téc.", "Ô tô chở người trên 30 chỗ (trừ ô tô buýt), ô tô tải có trọng tải trên 3,5 tấn.", "Xe ô tô con, xe ô tô chở người đến 30 chỗ (trừ xe buýt), ô tô tải có trọng tải nhỏ hơn hoặc bằng 3,5 tấn."],
       "answerIndex": 0,
@@ -2652,9 +2652,9 @@
     {
       "id": 266,
       "chapterId": 4,
-      "questionText": "Khi điều khiển xe mô tô quay đầu người lái xe cần thực hiện như thế nào để đảm bảo an toàn?",
+      "questionText": "Tay ga trên xe mô tô hai bánh có tác dụng gì trong các trường hợp dưới đây?",
       "questionImage" : "",
-      "answerList": ["Bật tín hiệu báo rẽ trước khi quay đầu, từ từ giảm tốc độ đến mức có thể dừng lại.", "Chỉ quay đầu xe tại những nơi được phép quay đầu.", "Quan sát an toàn các phương tiện tới từ phía trước, phía sau, hai bên đồng thời nhường đường cho xe từ bên phải và phía trước đi tới.", "Tất cả các ý nêu trên."],
+      "answerList": ["Để điều khiển xe chạy về phía trước.", "Để điều tiết công suất động cơ qua đó điều khiển tốc độ của xe.", "Để điều khiển xe chạy lùi.", "Cả ý 1 và ý 2."],
       "answerIndex": 3,
       "isDeadPoint": false,
       "comment": ""
@@ -3472,7 +3472,7 @@
     {
       "id": 348,
       "chapterId": 6,
-      "questionText": "Khi gặp biển này, xe mô tô ba bánh có được phép rẻ trái hoặc rẽ phải hay không?",
+      "questionText": "Khi gặp biển này, xe mô tô ba bánh có được phép rẽ trái hoặc rẽ phải không?",
       "questionImage" : "cau348",
       "answerList": ["Được phép.", "Không được phép."],
       "answerIndex": 1,
@@ -3552,7 +3552,7 @@
     {
       "id": 356,
       "chapterId": 6,
-      "questionText": "Biển nào báo hiệu chiều dài đoạn đường phải giữu cự ly tối thiểu giữa hai xe?",
+      "questionText": "Biển nào báo hiệu chiều dài đoạn đường phải giữ cự ly tối thiểu giữa hai xe?",
       "questionImage" : "cau356",
       "answerList": ["Biển 1.", "Biển 2.", "Cả ba biển."],
       "answerIndex": 0,
@@ -4182,7 +4182,7 @@
     {
       "id": 419,
       "chapterId": 6,
-      "questionText": "Biển nào sau đây là biển “ Dốc xuống nguy hiểm”?   ",
+      "questionText": "Biển nào sau đây là biển “Dốc xuống nguy hiểm”?   ",
       "questionImage" : "cau419",
       "answerList": ["Biển 1", "Biển 2"],
       "answerIndex": 0,
@@ -4192,7 +4192,7 @@
     {
       "id": 420,
       "chapterId": 6,
-      "questionText": "Biển nào sau đây là biển “ Dốc lên nguy hiểm”?",
+      "questionText": "Biển nào sau đây là biển “Dốc lên nguy hiểm”?",
       "questionImage" : "cau420",
       "answerList": ["Biển 1", "Biển 2"],
       "answerIndex": 1,
@@ -4202,7 +4202,7 @@
     {
       "id": 421,
       "chapterId": 6,
-      "questionText": "Biển Báo Này Có Ý Ngĩa Gì?",
+      "questionText": "Biển báo này có ý nghĩa gì?",
       "questionImage" : "cau421",
       "answerList": ["Chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải hi đường cong vòng sang trái", "Chỗ ngoặt nguy hiểm có nguy cơ lật xe bên trái khi đường cong vòng bên phải"],
       "answerIndex": 0,
@@ -4254,7 +4254,7 @@
       "chapterId": 6,
       "questionText": "Biển báo này có ý nghĩa gì?",
       "questionImage" : "cau426",
-      "answerList": ["Để báo trước gần tới đoạn đường có hiện tượng đất đá từ trên ta luy dương sạt lở bất ngờ gây nguy hiểm cho xe cộ và người đi đường.", "Để báo trước nơi có kết cấu mặt đường rời rạc, khi phương tiện đi qua, làm cho các viên đá, sỏi băng lên gây nguy hiểm và mất an toàn cho người và phương tiện tham gai giao thông.", "Để cảnh báo những đoạn nền đường yếu, đoạn đường đang theo dõi lún mà việc vận hành xe ở tốc độ cao có thể gây nguy hiểm."],
+      "answerList": ["Để báo trước gần tới đoạn đường có hiện tượng đất đá từ trên ta luy đường sạt lở bất ngờ gây nguy hiểm cho xe cộ và người đi đường.", "Để báo trước nơi có kết cấu mặt đường rời rạc, khi phương tiện đi qua, làm cho các viên đá, sỏi băng lên gây nguy hiểm và mất an toàn cho người và phương tiện tham gai giao thông.", "Để cảnh báo những đoạn nền đường yếu, đoạn đường đang theo dõi lún mà việc vận hành xe ở tốc độ cao có thể gây nguy hiểm."],
       "answerIndex": 0,
       "isDeadPoint": false,
       "comment": ""
@@ -4292,7 +4292,7 @@
     {
       "id": 430,
       "chapterId": 6,
-      "questionText": "Biển nào báo hiệu các phương tiện pải đi đúng làn đường quy định và tuân thủ tốc độ tối đa cho phép?",
+      "questionText": "Biển nào báo hiệu các phương tiện phải đi đúng làn đường quy định và tuân thủ tốc độ tối đa cho phép?",
       "questionImage" : "cau430",
       "answerList": ["Biển 1", "Biển 2", "Cả hai biển"],
       "answerIndex": 1,
@@ -4312,7 +4312,7 @@
     {
       "id": 432,
       "chapterId": 6,
-      "questionText": "Biển nào báo hiệu “ Đường dành cho xe ô tô”?",
+      "questionText": "Biển nào báo hiệu “Đường dành cho ô tô”?",
       "questionImage" : "cau432",
       "answerList": ["Biển 1", "Biển 2"],
       "answerIndex": 0,
@@ -4372,7 +4372,7 @@
     {
       "id": 438,
       "chapterId": 6,
-      "questionText": "Biển nào báo hiệu “ Đường một chiều”?",
+      "questionText": "Biển nào báo hiệu “Đường một chiều”?",
       "questionImage" : "cau438",
       "answerList": ["Biển 1", "Biển 2", "Cả hai biển"],
       "answerIndex": 1,
@@ -4382,7 +4382,7 @@
     {
       "id": 439,
       "chapterId": 6,
-      "questionText": "Trong các biển dưới đây biển nào là biển “ Hết tốc độ tối đa cho phép”?",
+      "questionText": "Trong các biển dưới đây biển nào là biển “Hết hạn chế tốc độ tối đa”?",
       "questionImage" : "cau439",
       "answerList": ["Biển 1", "Biển 2", "Biển 3", "Cả ba biển"],
       "answerIndex": 0,
@@ -4392,7 +4392,7 @@
     {
       "id": 440,
       "chapterId": 6,
-      "questionText": "Hiệu lực của biển “ Tốc độ tối đa cho phép” hết tác dụng khi gặp biển nào dưới đây?",
+      "questionText": "Hiệu lực của biển “ Tốc độ tối đa cho phép ”hết tác dụng khi gặp biển nào dưới đây?",
       "questionImage" : "cau440",
       "answerList": ["Biển 1", "Biển 2", "Biển 3", "Biển 1 và 2"],
       "answerIndex": 3,
@@ -4402,7 +4402,7 @@
     {
       "id": 441,
       "chapterId": 6,
-      "questionText": "Trong các biển dưới đây biển nào là biển “ Hết tốc độ tối thiểu”?",
+      "questionText": "Trong các biển dưới đây biển nào là biển “ Hết hạn chế tốc độ tối thiểu”?",
       "questionImage" : "cau441",
       "answerList": ["Biển 1", "Biển 2", "Biển 3", "Cả ba biển"],
       "answerIndex": 2,
@@ -4442,7 +4442,7 @@
     {
       "id": 445,
       "chapterId": 6,
-      "questionText": "Biển nào không cho phép rẻ phải?",
+      "questionText": "Biển nào không cho phép rẽ phải?",
       "questionImage" : "cau445",
       "answerList": ["Biển 1", "Biển 2", "Biển 3", "Biển 1 và 3"],
       "answerIndex": 0,
@@ -4452,7 +4452,7 @@
     {
       "id": 446,
       "chapterId": 6,
-      "questionText": "Khi đến chổ giao nhau, gặp biển nào thì người lái xe không được cho xe đi thẳng, phải rẽ sang hướng khác?",
+      "questionText": "Khi đến chỗ giao nhau, gặp biển nào thì người lái xe không được cho xe đi thẳng, phải rẽ sang hướng khác?",
       "questionImage" : "cau446",
       "answerList": ["Biển 1 và 2", "Biển 1 và 3", "Biển 2 và 3", "Cả ba biển"],
       "answerIndex": 0,
@@ -4551,7 +4551,7 @@
     {
       "id": 456,
       "chapterId": 6,
-      "questionText": "Biển nào báo hiệu nơi đỗ xe cho người tàn tật?",
+      "questionText": "Biển nào báo hiệu nơi đỗ xe dành cho người tàn tật?",
       "questionImage" : "cau456",
       "answerList": ["Biển 1", "Biển 2", "Biển 3"],
       "answerIndex": 1,
@@ -4573,7 +4573,7 @@
       "chapterId": 6,
       "questionText": "Gặp biển báo này, người tham gia thông phải xử lý như thế nào?",
       "questionImage" : "cau458",
-      "answerList": ["Dừng xe tại khu vực có trạm Cảnh sát giao thông.", "Tiếp tục lưu thông với tốc độ bình thường", "Phải giảm tốc độ đến mức an toàn không được vượt khi đi qua khu vực này"],
+      "answerList": ["Dừng xe tại khu vực có trạm Cảnh sát giao thông.", "Tiếp tục lưu thông với tốc độ bình thường", "Phải giảm tốc độ đến mức an toàn và không được vượt khi đi qua khu vực này"],
       "answerIndex": 2,
       "isDeadPoint": false,
       "comment": ""
@@ -4633,7 +4633,7 @@
       "chapterId": 6,
       "questionText": "Biển báo dưới đây có ý nghĩa gì?",
       "questionImage" : "cau464",
-      "answerList": ["Chỉ dẫn khoảng cách đến làn đường cứu nạn ( làn thoát xe khẩn cấp).", "Báo hiệu đường cụt phía trước.", "Báo hiệu nút giao gần nhất phía trước.", "Báo hiệu trạm dừng nghỉ phía trước."],
+      "answerList": ["Chỉ dẫn khoảng cách đến làn đường cứu nạn (làn thoát xe khẩn cấp).", "Báo hiệu đường cụt phía trước.", "Báo hiệu nút giao gần nhất phía trước.", "Báo hiệu trạm dừng nghỉ phía trước."],
       "answerIndex": 0,
       "isDeadPoint": false,
       "comment": ""
@@ -4641,7 +4641,7 @@
     {
       "id": 465,
       "chapterId": 6,
-      "questionText": "Tại đoạn đường có biển “ Làn đường dành riêng cho từng loại xe”, các phương tiện có được phép chuyển sang làn khác để đi theo hành trình mong muốn khi đến gần nơi đường bộ giao nhau hay không?",
+      "questionText": "Tại đoạn đường có biển “Làn đường dành riêng cho từng loại xe”, các phương tiện có được phép chuyển sang làn khác để đi theo hành trình mong muốn khi đến gần nơi đường bộ giao nhau hay không?",
       "questionImage" : "cau465",
       "answerList": ["Được phép chuyển sang làn khác.", "Không được phép chuyển sang làn khác, chỉ được đi trong làn quy định theo biển."],
       "answerIndex": 0,
@@ -4741,7 +4741,7 @@
     {
       "id": 475,
       "chapterId": 6,
-      "questionText": "Khi di chuyển trên đường cao tốc, gặp biển nào thì người lái xe đi được cả hai hướng (bên trái hoặc bên phải)  để tránh chướng ngại vật?",
+      "questionText": "Khi di chuyển trên đường cao tốc, gặp biển nào thì người lái xe đi được cả hai hướng (bên trái hoặc bên phải) để tránh chướng ngại vật?",
       "questionImage" : "cau475",
       "answerList": ["Biển 1", "Biển 2", "Biển 3"],
       "answerIndex": 1,
@@ -4803,7 +4803,7 @@
       "chapterId": 6,
       "questionText": "Các vạch dưới đây có tác dụng gì?",
       "questionImage" : "cau481",
-      "answerList": ["Phân chia hai chiều xe chạy ngược nhiều nhau", "Phân chia các làn xe chạy cùng chiều nhau"],
+      "answerList": ["Phân chia hai chiều xe chạy ngược chiều nhau", "Phân chia các làn xe chạy cùng chiều nhau"],
       "answerIndex": 0,
       "isDeadPoint": false,
       "comment": ""
@@ -4924,7 +4924,7 @@
       "questionText": "Thứ tự các xe đi như thế nào là đúng quy tắc giao thông?",
       "questionImage" : "cau493",
       "answerList": ["Xe con (A), xe cứu thương, xe con (B).", "Xe cứu thương, xe con (B), xe con (A).", "Xe con (B), xe con (A), xe cứu thương."],
-      "answerIndex": 1,
+      "answerIndex": 0,
       "isDeadPoint": false,
       "comment": ""
     },
@@ -5091,7 +5091,7 @@
     {
       "id": 510,
       "chapterId": 7,
-      "questionText": "Xe tải kéo mô tô ba bánh như hình này có đúng quy tắc giao thông?",
+      "questionText": "Xe tải kéo mô tô ba bánh như hình này có đúng quy tắc giao thông không?",
       "questionImage" : "cau510",
       "answerList": ["Đúng.", "Không đúng."],
       "answerIndex": 1,
@@ -5174,7 +5174,7 @@
       "questionText": "Xe kéo nhau trong trường hợp này đúng quy định không?",
       "questionImage" : "cau518",
       "answerList": ["Không đúng.", "Đúng."],
-      "answerIndex": 1,
+      "answerIndex": 0,
       "isDeadPoint": false,
       "comment": ""
     },
@@ -5303,7 +5303,7 @@
       "chapterId": 7,
       "questionText": "Xe nào vượt đúng quy tăc giao thông?",
       "questionImage" : "cau531",
-      "answerList": ["Xe tải.", "Cả hai xe.", "Xe con"],
+      "answerList": ["Xe tải.", "Cả hai xe.", "Xe con."],
       "answerIndex": 2,
       "isDeadPoint": false,
       "comment": ""
@@ -5441,7 +5441,7 @@
     {
       "id": 545,
       "chapterId": 7,
-      "questionText": "Người lái điều khiển xe chạy theo hướng nào là đúng quy tắc giao thông?",
+      "questionText": "Người lái xe điều khiển xe chạy theo hướng nào là đúng quy tắc giao thông?",
       "questionImage" : "cau545",
       "answerList": ["Chỉ hướng 2.", "Hướng 1 và 2.", "Tất cả các hướng trừ hướng 3.", "Tất cả các hướng trừ hướng 4."],
       "answerIndex": 1,
@@ -5653,7 +5653,7 @@
       "chapterId": 7,
       "questionText": "Trong hình dưới, những xe nào vi phạm quy tắc giao thông?",
       "questionImage" : "cau566",
-      "answerList": ["Xe con (A), xe con (B), xe tải (D).", "Xe tải (D), xe con (E), xe buýt (G).", "Xe tải ( D), xe con (B).", "Xe con (B), xe con (C)."],
+      "answerList": ["Xe con (A), xe con (B), xe tải (D).", "Xe tải (D), xe con (E), xe buýt (G).", "Xe tải (D), xe con (B).", "Xe con (B), xe con (C)."],
       "answerIndex": 2,
       "isDeadPoint": false,
       "comment": ""
@@ -5803,7 +5803,7 @@
       "chapterId": 7,
       "questionText": "Xe tải phía trước có tín hiệu xin chuyển làn đường, bạn xử lý như thế nào trong trường hợp này?",
       "questionImage" : "cau581",
-      "answerList": ["Bật tín hiệu xin chuyển làn đường sang trái để vượt xe tải.", "Phanh xe, giảm tốc độ chờ xe tải phía trước chuyển làn đường."],
+      "answerList": ["Bật tín hiệu xin chuyển làn đường sang trái để vượt xe tải.", "Phanh xe, giảm tốc độ chờ xe tải phía trước chuyển làn đường.", "Bấm còi báo hiệu và vượt qua xe tải trên làn đường của mình."],
       "answerIndex": 1,
       "isDeadPoint": false,
       "comment": ""
@@ -5821,7 +5821,7 @@
     {
       "id": 583,
       "chapterId": 7,
-      "questionText": "Các xe đi như thế nào là đúng quy tắc giao thông?",
+      "questionText": "Các xe đi theo thứ tự nào là đúng quy tắc giao thông đường bộ?",
       "questionImage" : "cau583",
       "answerList": ["Xe của bạn, mô tô, xe đạp.", "Xe mô tô, xe đạp, xe của bạn.", "Xe đạp, xe mô tô, xe của bạn."],
       "answerIndex": 2,
@@ -5863,7 +5863,7 @@
       "chapterId": 7,
       "questionText": "Bạn xử lý thế nào trong trường hợp này?",
       "questionImage" : "cau587",
-      "answerList": ["Tăng tốc độ, đi qua vạch người đi bộ sang đường, để người đi bộ sang đường sau.", "Giảm tốc độ, đi qua vạch người đi bộ sang đường, để người đi bộ sang đường sau.", "Giảm tốc độ , để người đi bộ sang đường trước, sau đó cho xe đi qua vạch người đi bộ sang đường."],
+      "answerList": ["Tăng tốc độ, đi qua vạch người đi bộ sang đường, để người đi bộ sang đường sau.", "Giảm tốc độ, đi qua vạch người đi bộ sang đường, để người đi bộ sang đường sau.", "Giảm tốc độ, để người đi bộ sang đường trước, sau đó cho xe đi qua vạch người đi bộ sang đường."],
       "answerIndex": 2,
       "isDeadPoint": false,
       "comment": ""
@@ -5943,7 +5943,7 @@
       "chapterId": 7,
       "questionText": "Khi gặp xe ngược chiều bật đèn pha trong tình huống dưới đây, bạn xử lý như thế nào?",
       "questionImage" : "cau595",
-      "answerList": ["Bật đèn chiếu xa, tăng tốc độ vượt xe cùng chiều.", "Giữ nguyên đền chiếu gần, giảm tốc độ, đi sau xe phía trước.", "Giữ nguyên đèn chiếu gần, tăng tốc độ vượt xe cùng chiều."],
+      "answerList": ["Bật đèn chiếu xa, tăng tốc độ vượt xe cùng chiều.", "Giữ nguyên đèn chiếu gần, giảm tốc độ, đi sau xe phía trước.", "Giữ nguyên đèn chiếu gần, tăng tốc độ vượt xe cùng chiều."],
       "answerIndex": 1,
       "isDeadPoint": false,
       "comment": ""

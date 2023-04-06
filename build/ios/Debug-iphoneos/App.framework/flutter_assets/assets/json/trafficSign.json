@@ -44,12 +44,6 @@
     },
     {
       "type": 0,
-      "name": "P.106",
-      "comment": "Cấm xe tải",
-      "description": "Cấm xe tải, mô tô kéo, các mô tô chuyên dùng đi vào (trừ xe ưu tiên theo quy định)."
-    },
-    {
-      "type": 0,
       "name": "P.106a",
       "comment": "Cấm xe tải theo trọng lượng",
       "description": "Cấm xe tải có khối lượng chuyên chở lớn hơn giá trị ghi trong biển báo đi vào."
