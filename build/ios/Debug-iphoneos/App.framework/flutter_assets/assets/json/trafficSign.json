@@ -44,12 +44,6 @@
     },
     {
       "type": 0,
-      "name": "P.106",
-      "comment": "Cấm xe tải",
-      "description": "Cấm xe tải, mô tô kéo, các mô tô chuyên dùng đi vào (trừ xe ưu tiên theo quy định)."
-    },
-    {
-      "type": 0,
       "name": "P.106a",
       "comment": "Cấm xe tải theo trọng lượng",
       "description": "Cấm xe tải có khối lượng chuyên chở lớn hơn giá trị ghi trong biển báo đi vào."
@@ -1581,61 +1575,61 @@
               "name": "Vạch 1.1",
               "comment": "Vạch phân chia hai chiều xe chạy (vạch tim đường), dạng vạch đơn, đứt nét",
               "description": ""
-          },
+        },
         {
               "type": 4,
               "name": "Vạch 1.2",
               "comment": "Vạch phân chia hai chiều xe chạy (vạch tim đường), dạng vạch đơn, nét liền",
               "description": ""
-          },
+        },
         {
               "type": 4,
               "name": "Vạch 1.3",
               "comment": "Vạch phân chia hai chiều xe chạy ngược chiều (vạch tim tường), dạng vạch đôi, nét liền",
               "description": ""
-          },
+        },
         {
               "type": 4,
               "name": "Vạch 1.4",
               "comment": "Vạch phân chia hai chiều xe chạy, dạng vạch đôi gồm một vạch nét liền, một vạch nét đứt",
               "description": ""
-          },
+        },
         {
               "type": 4,
               "name": "Vạch 1.5",
               "comment": "Vạch xác định ranh giới đường có thể thay đổi hướng xe chạy",
               "description": ""
-          },
+        },
         {
               "type": 4,
               "name": "Vạch 2.1",
               "comment": "Vạch phân chia các làn xe cùng chiều, dạng vạch đơn, đứt nét",
               "description": ""
-          },
+        },
         {
               "type": 4,
               "name": "Vạch 2.2",
               "comment": "Vạch phân chia các làn xe cùng chiều, dạng vạch đơn, liền nét",
               "description": ""
-          },
+        },
         {
               "type": 4,
               "name": "Vạch 7.6",
               "comment": "Vạch chỉ dẫn sắp đến chỗ có bố trí vạch đi bộ qua đường",
               "description": ""
-          },
+        },
         {
               "type": 4,
               "name": "Vạch 7.8",
               "comment": "Xác định khoảng cách xe trên đường",
               "description": ""
-          },
+        },
         {
               "type": 4,
               "name": "Vạch 9.2",
               "comment": "Vạch quy định vị trí dừng đỗ của phương tiện giao thông công cộng trên đường",
               "description": ""
-          },
+        }
         
   ]
 }
