@@ -5863,7 +5863,7 @@
       "chapterId": 7,
       "questionText": "Bạn xử lý thế nào trong trường hợp này?",
       "questionImage" : "cau587",
-      "answerList": ["Tăng tốc độ, đi qua vạch người đi bộ sang đường, để người đi bộ sang đường sau.", "Giảm tốc độ, đi qua vạch người đi bộ sang đường, để người đi bộ sang đường sau.", "Giảm tốc độ , để người đi bộ sang đường trước, sau đó cho xe đi qua vạch người đi bộ sang đường."],
+      "answerList": ["Tăng tốc độ, đi qua vạch người đi bộ sang đường, để người đi bộ sang đường sau.", "Giảm tốc độ, đi qua vạch người đi bộ sang đường, để người đi bộ sang đường sau.", "Giảm tốc độ, để người đi bộ sang đường trước, sau đó cho xe đi qua vạch người đi bộ sang đường."],
       "answerIndex": 2,
       "isDeadPoint": false,
       "comment": ""
