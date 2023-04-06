@@ -4402,7 +4402,7 @@
     {
       "id": 441,
       "chapterId": 6,
-      "questionText": "Trong các biển dưới đây biển nào là biển “ Hết tốc độ tối thiểu”?",
+      "questionText": "Trong các biển dưới đây biển nào là biển “ Hết hạn chế tốc độ tối thiểu”?",
       "questionImage" : "cau441",
       "answerList": ["Biển 1", "Biển 2", "Biển 3", "Cả ba biển"],
       "answerIndex": 2,
@@ -5303,7 +5303,7 @@
       "chapterId": 7,
       "questionText": "Xe nào vượt đúng quy tăc giao thông?",
       "questionImage" : "cau531",
-      "answerList": ["Xe tải.", "Cả hai xe.", "Xe con"],
+      "answerList": ["Xe tải.", "Cả hai xe.", "Xe con."],
       "answerIndex": 2,
       "isDeadPoint": false,
       "comment": ""
