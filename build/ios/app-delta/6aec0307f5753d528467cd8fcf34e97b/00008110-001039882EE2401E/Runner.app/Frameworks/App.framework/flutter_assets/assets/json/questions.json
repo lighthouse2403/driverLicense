@@ -3,7 +3,7 @@
     {
       "id": 1,
       "chapterId": 1,
-      "questionText": "Phần của đường bộ được sử dụng cho các phương tiện giao thông qua lại  là gì?",
+      "questionText": "Phần của đường bộ được sử dụng cho các phương tiện giao thông qua lại là gì?",
       "questionImage" : "",
       "answerList": ["Phần mặt đường và lề đường.", "Phần đường xe chạy.", "Phần đường xe cơ giới."],
       "answerIndex": 1,
@@ -3707,7 +3707,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Biển 3.", "Biển 1 và 3."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.224 'Đường người đi bộ cắt ngang'\n Biển 2: P.112 'Cấm người đi bộ'\n Biển 3: R.305 'Đường dành cho người đi bộ'\n Biển 1 báo ưu tiên cho người đi bộ nên phải nhường đường"
     },
     {
       "id": 372,
@@ -3717,7 +3717,7 @@
       "answerList": ["Biển 1.", "Biển 1 và 3.", "Biển 3.", "Cả ba biển."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.224 'Đường người đi bộ cắt ngang'\n Biển 2: P.112 'Cấm người đi bộ'\n Biển 3: R.305 'Đường dành cho người đi bộ'\n Biển 3 báo đường dành cho người đi bộ nên phương tiện khác không được đi vào."
     },
     {
       "id": 373,
@@ -3737,7 +3737,7 @@
       "answerList": ["Biển 1.", "Biển 1 và 2.", "Biển 2 và 3.", "Cả ba biển."],
       "answerIndex": 3,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.210 'Giao nhau với đường sắt có rào chắn'\n Biển 2: W.208 'Giao nhau với đường ưu tiên' \n Biển 3: W.209 'Giao nhau có tín hiệu đèn'"
     },
     {
       "id": 375,
@@ -3747,7 +3747,7 @@
       "answerList": ["Biển 1.", "Biển 2 và 3.", "Biển 3."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.210 'Giao nhau với đường sắt có rào chắn'\n Biển 2: W.208 'Giao nhau với đường ưu tiên' \n Biển 3: W.209 'Giao nhau có tín hiệu đèn'"
     },
     {
       "id": 376,
@@ -3757,7 +3757,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Biển 3.", "Cả ba biển."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.210 'Giao nhau với đường sắt có rào chắn'\n Biển 2: W.208 'Giao nhau với đường ưu tiên' \n Biển 3: W.209 'Giao nhau có tín hiệu đèn'"
     },
     {
       "id": 377,
@@ -3767,7 +3767,7 @@
       "answerList": ["Biển 1 và 2.", "Biển 1 và 3.", "Biển 2 và 3.", "Cả ba biển."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.210 'Giao nhau với đường sắt có rào chắn' \n Biển 2: W.234 'Giao nhau với đường hai chiều' \n Biển 3: W.242a 'Nơi đường sắt giao vuông góc với đường bộ'"
     },
     {
       "id": 378,
@@ -3777,7 +3777,7 @@
       "answerList": ["Biển 1 và 2.", "Biển 1 và 3.", "Biển 2 và 3.", "Cả ba biển."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.210 'Giao nhau với đường sắt có rào chắn' \n Biển 2: W.211a 'Giao nhau với đường sắt không có rào chắn' \n Biển 3: W.242a 'Nơi đường sắt giao vuông góc với đường bộ' bổ sung cho biển W.211a. Nên cả 2 biển 2 và 3 đều đúng."
     },
     {
       "id": 379,
@@ -3787,7 +3787,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Biển 3.", "Biển 1 và 3."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: Biển W.211a 'Giao nhau với đường sắt không có rào chắn' \n Biển 2: Biển W.208 'Giao nhau với đường ưu tiên' \n Biển 3: W.211b Giao nhau với tàu điện"
     },
     {
       "id": 380,
@@ -3797,7 +3797,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Biển 3."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.237 'Cầu vòng' \n Biển 2: W.218 'Cửa chui' \n Biển 3: W.240 'Đường hầm' \n Đáp án đúng là đáp án 2"
     },
     {
       "id": 381,
@@ -3807,7 +3807,7 @@
       "answerList": ["Để chỉ nơi đường sắt giao vuông góc với đường bộ không có rào chắn.", "Để báo trước sắp đến vị trí giao cắt đường bộ với đường sắt cùng mức, không vuông góc và không có người gác, không có rào chắn.", "Nơi đường sắt giao nhau với đường bộ."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Hai biển này là 242a và 242b 'Nơi đường sắt giao nhau vuông góc với đường bộ' bổ sung cho biển 211 'Giao nhau với đường sắt không có rào chắn'. \n Do đó câu trở lời 1 là đáp án đúng."
     },
     {
       "id": 382,
@@ -3817,7 +3817,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Biển 3.", "Biển 1 và 2."],
       "answerIndex": 3,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1 và Biển 2 là 242a và 242b 'Nơi đường sắt giao nhau vuông góc với đường bộ' bổ sung cho biển 211 'Giao nhau với đường sắt không có rào chắn'. \n Biển 3 là 243a 'Nơi giao nhau không vuông góc với đường bộ'"
     },
     {
       "id": 383,
@@ -3827,7 +3827,7 @@
       "answerList": ["Nơi đường sắt giao nhau với đường bộ.", "Nơi đường sắt giao vuông góc với đường bộ.", "Để báo trước sắp đến vị trí đường sắt giao không vuông góc với đường bộ, không có người gác và không có rào chắn."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Ba biển này là 243a, 243b, 243c 'Nơi giao nhau không vuông góc với đường sắt, không có người gác và không có rào chắn với đường sắt'"
     },
     {
       "id": 384,
@@ -3837,7 +3837,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Biển 3."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.207a 'Giao nhau với đường không ưu tiên' \n Biển 2: W.208 'Giao nhau với đường ưu tiên' \n Biển 3: I.402 'Hết đường ưu tiên'"
     },
     {
       "id": 385,
@@ -3847,7 +3847,7 @@
       "answerList": ["Biển 1 và 2.", "Biển 1 và 3.", "Biển 2 và 3.", "Cả ba biển."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.207a 'Giao nhau với đường không ưu tiên' \n Biển 2: W.208 'Giao nhau với đường ưu tiên' \n Biển 3: I.401 'Bắt đầu đường ưu tiên' \n Nên biển 1 và biển 3 là đáp án đúng."
     },
     {
       "id": 386,
@@ -3857,7 +3857,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Biển 3.", "Biển 2 và 3."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.207a 'Giao nhau với đường không ưu tiên' \n Biển 2: W.208 'Giao nhau với đường ưu tiên' \n Biển 3: I.401 'Bắt đầu đường ưu tiên' \n Nên biển 1 là đáp án đúng."
     },
     {
       "id": 387,
@@ -3867,7 +3867,7 @@
       "answerList": ["Biển 1 và 3.", "Biển 2.", "Biển 3."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.207a 'Giao nhau với đường không ưu tiên' \n Biển 2: W.208 'Giao nhau với đường ưu tiên' \n Biển 3: I.401 'Bắt đầu đường ưu tiên' \n Nên biển 2 là đáp án đúng."
     },
     {
       "id": 388,
@@ -3877,7 +3877,7 @@
       "answerList": ["Biển 1 và 2.", "Biển 1 và 3.", "Biển 2 và 3.", "Cả ba biển."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.203a 'Đường bị hẹp cả hai bên' \n Biển 2: W.203b 'Đường bị hẹp về phía trái' \n Biển 3: W.201b 'Chỗ ngoặt nguy hiểm vòng bên phải' \n Nên đáp án đúng là Biển 1 và Biển 2"
     },
     {
       "id": 389,
@@ -3887,7 +3887,7 @@
       "answerList": ["Biển 1.", "Biển 2 và 3.", "Biển 2 và 3.", "Cả ba biển."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.236 'Hết đường đôi' \n Biển 2: W.203b 'Đường bị hẹp về phía trái' \n Biển 3: W.203c 'Đường bị hẹp về phía phải' \n Câu này hỏi về việc đường bị thu hẹp nên câu trả lời đúng là Biển 2 và 3"
     },
     {
       "id": 390,
@@ -3897,7 +3897,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Biển 3.", "Cả ba biển."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.205a 'Đường giao nhau' cùng cấp \n Biển 2: W.207a 'Giao nhau với đường không ưu tiên' \n Biển 3: W.208 'Giao nhau với đường ưu tiên'"
     },
     {
       "id": 391,
@@ -3907,7 +3907,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Biển 3."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.205a 'Đường giao nhau' cùng cấp \n Biển 2: W.207a 'Giao nhau với đường không ưu tiên' \n Biển 3: W.208 'Giao nhau với đường ưu tiên'"
     },
     {
       "id": 392,
@@ -3917,7 +3917,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Biển 3."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.205a 'Đường giao nhau' cùng cấp \n Biển 2: W.207a 'Giao nhau với đường không ưu tiên' \n Biển 3: W.208 'Giao nhau với đường ưu tiên'"
     },
     {
       "id": 393,
@@ -3927,7 +3927,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Biển 3."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.204 'Đường hai chiều' \n Biển 2: P.132 'Nhường đường cho xe cơ giới đi ngược chiều qua đường hẹp' \n Biển 3: I.406 'Được ưu tiên qua đường hẹp"
     },
     {
       "id": 394,
@@ -3937,7 +3937,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Biển 3."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.204 'Đường hai chiều' \n Biển 2: P.132 'Nhường đường cho xe cơ giới đi ngược chiều qua đường hẹp' \n Biển 3: I.406 'Được ưu tiên qua đường hẹp"
     },
     {
       "id": 395,
@@ -3947,7 +3947,7 @@
       "answerList": ["Biển 1.", "Biển 2.", "Biển 3.", "Biển 2 và 3."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.204 'Đường hai chiều' \n Biển 2: P.132 'Nhường đường cho xe cơ giới đi ngược chiều qua đường hẹp' \n Biển 3: I.406 'Được ưu tiên qua đường hẹp"
     },
     {
       "id": 396,
@@ -4047,7 +4047,7 @@
       "answerList": ["Biển 1", "Biển 2", "Biển 3"],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.213 'Cầu tạm' \n Biển 2: W.212 'Cầu hẹp' \n Biển 3: W.214 'Cầu xoay - cầu cất'"
     },
     {
       "id": 406,
@@ -4057,7 +4057,7 @@
       "answerList": ["Biển 1", "Biển 2", "Biển 3"],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.213 'Cầu tạm' \n Biển 2: W.212 'Cầu hẹp' \n Biển 3: W.214 'Cầu xoay - cầu cất'"
     },
     {
       "id": 407,
@@ -4067,7 +4067,7 @@
       "answerList": ["Biển 1", "Biển 2", "Biển 3"],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.215a 'Kè, vực sâu phía trước' \n Biển 2: W.215b 'Kè, vực sâu bên đường phía bên phải' \n Biển 3: W.215c 'Kè, vực sâu bên đường phía bên trái'"
     },
     {
       "id": 408,
@@ -4077,7 +4077,7 @@
       "answerList": ["Biển 1", "Biển 2", "Biển 3", "Biển 1 và Biển 2"],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.215a 'Kè, vực sâu phía trước' \n Biển 2: W.215b 'Kè, vực sâu bên đường phía bên phải' \n Biển 3: W.215c 'Kè, vực sâu bên đường phía bên trái'"
     },
     {
       "id": 409,
@@ -4087,7 +4087,7 @@
       "answerList": ["Biển 1", "Biển 2", "Biển 3"],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.215a 'Kè, vực sâu phía trước' \n Biển 2: W.215b 'Kè, vực sâu bên đường phía bên phải' \n Biển 3: W.215c 'Kè, vực sâu bên đường phía bên trái'"
     },
     {
       "id": 410,
@@ -4097,7 +4097,7 @@
       "answerList": ["Biển 1", "Biển 2", "Biển 3"],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.201c 'Chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải khi đường cong vòng sang bên trái' \n Biển 2: W.222a 'Đường trơn' \n Biển 3: W.217 'Bến phà'"
     },
     {
       "id": 411,
@@ -4107,7 +4107,7 @@
       "answerList": ["Biển 1", "Biển 2", "Biển 3"],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.215b 'Kè, vực sâu bên đường phía bên trái' \n Biển 2: W.222b 'Lề đường nguy hiểm' \n Biển 3: W.201c 'Chỗ ngoặt nguy hiểm có nguy cơ lật xe'"
     },
     {
       "id": 412,
@@ -4137,7 +4137,7 @@
       "answerList": ["Biển 1", "Biển 2", "Biển 3", "Cả 3 biển"],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.204 'Đường hầm' \n Biển 2: W.241 'Ùn tắc giao thông' \n Biển 3: W.244 'Đoạn đường hay xảy ra tai nạn'"
     },
     {
       "id": 415,
@@ -4157,7 +4157,7 @@
       "answerList": ["Biển 1", "Biển 2", "Biển 3"],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.224 'Đường người đi bộ cắt ngang' \n Biển 2: I.423c 'Điểm bắt đầu đường đi bộ' \n Biển 3: W.225 'Trẻ em'"
     },
     {
       "id": 417,
@@ -4167,7 +4167,7 @@
       "answerList": ["Biển 1", "Biển 2", "Biển 3", "Cả ba biển."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: W.224 'Đường người đi bộ cắt ngang' \n Biển 2: W.225 'Trẻ em' \n Biển 3: W.226 'Đường người đi xe đạp cắt ngang'"
     },
     {
       "id": 418,
@@ -4207,7 +4207,7 @@
       "answerList": ["Chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải hi đường cong vòng sang trái", "Chỗ ngoặt nguy hiểm có nguy cơ lật xe bên trái khi đường cong vòng bên phải"],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển W.201c 'Chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải khi đường cong vòng sang trái'"
     },
     {
       "id": 422,
@@ -4217,7 +4217,7 @@
       "answerList": ["Báo trước đoạn đường có gió ngang.", "Báo trước đoạn đường trơn trượt.", "Báo trước sắp đến bến phà."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển W.217 'Bến phà'"
     },
     {
       "id": 423,
@@ -4227,7 +4227,7 @@
       "answerList": ["Báo hiệu đường có ổ gà, lồi lõm.", "Báo hiệu đường có gờ giảm tốc phía trước."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển W.221a 'Đường ổ gà, sống trâu'"
     },
     {
       "id": 424,
@@ -4237,7 +4237,7 @@
       "answerList": ["Báo hiệu đường có ổ gà, lồi lõm.", "Báo hiệu đường có gờ giảm tốc phía trước"],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển W.221b 'Đường có sóng mấp mô nhân tạo'"
     },
     {
       "id": 425,
@@ -4247,7 +4247,7 @@
       "answerList": ["Để báo trước gần tới đoạn đường có hiện tượng đất đá từ trên ta luy dương sạt lở bất ngờ gây nguy hiểm cho xe cộ và người đi đường.", "Để báo trước nơi có kết cấu mặt đường rời rạc, khi phương tiện đi qua, làm cho các viên đá, sỏi băng lên gây nguy hiểm và mất an toàn cho người và phương tiện tham gai giao thông.", "Để cảnh báo những đoạn nền đường yếu, đoạn đường đang theo dõi lún mà việc vận hành xe ở tốc độ cao có thể gây nguy hiểm."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển W.228d 'Nền đường yếu'"
     },
     {
       "id": 426,
@@ -4257,7 +4257,7 @@
       "answerList": ["Để báo trước gần tới đoạn đường có hiện tượng đất đá từ trên ta luy đường sạt lở bất ngờ gây nguy hiểm cho xe cộ và người đi đường.", "Để báo trước nơi có kết cấu mặt đường rời rạc, khi phương tiện đi qua, làm cho các viên đá, sỏi băng lên gây nguy hiểm và mất an toàn cho người và phương tiện tham gai giao thông.", "Để cảnh báo những đoạn nền đường yếu, đoạn đường đang theo dõi lún mà việc vận hành xe ở tốc độ cao có thể gây nguy hiểm."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển số W.228 (a,b) 'Đá lở'"
     },
     {
       "id": 427,
@@ -4267,7 +4267,7 @@
       "answerList": ["Để báo trước gần tới đoạn đường có hiện tượng đất đá từ trên ta luy dương sạt lở bất ngờ gây nguy hiểm cho xe cộ và người đi đường.", "Để báo trước nơi có kết cấu mặt đường rời rạc, khi phương tiện đi qua, làm cho các viên đá, sỏi băng lên gây nguy hiểm và mất an toàn cho người và phương tiện tham gai giao thông.", "Để cảnh báo những đoạn nền đường yếu, đoạn đường đang theo dõi lún mà việc vận hành xe ở tốc độ cao có thể gây nguy hiểm."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển số W.228c 'Sỏi đá bắn lên'"
     },
     {
       "id": 428,
@@ -4297,7 +4297,7 @@
       "answerList": ["Biển 1", "Biển 2", "Cả hai biển"],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: 127b 'Tốc độ tối đa trên từng làn đường' \n Biển 2: 127c 'Tốc độ tối đa cho phép theo phương tiện trên từng làn đường' \n Nên biển 2 là đáp án đúng (quy định loại phương tiện và tốc độ của từng làn đường)"
     },
     {
       "id": 431,
@@ -4307,7 +4307,7 @@
       "answerList": ["Biển 1", "Biển 2", "Cả hai biển"],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: 127b 'Tốc độ tối đa trên từng làn đường' \n Biển 2: 127c 'Tốc độ tối đa cho phép theo phương tiện trên từng làn đường' \n Nên cả hai biển đều là đáp án đúng (quy định tốc độ phương tiện theo làn đường)"
     },
     {
       "id": 432,
@@ -4357,7 +4357,7 @@
       "answerList": ["Biển 1", "Biển 2", "Không biển nào"],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: R.301a 'Hướng đi phải theo' chỉ được đi thẳng đặt trước ngã ba, ngã tư \n Biển 2: R.301h 'Hướng đi phải theo' Chỉ được rẽ trái hoặc rẽ phải đặt sau ngã ba, ngã tư \n Nên đáp án đúng là không có biển nào"
     },
     {
       "id": 437,
@@ -4367,7 +4367,7 @@
       "answerList": ["Biển 1", "Biển 2"],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: R.301a 'Hướng đi phải theo' chỉ được đi thẳng đặt trước ngã ba, ngã tư \n Biển 2: I.407a 'Đường một chiều' không liên quan đến hướng đi phải theo \n Nên biển 1 là đáp án đúng"
     },
     {
       "id": 438,
@@ -4377,7 +4377,7 @@
       "answerList": ["Biển 1", "Biển 2", "Cả hai biển"],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: R.301a 'Hướng đi phải theo' chỉ được đi thẳng đặt trước ngã ba, ngã tư \n Biển 2: I.407a 'Đường một chiều' không liên quan đến hướng đi phải theo \n Nên biển 2 là đáp án đúng"
     },
     {
       "id": 439,
@@ -4387,7 +4387,7 @@
       "answerList": ["Biển 1", "Biển 2", "Biển 3", "Cả ba biển"],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: DP134 'Hết hạn chế tốc độ tối đa' \n Biển 2: DP135 'Hết mọi lệnh cấm' \n Biển 3: R.307 'Hết hạn chế tốc độ tối thiểu' \n Nên biển 1 là biển 'Hết hạn chế tốc độ tối đa' \n Chú ý câu này hỏi ý nghĩa của biển"
     },
     {
       "id": 440,
@@ -4397,7 +4397,7 @@
       "answerList": ["Biển 1", "Biển 2", "Biển 3", "Biển 1 và 2"],
       "answerIndex": 3,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: DP134 'Hết hạn chế tốc độ tối đa' \n Biển 2: DP135 'Hết mọi lệnh cấm' \n Biển 3: R.307 'Hết hạn chế tốc độ tối thiểu' \n Nên Biển 1 và Biển 2 đều hết hạn chế tốc độ tối đa \n Chú ý câu hỏi các biển hết hạn chế, không phải ý nghĩa của biển."
     },
     {
       "id": 441,
@@ -4407,7 +4407,7 @@
       "answerList": ["Biển 1", "Biển 2", "Biển 3", "Cả ba biển"],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: DP134 'Hết hạn chế tốc độ tối đa' \n Biển 2: DP135 'Hết mọi lệnh cấm' \n Biển 3: R.307 'Hết hạn chế tốc độ tối thiểu' \n Nên Biển 3 là biển 'Hết hạn chế tốc độ tối đa' \n Chú ý câu này hỏi ý nghĩa của biển"
     },
     {
       "id": 442,
@@ -4417,7 +4417,7 @@
       "answerList": ["Biển 1", "Biển 2", "Biển 3", "Biển 2 và 3"],
       "answerIndex": 3,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: Biển DP.134 'Hết hạn chế tốc độ tối đa' \n Biển 2: DP.135 'Hết tất cả các lệnh cấm' \n Biển 3: DP.133 'Hết cấm vượt' \n Nên đáp án đúng phải là Biển 2 và Biển 3"
     },
     {
       "id": 443,
@@ -4427,7 +4427,7 @@
       "answerList": ["Biển 1", "Biển 2", "Biển 3", "Cả ba biển"],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: Biển DP.134 'Hết hạn chế tốc độ tối đa' \n Biển 2: DP.135 'Hết tất cả các lệnh cấm' \n Biển 3: R.307 'Hết hạn chế tốc độ tối thiểu'"
     },
     {
       "id": 444,
@@ -4437,7 +4437,7 @@
       "answerList": ["Biển 1", "Biển 2", "Biển 3", "Không biển nào"],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "R.301 (a,b,c,d,e,f,g,h) 'Hướng đi phải theo' \n Biển 1: R.301e đặt trước ngã ba, ngã tư, chỉ được rẽ trái ở phạm vi ngã ba, ngã tư đằng sau mặt biển. \n Biển 2: R.301h đặt sau ngã ba, ngã tư, chỉ được phép rẽ trái, quay đầu hoặc rẽ phải ở khu vực ngã ba, ngã tư trước mặt biển. \n Biển 3: R.301g đặt trước ngã ba ngã tư, chỉ được phép đi thẳng hay rẽ trái ở khu vực sau mặt biển và được phép quay đầu xe để đi theo hướng ngược lại. \n Biển 3 là đáp án đúng"
     },
     {
       "id": 445,
@@ -4447,7 +4447,7 @@
       "answerList": ["Biển 1", "Biển 2", "Biển 3", "Biển 1 và 3"],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "R.301 (a,b,c,d,e,f,g,h) 'Hướng đi phải theo' \n Biển 1: R.301e đặt trước ngã ba, ngã tư, chỉ được rẽ trái ở phạm vi ngã ba, ngã tư đằng sau mặt biển. \n Biển 2: R.301h đặt sau ngã ba, ngã tư, chỉ được phép rẽ trái, quay đầu hoặc rẽ phải ở khu vực ngã ba, ngã tư trước mặt biển. \n Biển 3: R.301g đặt trước ngã ba ngã tư, chỉ được phép đi thẳng hay rẽ phải ở khu vực sau mặt biển và được phép quay đầu xe để đi theo hướng ngược lại. \n Biển 1 không cho phép rẽ phải là đáp án đúng"
     },
     {
       "id": 446,
@@ -4457,7 +4457,7 @@
       "answerList": ["Biển 1 và 2", "Biển 1 và 3", "Biển 2 và 3", "Cả ba biển"],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "R.301 (a,b,c,d,e,f,g,h) 'Hướng đi phải theo' \n Biển 1: R.301e đặt trước ngã ba, ngã tư, chỉ được rẽ trái ở phạm vi ngã ba, ngã tư đằng sau mặt biển. \n Biển 2: R.301h đặt sau ngã ba, ngã tư, chỉ được phép rẽ trái, quay đầu hoặc rẽ phải ở khu vực ngã ba, ngã tư trước mặt biển. \n Biển 3: R.301g đặt trước ngã ba ngã tư, chỉ được phép đi thẳng hay rẽ phải ở khu vực sau mặt biển và được phép quay đầu xe để đi theo hướng ngược lại. \n Biển 1 và Biển 2 là đáp án đúng"
     },
     {
       "id": 447,
@@ -4467,7 +4467,7 @@
       "answerList": ["Biển 1", "Biển 2", "Cả hai biển"],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: I.409 'Chỗ quay xe' \n Biển 2: I.410 'Khu vực quay xe' \n Nên cả hai biển đều cho phép quay đầu xe."
     },{
       "id": 448,
       "chapterId": 6,
@@ -4486,7 +4486,7 @@
       "answerList": ["Biển chỉ dẫn hết cấm đỗ xe theo giờ trong khu vực.", "Biển chỉ dẫn hết hiệu lực khu vực đỗ xe trên các tuyến đường đối ngoại.", "Biển chỉ dẫn khu vực đỗ xe trên các tuyến đường đối ngoại."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: R.E,10b 'Hết cấm đỗ xe theo giờ trong khu vực' \n Biển 2: R.E,10a 'Hết cấm đỗ xe trong khu vực' \n Biển 3: R.E,10c 'Hết khu vực đỗ xe'"
     },
     {
       "id": 450,
@@ -4496,7 +4496,7 @@
       "answerList": ["Biễn chỉ dẫn khu vực cấm đỗ xe trên các tuyến đường đối ngoại.", "Biển chỉ dẫn khu vực đỗ xe trên các tuyến đường đối ngoại.", "Biển hạn chế tốc độ tối đa trong khu vực.", "Biển chỉ dẫn hết hiệu lực khu vực cấm đỗ xe theo giờ trên các tuyến đường đối ngoại."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: R.E,9a 'Cấm đỗ xe trong khu vực' \n Biển 2: R.E,10c 'Khu vực đỗ xe' \n Biển 3: R.E,9d 'Hạn chế tốc độ tối đa trong khu vực'"
     },
     {
       "id": 451,
@@ -4536,7 +4536,7 @@
       "answerList": ["Biển 1", "Biển 2", "Cả 2 biển", "Không biển nào"],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: I.424a 'Cầu vượt qua đường cho người đi bộ' \n Biển 2: I.424c 'Hầm chui qua đường cho người đi bộ' \n Nên đáp án đúng là Biển 1"
     },
     {
       "id": 455,
@@ -4546,7 +4546,7 @@
       "answerList": ["Biển 1", "Biển 2", "Cả 2 biển", "Không biển nào"],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển 1: I.424b 'Cầu vượt qua đường cho người đi bộ' \n Biển 2: I.424d 'Hầm chui qua đường cho người đi bộ' \n Nên đáp án đúng là Biển 2"
     },
     {
       "id": 456,
@@ -4576,7 +4576,7 @@
       "answerList": ["Dừng xe tại khu vực có trạm Cảnh sát giao thông.", "Tiếp tục lưu thông với tốc độ bình thường", "Phải giảm tốc độ đến mức an toàn và không được vượt khi đi qua khu vực này"],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển I.436 'Trạm cảnh sát giao thông'. Các phương tiện phải giảm tốc độ đến mức an toàn và không được vượt khi đi qua khu vực này."
     },
     {
       "id": 459,
@@ -4656,7 +4656,7 @@
       "answerList": ["Có.", "Không."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển R.403a 'Đường dành cho ô tô' nên xe tải và xe khách đi vào được."
     },
     {
       "id": 467,
@@ -4666,7 +4666,7 @@
       "answerList": ["Có.", "Không."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển R.403d 'Đường dành cho ô tô con' nên xe tải và xe khách KHÔNG được phép đi vào"
     },
     {
       "id": 468,
@@ -4836,7 +4836,7 @@
       "answerList": ["Để xác định làn đường", "Báo hiệu người lái xe chỉ được phép đi thẳng", "Dùng để xác định khoảng cách giữa các phương tiện trên đường.", "Để trang trí"],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Vạch 7.8: Vạch xác định khoảng cách xe trên đường."
     },
     {
       "id": 485,
@@ -4846,7 +4846,7 @@
       "answerList": ["Báo cho người điều khiển không được dừng phương tiện trong phạm vi phần mặt đường có bố trí vạch để tránh ùn tắc giao thông.", "Báo hiệu sắp đến chỗ có bố trí vạch đi bộ qua đường", "Dùng để xác định khoảng cách giữa các phương tiện trên đường."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Vạch 7.6: VẠch chỉ dẫn sắp đến chỗ có bố trí vạch đi bộ qua đường."
     },
     {
       "id": 486,
@@ -4856,7 +4856,7 @@
       "answerList": ["Vị trí dừng xe của các phương tiện vận tải hành khách công cộng", "Báo cho người điều khiển được dừng phương tiện trong phạm vi phần mặt đường có bố trí vạch để tránh ùn tắc giao thông.", "Dùng để xác định vị trí giữa các phương tiện trên đường."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Vạch 9.2: Vạch quy định vị trí dừng đỗ của phương tiện giao thông công cộng trên đường."
     },
     {
       "id": 487,
@@ -4876,7 +4876,7 @@
       "answerList": ["Xe công an, xe con, xe tải, xe khách.", "Xe công an, xe khách, xe con, xe tải.", "Xe công an, xe tải, xe khách, xe con.", "Xe con, xe công an, xe tải, xe khách."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Thứ tự ưu tiên: Xe ưu tiên - Đường ưu tiên - Đường cùng cấp theo thứ tự bên phải trống - rẽ phải - đi thẳng - rẽ trái. \n 1. Xe công an: Xe ưu tiên \n 2. Xe con: Đường ưu tiên \n 3. Xe tải: Đường không ưu tiên, đi thẳng \n 4. Xe khách: Đường không ưu tiên, rẽ trái"
     },
     {
       "id": 489,
@@ -4886,7 +4886,7 @@
       "answerList": ["Xe tải, xe công an, xe khách, xe con.", "Xe công an, xe khách, xe con, xe tải.", "Xe công an, xe con, xe tải, xe khách.", "Xe công an, xe tải, xe khách, xe con."],
       "answerIndex": 3,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Thứ tự ưu tiên: Xe ưu tiên - Đường ưu tiên - Đường cùng cấp theo thứ tự bên phải trống - rẽ phải - đi thẳng - rẽ trái. \n 1. Xe công an: Xe ưu tiên \n 2. Xe tải: Đường ưu tiên \n 3. Xe khách: Đường không ưu tiên, bên phải trống \n 4. Xe con: Đường không ưu tiên, bên phải vướng xe khách nên phải nhường"
     },
     {
       "id": 490,
@@ -4896,7 +4896,7 @@
       "answerList": ["Xe tải, xe con, mô tô.", "Xe con, xe tải, mô tô.", "Mô tô, xe con, xe tải.", "Xe con, mô tô, xe tải."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Thứ tự ưu tiên: Xe ưu tiên - Đường ưu tiên - Đường cùng cấp theo thứ tự bên phải trống - rẽ phải - đi thẳng - rẽ trái. \n 1. Xe mô tô: Bên phải trống \n 2. Xe con: Đi thẳng \n 3. Xe tải: Rẽ trái"
     },
     {
       "id": 491,
@@ -4906,7 +4906,7 @@
       "answerList": ["Xe con.", "Xe tải."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Giao nhau cùng cấp có vòng xuyến: Chưa vào vòng xuyến thì ưu tiên xe bên phải, đã vào vòng xuyến thì ưu tiên xe từ bên trái tới. \n Xe con nhường vì thấy xe tải từ bên trái tới đã nằm trong vòng xuyến."
     },
     {
       "id": 492,
@@ -4916,7 +4916,7 @@
       "answerList": ["Xe mô tô", "Xe con"],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe con được đi trước vì mô tô có biển STOP trước mặt"
     },
     {
       "id": 493,
@@ -4926,7 +4926,7 @@
       "answerList": ["Xe con (A), xe cứu thương, xe con (B).", "Xe cứu thương, xe con (B), xe con (A).", "Xe con (B), xe con (A), xe cứu thương."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Thứ tự ưu tiên: Xe ưu tiên - Đường ưu tiên - Đường cùng cấp theo thứ tự bên phải trống - rẽ phải - đi thẳng - rẽ trái. \n 1. Xe con (A): Đã vào ngã tư trước \n 2. Xe cứu thương: Xe ưu tiên \n 3. Xe con (B)"
     },
     {
       "id": 494,
@@ -4936,7 +4936,7 @@
       "answerList": ["Xe cứu thương, xe cứu hỏa, xe con.", "Xe cứu hỏa, xe cứu thương, xe con.", "Xe cứu thương, xe con, xe cứu hỏa."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Thứ tự xe ưu tiên: Xe cứu hoả (mức độ thương vong lớn hơn) - Xe công an - Xe cứu thương"
     },
     {
       "id": 495,
@@ -4946,7 +4946,7 @@
       "answerList": ["Xe mô tô.", "Xe cứu thương."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe ưu tiên đi trước"
     },
     {
       "id": 496,
@@ -4956,7 +4956,7 @@
       "answerList": ["Xe khách.", "Xe tải.", "Xe con."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Thứ tự ưu tiên: Xe ưu tiên - Đường ưu tiên - Đường cùng cấp theo thứ tự bên phải trống - rẽ phải - đi thẳng - rẽ trái. \n 1. Xe con: Đường ưu tiên \n 2. Xe tải: Đường không ưu tiên, rẽ phải \n 3. Xe khách: Đường không ưu tiên, rẽ trái \n Nên đáp án 1 là đáp án đúng"
     },
     {
       "id": 497,
@@ -4966,7 +4966,7 @@
       "answerList": ["Xe con.", "Xe tải."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Thứ tự ưu tiên: Xe ưu tiên - Đường ưu tiên - Đường cùng cấp theo thứ tự bên phải trống - rẽ phải - đi thẳng - rẽ trái. \n Xe tải bên phải trống nên đi trước \n Đáp án đúng là Xe con phải nhường đường, bên phải vướng xe tải"
     },
     {
       "id": 498,
@@ -4976,7 +4976,7 @@
       "answerList": ["Xe công an.", "Xe chữa cháy."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe ưu tiên theo mức độ thiệt hại: Xe chữa cháy ưu tiên hơn."
     },
     {
       "id": 499,
@@ -4986,7 +4986,7 @@
       "answerList": ["Xe con và xe khách.", "Mô tô."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe con và xe khách đang ở làn đường có tín hiệu đèn xanh nên được phép đi"
     },
     {
       "id": 500,
@@ -4996,7 +4996,7 @@
       "answerList": ["Xe khách, mô tô.", "Xe con, xe tải.", "Xe tải, mô tô."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe con và xe tải đang ở trên làn đường có tín hiệu đèn xanh nên được phép đi."
     },
     {
       "id": 501,
@@ -5006,7 +5006,7 @@
       "answerList": ["Xe công an", "Xe quân sự"],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe ưu tiên cùng cấp nên áp dụng thứ tự đường cùng cấp: Bên phải trống - Rẽ phải - Đi thẳng - Rẽ trái. \n Xe quân sự được ưu tiên trước do bên phải trống."
     },
     {
       "id": 502,
@@ -5016,7 +5016,7 @@
       "answerList": ["Hướng 2, 3, 4.", "Chỉ hướng 1.", "Hướng 1 và 2.", "Hướng 3 và 4."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Hướng 1 rẽ phải có tín hiệu đèn xanh nên được phép đi. Hướng đi thẳng đang có tín hiệu đèn đỏ do đó các hướng 2,3,4 không thể đi được. \n Câu trả lời đúng là chỉ có hướng 1"
     },
     {
       "id": 503,
@@ -5026,7 +5026,7 @@
       "answerList": ["Xe khách, xe tải, mô tô", "Xe tải, xe con, mô tô", "Xe khách, xe con, mô tô"],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "1. Xe khách: Sai làn, Đi thẳng đang đèn đỏ \n 2. Xe tải: Sai làn, đi trên làn đi thẳng trong khi thực hiện rẽ trái \n 3. Xe mô tô: Sai làn, đi trên làn rẽ trái trong khi thực hiện rẽ phải \n Nên đáp án đúng là xe khách, xe tải và xe mô tô đều vi phạm quy tắc giao thông"
     },
     {
       "id": 504,
@@ -5036,7 +5036,7 @@
       "answerList": ["Xe khách, xe tải, mô tô, xe con.", "Xe con, xe khách, xe tải, mô tô.", "Mô tô, xe tải, xe khách, xe con.", "Mô tô, xe tải, xe con, xe khách."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Giao nhau cùng cấp có vòng xuyến: Chưa vào vòng xuyến thì ưu tiên xe bên phải, đã vào vòng xuyến thì ưu tiên xe từ bên trái tới. \n toàn bộ các xe đều chưa vào vòng xuyến nên ưu tiên xe bên phải \n Thứ tự sẽ là Mô tô, xe tải, xe khách, xe con."
     },
     {
       "id": 505,
@@ -5046,7 +5046,7 @@
       "answerList": ["Xe tải.", "Xe con và mô tô.", "Cả ba xe.", "xe con và xe tải."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển cấm đỗ xe tải (ở biển phụ) nên chỉ có xe tải vi phạm"
     },
     {
       "id": 506,
@@ -5056,7 +5056,7 @@
       "answerList": ["Xe tải.", "Xe con (B).", "Xe con (A)."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Thứ tự ưu tiên không vòng xuyến: Xe vào ngã ba, ngã tư trước - Xe ưu tiên - Đường ưu tiên - Đường cùng cấp theo thứ tự bên phải trống - rẽ phải - đi thẳng - rẽ trái. \n Nên đáp án đúng là Xe con (B): Đường ưu tiên"
     },
     {
       "id": 507,
@@ -5066,7 +5066,7 @@
       "answerList": ["Cả ba hướng.", "Chỉ hướng 1 và 3.", "Chỉ hướng 1."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Lưu ý câu hỏi này hỏi về hướng đi của XE GẮN MÁY. \n Hướng 1 và 3 chắc chắn là đi được rồi \n Với hướng 2: Biến báo cấm mô tô đi vào chỉ có tác dụng với xe MÔ TÔ nên xe gắn máy không có hiệu lực. Do đó vẫn đi được bình thường."
     },
     {
       "id": 508,
@@ -5076,7 +5076,7 @@
       "answerList": ["Cả hai xe.", "Không xe nào vi phạm.", "Chỉ xe mô tô vi phạm.", "Chỉ xe tải vi phạm."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển cấm đỗ xe ở cả phía trước và phía sau biển (ở biển báo phụ) nên cả 2 xe vi phạm"
     },
     {
       "id": 509,
@@ -5086,7 +5086,7 @@
       "answerList": ["Chỉ mô tô.", "Chỉ xe tải.", "Cả 3 xe.", "Chỉ mô tô và xe tải."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe tải đậu trái đường, xe con và mô tô đậu xe đè vạch nên cả 3 xe đều vi phạm"
     },
     {
       "id": 510,
@@ -5096,7 +5096,7 @@
       "answerList": ["Đúng.", "Không đúng."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe tải kéo xe mô tô ba bánh như hình trên là không đúng vì đi vào đường có biển P.108 'Cấm ô tô kéo mooc' kể cả xe máy kéo, xe ô tô khách kéo theo rơ mooc đi qua"
     },
     {
       "id": 511,
@@ -5106,7 +5106,7 @@
       "answerList": ["Hướng 2 và 5.", "Chỉ hướng 1."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Hướng 1 có biển cấm ô tô nên xe ô tô đương nhiên không được phép đi vào"
     },
     {
       "id": 512,
@@ -5116,7 +5116,7 @@
       "answerList": ["Hướng 1 và 2.", "Hướng 3.", "Hướng 1 và 4.", "Hướng 2 và 3."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển P.123a 'Cấm rẽ trái' không cấm quay đầu nên chỉ có hướng 3 là hướng ô tô không được phép đi"
     },
     {
       "id": 513,
@@ -5126,7 +5126,7 @@
       "answerList": ["Cả 2 xe đều đúng.", "Xe con.", "Xe khách."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển số P.126 'Cấm ô tô tải vượt' nên không áp dụng với xe con và xe khách"
     },
     {
       "id": 514,
@@ -5136,7 +5136,7 @@
       "answerList": ["Hướng 2 và 3.", "Hướng 1, 2 và 3.", "Hướng 1 và 3."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển R.301g được đặt trước ngã ba, ngã tư. Các xe chỉ được phép đi thẳng hay rẽ trái ở khu vực sau mặt biển và được phép quay đầu xe để đi theo hướng ngược lại. \n Đáp án đúng là hướng 2 và hướng 3"
     },
     {
       "id": 515,
@@ -5146,7 +5146,7 @@
       "answerList": ["Không.", "Vi phạm."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe kéo rơ mooc, xe kéo sơ mi rơ mooc đã kéo rơ mooc thì không được kéo thêm xe khác nên trường hợp này là vi phạm."
     },
     {
       "id": 516,
@@ -5156,7 +5156,7 @@
       "answerList": ["Xe khách.", "Xe tải."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Phía trước xe tải có biển báo được ưu tiên qua đường hẹp nên được đi trước. \n Hoặc phía trước xe khách có biển báo nhường cho xe ngược chiều qua đường hẹp."
     },
     {
       "id": 517,
@@ -5166,7 +5166,7 @@
       "answerList": ["Xe con", "Xe mô tô"],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Cả hai xe đều gặp đèn xanh nên áp dụng quy tắc đường cùng cấp: Bên phải trống - Rẽ phải - Đi thẳng - Rẽ trái. \n Nên đáp án đúng là xe mô tô rẽ phải được quyền đi trước. Xe con rẽ trái phải nhường đường."
     },
     {
       "id": 518,
@@ -5176,7 +5176,7 @@
       "answerList": ["Không đúng.", "Đúng."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe đầu kéo (xe container) đã kéo rơ mooc, sơ mi rơ mooc không được kéo thêm rơ mooc hoặc xe khác, vật khác."
     },
     {
       "id": 519,
@@ -5186,7 +5186,7 @@
       "answerList": ["Hướng 1.", "Hướng 1, 3 và 4.", "Hướng 2, 3 và 4.", "Cả bốn hướng."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển số R.301d 'Chỉ được rẽ phải' chỉ áp dụng với xe tải (biển phụ) nên không áp dụng với xe con. \n Hướng 2 cấm xe con không được đi vào, còn hướng 1,3 và 4 xe con đều được phép đi."
     },
     {
       "id": 520,
@@ -5196,7 +5196,7 @@
       "answerList": ["Xe con (A), mô tô, xe con (B), xe đạp.", "Xe con (B), xe đạp, mô tô, xe con (A).", "Xe con (A), xe con (B). mô tô + xe đạp.", "Mô tô + xe đạp, xe con (A), xe con (B)."],
       "answerIndex": 3,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Thứ tự ưu tiên không vòng xuyến: Xe vào ngã ba, ngã tư trước - Xe ưu tiên - Đường ưu tiên - Đường cùng cấp theo thứ tự bên phải trống - rẽ phải - đi thẳng - rẽ trái. \n 1. Mô tô và xe đạp: Bên phải trống \n 2. Xe con (A): Đi thẳng \n 3. Xe con (B): Rẽ trái"
     },
     {
       "id": 521,
@@ -5206,7 +5206,7 @@
       "answerList": ["Chỉ hướng 1.", "Hướng 1,3 và 4.", "Hướng 1, 2 và 3.", "Cả bốn hướng."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển số R.301d 'Chỉ được rẽ phải' áp dụng với xe tải (biển phụ) nên hướng 3,4 rẽ trái bị cấm. Hướng 2 có biển cấm xe tải đi vào \n Nên xe tải chỉ có thể chạy theo hướng 1 là đáp án đúng."
     },
     {
       "id": 522,
@@ -5216,7 +5216,7 @@
       "answerList": ["Cả ba hướng.", "Hướng 2 và 3."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe tải cấm rẽ phải (biển phụ) nên chỉ đi được theo hướng 2 và hướng 3."
     },
     {
       "id": 523,
@@ -5226,7 +5226,7 @@
       "answerList": ["Chỉ hướng 1.", "Hướng 1 và 4.", "Hướng 1 và 5.", "Hướng 1, 4 và 5."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Hướng 2,3,4 bị cấm do có biển cấm xe ô tô đi vào. \n Hướng 1 và 5 xe tải đi được bình thường."
     },
     {
       "id": 524,
@@ -5236,7 +5236,7 @@
       "answerList": ["Cả bốn hướng.", "Trừ hướng 2.", "Hướng 2, 3 và 4.", "Trừ hướng 4."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Hướng 2 có biển cấm xe tải nên xe tải không được phép đi vào."
     },
     {
       "id": 525,
@@ -5246,7 +5246,7 @@
       "answerList": ["Xe mô tô", "Xe con"],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Thứ tự ưu tiên không vòng xuyến: Xe vào ngã ba, ngã tư trước - Xe ưu tiên - Đường ưu tiên - Đường cùng cấp theo thứ tự bên phải trống - rẽ phải - đi thẳng - rẽ trái. \n Xe mô tô rẽ trái từ đường ưu tiên vào đường ưu tiên (theo biển báo và biển phụ) nên được quyền đi trước"
     },
     {
       "id": 526,
@@ -5256,7 +5256,7 @@
       "answerList": ["Không vi phạm", "Vi phạm"],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển số R.301a được đặt trước ngã ba, ngã tư. Các xe chỉ được đi thẳng ở khu vực ngã ba, ngã tư."
     },
     {
       "id": 527,
@@ -5266,7 +5266,7 @@
       "answerList": ["Xe khách.", "Mô tô.", "Xe con.", "Xe con và mô tô."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe con quay đầu đè vạch liền trên đường nên vi phạm"
     },
     {
       "id": 528,
@@ -5276,7 +5276,7 @@
       "answerList": ["Các xe phía tay phải và tay trái của người điều khiển được phép đi thẳng.", "Cho phép các xe ở mọi hướng được rẽ phải.", "Tất cả các xe phải dừng lại trước ngã tư, trừ những xe đã ở trong ngã tư được phép tiếp tục đi."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Giơ tay thẳng đứng: Tất cả dừng, trừ xe đã ở trong ngã tư được phép đi. \n Giang ngang tay: Trái phải đi, trước sau dừng. \n Tay phải giơ trước: Sau phải dừng, trước rẽ phải trái đi các hướng, người đi bộ qua đường đi sau người điều khiển."
     },
     {
       "id": 529,
@@ -5286,7 +5286,7 @@
       "answerList": ["Mô tô, xe con.", "Xe con, xe tải.", "Mô tô, xe tải.", "Cả ba xe."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Giang tay ngang: Trái phải đi, trước sau dừng \n Xe mô tô và xe tải được phép đi là đáp án đúng."
     },
     {
       "id": 530,
@@ -5296,7 +5296,7 @@
       "answerList": ["Đúng.", "Không đúng."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe con đi thẳng và xe tải rẽ trái không giao nhau nên được phép vượt trong trường hợp này."
     },
     {
       "id": 531,
@@ -5306,7 +5306,7 @@
       "answerList": ["Xe tải.", "Cả hai xe.", "Xe con."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Theo hướng xe tải, vượt xe khách đè vạch liền nên vi phạm. \n Theo hướng xe con, xe con vượt xe tải đè vạch đứt nên không vi phạm quy tắc giao thông là đáp án đúng."
     },
     {
       "id": 532,
@@ -5316,7 +5316,7 @@
       "answerList": ["Xe chữa cháy.", "Xe tải.", "Cả hai xe."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển cấm xe ngược chiều không có tác dụng với xe chữa cháy (xe ưu tiên) nên không vi phạm. \n Trước mặt xe tải có biển cấm rẽ trái và quay đầu nên vi phạm là đáp án đúng."
     },
     {
       "id": 533,
@@ -5326,7 +5326,7 @@
       "answerList": ["Xe khách, xe tải, xe con.", "Xe con, xe tải, xe khách.", "Xe tải, xe khách, xe con."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Thứ tự ưu tiên: Xe ưu tiên - Đường ưu tiên - Đường cùng cấp theo thứ tự bên phải trống - rẽ phải - đi thẳng - rẽ trái. \n 1. Xe tải: Rẽ phải \n 2. Xe khách: Đi thẳng \n 3. Xe con: Rẽ trái"
     },
     {
       "id": 534,
@@ -5336,7 +5336,7 @@
       "answerList": ["Xe khách và xe tải, xe con.", "Xe tải, xe khách, xe con.", "Xe con, xe khách, xe tải."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Thứ tự ưu tiên: Xe ưu tiên - Đường ưu tiên - Đường cùng cấp theo thứ tự bên phải trống - rẽ phải - đi thẳng - rẽ trái. \n 1. Xe khách và xe tải cùng rẽ phải nên cùng nhau đi trước. Hãy nhìn đáp án có chữ VÀ"
     },
     {
       "id": 535,
@@ -5346,7 +5346,7 @@
       "answerList": ["Cả bốn hướng", "Chỉ hướng 1 và 2", "Trừ hướng 4"],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển số P.102 'Cấm đi ngược chiều' ở hướng 4 nên hướng này không được phép đi"
     },
     {
       "id": 536,
@@ -5356,7 +5356,7 @@
       "answerList": ["Xe công an, xe con, xe tải, xe khách.", "Xe con, xe khách và xe công an, xe tải.", "Xe công an, xe con, xe khách, xe tải.", "Xe con, xe tải, xe khách, xe công an."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Thứ tự ưu tiên: Xe ưu tiên - Đường ưu tiên - Đường cùng cấp theo thứ tự bên phải trống - rẽ phải - đi thẳng - rẽ trái. \n 1. Xe công an: Xe ưu tiên \n 2. Xe con: Đường ưu tiên, bên phải trống \n 3. Xe tải: Đường ưu tiên, bên phải vướng xe con nếu đi trước \n 4. Xe khách: Đường không ưu tiên"
     },
     {
       "id": 537,
@@ -5366,7 +5366,7 @@
       "answerList": ["Cả bốn hướng.", "Hướng 1, 2 và 3.", "Hướng 1 và 4.", "Hướng 1, 3 và 4."],
       "answerIndex": 3,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Trước mặt xe tải là biển số P.123a 'Cấm rẽ trái' không cấm quay đầu (hướng 3) \n Hướng 4 là Biển số P.109 'Cấm máy kéo' không cấm xe tải. \n Nên các hướng 1,3,4 là câu trả lời đúng"
     },
     {
       "id": 538,
@@ -5376,7 +5376,7 @@
       "answerList": ["Chỉ xe khách, mô tô.", "Tất cả các loại xe trên.", "Không xe nào châp hành đúng quy tắc giao thông."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe khách chờ đèn đỏ rẽ trái.\n Xe tải đi thẳng và rẽ phải theo tín hiệu đèn xanh. \n Xe con đi thẳng và rẽ phải theo tín hiệu đèn xanh. \n Xe mô tô chờ đèn đỏ rẽ trái. \n Nên tất cả các xe đều chấp hành."
     },
     {
       "id": 539,
@@ -5386,7 +5386,7 @@
       "answerList": ["Cả ba hướng.", "Hướng 1 và 2.", "Hướng 1 và 3.", "Hướng 2 và 3."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Hướng 2 có"
     },
     {
       "id": 540,
@@ -5396,7 +5396,7 @@
       "answerList": ["Xe công an, xe quân sự, xe con + xe mô tô.", "Xe quân sự, xe công an, xe con + mô tô.", "Xe mô tô + xe con, xe quân sự, xe công an."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Thứ tự ưu tiên: Xe ưu tiên - Đường ưu tiên - Đường cùng cấp theo thứ tự bên phải trống - rẽ phải - đi thẳng - rẽ trái. \n 1. Xe quân sự: Xe ưu tiên cùng cấp xe công an nhưng đi thẳng. \n 2. Xe công an: Xe ưu tiên, rẽ trái \n 3. Xe con và xe mô tô: Cùng đi thẳng"
     },
     {
       "id": 541,
@@ -5406,7 +5406,7 @@
       "answerList": ["Xe A.", "Xe B."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe xuống dốc A phải nhường đường cho xe đang lên dốc B"
     },
     {
       "id": 542,
@@ -5416,7 +5416,7 @@
       "answerList": ["Không vi phạm.", "Vi phạm."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe con quay đầu đè vạch nên vi phạm"
     },
     {
       "id": 543,
@@ -5426,7 +5426,7 @@
       "answerList": ["Xe con (E), mô tô (C).", "Xe tải (A), mô tô (D).", "Xe khách (B), mô tô (C).", "Xe khách  (B), mô tô (D)."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe mô tô C chạy vào làn dành riêng cho ô tô: Vi phạm \n Xe con E chạy vào làn dành riêng cho xe máy: Vi phạm"
     },
     {
       "id": 544,
@@ -5436,7 +5436,7 @@
       "answerList": ["Nhường xe con rẽ trái trước.", "Đi thẳng không nhường."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Người lái xe phải nhường đường xe con rẽ trái trước vì xe con rẽ trái vào nơi giao nhau trước (đã qua vạch)."
     },
     {
       "id": 545,
@@ -5446,7 +5446,7 @@
       "answerList": ["Chỉ hướng 2.", "Hướng 1 và 2.", "Tất cả các hướng trừ hướng 3.", "Tất cả các hướng trừ hướng 4."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Hướng 4: Biển số P.123b 'Cấm rẽ phải' \n Hướng 3: Biển số P.102 'Cấm đi ngược chiều' \n Nên chỉ có thể đi theo hướng 1 và hướng 2 là câu trả lời đúng."
     },
     {
       "id": 546,
@@ -5456,7 +5456,7 @@
       "answerList": ["Xe con (A).", "Xe con (B)."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe con (A) đang đi trước và xi nhan trái nên được đi trước. \n Xe con (B) xi nhan phải và đi sau nên phải nhường"
     },
     {
       "id": 547,
@@ -5466,7 +5466,7 @@
       "answerList": ["Rẽ trái ngay trước xe buýt.", "Rẽ trái trước xe tải.", "Nhường đường cho xe buýt và xe tải."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe tải đã vào nơi giao nhau trước nên được đi đầu tiên \n Tiếp theo xe buýt: Đi thẳng \n Cuối cùng là xe của bạn: Rẽ trái"
     },
     {
       "id": 548,
@@ -5476,7 +5476,7 @@
       "answerList": ["Xe con (B), mô tô (C).", "Xe con (A), mô tô (C).", "Xe con (E), mô tô (D).", "Tất cả các loại xe trên."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Nhìn vào bảng chỉ dẫn loại phương tiện theo làn đường: \n Xe con (E) đi trên làn dành riêng cho mô tô nên vi phạm \n Xe mô tô (D) chạy trên làn dành riêng cho ô tô nên cũng vi phạm"
     },
     {
       "id": 549,
@@ -5486,7 +5486,7 @@
       "answerList": ["Xe của bạn", "Xe tải"],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Trước mặt xe của bạn có biển số W.208 'Giao nhau với đường ưu tiên' nên phải ưu tiên các xe đang đi trên đường ưu tiên. \n Xe tải được ưu tiên trong trường hợp này"
     },
     {
       "id": 550,
@@ -5496,7 +5496,7 @@
       "answerList": ["Quay đầu theo hướng A", "Quay đầu theo hướng B", "Cấm quay đầu"],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Trước mặt người lái xe có biển số P.123a 'Cấm rẽ trái' không cấm quay đầu. Tuy nhiên, hướng B quay đầu đè vạch liền nên vi phạm. Do đó chỉ có hướng A quay đầu xe là câu trả lời đúng."
     },
     {
       "id": 551,
@@ -5506,7 +5506,7 @@
       "answerList": ["Xe con và xe tải, xe của bạn.", "Xe của bạn, xe tải và xe con.", "Xe của bạn và xe con, xe tải.", "Xe của bạn, xe tải + xe con."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Thứ tự ưu tiên: Xe ưu tiên - Đường ưu tiên - Đường cùng cấp theo thứ tự bên phải trống - rẽ phải - đi thẳng - rẽ trái. \n Xe bạn: đang trên đường ưu tiên nên được đi trước. \n Xe con: rẽ phải không giao nhau với xe bạn nên được đi đồng thời với xe bạn. \n Xe tải: rẽ trái từ đường không ưu tiên nên phải nhường đi sau cùng"
     },
     {
       "id": 552,
@@ -5516,7 +5516,7 @@
       "answerList": ["Tăng tốc cho xe chạy vượt qua.", "Bật tín hiệu báo hiệu bằng đèn hoặc còi, khi đủ điều kiện an toàn, tăng tốc cho xe chạy vượt qua.", "Đánh lái sang làn bên trái và tăng tốc cho xe chạy vượt qua."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Chú ý vạch kẻ đường ngăn cách với làn bên trái là vạch liền. Bạn phải bật tín hiệu báo hiệu cho đến khi xe tải phía trước giảm tốc độ và chuyển qua làn bên phải thì bạn mới có thể tăng tốc cho xe vượt qua."
     },
     {
       "id": 553,
@@ -5526,7 +5526,7 @@
       "answerList": ["Xe khách, mô tô.", "Xe tải, mô tô.", "Xe con, xe tải."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe con và xe tải đang ở trên làn đường có tín hiệu đèn đỏ nên phải dừng lại"
     },
     {
       "id": 554,
@@ -5536,7 +5536,7 @@
       "answerList": ["Xe tải.", "Xe khách.", "Xe con."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Thứ tự ưu tiên: Xe ưu tiên - Đường ưu tiên - Đường cùng cấp theo thứ tự bên phải trống - rẽ phải - đi thẳng - rẽ trái. \n 1. Xe tải: đi thẳng không phải nhường đường vì không vướng xe nào cả. \n 2. Xe con: Rẽ phải. \n 3. Xe khách: Đi thẳng nên phải nhường xe con là câu trả lời đúng"
     },
     {
       "id": 555,
@@ -5546,7 +5546,7 @@
       "answerList": ["Được vượt.", "Cấm vượt."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Tại nơi giao nhau, trên đoạn đường có làn đường dành cho người đi bộ cắt ngang thì không được phép vượt."
     },
     {
       "id": 556,
@@ -5556,7 +5556,7 @@
       "answerList": ["Cho phép.", "Không được vượt."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Tại nơi giao nhau, trên đoạn đường có làn đường dành cho người đi bộ cắt ngang thì không được phép vượt."
     },
     {
       "id": 557,
@@ -5566,7 +5566,7 @@
       "answerList": ["Vị trí A và B.", "Vị trí A và C.", "Vị trí B và C.", "Cả ba vị trí A, B và C."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Vị trsi A vi phạm do dừng bên trái đường. Biển số P.131a 'Cấm đỗ xe' không cấm dừng xe. Do đó vị trí dừng tại B và C là câu trả lời đúng"
     },
     {
       "id": 558,
@@ -5576,7 +5576,7 @@
       "answerList": ["Được phép dừng ở vị trí A.", "Được phép dừng ở vị trí B.", "Được phép dừng ở vị trí A và B.", "Không được dừng."],
       "answerIndex": 3,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển số P.130 'Cấm dừng xe và đỗ xe' và biển phụ báo phạm vi trước và sau biển báo nên không được dừng xe tại cả 2 vị trí A và B."
     },
     {
       "id": 559,
@@ -5586,7 +5586,7 @@
       "answerList": ["Xe mô tô.", "Xe ô tô con.", "Không xe nào vi phạm.", "Cả hai xe."],
       "answerIndex": 3,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển số R.301a chỉ cho phép các phương tiện đi thẳng trong khi cả hai xe đều có tín hiệu xi nhan rẽ sang hướng khác nên cả hai xe đều vi phạm quy tắc giao thông."
     },
     {
       "id": 560,
@@ -5596,7 +5596,7 @@
       "answerList": ["Xe con.", "Xe tải.", "Xe con và xe tải."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe con trong cả hai phía đều đang ở đúng làn đường và đi theo hướng mà đèn xanh đang bật nên đúng quy tắc. \n Xe tải trong cả hai phía đều ở sai làn đường so với hướng rẽ nên vi phạm quy tắc giao thông."
     },
     {
       "id": 561,
@@ -5606,7 +5606,7 @@
       "answerList": ["Xe tải, xe con.", "Xe khách, xe con.", "Xe khách, xe tải."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe con và xe mô tô đang ở đúng làn đường, đúng hướng rẽ với tín hiệu đèn xanh nên đúng quy tắc giao thông. \n Xe khách và xe tải đang ở sai làn đường so với hướng rẽ nên đều vi phạm"
     },
     {
       "id": 562,
@@ -5616,7 +5616,7 @@
       "answerList": ["Xe con, xe tải, xe khách.", "Xe tải, xe khách, xe mô tô.", "Xe khách, xe mô tô, xe con.", "Cả bốn xe."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe con: đi đúng làn đường theo hướng rẽ và tín hiệu đèn. \n Xe khách: sai làn đường và tín hiệu đèn. \n Xe tải: Đi thẳng vi phạm đèn đỏ. \n Xe mô tô: Đi thẳng vi phạm đèn đỏ"
     },
     {
       "id": 563,
@@ -5626,7 +5626,7 @@
       "answerList": ["Xe khách, xe tải.", "Xe khách, xe con.", "Xe con, xe tải.", "Xe khách, xe tải, xe con."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe con: đúng làn đường và tín hiệu đèn. \n Xe khách: sai làn đường. \n Xe tải: sai làn đường và tín hiệu đèn"
     },
     {
       "id": 564,
@@ -5636,7 +5636,7 @@
       "answerList": ["Đánh lái sang trái cho xe vượt qua.", "Quan sát phía trước, phía sau, khi đủ điều kiện an toàn, bật tín hiệu bằng đèn hoặc còi rồi cho xe chạy vượt qua.", "Cấm vượt"],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Chú ý quan sát, bật tín hiệu đèn, còi rồi mới được vượt. \n Nên đáp án 2 trong trường hợp này mô tả chính xác."
     },
     {
       "id": 565,
@@ -5646,7 +5646,7 @@
       "answerList": ["Xe tải, mô tô.", "Xe khách, mô tô.", "Xe tải, xe con.", "Mô tô, xe con."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe con và xe tải: Vi phạm tín hiệu đèn \n Xe khách và xe mô tô: Đúng làn đường và đúng tín hiệu đèn."
     },
     {
       "id": 566,
@@ -5656,7 +5656,7 @@
       "answerList": ["Xe con (A), xe con (B), xe tải (D).", "Xe tải (D), xe con (E), xe buýt (G).", "Xe tải (D), xe con (B).", "Xe con (B), xe con (C)."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe con (B) và xe tải (D) đang đè lên vạch liền phân tách làn đường nên vi phạm quy tắc giao thông."
     },
     {
       "id": 567,
@@ -5666,7 +5666,7 @@
       "answerList": ["Xe của bạn, mô tô , xe con.", "Xe con, xe của bạn, mô tô.", "Mô tô, xe con, xe của bạn."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Thứ tự ưu tiên: Xe ưu tiên - Đường ưu tiên - Đường cùng cấp theo thứ tự bên phải trống - rẽ phải - đi thẳng - rẽ trái. \n Biển báo phía trước là đường ưu tiên và biển phụ báo hướng di chuyển của xe mô tô là hướng ưu tiên. \n 1. Xe mô tô: Đường ưu tiên \n 2. Xe con: Đường không ưu tiên, bên phải trống \n 3. Xe của bạn: Đường không ưu tiên, bên phải vướng xe con."
     },
     {
       "id": 568,
@@ -5676,7 +5676,7 @@
       "answerList": ["Xe của bạn, mô tô, xe con.", "Xe con, xe của bạn, mô tô.", "Mô tô, xe con, xe của bạn."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Thứ tự ưu tiên: Xe ưu tiên - Đường ưu tiên - Đường cùng cấp theo thứ tự bên phải trống - rẽ phải - đi thẳng - rẽ trái. \n 1. Xe con: rẽ phải \n 2. Xe của bạn: Đi thẳng \n 3. Mô tô: Rẽ trái"
     },
     {
       "id": 569,
@@ -5686,7 +5686,7 @@
       "answerList": ["Xe con.", "Xe của bạn.", "Cả hai xe."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe con dừng lại vì phía trước là tín hiệu đèn đỏ. \n Xe của bạn được đi vì rẽ phải trước đèn đỏ nên không vi phạm."
     },
     {
       "id": 570,
@@ -5696,7 +5696,7 @@
       "answerList": ["Đi thẳng hoặc rẽ trái.", "Đi thẳng hoặc rẽ phải.", "Rẽ trái.", "Đi thẳng, rẽ phải hoặc rẽ trái."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Làn đường mà xe của bạn đang đi chỉ được đi thẳng hoặc rẽ trái"
     },
     {
       "id": 571,
@@ -5706,7 +5706,7 @@
       "answerList": ["Chuyển sang làn đường bên phải và rẽ phải.", "Dừng lại trước vạch dừng và rẽ phải khi đèn xanh.", "Dừng lại trước vạch dừng và đi thẳng hoặc rẽ trái khi đèn xanh."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Bạn phải dừng lại chờ đèn đỏ và làn đượng bạn đang dừng xe chỉ được rẽ trái hoặc đi thẳng khi đèn xanh."
     },
     {
       "id": 572,
@@ -5716,7 +5716,7 @@
       "answerList": ["Tăng tốc độ, rẽ phải trước xe tải và xe đạp.", "Giảm tốc độ, rẽ phải sau xe tải và xe đạp.", "Tăng tốc độ, rẽ phải trước xe đạp."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe tải đã vào nơi giao nhau trước nên sẽ được ưu tiên trước. Biển báo phía trước là đường ưu tiên dành cho xe thô sơ nên phải nhường đường cho xe đạp. Do đó, xe bạn rẽ phải sau xe tải và xe đạp."
     },
     {
       "id": 573,
@@ -5726,7 +5726,7 @@
       "answerList": ["Tăng tốc độ, rẽ phải trước xe con màu xanh phía trước và người đi bộ.", "Giảm tốc độ, để người đi bộ qua đường và rẽ phải trước xe con màu xanh.", "Giảm tốc độ, để người đi bộ qua đường và rẽ phải sau xe con màu xanh."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Ở vạch kẻ đường dành cho người đi bộ có người chuẩn bị sang đường nên phải nhường đường và không được phép vượt. \n Nên bạn phải nhường đường cho người đi bộ và rẽ phải sau xe con màu xanh"
     },
     {
       "id": 574,
@@ -5736,7 +5736,7 @@
       "answerList": ["Nhường đường cho xe khách và đi trước xe đạp.", "Nhường đường cho xe đạp và đi trước xe khách.", "Nhường đường cho xe đạp và xe khách."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Trước mặt bạn có Biển số R.122 'Dừng lại' nên phải dừng xe và nhường đường. Nên xe của bạn phải nhường đường cho xe đạp và xe khách."
     },
     {
       "id": 575,
@@ -5746,7 +5746,7 @@
       "answerList": ["Xe con.", "Xe tải.", "Xe của bạn."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển W.207c 'Giao nhau với đường không ưu tiên' cho biết xe tải đi từ đường không ưu tiên nên phải nhường đường."
     },
     {
       "id": 576,
@@ -5756,7 +5756,7 @@
       "answerList": ["Xe đi ngược chiểu.", "Xe của bạn."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe bạn không thể vượt khi phía trước có chướng ngại vật hoặc xe đi ngược chiều. Nên xe của bạn phải nhường đường trong tình huống này."
     },
     {
       "id": 577,
@@ -5766,7 +5766,7 @@
       "answerList": ["Tăng tốc độ, chuyển sang làn đường bên trái để vượt.", "Không được vượt những người đi xe đạp."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe của bạn không được vượt khi bên trái có chướng ngại vật hay xe đi ngược chiều."
     },
     {
       "id": 578,
@@ -5776,7 +5776,7 @@
       "answerList": ["Nếu phía sau không có xe xin vượt, chuyển sang làn đường bên trái.", "Nếu phía sau có xe xin vượt, thì giảm tốc độ, ở lại làn đường, dừng lại khi cần thiết.", "Tăng tốc độ trên làn đường của mình và vượt xe con.", "Ý 1 và 2."],
       "answerIndex": 3,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Cần quan sát kỹ xe phía sau trong tình huống này để có hành động hợp lý. Nếu không có xe xin vượt chuyển làn trái đi tiếp. Nếu có xe xin vượt thì giảm tốc độ, ở lại làn đường hoặc dừng lại nếu cần thiết."
     },
     {
       "id": 579,
@@ -5786,7 +5786,7 @@
       "answerList": ["Chuyển sang nửa đường bên trái để đi tiếp.", "Bấm còi, nháy đèn báo hiệu và đi tiếp.", "Giảm tốc độ, dừng lại nhường đường."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Không được vượt khi phía trước có chướng ngại vật hay xe chạy ngược chiều. Do đó, cần giảm tốc độ, dừng lại nhường đường."
     },
     {
       "id": 580,
@@ -5796,7 +5796,7 @@
       "answerList": ["Phanh xe giảm tốc độ và đi sát lề đường bên phải.", "Bấm còi, nháy đèn báo hiệu, giữ nguyên tốc độ và đi tiếp.", "Phanh xe giảm tốc độ và đi sát vào lề đường bên trái."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Vì xe màu xanh đang trên làn đường của bạn, để đảm bảo an toàn, bạn cần phanh xe giảm tốc độ và đi sát lề đường bên phải."
     },
     {
       "id": 581,
@@ -5806,7 +5806,7 @@
       "answerList": ["Bật tín hiệu xin chuyển làn đường sang trái để vượt xe tải.", "Phanh xe, giảm tốc độ chờ xe tải phía trước chuyển làn đường.", "Bấm còi báo hiệu và vượt qua xe tải trên làn đường của mình."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Không được vượt khi phía trước có xe đang chuyển làn đường. Do đó, để đảm bảo an toàn bạn cần phanh xe giảm tốc độ chờ xe tải phía trước chuyển làn đường."
     },
     {
       "id": 582,
@@ -5816,7 +5816,7 @@
       "answerList": ["Tăng tốc độ và đi thẳng qua ngã tư.", "Dừng xe trước vạch dừng.", "Giảm tốc độ và đi thẳng qua ngã tư."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Trước mặt là Biển số W.208 'Giao nhau với đường ưu tiên' nên bạn phải giảm tốc độ, quan sát nhường đường ưu tiên nếu có và đi qua ngã tư."
     },
     {
       "id": 583,
@@ -5826,7 +5826,7 @@
       "answerList": ["Xe của bạn, mô tô, xe đạp.", "Xe mô tô, xe đạp, xe của bạn.", "Xe đạp, xe mô tô, xe của bạn."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Thứ tự ưu tiên: Xe ưu tiên - Đường ưu tiên - Bên phải trống - Rẽ phải - Đi thẳng - Rẽ trái. \n 1. Xe đạp: Bên phải trống \n 2. Xe mô tô: Đi thẳng \n 3. Xe của bạn: Rẽ trái"
     },
     {
       "id": 584,
@@ -5836,7 +5836,7 @@
       "answerList": ["Xe của bạn, xe tải, xe con.", "Xe con, xe tải, xe của bạn.", "Xe tải, xe của bạn, xe con.", "Xe của bạn, xe con, xe tải."],
       "answerIndex": 3,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Thứ tự ưu tiên: Xe ưu tiên - Đường ưu tiên - Bên phải trống - Rẽ phải - Đi thẳng - Rẽ trái. \n 1. Xe của bạn: Đường ưu tiên \n 2. Xe con: Đường không ưu tiên, đi thẳng \n 3. Xe tải: Đường không ưu tiên, rẽ trái"
     },
     {
       "id": 585,
@@ -5846,7 +5846,7 @@
       "answerList": ["Xe của bạn.", "Xe con."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Thứ tự ưu tiên: Xe ưu tiên - Đường ưu tiên - Bên phải trống - Rẽ phải - Đi thẳng - Rẽ trái. \n 1. Xe con: Đường ưu tiên \n 2. Xe của bạn: Đường không ưu tiên nên phải nhường đường."
     },
     {
       "id": 586,
@@ -5856,7 +5856,7 @@
       "answerList": ["Xe con", "Xe của bạn"],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Trước mặt xe của bạn có biển số P.132 'Nhường đường cho xe cơ giới đi ngược chiều qua đường hẹp' nên phải nhường đường"
     },
     {
       "id": 587,
@@ -5866,7 +5866,7 @@
       "answerList": ["Tăng tốc độ, đi qua vạch người đi bộ sang đường, để người đi bộ sang đường sau.", "Giảm tốc độ, đi qua vạch người đi bộ sang đường, để người đi bộ sang đường sau.", "Giảm tốc độ, để người đi bộ sang đường trước, sau đó cho xe đi qua vạch người đi bộ sang đường."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Trước mặt bạn có biển I.423a 'Đường người đi bộ sang ngang' nên bạn phải giảm tốc độ và nhường đường cho người đi bộ sang đường."
     },
     {
       "id": 588,
@@ -5876,7 +5876,7 @@
       "answerList": ["Xe con.", "Xe của bạn."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Thứ tự ưu tiên: Xe ưu tiên - Đường ưu tiên - Bên phải trống - Rẽ phải - Đi thẳng - Rẽ trái. \n Xe của bạn trên đường ưu tiên (theo biển báo) nên được đi trước"
     },
     {
       "id": 589,
@@ -5886,7 +5886,7 @@
       "answerList": ["Xe con, xe tải, xe của bạn.", "Xe tải, xe con, xe của bạn.", "Xe tải, xe của bạn, xe con."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Thứ tự ưu tiên: Xe ưu tiên - Đường ưu tiên - Bên phải trống - Rẽ phải - Đi thẳng - Rẽ trái. \n 1. Xe tải: Bên phải trống \n 2. Xe con: Đi thẳng \n 3. Xe của bạn: Rẽ trái"
     },
     {
       "id": 590,
@@ -5896,7 +5896,7 @@
       "answerList": ["Tăng tốc độ cho xe lấn sang phần đường bên trái.", "Giảm tốc độ cho xe lấn sang phần đường bên trái.", "Giảm tốc độ cho xe đi sát phần đường bên phải."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Phía trước khuất tầm nhìn, bên trái làn đường là vạch liền nên bạn cần phải giảm tốc độ, đi sát làn đường bên phải để đảm bảo đi đúng làn đường."
     },
     {
       "id": 591,
@@ -5906,7 +5906,7 @@
       "answerList": ["Xe tải.", "Xe của bạn."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Thứ tự ưu tiên: Xe ưu tiên - Đường ưu tiên - Bên phải trống - Rẽ phải - Đi thẳng - Rẽ trái. \n 1. Xe tải: Đi thẳng \n 2. Xe của bạn: Rẽ trái"
     },
     {
       "id": 592,
@@ -5916,7 +5916,7 @@
       "answerList": ["Xe con.", "Xe mô tô.", "Cả 2 xe đều sai."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Biển số W.211a 'Giao nhau với đường sắt không có rào chắn' thì các phương tiện đứng cách xa đường sắt tối thiểu 5m nên xe con đúng."
     },
     {
       "id": 593,
@@ -5926,7 +5926,7 @@
       "answerList": ["Xe tải, xe đạp, xe của bạn.", "Xe của bạn, xe đạp, xe tải.", "Xe của bạn, xe tải, xe đạp."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Thứ tự ưu tiên: Xe ưu tiên - Đường ưu tiên - Bên phải trống - Rẽ phải - Đi thẳng - Rẽ trái. \n 1. Xe của bạn: Bên phải trống, đi thẳng \n 2. Xe tải: Rẽ trái, bên phải trống (khi xe bạn đã đi rồi) \n 3. Xe đạp: Rẽ trái"
     },
     {
       "id": 594,
@@ -5936,7 +5936,7 @@
       "answerList": ["Hướng 1", "Hướng 2", "Cả hai hướng đều được"],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Vạch kẻ đường nét đứt màu vàng, phân chia hai chiều xe chạy. Do đó, hướng 2 sẽ đi bên trái đường một đoạn nên khôn gđược phép. Do đó, bạn chỉ được chọn theo hướng 1 để rẽ trái."
     },
     {
       "id": 595,
@@ -5946,7 +5946,7 @@
       "answerList": ["Bật đèn chiếu xa, tăng tốc độ vượt xe cùng chiều.", "Giữ nguyên đèn chiếu gần, giảm tốc độ, đi sau xe phía trước.", "Giữ nguyên đèn chiếu gần, tăng tốc độ vượt xe cùng chiều."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Giữ nguyên đèn chiếu gần và giảm tốc độ do không thể quan sát rõ phía trước"
     },
     {
       "id": 596,
@@ -5956,7 +5956,7 @@
       "answerList": ["Quan sát nếu thấy không có tàu thì tăng tốc, cho xe vượt qua đường sắt.", "Dừng lại trước rào chắn một khoảng cách an toàn.", "Ra tín hiệu, yêu cầu người gác chắn tàu kéo chậm Barie để xe bạn qua."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Bắt buộc phải dừng xe"
     },
     {
       "id": 597,
@@ -5966,7 +5966,7 @@
       "answerList": ["Đúng.", "Sai."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Khi nhập làn cao tốc phải chạy dọc theo làn tạm để đủ thời gian quan sát, khoảng cách an toàn và đủ tốc độ trước khi chuyển vào làn cao tốc nên trong tình huống này xe màu đỏ sai khi nhập làn cao tốc."
     },
     {
       "id": 598,
@@ -5976,7 +5976,7 @@
       "answerList": ["Được vượt.", "Không được vượt."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe xin vượt chỉ được vượt khi không có chướng ngại vật phía trước, không có xe chạy ngược chiều trong đoạn đường định vượt, xe chạy phía trước không có tín hiệu vượt xe khác và đã tránh bên phải. Do đó xe màu đỏ không được vượt."
     },
     {
       "id": 599,
@@ -5986,7 +5986,7 @@
       "answerList": ["Đúng.", "Không Đúng."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Xe màu đỏ đang tránh về phía bên phải, xe màu vàng đã có tín hiệu xin vượt, vạch kẻ đường theo hướng xe chạy là nét đứt, không có xe ngược chiều. Nên xe vàng vượt đsung quy tắc giao thông"
     },
     {
       "id": 600,
@@ -5996,7 +5996,7 @@
       "answerList": ["Vượt về phía bên phải để đi tiếp.", "Giảm tốc độ chờ xe đầu kéo rẽ phải, rồi tiếp tục đi.", "Vượt về phía bên trái để đi tiếp."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": ""
+      "comment": "Giảm tốc độ chờ xe đầu kéo rẽ phải rồi mới tiếp tục đi."
     }
   ]
 }

@@ -27,7 +27,6 @@ class QuestionRow extends StatelessWidget{
           question.questionImage.isEmpty ? Container(height: 0): Image.asset('assets/icon/question/${question.questionImage}.png'),
         ],
       )
-
     );
   }
 }

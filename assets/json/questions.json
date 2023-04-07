@@ -5396,7 +5396,7 @@
       "answerList": ["Xe công an, xe quân sự, xe con + xe mô tô.", "Xe quân sự, xe công an, xe con + mô tô.", "Xe mô tô + xe con, xe quân sự, xe công an."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": "Thứ tự ưu tiên: Xe ưu tiên - Đường ưu tiên - Đường cùng cấp theo thứ tự bên phải trống - rẽ phải - đi thẳng - rẽ trái. \n 1. Xe quân sự: Xe ưu tiên cùng cấp xe công an nhưng đi thẳng. \n 2. Xe công an: Xe ưu tiên, rẽ trái \n 3. Xe con và xe mô tô: Cùng đi thẳng
+      "comment": "Thứ tự ưu tiên: Xe ưu tiên - Đường ưu tiên - Đường cùng cấp theo thứ tự bên phải trống - rẽ phải - đi thẳng - rẽ trái. \n 1. Xe quân sự: Xe ưu tiên cùng cấp xe công an nhưng đi thẳng. \n 2. Xe công an: Xe ưu tiên, rẽ trái \n 3. Xe con và xe mô tô: Cùng đi thẳng"
     },
     {
       "id": 541,
@@ -5566,7 +5566,7 @@
       "answerList": ["Vị trí A và B.", "Vị trí A và C.", "Vị trí B và C.", "Cả ba vị trí A, B và C."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": "Vị trsi A vi phạm do dừng bên trái đường. \n Biển số P.131a 'Cấm đỗ xe' không cấm dừng xe. \n Do đó vị trí dừng tại B và C là câu trả lời đúng"
+      "comment": "Vị trsi A vi phạm do dừng bên trái đường. Biển số P.131a 'Cấm đỗ xe' không cấm dừng xe. Do đó vị trí dừng tại B và C là câu trả lời đúng"
     },
     {
       "id": 558,

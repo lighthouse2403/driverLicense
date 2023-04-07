@@ -3,7 +3,7 @@
     {
       "id": 0,
       "status": 0,
-      "questionIds": [1],
+      "questionIds": [],
       "finishedCount": 0,
       "total": 30,
       "hasDeadthPoint": false
