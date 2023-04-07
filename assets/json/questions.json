@@ -3,7 +3,7 @@
     {
       "id": 1,
       "chapterId": 1,
-      "questionText": "Phần của đường bộ được sử dụng cho các phương tiện giao thông qua lại  là gì?",
+      "questionText": "Phần của đường bộ được sử dụng cho các phương tiện giao thông qua lại là gì?",
       "questionImage" : "",
       "answerList": ["Phần mặt đường và lề đường.", "Phần đường xe chạy.", "Phần đường xe cơ giới."],
       "answerIndex": 1,
