@@ -1,6 +1,4 @@
-*.dark_tool
-*.d
-*.build
+**/build
 **/.dart_tool
 **/.idea
 *.flutter-plugins
