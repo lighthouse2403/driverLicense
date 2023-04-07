@@ -87,7 +87,7 @@ class _TestListState extends State<TestList> {
     final String questionResponse = await rootBundle.loadString('assets/json/questions.json');
     final questionData = await json.decode(questionResponse);
     questionList = List<QuestionModel>.from(questionData["questions"].map((json) => QuestionModel.fromJson(json, null)));
-
+    
     // Update question information in the test
     for (var test in testArray) {
       test.finishedCount = finishedQuestions.where((element) => element.testId == test.id).length;
@@ -102,7 +102,10 @@ class _TestListState extends State<TestList> {
   void goToTestPage(int index) {
     var finishedQuestion = finishedQuestions.where((element) => element.testId == index) ?? [];
     TestModel selectedTest = testArray[index];
-    List<QuestionModel> questionsInTest = questionList.where((element) => selectedTest.questionIds.contains('${element.id}')).toList();
+
+    List<String> selectedQuestionIDs = selectedTest.questionIds.map((e) => '${e}').toList();
+    List<QuestionModel> questionsInTest = questionList.where((element) => selectedQuestionIDs.contains('${element.id}')).toList();
+
     Navigator.push(
         context,
         MaterialPageRoute(
