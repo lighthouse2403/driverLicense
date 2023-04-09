@@ -223,7 +223,7 @@
     {
       "id": 23,
       "chapterId": 1,
-      "questionText": "Sử dụng rượu bia khi lái xe, nếu bị phát hiện thì bị xử lý như thế nào?",
+      "questionText": "Sử dụng rượu, bia khi lái xe, nếu bị phát hiện thì bị xử lý như thế nào?",
       "questionImage" : "",
       "answerList": ["Chỉ bị nhắc nhở.", "Bị xử phạt hành chính hoặc có thể bị xử lý hình sự tùy theo mức độ vi phạm.", "Không bị xử lý hình sự."],
       "answerIndex": 1,
