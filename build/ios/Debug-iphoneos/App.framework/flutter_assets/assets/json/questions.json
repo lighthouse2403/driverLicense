@@ -3,7 +3,7 @@
     {
       "id": 1,
       "chapterId": 1,
-      "questionText": "Phần của đường bộ được sử dụng cho các phương tiện giao thông qua lại  là gì?",
+      "questionText": "Phần của đường bộ được sử dụng cho các phương tiện giao thông qua lại là gì?",
       "questionImage" : "",
       "answerList": ["Phần mặt đường và lề đường.", "Phần đường xe chạy.", "Phần đường xe cơ giới."],
       "answerIndex": 1,
@@ -1174,7 +1174,7 @@
       "chapterId": 1,
       "questionText": "Khi lái xe trên đường vắng mà cảm thấy buồn ngủ, người lái xe nên chọn cách xử lý như thế nào cho phù hợp?",
       "questionImage" : "",
-      "answerList": ["Tăng tốc độ kết hợp với nghe nhạc và đi tiếp.", "Quan sát, dừng xe tại nơi quy định; nghỉ cho đến khi hết buồn ngủ và đi tiếp.", "Sử dụng một ít rượu và bia để hết buồn ngủ và đi tiếp."],
+      "answerList": ["Tăng tốc độ kết hợp với nghe nhạc và đi tiếp.", "Quan sát và dừng xe tại nơi quy định. Nghỉ ngơi cho đến khi hết buồn ngủ và đi tiếp.", "Sử dụng một ít rượu và bia để hết buồn ngủ và đi tiếp."],
       "answerIndex": 1,
       "isDeadPoint": true,
       "comment": ""
@@ -4075,7 +4075,7 @@
       "questionText": "Biển nào sau đây là biển “ Kè, vực sâu bên đường phía bên trái”?",
       "questionImage" : "cau408",
       "answerList": ["Biển 1", "Biển 2", "Biển 3", "Biển 1 và Biển 2"],
-      "answerIndex": 1,
+      "answerIndex": 2,
       "isDeadPoint": false,
       "comment": "Biển 1: W.215a 'Kè, vực sâu phía trước' \n Biển 2: W.215b 'Kè, vực sâu bên đường phía bên phải' \n Biển 3: W.215c 'Kè, vực sâu bên đường phía bên trái'"
     },
@@ -5396,7 +5396,7 @@
       "answerList": ["Xe công an, xe quân sự, xe con + xe mô tô.", "Xe quân sự, xe công an, xe con + mô tô.", "Xe mô tô + xe con, xe quân sự, xe công an."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": "Thứ tự ưu tiên: Xe ưu tiên - Đường ưu tiên - Đường cùng cấp theo thứ tự bên phải trống - rẽ phải - đi thẳng - rẽ trái. \n 1. Xe quân sự: Xe ưu tiên cùng cấp xe công an nhưng đi thẳng. \n 2. Xe công an: Xe ưu tiên, rẽ trái \n 3. Xe con và xe mô tô: Cùng đi thẳng
+      "comment": "Thứ tự ưu tiên: Xe ưu tiên - Đường ưu tiên - Đường cùng cấp theo thứ tự bên phải trống - rẽ phải - đi thẳng - rẽ trái. \n 1. Xe quân sự: Xe ưu tiên cùng cấp xe công an nhưng đi thẳng. \n 2. Xe công an: Xe ưu tiên, rẽ trái \n 3. Xe con và xe mô tô: Cùng đi thẳng"
     },
     {
       "id": 541,
@@ -5566,7 +5566,7 @@
       "answerList": ["Vị trí A và B.", "Vị trí A và C.", "Vị trí B và C.", "Cả ba vị trí A, B và C."],
       "answerIndex": 2,
       "isDeadPoint": false,
-      "comment": "Vị trsi A vi phạm do dừng bên trái đường. \n Biển số P.131a 'Cấm đỗ xe' không cấm dừng xe. \n Do đó vị trí dừng tại B và C là câu trả lời đúng"
+      "comment": "Vị trsi A vi phạm do dừng bên trái đường. Biển số P.131a 'Cấm đỗ xe' không cấm dừng xe. Do đó vị trí dừng tại B và C là câu trả lời đúng"
     },
     {
       "id": 558,

@@ -82,8 +82,8 @@ class SQLHelper {
   Future<List<TestModel>> getAllRandomTest(int licenseId) async {
     final db = await SQLHelper.db('random_tests');
     final List<Map<String, dynamic>> list = await db.query('random_tests', where: 'licenseId = ?', whereArgs: [licenseId]);
-
     List<TestModel> testArray = list.map((e) => TestModel.fromDatabase(e)).toList();
+
     testArray.sort((a,b) => a.id.compareTo(b.id));
     return testArray;
   }

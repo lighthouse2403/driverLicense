@@ -28,7 +28,6 @@ class _TrafficSignState extends State<TrafficSign> {
     final String response = await rootBundle.loadString('assets/json/trafficSign.json');
 
     final trafficSigndata = await json.decode(response);
-    print('loadTrafficSignData ${response.toString()}');
 
     traficSignArray = List<TrafficSignModel>.from(trafficSigndata["trafficSign"].map((json) => TrafficSignModel.fromJson(json)));
   }

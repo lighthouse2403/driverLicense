@@ -51,7 +51,7 @@ class _TestListState extends State<TestList> {
     TestModel newRandomTest = TestModel(id: newRandomId, status: 0, finishedCount: 0, total: 35, hasDeadthPoint: true);
     newRandomTest.licenseType = licenseTypes?.where((element) => element.id == currentLicenseTypeId).first;
 
-    newRandomTest.questionIds = randomQuestion.map((e) => e.id).toList();
+    newRandomTest.questionIds = randomQuestion.map((e) => '${e.id}').toList();
 
     await SQLHelper().insertTest(newRandomTest, 'random_tests');
 
@@ -62,8 +62,6 @@ class _TestListState extends State<TestList> {
   }
 
   Future<void> loadTheoryData() async {
-    print('TEST LIST');
-
     // Detect license type like B1, B2, C,D, E, F
     SharedPreferences prefs = await SharedPreferences.getInstance();
     int licenseId = prefs.getInt('licenseType') ?? 2;
@@ -78,7 +76,6 @@ class _TestListState extends State<TestList> {
     final String testResponse = await rootBundle.loadString('assets/json/tests.json');
     final testData = await json.decode(testResponse);
     testArray = List<TestModel>.from(testData['$licenseId'].map((json) => TestModel.fromJson(json)));
-
     testArray.addAll(randomTests);
 
     // Get all license type to import to test
@@ -90,7 +87,7 @@ class _TestListState extends State<TestList> {
     final String questionResponse = await rootBundle.loadString('assets/json/questions.json');
     final questionData = await json.decode(questionResponse);
     questionList = List<QuestionModel>.from(questionData["questions"].map((json) => QuestionModel.fromJson(json, null)));
-
+    
     // Update question information in the test
     for (var test in testArray) {
       test.finishedCount = finishedQuestions.where((element) => element.testId == test.id).length;
@@ -105,13 +102,17 @@ class _TestListState extends State<TestList> {
   void goToTestPage(int index) {
     var finishedQuestion = finishedQuestions.where((element) => element.testId == index) ?? [];
     TestModel selectedTest = testArray[index];
+
+    List<String> selectedQuestionIDs = selectedTest.questionIds.map((e) => '${e}').toList();
+    List<QuestionModel> questionsInTest = questionList.where((element) => selectedQuestionIDs.contains('${element.id}')).toList();
+
     Navigator.push(
         context,
         MaterialPageRoute(
             builder: (context) => TestPage(
                                     test: testArray[index],
                                     finishedQuestionList: finishedQuestion.toList(),
-                                    questionList: questionList.where((element) => selectedTest.questionIds.contains(element.id)).toList(),
+                                    questionList: questionsInTest,
             ))
     ).then(onGoBack);
   }
