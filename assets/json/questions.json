@@ -4352,7 +4352,7 @@
     {
       "id": 436,
       "chapterId": 6,
-      "questionText": "Biển nào (đặt trước ngã ba, ngã tư) co phép xe được rẽ sang dướng khác?",
+      "questionText": "Biển nào (đặt trước ngã ba, ngã tư) co phép xe được rẽ sang hướng khác?",
       "questionImage" : "cau436",
       "answerList": ["Biển 1", "Biển 2", "Không biển nào"],
       "answerIndex": 2,
@@ -5123,7 +5123,7 @@
       "chapterId": 7,
       "questionText": "Xe nào vượt đúng quy tắc giao thông?",
       "questionImage" : "cau513",
-      "answerList": ["Cả 2 xe đều đúng.", "Xe con.", "Xe khách."],
+      "answerList": ["Cả 2 xe đều đúng.", "Xe con.", "Xe tải."],
       "answerIndex": 1,
       "isDeadPoint": false,
       "comment": "Biển số P.126 'Cấm ô tô tải vượt' nên không áp dụng với xe con và xe khách"
