@@ -4392,7 +4392,7 @@
     {
       "id": 440,
       "chapterId": 6,
-      "questionText": "Hiệu lực của biển “ Tốc độ tối đa cho phép ”hết tác dụng khi gặp biển nào dưới đây?",
+      "questionText": "Hiệu lực của biển “Tốc độ tối đa cho phép” hết tác dụng khi gặp biển nào dưới đây?",
       "questionImage" : "cau440",
       "answerList": ["Biển 1", "Biển 2", "Biển 3", "Biển 1 và 2"],
       "answerIndex": 3,
