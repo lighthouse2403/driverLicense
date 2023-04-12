@@ -3452,7 +3452,7 @@
     {
       "id": 346,
       "chapterId": 6,
-      "questionText": "Biển nào không có hiệu lực đối với ô tô tải không kéo mooc?",
+      "questionText": "Biển nào không có hiệu lực đối với ô tô tải không kéo moóc?",
       "questionImage" : "cau346",
       "answerList": ["Biển 1 và 2.", " Biển 2 và 3.", "Biển 1 và 3.", "Cả ba biển."],
       "answerIndex": 0,
@@ -4352,7 +4352,7 @@
     {
       "id": 436,
       "chapterId": 6,
-      "questionText": "Biển nào (đặt trước ngã ba, ngã tư) co phép xe được rẽ sang hướng khác?",
+      "questionText": "Biển nào (đặt trước ngã ba, ngã tư) cho phép xe được rẽ sang hướng khác?",
       "questionImage" : "cau436",
       "answerList": ["Biển 1", "Biển 2", "Không biển nào"],
       "answerIndex": 2,
@@ -4821,7 +4821,7 @@
     {
       "id": 483,
       "chapterId": 6,
-      "questionText": "Khi gặp vạch kẻ đường nào các xe được phép đè vạch?",
+      "questionText": "Xe chữa cháy?",
       "questionImage" : "cau483",
       "answerList": ["Vạch 1", "Vạch 2", "Vạch 3", "Vạch 1 và vạch 3"],
       "answerIndex": 3,
