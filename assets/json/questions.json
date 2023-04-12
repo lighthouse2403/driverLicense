@@ -702,7 +702,7 @@
     {
       "id": 71,
       "chapterId": 1,
-      "questionText": "Người có giấy phép lái xe hạng FE được điểu khiển các loại xe nào dưới đây?",
+      "questionText": "Người có giấy phép lái xe hạng FE được điều khiển các loại xe nào dưới đây?",
       "questionImage" : "",
       "answerList": ["Các loại xe được quy định tại giấy phép lái xe hạng E có kéo rơ moóc và được điều khiển các loại xe: ô tô chở khách nối toa và các loại xe quy định cho giấy phép lái xe hạng B1, B2, C, D, FB2, FD.", "Các loại xe được quy định tại giấy phép lái xe hạng E có kéo rơ moóc, đầu kéo kéo sơ mi rơ moóc và được điều khiển các loại xe: ô tô chở khách nối toa và các loại xe quy định cho giấy phép lái xe hạng B1, B2, C, D, FB2, FD.", "Tất cả các loại xe nêu trên."],
       "answerIndex": 0,
@@ -1262,7 +1262,7 @@
     {
       "id": 127,
       "chapterId": 1,
-      "questionText": " Trên đường bộ (trừ đường cao tốc) trong khu vực đông dân cư, đường hai chiều hoặc đường một chiều có một làn xe cơ giới, loại xe nào dưới đây được tham gia giao thông với tốc độ tối đa cho phép là 50 km/h?",
+      "questionText": "Trên đường bộ (trừ đường cao tốc) trong khu vực đông dân cư, đường hai chiều hoặc đường một chiều có một làn xe cơ giới, loại xe nào dưới đây được tham gia giao thông với tốc độ tối đa cho phép là 50 km/h?",
       "questionImage" : "",
       "answerList": ["Ô tô con, ô tô tải, ô tô chở người trên 30 chỗ.", "Xe gắn máy, xe máy chuyên dùng.", "Cả ý 1 và ý 2."],
       "answerIndex": 0,
@@ -1682,7 +1682,7 @@
     {
       "id": 169,
       "chapterId": 2,
-      "questionText": "rong hoạt động vận tải khách, những hành vi nào dưới đây bị nghiêm cấm?",
+      "questionText": "Trong hoạt động vận tải khách, những hành vi nào dưới đây bị nghiêm cấm?",
       "questionImage" : "",
       "answerList": ["Cạnh tranh nhau nhằm tăng lợi nhuận.", "Giảm giá để thu hút khách.", "Đe dọa, xúc phạm, tranh giành, lôi kéo hành khách; bắt ép hành khách sử dụng dịch vụ ngoài ý muốn; xuống khách nhằm trốn tránh phát hiện xe chở quá số người quy định.", "Tất cả các ý trên."],
       "answerIndex": 2,
@@ -4204,7 +4204,7 @@
       "chapterId": 6,
       "questionText": "Biển báo này có ý nghĩa gì?",
       "questionImage" : "cau421",
-      "answerList": ["Chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải hi đường cong vòng sang trái", "Chỗ ngoặt nguy hiểm có nguy cơ lật xe bên trái khi đường cong vòng bên phải"],
+      "answerList": ["Chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải khi đường cong vòng sang trái", "Chỗ ngoặt nguy hiểm có nguy cơ lật xe bên trái khi đường cong vòng bên phải"],
       "answerIndex": 0,
       "isDeadPoint": false,
       "comment": "Biển W.201c 'Chỗ ngoặt nguy hiểm có nguy cơ lật xe bên phải khi đường cong vòng sang trái'"
