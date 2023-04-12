@@ -4052,7 +4052,7 @@
     {
       "id": 406,
       "chapterId": 6,
-      "questionText": "Biển nào dưới đây là biển “ Cầu xoay – cầu cất”?",
+      "questionText": "Biển nào dưới đây là biển “Cầu xoay – cầu cất”?",
       "questionImage" : "cau406",
       "answerList": ["Biển 1", "Biển 2", "Biển 3"],
       "answerIndex": 0,
@@ -4422,7 +4422,7 @@
     {
       "id": 443,
       "chapterId": 6,
-      "questionText": "Trong các biển dưới đây biển nào là biển “ Hết mọi lệnh cấm”?",
+      "questionText": "Trong các biển dưới đây biển nào là biển “Hết mọi lệnh cấm”?",
       "questionImage" : "cau443",
       "answerList": ["Biển 1", "Biển 2", "Biển 3", "Cả ba biển"],
       "answerIndex": 1,
@@ -4621,7 +4621,7 @@
     {
       "id": 463,
       "chapterId": 6,
-      "questionText": "Biển nào báo hiệu “ Tuyến đường cầu vượt cắt ngang qua”?",
+      "questionText": "Biển nào báo hiệu “Tuyến đường cầu vượt cắt ngang qua”?",
       "questionImage" : "cau463",
       "answerList": ["Biển 1 và 2", "Biển 1 và 3", "Biển 2 và 3"],
       "answerIndex": 0,
