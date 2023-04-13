@@ -34,7 +34,7 @@ class _ChapterListState extends State<ChapterList> {
   }
 
   void goToQuestionPage(int chapterId) {
-    var questions =  widget.questionList.where((element) => element.chapterId == chapterId).toList();
+    var questions =  widget.questionList.where((element) => element.chapterId == chapterId).toList() ?? [];
     ChapterModel chapter = chapterArray.where((element) => element.id == chapterId).first;
     Navigator.push(
         context,
