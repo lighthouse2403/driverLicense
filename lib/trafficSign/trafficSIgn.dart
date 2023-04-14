@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:license/trafficSign/trafficSignPage.dart';
 import '../Test/HorizontalTab.dart';
-import 'TrafficSignModel.dart';
+import 'Model/TrafficSignModel.dart';
 
 class TrafficSign extends StatefulWidget {
   const TrafficSign({super.key});
