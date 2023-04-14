@@ -1,6 +1,6 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:license/trafficSign/TrafficSignModel.dart';
+import 'package:license/trafficSign/Model/TrafficSignModel.dart';
 import 'package:license/trafficSign/trafficSignRow.dart';
 
 import '../Ads/adsHelper.dart';
