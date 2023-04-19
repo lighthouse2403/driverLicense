@@ -49,7 +49,14 @@ class _MoreState extends State<More> {
                               }
                               Navigator.pop(context);
                             },
-                            child: const Text('Xoá'),
+                            child: const Text(
+                              'Huỷ',
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w500,
+                                  color: Colors.red
+                              ),
+                            ),
                           ),
                           TextButton(
                             onPressed: () {
@@ -58,7 +65,14 @@ class _MoreState extends State<More> {
                               }
                               Navigator.pop(context);
                             },
-                            child: const Text('Huỷ'),
+                            child: const Text(
+                              'Xoá',
+                              style: TextStyle(
+                                  fontSize: 15,
+                                  fontWeight: FontWeight.w700,
+                                  color: Colors.black
+                              ),
+                            ),
                           )
                         ],
                       ),
