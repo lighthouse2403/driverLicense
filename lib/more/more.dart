@@ -49,7 +49,7 @@ class _MoreState extends State<More> {
                               }
                               Navigator.pop(context);
                             },
-                            child: const Text('OK'),
+                            child: const Text('Xoá'),
                           ),
                           TextButton(
                             onPressed: () {
@@ -58,7 +58,7 @@ class _MoreState extends State<More> {
                               }
                               Navigator.pop(context);
                             },
-                            child: const Text('Cancel'),
+                            child: const Text('Huỷ'),
                           )
                         ],
                       ),
