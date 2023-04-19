@@ -2,12 +2,12 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:license/Ads/adsHelper.dart';
-import 'package:license/DeathQuestion/DeathQuestion.dart';
 import 'package:license/Setting/setting.dart';
 import 'package:license/Test/TestList.dart';
 import 'package:license/Theory/ChapterList.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import '../Theory/Model/QuestionModel.dart';
+import '../more/more.dart';
 import '../trafficSign/trafficSIgn.dart';
 
 class MainBottomTabBar extends StatefulWidget {
@@ -50,15 +50,12 @@ class MainBottomTabBarState extends State<MainBottomTabBar> {
     return FutureBuilder(
       future: getAllQuestion(),
         builder: (context, item) {
-        List<QuestionModel> deathQuestions = questionList.where((element) => element.isDeadPoint).toList();
-
         widgetOptions = [
           ChapterList(questionList: questionList,),
           const TestList(),
-          DeathQuestionPage(questionList: deathQuestions),
           const TrafficSign(),
+          const More(),
           const SettingScreen()];
-
           return Scaffold(
             body: Center(
               child: widgetOptions.elementAt(_selectedIndex),
@@ -77,13 +74,13 @@ class MainBottomTabBarState extends State<MainBottomTabBar> {
                   backgroundColor: Colors.green,
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(Icons.warning),
-                  label: 'Câu liệt',
+                  icon: Icon(Icons.traffic),
+                  label: 'Biển báo',
                   backgroundColor: Colors.green,
                 ),
                 BottomNavigationBarItem(
-                  icon: Icon(Icons.traffic),
-                  label: 'Biển báo',
+                  icon: Icon(Icons.warning),
+                  label: 'Tiện ích',
                   backgroundColor: Colors.green,
                 ),
                 BottomNavigationBarItem(
