@@ -4,9 +4,11 @@ import 'package:license/Theory/Model/QuestionModel.dart';
 import 'package:sqflite/sqflite.dart' as sql;
 
 class SQLHelper {
+  static String databasePath = 'driverLicense.db';
+
   static Future<sql.Database> db(String tableName) async {
     return sql.openDatabase(
-      'driverLicense.db',
+      SQLHelper.databasePath,
       version: 1,
       onCreate: (sql.Database database, int version) async {
         await createTables(database);
@@ -39,8 +41,6 @@ class SQLHelper {
   Future<void> insertTest(TestModel test, String tableName) async {
     // Get a reference to the database.
     final db = await SQLHelper.db(tableName);
-
-    print('insert test: ${test.toJson().toString()}');
     // Insert the Dog into the correct table. You might also specify the
     // `conflictAlgorithm` to use in case the same dog is inserted twice.
     //
@@ -160,5 +160,9 @@ class SQLHelper {
     } catch (err) {
       debugPrint("Something went wrong when deleting an item: $err");
     }
+  }
+
+  static Future<void> clearData() async {
+    sql.deleteDatabase(SQLHelper.databasePath);
   }
 }
