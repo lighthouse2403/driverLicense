@@ -63,7 +63,7 @@ class _MoreState extends State<More> {
         break;
       case 1:
         if (widget.wrongQuestions.isEmpty) {
-          Fluttertoast.showToast(msg: 'Bạn chưa có câu sai');
+          Fluttertoast.showToast(msg: 'Bạn chưa có câu sai', gravity: ToastGravity.CENTER);
           return;
         }
 
