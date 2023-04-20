@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:license/CustomWidget/alert.dart';
 import 'package:license/Database/sqlHelper.dart';
 import 'package:license/more/more_model.dart';
 import 'package:license/more/more_row.dart';
@@ -13,9 +14,9 @@ class More extends StatefulWidget {
 
 class _MoreState extends State<More> {
   List moreList = [
-    MoreModel(icon: '', name: 'Mẹo'),
-    MoreModel(icon: '', name: 'Câu sai'),
-    MoreModel(icon: '', name: 'Xoá dữ liệu cũ'),
+    MoreModel(icon: 'tips', name: 'Mẹo'),
+    MoreModel(icon: 'wrongAnswer', name: 'Câu sai'),
+    MoreModel(icon: 'reset', name: 'Xoá dữ liệu cũ'),
   ];
 
   @override
@@ -38,44 +39,15 @@ class _MoreState extends State<More> {
                   onTap: () {
                     showDialog(
                       context: context,
-                      builder: (_) => CupertinoAlertDialog (
-                        title: const Text('Xác nhận'),
-                        content: const Text('Bạn có muốn xoá tất cả lịch sử ôn tập không?'),
-                        actions: <Widget>[
-                          TextButton(
-                            onPressed: () {
+                      builder: (_) {
+                        return Alert(
+                            confirmPressed: () {
                               if (index == moreList.length - 1) {
                                 SQLHelper.clearData();
                               }
-                              Navigator.pop(context);
-                            },
-                            child: const Text(
-                              'Huỷ',
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w500,
-                                  color: Colors.red
-                              ),
-                            ),
-                          ),
-                          TextButton(
-                            onPressed: () {
-                              if (index == moreList.length - 1) {
-                                SQLHelper.clearData();
-                              }
-                              Navigator.pop(context);
-                            },
-                            child: const Text(
-                              'Xoá',
-                              style: TextStyle(
-                                  fontSize: 15,
-                                  fontWeight: FontWeight.w700,
-                                  color: Colors.black
-                              ),
-                            ),
-                          )
-                        ],
-                      ),
+                            }
+                            );
+                      },
                     );
                   },
                   child: MoreRow(moreModel: moreList[index])

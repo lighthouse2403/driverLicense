@@ -15,6 +15,7 @@ class MoreRow extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             const Icon(Icons.more),
+            const SizedBox(height: 10),
             Text(
               moreModel.name,
               style: const TextStyle(
