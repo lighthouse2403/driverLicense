@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "457970911968",
+    "firebase_url": "https://driver-license-6d9e1-default-rtdb.firebaseio.com",
+    "project_id": "driver-license-6d9e1",
+    "storage_bucket": "driver-license-6d9e1.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:457970911968:android:0d0b659dc1a2614ff51e85",
+        "android_client_info": {
+          "package_name": "com.driver.license.license"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "457970911968-al12eroj9mnm8083csj2o3u4tm0d5gsn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAtwwGwf5SPMkCK4jRP_DgqGaEnheSm4fY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "457970911968-al12eroj9mnm8083csj2o3u4tm0d5gsn.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "457970911968-ftej4b2sja2580jpt65m60oh71irv2j1.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.driver.license"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

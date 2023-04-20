@@ -17,8 +17,8 @@ class CommentRow extends StatelessWidget{
         child: Text(
           comment,
           style: const TextStyle(
-              fontWeight: FontWeight.w500,
-              fontSize: 14,
+              fontWeight: FontWeight.w400,
+              fontSize: 16,
               color: Colors.black,
               height: 1.3
           ),
