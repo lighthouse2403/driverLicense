@@ -35,7 +35,6 @@ class MainBottomTabBarState extends State<MainBottomTabBar> {
 
   @override
   void initState() {
-    print('initState');
     // TODO: implement initState
     super.initState();
     AdHelper ads = AdHelper();
@@ -46,15 +45,15 @@ class MainBottomTabBarState extends State<MainBottomTabBar> {
 
   @override
   Widget build(BuildContext context) {
-
+  List<QuestionModel> wrongQuestions = questionList.where((element) => (element.selectedIndex != element.answerIndex) && (element.selectedIndex != -1)).toList();
     return FutureBuilder(
       future: getAllQuestion(),
         builder: (context, item) {
         widgetOptions = [
-          ChapterList(questionList: questionList,),
+          ChapterList(questionList: questionList),
           const TestList(),
           const TrafficSign(),
-          const More(),
+          More(wrongQuestions: wrongQuestions),
           const SettingScreen()];
           return Scaffold(
             body: Center(

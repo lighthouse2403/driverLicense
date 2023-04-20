@@ -2,12 +2,17 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:license/CustomWidget/alert.dart';
 import 'package:license/Database/sqlHelper.dart';
+import 'package:license/Theory/questionPage.dart';
 import 'package:license/more/more_model.dart';
 import 'package:license/more/more_row.dart';
+import 'package:license/more/tips.dart';
+
+import '../Theory/Model/QuestionModel.dart';
 
 class More extends StatefulWidget {
-  const More({super.key});
+  More({super.key, required this.wrongQuestions});
 
+  List<QuestionModel> wrongQuestions;
   @override
   State<More> createState() => _MoreState();
 }
@@ -37,18 +42,7 @@ class _MoreState extends State<More> {
               itemBuilder: (BuildContext context, int index) {
                 return InkWell(
                   onTap: () {
-                    showDialog(
-                      context: context,
-                      builder: (_) {
-                        return Alert(
-                            confirmPressed: () {
-                              if (index == moreList.length - 1) {
-                                SQLHelper.clearData();
-                              }
-                            }
-                            );
-                      },
-                    );
+                    gotoDetail(index);
                   },
                   child: MoreRow(moreModel: moreList[index])
                 );
@@ -56,5 +50,36 @@ class _MoreState extends State<More> {
               ),
         )
     );
+  }
+
+  void gotoDetail(int index) {
+    switch (index) {
+      case 0:
+        Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => Tips())
+        );
+        break;
+      case 1:
+        Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => QuestionPage(questionList: widget.wrongQuestions, title: 'Câu hay sai'))
+        );
+        break;
+      case 2:
+        showDialog(
+          context: context,
+          builder: (_) {
+            return Alert(
+                confirmPressed: () {
+                  if (index == moreList.length - 1) {
+                    SQLHelper.clearData();
+                  }
+                }
+            );
+          },
+        );
+        break;
+    }
   }
 }

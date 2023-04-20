@@ -59,7 +59,7 @@ class _ChapterListState extends State<ChapterList> {
 
     Navigator.push(
         context,
-        MaterialPageRoute(builder: (context) => QuestionPage(questionList: questions, chapter: chapter,))
+        MaterialPageRoute(builder: (context) => QuestionPage(questionList: questions, title: chapter.name,))
     ).then(onGoBack);
   }
 
