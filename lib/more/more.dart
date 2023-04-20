@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:license/CustomWidget/alert.dart';
 import 'package:license/Database/sqlHelper.dart';
 import 'package:license/Theory/questionPage.dart';
@@ -61,6 +62,11 @@ class _MoreState extends State<More> {
         );
         break;
       case 1:
+        if (widget.wrongQuestions.isEmpty) {
+          Fluttertoast.showToast(msg: 'Bạn chưa có câu sai');
+          return;
+        }
+
         Navigator.push(
             context,
             MaterialPageRoute(builder: (context) => QuestionPage(questionList: widget.wrongQuestions, title: 'Câu hay sai'))
