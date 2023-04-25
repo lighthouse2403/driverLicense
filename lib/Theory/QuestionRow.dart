@@ -19,7 +19,7 @@ class QuestionRow extends StatelessWidget{
             question.questionText,
             style: const TextStyle(
                 fontWeight: FontWeight.w500,
-                fontSize: 17,
+                fontSize: 18,
                 color: Colors.black
             ),
           ),

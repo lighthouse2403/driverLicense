@@ -50,6 +50,7 @@ class QuestionModel {
     questionImage = json['questionImage'];
     answerList = json['answerList'].split('--');
     comment = json['comment'];
+    isDeadPoint = json['isDeadPoint'] == 1 ? true : false;
     selectedIndex = json['selectedIndex'];
     if (json['questionOnTestId'] != null) {
       questionOnTestId = json['questionOnTestId'];
@@ -68,6 +69,7 @@ class QuestionModel {
     data['questionImage'] = questionImage;
     data['answerList'] = answerList.join('--');
     data['comment'] = comment;
+    data['isDeadPoint'] = isDeadPoint ? 1 : 0;
     data['selectedIndex'] = selectedIndex;
     data['testId'] = testId;
     if (questionOnTestId.isNotEmpty) {

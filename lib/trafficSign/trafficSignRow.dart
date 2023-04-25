@@ -18,7 +18,8 @@ class _TrafficSignRowState extends State<TrafficSignRow> {
       onTap: () {
         Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => TrafficSignDetail(trafficSignModel: widget.model,)));
+            MaterialPageRoute(builder: (context) => TrafficSignDetail(trafficSignModel: widget.model,))
+        );
       },
       child: Row(
         children: [

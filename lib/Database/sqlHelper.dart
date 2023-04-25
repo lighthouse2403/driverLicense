@@ -4,9 +4,11 @@ import 'package:license/Theory/Model/QuestionModel.dart';
 import 'package:sqflite/sqflite.dart' as sql;
 
 class SQLHelper {
+  static String databasePath = 'driverLicense.db';
+
   static Future<sql.Database> db(String tableName) async {
     return sql.openDatabase(
-      'driverLicense.db',
+      SQLHelper.databasePath,
       version: 1,
       onCreate: (sql.Database database, int version) async {
         await createTables(database);
@@ -15,7 +17,7 @@ class SQLHelper {
   }
 
   static Future<void> createTables(sql.Database database) async {
-    await database.execute("CREATE TABLE questions(id INTEGER PRIMARY KEY, chapterId INTEGER, questionText TEXT, answerIndex INTEGER, questionImage TEXT, answerList TEXT, comment TEXT, selectedIndex INTEGER, testId INTEGER)");
+    await database.execute("CREATE TABLE questions(id INTEGER PRIMARY KEY, chapterId INTEGER, questionText TEXT, answerIndex INTEGER, questionImage TEXT, answerList TEXT, comment TEXT, selectedIndex INTEGER, testId INTEGER, isDeadPoint BOLEAN)");
     await database.execute("CREATE TABLE questions_in_test(questionOnTestId TEXT PRIMARY KEY, id INTEGER, chapterId INTEGER, questionText TEXT, answerIndex INTEGER, questionImage TEXT, answerList TEXT, comment TEXT, selectedIndex INTEGER, testId INTEGER)");
     await database.execute("CREATE TABLE tests(id INTEGER PRIMARY KEY, status INTEGER, questionIds TEXT, finishedCount INTEGER, exactCount INTEGER, total INTEGER, hasDeadthPoint BOLEAN, licenseId INTEGER)");
     await database.execute("CREATE TABLE random_tests(id INTEGER PRIMARY KEY, status INTEGER, questionIds TEXT, finishedCount INTEGER, exactCount INTEGER, total INTEGER, hasDeadthPoint BOLEAN, licenseId INTEGER)");
@@ -39,8 +41,6 @@ class SQLHelper {
   Future<void> insertTest(TestModel test, String tableName) async {
     // Get a reference to the database.
     final db = await SQLHelper.db(tableName);
-
-    print('insert test: ${test.toJson().toString()}');
     // Insert the Dog into the correct table. You might also specify the
     // `conflictAlgorithm` to use in case the same dog is inserted twice.
     //
@@ -160,5 +160,9 @@ class SQLHelper {
     } catch (err) {
       debugPrint("Something went wrong when deleting an item: $err");
     }
+  }
+
+  static Future<void> clearData() async {
+    sql.deleteDatabase(SQLHelper.databasePath);
   }
 }

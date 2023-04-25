@@ -51,7 +51,7 @@ class AnswerRow extends StatelessWidget {
               child: Text(
                 question.answerList[index],
                 style: TextStyle(
-                  fontSize: 14,
+                  fontSize: 16,
                   fontWeight: FontWeight.w500,
                   color: answerTextColor,
                 ),

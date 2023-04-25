@@ -7,9 +7,9 @@ import '../Ads/adsHelper.dart';
 import '../Test/HorizontalTab.dart';
 
 class QuestionPage extends StatefulWidget {
-  const QuestionPage({super.key, required this.questionList, required this.chapter});
+  const QuestionPage({super.key, required this.questionList, required this.title});
   final List<QuestionModel> questionList;
-  final ChapterModel chapter;
+  final String title;
 
   @override
   State<QuestionPage> createState() => _QuestionPageState();
@@ -56,7 +56,7 @@ class _QuestionPageState extends State<QuestionPage> {
     );
     return Scaffold(
         appBar: AppBar(
-          title: Text(widget.chapter.name, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w500)),
+          title: Text(widget.title, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w500)),
           backgroundColor: Colors.green,
         ),
         body: Column(

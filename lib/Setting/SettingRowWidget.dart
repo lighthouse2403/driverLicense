@@ -11,7 +11,7 @@ class SettingRowWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.all(Radius.circular(6)),
+        borderRadius: const BorderRadius.all(Radius.circular(6)),
         border: Border.all(
             width: 0.5,
             color: (selectedLicenseId == licenseType.id) ? Colors.green : Colors.grey.withOpacity(0.8)
