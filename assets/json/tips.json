@@ -1,0 +1,143 @@
+{
+  "theory_tips" : [
+    {
+      "id": 1,
+      "name": "Mẹo trả lời các câu hỏi về hệ thống biển báo giao thông",
+      "section": [
+            {
+              "name": "Nhận diện biển báo giao thông",
+              "content": "Có 5 nhóm biển báo giao thông:",
+              "answer": ["Biển báo cấm: Hình tròn viền đỏ, nền trắng",
+                        "Biển báo nguy hiểm: Hình tam giác vàng viền đỏ",
+                        "Biển báo hiệu lệnh: Hình tròn xanh",
+                        "Biển chỉ dẫn: Hình vuông hoặc chữ nhật xanh",
+                        "Biển báo phụ: Hình vuông hoặc chữ nhật trắng/đen"]
+            },
+            {
+              "name": "Các mẹo học biển báo cần nhớ",
+              "content": "Có một số quy tắc chung về ý nghĩa biển báo giao thông cần nhớ, đây là một trong các mẹo học biển báo cần nhớ:",
+              "answer": [
+                        "Sơ đồ thứ tự cấm: Ô tô con > xe khách > xe tải > xe máy kéo > xe kéo móc",
+                        "Biển Cấm 2 bánh: cấm luôn 3 bánh nhưng không cấm 4 bánh",
+                        "Biển Cấm 4 bánh: cấm 3 bánh nhưng không cấm 2 bánh",
+                        "Biển Cấm xe nhỏ: cấm luôn xe lớn",
+                        "Biển Cấm xe ô tô: cấm luôn xe lam, xe ba bánh…",
+                        "Biển Cấm xe lớn: không cấm xe nhỏ",
+                        "Biển Cấm rẽ trái: cấm luôn quay đầu",
+                        "Biển Cấm quay đầu: không cấm rẽ trái",
+                        "Biển màu xanh cho phép quay đầu: không cấm rẽ trái",
+                        "Biển STOP: mọi xe đều dừng, bao gồm xe ưu tiên",
+                        "Biển Cấm ô tô vượt: tất cả xe tải, xe khách… đều không được phép vượt",
+                        "Biển Cấm xe tải vượt: không cấm xe ô tô, xe khách…"]
+          },
+            {
+              "name": "Các mẹo thi biển báo lưu ý",
+              "content": "Khi xem câu hỏi thi về phần biển báo, cần lưu ý:",
+              "answer": [
+                        "Câu hỏi có 2 hoặc 3 biển tròn màu xanh phân 2 trường hợp: Loại câu dài 1 hàng thì chọn đáp án 1. Loại câu từ 2 hàng trở lên chọn đáp án 3.",
+                        "Câu hỏi có đáp án “Không được phép” thì chọn đáp án này.",
+                        "Đỗ xe: không giới hạn thời gian",
+                        "Dừng xe: có giới hạn thời gian",
+              ]
+          }
+      ],
+    },
+    {
+      "id": 2,
+      "name": "Mẹo câu hỏi về khái niệm, văn hoá, đạo đức…",
+      "section": [
+            {
+              "name": "Các câu hỏi về chủ đề sau thì chọn đáp áp “Tất cả”:",
+              "content": "Các câu hỏi về chủ đề sau thì chọn đáp áp “Tất cả”:",
+              "answer": [
+                  "Đạo đức",
+                  Kinh doanh vận tải
+                  Hành vi]
+            },
+            {
+              "name": "Các mẹo học biển báo cần nhớ",
+              "content": "Có một số quy tắc chung về ý nghĩa biển báo giao thông cần nhớ, đây là một trong các mẹo học biển báo cần nhớ:",
+              "answer": [
+                        "Sơ đồ thứ tự cấm: Ô tô con > xe khách > xe tải > xe máy kéo > xe kéo móc",
+                        "Biển Cấm 2 bánh: cấm luôn 3 bánh nhưng không cấm 4 bánh",
+                        "Biển Cấm 4 bánh: cấm 3 bánh nhưng không cấm 2 bánh",
+                        "Biển Cấm xe nhỏ: cấm luôn xe lớn",
+                        "Biển Cấm xe ô tô: cấm luôn xe lam, xe ba bánh…",
+                        "Biển Cấm xe lớn: không cấm xe nhỏ",
+                        "Biển Cấm rẽ trái: cấm luôn quay đầu",
+                        "Biển Cấm quay đầu: không cấm rẽ trái",
+                        "Biển màu xanh cho phép quay đầu: không cấm rẽ trái",
+                        "Biển STOP: mọi xe đều dừng, bao gồm xe ưu tiên",
+                        "Biển Cấm ô tô vượt: tất cả xe tải, xe khách… đều không được phép vượt",
+                        "Biển Cấm xe tải vượt: không cấm xe ô tô, xe khách…"]
+          },
+            {
+              "name": "Các mẹo thi biển báo lưu ý",
+              "content": "Khi xem câu hỏi thi về phần biển báo, cần lưu ý:",
+              "answer": [
+                        "Câu hỏi có 2 hoặc 3 biển tròn màu xanh phân 2 trường hợp: Loại câu dài 1 hàng thì chọn đáp án 1. Loại câu từ 2 hàng trở lên chọn đáp án 3.",
+                        "Câu hỏi có đáp án “Không được phép” thì chọn đáp án này.",
+                        "Đỗ xe: không giới hạn thời gian",
+                        "Dừng xe: có giới hạn thời gian",
+              ]
+          }
+      ],
+    }
+  ],
+  "practice_tips" : [
+    {
+      "id": 1,
+      "name": "B1",
+      "comment": "Không được hành nghề lái xe, xe chở người đến 9 chỗ, trọng tải dứoi 3500 Kg.",
+      "testCount": 20,
+      "questionCount": 30,
+      "minutes": 20,
+      "require": 27
+    },
+    {
+      "id": 2,
+      "name": "B2",
+      "comment": "Cho phép hành nghề lái xe, xe chở người đến 9 chỗ, trọng tải dứoi 3500 Kg.",
+      "testCount": 18,
+      "questionCount": 35,
+      "minutes": 22,
+      "require": 32
+    },
+    {
+      "id": 3,
+      "name": "C",
+      "comment": "Ô tô tải trên 3500 Kg.",
+      "testCount": 15,
+      "questionCount": 40,
+      "minutes": 24,
+      "require": 36
+    },
+    {
+      "id": 4,
+      "name": "D",
+      "comment": "Ô tô chở người từ 10 đến 30 chỗ.",
+      "testCount": 14,
+      "questionCount": 45,
+      "minutes": 26,
+      "require": 41
+    },
+    {
+      "id": 5,
+      "name": "E",
+      "comment": "Ô tô chở người trên 30 chỗ.",
+      "testCount": 14,
+      "questionCount": 45,
+      "minutes": 26,
+      "require": 41
+    },
+    {
+      "id": 6,
+      "name": "F",
+      "comment": "Điều khiển các loại xe kéo rơ moóc",
+      "testCount": 14,
+      "questionCount": 45,
+      "minutes": 26,
+      "require": 41
+    }
+  ]
+}
