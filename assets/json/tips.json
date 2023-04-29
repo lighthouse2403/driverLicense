@@ -266,6 +266,173 @@
             ]
         }
       ],
+    },
+    {
+      "id": 8,
+      "name": "Mẹo trả lời câu hỏi về cấu tạo và sửa chữa",
+      "section": [
+          {
+            "name": "Công dụng hộp số ô tô",
+            "content": "",
+            "answer": [
+                      "Chọn chuyển động lùi"
+                      ]
+        },
+          {
+            "name": "Công dụng động cơ ô tô",
+            "content": "",
+            "answer": [
+                      "Chọn nhiệt năng thành cơ năng",
+            ]
+        },
+          {
+            "name": "Công dụng hệ thống truyền lực",
+            "content": "",
+            "answer": [
+                      "Chọn dùng để truyền"
+                      ]
+        },
+          {
+            "name": "Công dụng hệ thống lái",
+            "content": "",
+            "answer": [
+                      "Chọn chuyển hướng",
+            ]
+        },
+          {
+            "name": "Công dụng ly hợp",
+            "content": "",
+            "answer": [
+                      "Chọn dùng để truyền hoặc ngắt"
+                      ]
+        },
+          {
+            "name": "Động cơ 2 kỳ",
+            "content": "",
+            "answer": [
+                      "Chọn 2 hành trình",
+            ]
+        },
+          {
+            "name": "Động cơ 4 kỳ",
+            "content": "",
+            "answer": [
+                      "Chọn 4 hành trình",
+            ]
+        },
+          {
+            "name": "Kính chắn gió",
+            "content": "",
+            "answer": [
+                      "Chọn loại kính an toàn",
+            ]
+        },
+          {
+            "name": "Dây đai an toàn",
+            "content": "",
+            "answer": [
+                      "Chọn hãm giữ chặt",
+            ]
+        },
+          {
+            "name": "Âm lượng còi",
+            "content": "",
+            "answer": [
+                      "Chọn < 90 < 115db",
+            ]
+        },
+          {
+            "name": "Khi vào số tiến/lùi xe số tự động",
+            "content": "",
+            "answer": [
+                      "Chọn đạp phanh chân hết trành trình",
+            ]
+        },
+          {
+            "name": "Khi quay đầu",
+            "content": "",
+            "answer": [
+                      "Chọn đưa đầu xe về phía nguy hiểm",
+            ]
+        },
+          {
+            "name": "Điều khiển tăng số",
+            "content": "",
+            "answer": [
+                      "Chọn nhịp nhàng, chính xác",
+            ]
+        },
+          {
+            "name": "Điều khiển ô tô gần xe ngược chiều vào ban đêm",
+            "content": "",
+            "answer": [
+                      "Chọn đèn chiếu xa sang chiếu gần",
+            ]
+        },
+          {
+            "name": "Nhả phanh tay",
+            "content": "",
+            "answer": [
+                      "Chọn kéo cần phanh tay về phía sau, bóp khoá hãm",
+            ]
+        },
+          {
+            "name": "Khởi hành ô tô trên đường bằng",
+            "content": "",
+            "answer": [
+                      "Chọn đạp ly hợp trên hành trình",
+            ]
+        },
+          {
+            "name": "Điều kiện ô tô giảm số",
+            "content": "",
+            "answer": [
+                      "Chọn vù ga phù hợp với tốc độ",
+            ]
+        },
+          {
+            "name": "Điều kiện ô tô đường trơn",
+            "content": "",
+            "answer": [
+                      "Chọn không đánh lái ngoặt và phanh gấp",
+            ]
+        },
+          {
+            "name": "Nguyên nhân xăng không vào buồng phao của bộ chế hòa khí",
+            "content": "",
+            "answer": [
+                      "Chọn tắc bầu lọc",
+            ]
+        },
+          {
+            "name": "Nguyên nhân thông thường động cơ điezen không nổ",
+            "content": "",
+            "answer": [
+                      "Chọn không có tia lửa điện",
+            ]
+        },
+          {
+            "name": "Phương pháp khắc phục giclơ bị tắc",
+            "content": "",
+            "answer": [
+                      "Chọn thông lỗ giclơ bằng khí nén",
+            ]
+        },
+          {
+            "name": "Phương pháp điều chỉnh lửa sớm sang muộn",
+            "content": "",
+            "answer": [
+                      "Chọn cùng chiều với bộ cam",
+            ]
+        },
+          {
+            "name": "Phương pháp điều chỉnh lửa muộn sang sớm",
+            "content": "",
+            "answer": [
+                      "Chọn ngược chiều với bộ cam",
+            ]
+        }
+      ],
     }
   ],
   "practice_tips" : [
