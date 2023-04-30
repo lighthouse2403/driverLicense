@@ -5,14 +5,15 @@ import 'package:firebase_core/firebase_core.dart';
 import 'firebase_options.dart';
 
 Future<void> main() async {
-  if (Firebase.apps.isEmpty) {
-    await Firebase.initializeApp(
-      name: 'Driver license',
-      options: DefaultFirebaseOptions.currentPlatform,
-    ).whenComplete(() {
-      print("completedAppInitialize");
-    });
-  }
+
+  // if (Firebase.apps.isEmpty) {
+  //   await Firebase.initializeApp(
+  //     name: 'Driver license',
+  //     options: DefaultFirebaseOptions.currentPlatform,
+  //   ).whenComplete(() {
+  //     print("completedAppInitialize");
+  //   });
+  // }
   runApp(const DriverLicense());
 }
 

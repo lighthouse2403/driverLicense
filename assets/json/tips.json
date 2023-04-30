@@ -37,10 +37,10 @@
                         "Câu hỏi có 2 hoặc 3 biển tròn màu xanh phân 2 trường hợp: Loại câu dài 1 hàng thì chọn đáp án 1. Loại câu từ 2 hàng trở lên chọn đáp án 3.",
                         "Câu hỏi có đáp án “Không được phép” thì chọn đáp án này.",
                         "Đỗ xe: không giới hạn thời gian",
-                        "Dừng xe: có giới hạn thời gian",
+                        "Dừng xe: có giới hạn thời gian"
               ]
           }
-      ],
+      ]
     },
     {
       "id": 2,
@@ -82,7 +82,7 @@
                         "Tại",
                         "Phải",
                         "Trên",
-                        "Xe chữa cháy",
+                        "Xe chữa cháy"
               ]
           },
             {
@@ -96,10 +96,10 @@
                         "Khách",
                         "Tham gia giao thông",
                         "Văn hoá giao thông",
-                        "Tư tưởng Hồ Chí Minh",
+                        "Tư tưởng Hồ Chí Minh"
               ]
           }
-      ],
+      ]
     },
     {
       "id": 3,
@@ -120,13 +120,12 @@
                   "Trên đường cao tốc: chọn đáp án tốc độ cao nhất (trừ 30)"
               ]
             }
-      ],
+      ]
     },
     {
       "id": 4,
       "name": "Câu hỏi dấu bằng lái",
       "section": [
-          ,
           {
             "name": "B2 < hoặc 9 chỗ; < 3,5 tấn",
             "content": "",
@@ -138,45 +137,44 @@
             "name": "C < hoặc 9 chỗl > 3,5 tấn",
             "content": "",
             "answer": [
-                      "Chọn đáp án 3",
+                      "Chọn đáp án 3"
             ]
         },
           {
             "name": "FC",
             "content": "",
             "answer": [
-                      "Chọn đáp án 2",
+                      "Chọn đáp án 2"
             ]
         },
           {
             "name": "Tuổi tối đa lái xe dấu E",
             "content": "",
             "answer": [
-                      "Chọn đáp án 55 tuổi/nam và 50 tuổi/nữ",
+                      "Chọn đáp án 55 tuổi/nam và 50 tuổi/nữ"
             ]
         },
           {
             "name": "Xe tải",
             "content": "",
             "answer": [
-                      "Chọn đáp án 25 năm",
+                      "Chọn đáp án 25 năm"
             ]
         },
           {
             "name": "Chở người > 9 chỗ",
             "content": "",
             "answer": [
-                      "Chọn đáp án 20 năm",
+                      "Chọn đáp án 20 năm"
             ]
         }
           
-      ],
+      ]
     },
     {
       "id": 5,
       "name": "Câu hỏi độ tuổi tham gia giao thông",
       "section": [
-          ,
           {
             "name": "16 tuổi",
             "content": "",
@@ -188,45 +186,43 @@
             "name": "18 tuổi",
             "content": "",
             "answer": [
-                      "Chọn hạng A1, A2, B2",
+                      "Chọn hạng A1, A2, B2"
             ]
         },
           {
             "name": "21 tuổi",
             "content": "",
             "answer": [
-                      "Chọn hạng C",
+                      "Chọn hạng C"
             ]
         },
           {
             "name": "24 tuổi",
             "content": "",
             "answer": [
-                      "Chọn hạng D",
+                      "Chọn hạng D"
             ]
         },
           {
             "name": "27 tuổi",
             "content": "",
             "answer": [
-                      "Chọn hạng E",
+                      "Chọn hạng E"
             ]
         },
           {
             "name": "Nam > 60 tuổi, nữ > 55 tuổi",
             "content": "",
             "answer": [
-                      "Chọn hạng B1",
+                      "Chọn hạng B1"
             ]
         }
-          
       ]
       },
     {
       "id": 6,
       "name": "Mẹo câu hỏi về niên hạn sử dụng xe",
       "section": [
-          ,
           {
             "name": "Xe tải:",
             "content": "",
@@ -238,10 +234,10 @@
             "name": "Xe ô tô trên 9 chỗ:",
             "content": "",
             "answer": [
-                      "20 năm",
+                      "20 năm"
             ]
         }
-      ],
+      ]
     },
     {
       "id": 7,
@@ -262,10 +258,10 @@
             "name": "Xe ô tô trên 9 chỗ:",
             "content": "",
             "answer": [
-                      "20 năm",
+                      "20 năm"
             ]
         }
-      ],
+      ]
     },
     {
       "id": 8,
@@ -282,7 +278,7 @@
             "name": "Công dụng động cơ ô tô",
             "content": "",
             "answer": [
-                      "Chọn nhiệt năng thành cơ năng",
+                      "Chọn nhiệt năng thành cơ năng"
             ]
         },
           {
@@ -296,7 +292,7 @@
             "name": "Công dụng hệ thống lái",
             "content": "",
             "answer": [
-                      "Chọn chuyển hướng",
+                      "Chọn chuyển hướng"
             ]
         },
           {
@@ -310,129 +306,129 @@
             "name": "Động cơ 2 kỳ",
             "content": "",
             "answer": [
-                      "Chọn 2 hành trình",
+                      "Chọn 2 hành trình"
             ]
         },
           {
             "name": "Động cơ 4 kỳ",
             "content": "",
             "answer": [
-                      "Chọn 4 hành trình",
+                      "Chọn 4 hành trình"
             ]
         },
           {
             "name": "Kính chắn gió",
             "content": "",
             "answer": [
-                      "Chọn loại kính an toàn",
+                      "Chọn loại kính an toàn"
             ]
         },
           {
             "name": "Dây đai an toàn",
             "content": "",
             "answer": [
-                      "Chọn hãm giữ chặt",
+                      "Chọn hãm giữ chặt"
             ]
         },
           {
             "name": "Âm lượng còi",
             "content": "",
             "answer": [
-                      "Chọn < 90 < 115db",
+                      "Chọn < 90 < 115db"
             ]
         },
           {
             "name": "Khi vào số tiến/lùi xe số tự động",
             "content": "",
             "answer": [
-                      "Chọn đạp phanh chân hết trành trình",
+                      "Chọn đạp phanh chân hết trành trình"
             ]
         },
           {
             "name": "Khi quay đầu",
             "content": "",
             "answer": [
-                      "Chọn đưa đầu xe về phía nguy hiểm",
+                      "Chọn đưa đầu xe về phía nguy hiểm"
             ]
         },
           {
             "name": "Điều khiển tăng số",
             "content": "",
             "answer": [
-                      "Chọn nhịp nhàng, chính xác",
+                      "Chọn nhịp nhàng, chính xác"
             ]
         },
           {
             "name": "Điều khiển ô tô gần xe ngược chiều vào ban đêm",
             "content": "",
             "answer": [
-                      "Chọn đèn chiếu xa sang chiếu gần",
+                      "Chọn đèn chiếu xa sang chiếu gần"
             ]
         },
           {
             "name": "Nhả phanh tay",
             "content": "",
             "answer": [
-                      "Chọn kéo cần phanh tay về phía sau, bóp khoá hãm",
+                      "Chọn kéo cần phanh tay về phía sau, bóp khoá hãm"
             ]
         },
           {
             "name": "Khởi hành ô tô trên đường bằng",
             "content": "",
             "answer": [
-                      "Chọn đạp ly hợp trên hành trình",
+                      "Chọn đạp ly hợp trên hành trình"
             ]
         },
           {
             "name": "Điều kiện ô tô giảm số",
             "content": "",
             "answer": [
-                      "Chọn vù ga phù hợp với tốc độ",
+                      "Chọn vù ga phù hợp với tốc độ"
             ]
         },
           {
             "name": "Điều kiện ô tô đường trơn",
             "content": "",
             "answer": [
-                      "Chọn không đánh lái ngoặt và phanh gấp",
+                      "Chọn không đánh lái ngoặt và phanh gấp"
             ]
         },
           {
             "name": "Nguyên nhân xăng không vào buồng phao của bộ chế hòa khí",
             "content": "",
             "answer": [
-                      "Chọn tắc bầu lọc",
+                      "Chọn tắc bầu lọc"
             ]
         },
           {
             "name": "Nguyên nhân thông thường động cơ điezen không nổ",
             "content": "",
             "answer": [
-                      "Chọn không có tia lửa điện",
+                      "Chọn không có tia lửa điện"
             ]
         },
           {
             "name": "Phương pháp khắc phục giclơ bị tắc",
             "content": "",
             "answer": [
-                      "Chọn thông lỗ giclơ bằng khí nén",
+                      "Chọn thông lỗ giclơ bằng khí nén"
             ]
         },
           {
             "name": "Phương pháp điều chỉnh lửa sớm sang muộn",
             "content": "",
             "answer": [
-                      "Chọn cùng chiều với bộ cam",
+                      "Chọn cùng chiều với bộ cam"
             ]
         },
           {
             "name": "Phương pháp điều chỉnh lửa muộn sang sớm",
             "content": "",
             "answer": [
-                      "Chọn ngược chiều với bộ cam",
+                      "Chọn ngược chiều với bộ cam"
             ]
         }
-      ],
+      ]
     }
   ],
   "practice_tips" : [
