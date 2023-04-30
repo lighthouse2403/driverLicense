@@ -1,0 +1,490 @@
+{
+  "theory_tips" : [
+    {
+      "id": 1,
+      "name": "Mẹo trả lời các câu hỏi về hệ thống biển báo giao thông",
+      "section": [
+            {
+              "name": "Nhận diện biển báo giao thông",
+              "content": "Có 5 nhóm biển báo giao thông:",
+              "answer": ["Biển báo cấm: Hình tròn viền đỏ, nền trắng",
+                        "Biển báo nguy hiểm: Hình tam giác vàng viền đỏ",
+                        "Biển báo hiệu lệnh: Hình tròn xanh",
+                        "Biển chỉ dẫn: Hình vuông hoặc chữ nhật xanh",
+                        "Biển báo phụ: Hình vuông hoặc chữ nhật trắng/đen"]
+            },
+            {
+              "name": "Các mẹo học biển báo cần nhớ",
+              "content": "Có một số quy tắc chung về ý nghĩa biển báo giao thông cần nhớ, đây là một trong các mẹo học biển báo cần nhớ:",
+              "answer": [
+                        "Sơ đồ thứ tự cấm: Ô tô con > xe khách > xe tải > xe máy kéo > xe kéo móc",
+                        "Biển Cấm 2 bánh: cấm luôn 3 bánh nhưng không cấm 4 bánh",
+                        "Biển Cấm 4 bánh: cấm 3 bánh nhưng không cấm 2 bánh",
+                        "Biển Cấm xe nhỏ: cấm luôn xe lớn",
+                        "Biển Cấm xe ô tô: cấm luôn xe lam, xe ba bánh…",
+                        "Biển Cấm xe lớn: không cấm xe nhỏ",
+                        "Biển Cấm rẽ trái: cấm luôn quay đầu",
+                        "Biển Cấm quay đầu: không cấm rẽ trái",
+                        "Biển màu xanh cho phép quay đầu: không cấm rẽ trái",
+                        "Biển STOP: mọi xe đều dừng, bao gồm xe ưu tiên",
+                        "Biển Cấm ô tô vượt: tất cả xe tải, xe khách… đều không được phép vượt",
+                        "Biển Cấm xe tải vượt: không cấm xe ô tô, xe khách…"]
+          },
+            {
+              "name": "Các mẹo thi biển báo lưu ý",
+              "content": "Khi xem câu hỏi thi về phần biển báo, cần lưu ý:",
+              "answer": [
+                        "Câu hỏi có 2 hoặc 3 biển tròn màu xanh phân 2 trường hợp: Loại câu dài 1 hàng thì chọn đáp án 1. Loại câu từ 2 hàng trở lên chọn đáp án 3.",
+                        "Câu hỏi có đáp án “Không được phép” thì chọn đáp án này.",
+                        "Đỗ xe: không giới hạn thời gian",
+                        "Dừng xe: có giới hạn thời gian",
+              ]
+          }
+      ],
+    },
+    {
+      "id": 2,
+      "name": "Mẹo câu hỏi về khái niệm, văn hoá, đạo đức…",
+      "section": [
+            {
+              "name": "Các câu hỏi về chủ đề sau thì chọn đáp áp “Tất cả”:",
+              "content": "",
+              "answer": [
+                  "Đạo đức",
+                  "Kinh doanh vận tải",
+                  "Hành vi"
+              ]
+            },
+            {
+              "name": "Các câu hỏi có phần đáp án chứa những từ sau thì chọn đáp áp đó:",
+              "content": "",
+              "answer": [
+                        "Chấp hành",
+                        "Bắt buộc",
+                        "Cơ quan có thẩm quyền",
+                        "Dùng thanh nối cứng",
+                        "Báo hiệu tạm thời",
+                        "Nghiêm cấm/bị nghiêm cấm",
+                        "Hiệu lệnh người điều khiển giao thông",
+                        "Xe chữa cháy làm nhiệm vụ",
+                        "Phương tiện giao thông đường sắt",
+                        "Đèn chiếu xa sang gần",
+                        "Về số thấp… gài số 1",
+                        "Giảm tốc độ (nếu có 2 đáp án cùng có cụm từ này, chọn đáp án bên phải)"]
+          },
+            {
+              "name": "Trong câu hỏi chứa những từ sau thì chọn đáp án dài nhất:",
+              "content": "",
+              "answer": [
+                        "Quan sát",
+                        "Kiểm tra",
+                        "Ở",
+                        "Tại",
+                        "Phải",
+                        "Trên",
+                        "Xe chữa cháy",
+              ]
+          },
+            {
+              "name": "Trong câu hỏi có ý liệt kê về các chủ đề sau thì chọn 2 đáp án (thường câu hỏi này chỉ 2 có đáp án):",
+              "content": "",
+              "answer": [
+                        "Đạo đức",
+                        "Nghĩa vụ",
+                        "Hành vi",
+                        "Trách nhiệm",
+                        "Khách",
+                        "Tham gia giao thông",
+                        "Văn hoá giao thông",
+                        "Tư tưởng Hồ Chí Minh",
+              ]
+          }
+      ],
+    },
+    {
+      "id": 3,
+      "name": "Câu hỏi về tốc độ xe",
+      "section": [
+            {
+              "name": "Trong câu hỏi về tốc độ có các mẹo sau:",
+              "content": "",
+              "answer": [
+                  "Trong khu dân cư: tốc độ 30 km/h (xe công nông)",
+                  "Trong khu dân cư: tốc độ 40 km/h (xe gắn máy, xe môtô)",
+                  "Trong khu dân cư: tốc độ 50 km/h (xe < 3,5 tấn)",
+                  "Ngoài khu dân cư: tốc độ 40 km/h – Chọn đáp án 1",
+                  "Ngoài khu dân cư: tốc độ 50 km/h – Chọn đáp án 3",
+                  "Ngoài khu dân cư: tốc độ 60 km/h – Chọn đáp án 4",
+                  "Ngoài khu dân cư: tốc độ 70 km/h – Chọn đáp án 2",
+                  "Ngoài khu dân cư: tốc độ 80 km/h – Chọn đáp án 1",
+                  "Trên đường cao tốc: chọn đáp án tốc độ cao nhất (trừ 30)"
+              ]
+            }
+      ],
+    },
+    {
+      "id": 4,
+      "name": "Câu hỏi dấu bằng lái",
+      "section": [
+          ,
+          {
+            "name": "B2 < hoặc 9 chỗ; < 3,5 tấn",
+            "content": "",
+            "answer": [
+                      "Chọn đáp án 2"
+                      ]
+        },
+          {
+            "name": "C < hoặc 9 chỗl > 3,5 tấn",
+            "content": "",
+            "answer": [
+                      "Chọn đáp án 3",
+            ]
+        },
+          {
+            "name": "FC",
+            "content": "",
+            "answer": [
+                      "Chọn đáp án 2",
+            ]
+        },
+          {
+            "name": "Tuổi tối đa lái xe dấu E",
+            "content": "",
+            "answer": [
+                      "Chọn đáp án 55 tuổi/nam và 50 tuổi/nữ",
+            ]
+        },
+          {
+            "name": "Xe tải",
+            "content": "",
+            "answer": [
+                      "Chọn đáp án 25 năm",
+            ]
+        },
+          {
+            "name": "Chở người > 9 chỗ",
+            "content": "",
+            "answer": [
+                      "Chọn đáp án 20 năm",
+            ]
+        }
+          
+      ],
+    },
+    {
+      "id": 5,
+      "name": "Câu hỏi độ tuổi tham gia giao thông",
+      "section": [
+          ,
+          {
+            "name": "16 tuổi",
+            "content": "",
+            "answer": [
+                      "Chọn xe máy dưới 50 cm3"
+                      ]
+        },
+          {
+            "name": "18 tuổi",
+            "content": "",
+            "answer": [
+                      "Chọn hạng A1, A2, B2",
+            ]
+        },
+          {
+            "name": "21 tuổi",
+            "content": "",
+            "answer": [
+                      "Chọn hạng C",
+            ]
+        },
+          {
+            "name": "24 tuổi",
+            "content": "",
+            "answer": [
+                      "Chọn hạng D",
+            ]
+        },
+          {
+            "name": "27 tuổi",
+            "content": "",
+            "answer": [
+                      "Chọn hạng E",
+            ]
+        },
+          {
+            "name": "Nam > 60 tuổi, nữ > 55 tuổi",
+            "content": "",
+            "answer": [
+                      "Chọn hạng B1",
+            ]
+        }
+          
+      ]
+      },
+    {
+      "id": 6,
+      "name": "Mẹo câu hỏi về niên hạn sử dụng xe",
+      "section": [
+          ,
+          {
+            "name": "Xe tải:",
+            "content": "",
+            "answer": [
+                      "25 năm"
+                      ]
+        },
+          {
+            "name": "Xe ô tô trên 9 chỗ:",
+            "content": "",
+            "answer": [
+                      "20 năm",
+            ]
+        }
+      ],
+    },
+    {
+      "id": 7,
+      "name": "Quy tắc cần nhớ về câu hỏi sa hình",
+      "section": [
+          {
+            "name": "Để trả lời các câu hỏi sa hình, cần thực hiện các bước sau:",
+            "content": "",
+            "answer": [
+                      "Bước 1: Xét xe trong giao lộ",
+                      "Bước 2: Xét xe ưu tiên (xe chữa cháy, xe quân sự – công an, xe cứu thương…)",
+                      "Bước 3: Xét xe đường ưu tiên (biển báo)",
+                      "Bước 4: Xét xe bên phải không vướng (từ ngã 4)",
+                      "Bước 5: Xét xe phải trước > đi thẳng > rẽ trái > quay đầu"
+                      ]
+        },
+          {
+            "name": "Xe ô tô trên 9 chỗ:",
+            "content": "",
+            "answer": [
+                      "20 năm",
+            ]
+        }
+      ],
+    },
+    {
+      "id": 8,
+      "name": "Mẹo trả lời câu hỏi về cấu tạo và sửa chữa",
+      "section": [
+          {
+            "name": "Công dụng hộp số ô tô",
+            "content": "",
+            "answer": [
+                      "Chọn chuyển động lùi"
+                      ]
+        },
+          {
+            "name": "Công dụng động cơ ô tô",
+            "content": "",
+            "answer": [
+                      "Chọn nhiệt năng thành cơ năng",
+            ]
+        },
+          {
+            "name": "Công dụng hệ thống truyền lực",
+            "content": "",
+            "answer": [
+                      "Chọn dùng để truyền"
+                      ]
+        },
+          {
+            "name": "Công dụng hệ thống lái",
+            "content": "",
+            "answer": [
+                      "Chọn chuyển hướng",
+            ]
+        },
+          {
+            "name": "Công dụng ly hợp",
+            "content": "",
+            "answer": [
+                      "Chọn dùng để truyền hoặc ngắt"
+                      ]
+        },
+          {
+            "name": "Động cơ 2 kỳ",
+            "content": "",
+            "answer": [
+                      "Chọn 2 hành trình",
+            ]
+        },
+          {
+            "name": "Động cơ 4 kỳ",
+            "content": "",
+            "answer": [
+                      "Chọn 4 hành trình",
+            ]
+        },
+          {
+            "name": "Kính chắn gió",
+            "content": "",
+            "answer": [
+                      "Chọn loại kính an toàn",
+            ]
+        },
+          {
+            "name": "Dây đai an toàn",
+            "content": "",
+            "answer": [
+                      "Chọn hãm giữ chặt",
+            ]
+        },
+          {
+            "name": "Âm lượng còi",
+            "content": "",
+            "answer": [
+                      "Chọn < 90 < 115db",
+            ]
+        },
+          {
+            "name": "Khi vào số tiến/lùi xe số tự động",
+            "content": "",
+            "answer": [
+                      "Chọn đạp phanh chân hết trành trình",
+            ]
+        },
+          {
+            "name": "Khi quay đầu",
+            "content": "",
+            "answer": [
+                      "Chọn đưa đầu xe về phía nguy hiểm",
+            ]
+        },
+          {
+            "name": "Điều khiển tăng số",
+            "content": "",
+            "answer": [
+                      "Chọn nhịp nhàng, chính xác",
+            ]
+        },
+          {
+            "name": "Điều khiển ô tô gần xe ngược chiều vào ban đêm",
+            "content": "",
+            "answer": [
+                      "Chọn đèn chiếu xa sang chiếu gần",
+            ]
+        },
+          {
+            "name": "Nhả phanh tay",
+            "content": "",
+            "answer": [
+                      "Chọn kéo cần phanh tay về phía sau, bóp khoá hãm",
+            ]
+        },
+          {
+            "name": "Khởi hành ô tô trên đường bằng",
+            "content": "",
+            "answer": [
+                      "Chọn đạp ly hợp trên hành trình",
+            ]
+        },
+          {
+            "name": "Điều kiện ô tô giảm số",
+            "content": "",
+            "answer": [
+                      "Chọn vù ga phù hợp với tốc độ",
+            ]
+        },
+          {
+            "name": "Điều kiện ô tô đường trơn",
+            "content": "",
+            "answer": [
+                      "Chọn không đánh lái ngoặt và phanh gấp",
+            ]
+        },
+          {
+            "name": "Nguyên nhân xăng không vào buồng phao của bộ chế hòa khí",
+            "content": "",
+            "answer": [
+                      "Chọn tắc bầu lọc",
+            ]
+        },
+          {
+            "name": "Nguyên nhân thông thường động cơ điezen không nổ",
+            "content": "",
+            "answer": [
+                      "Chọn không có tia lửa điện",
+            ]
+        },
+          {
+            "name": "Phương pháp khắc phục giclơ bị tắc",
+            "content": "",
+            "answer": [
+                      "Chọn thông lỗ giclơ bằng khí nén",
+            ]
+        },
+          {
+            "name": "Phương pháp điều chỉnh lửa sớm sang muộn",
+            "content": "",
+            "answer": [
+                      "Chọn cùng chiều với bộ cam",
+            ]
+        },
+          {
+            "name": "Phương pháp điều chỉnh lửa muộn sang sớm",
+            "content": "",
+            "answer": [
+                      "Chọn ngược chiều với bộ cam",
+            ]
+        }
+      ],
+    }
+  ],
+  "practice_tips" : [
+    {
+      "id": 1,
+      "name": "Chuẩn trước khi bắt đầu bài thi",
+      "comment": "Khi vào xe, người thi không bật đèn xi-nhan ngay. Vì đây được xem là tín hiệu cho thấy người thi đã sẵn sàng. Thay vào đó, vừa vào xe, người thi hãy tiến hành điều chỉnh ghế, điều chỉnh kính chiếu hậu vừa tầm mắt, thắt dây an toàn, hạ phanh tay, vào số 1… Khi đã chuẩn bị đầy đủ các bước và hít hở sâu để giảm căng thẳng, sau đó người bật xi-nhan để thông báo cho sát hạch viên bản thân đã sẵn sàng."
+    },
+    {
+      "id": 2,
+      "name": "Xuất phát",
+      "comment": "Khi có hiệu lệnh “Bắt đầu”, người thi mở côn cho xe chạy từ từ qua vạch xuất phát. Lưu ý từ khi có hiệu lệnh sau 20 giây xe vẫn chưa qua vạch xuất phát sẽ bị trừ 5 điểm, sau 30 giây bị loại thẳng."
+    },
+    {
+      "id": 3,
+      "name": "Dừng xe nhường đường người đi bộ",
+      "comment": "Ở bài này, xe cần dừng trước vạch trắng – phần kẻ sọc dành cho người đi bộ. Tuy nhiên cản trước cách vạch không quá 0,5m."
+    },
+    {
+      "id": 4,
+      "name": "Dừng và khởi hành ngang dốc",
+      "comment": "Khi vào bài thi này có một mẹo thi sa hình B2 là không cần đạp ga, chỉ cần mở côn để xe lăn bánh đến cột STOP. Chú ý, xe dừng quá cột STOP sẽ bị loại trực tiếp. Cho xe lăn bánh thấy vai cách cột STOP tầm 3 tấc thì cắt côn và phanh nhanh là được.Giữ chân côn từ từ khi thấy kim vòng tua máy xuống giữa 1 và 0 thì nhả phanh, đạp ga liên tục. Khi lên dốc xe cách vạch dừng không quá 50 cm, không để xe bị tụt dốc quá 50 cm."
+    },
+    {
+      "id": 5,
+      "name": "Bài thi qua vệt bánh xe và đường vòng vuông góc",
+      "comment": "Qua vệt bánh xe: Bánh xe trước và bánh xe sau bên phụ qua vùng giới hạn của vệt bánh xe. Nếu không qua vùng giới hạn, người thi sẽ bị loại thẳng. Mỗi lần bánh xe đè lên vạch sẽ bị trừ 5 điểm, quá 5 giây sẽ bị trừ thêm 5 điểm. Thời gian hoàn thành bài thi không quá 2 phút, nếu vượt qua 2 phút sẽ bị trừ 5 điểm.Qua đường vòng vuông góc: Canh sao để vai bạn ngang với góc đường thì đánh hết lái thật nhanh."
+    },
+    {
+      "id": 6,
+      "name": "Qua ngã tư có tín hiệu điều khiển giao thông",
+      "comment": "Khi thấy đèn tín hiệu, xe phải dừng trước vạch vàng 1m và cắt côn. Sau khi đợi đèn đỏ còn tầm 2 giây thì mở côn đi tiếp. Chú ý nếu thấy đèn xanh còn 3 – 4 giây cũng không nên đi vì nếu xe chưa qua hết gặp đèn đỏ sẽ bị trừ 10 điểm. Thời gian lái xe qua ngã tư là 20 giây. Sau 20 giây từ khi đèn xanh sáng lên mà xe chưa qua hết ngã tư bị trừ 5 điểm, sau 30 giây bị loại thẳng."
+    },
+    {
+      "id": 7,
+      "name": "Bài thi đường vòng quanh co",
+      "comment": "Với bài thi này áp dụng quy tắc “tiến bám lưng, lùi bám bụng”. Bánh xe không được đè vạch giới hạn. Mỗi lần đè sẽ bị trừ 5 điểm. Sau 5 giây bị trừ tiếp 5 điểm. Bài thi này cần hoàn thành trong 5 phút, sau 5 phút bị trừ 5 điểm. Xe không được chạm vạch hoặc đè vỉa hè. Khi nghe âm báo “Tưng” thì phanh lại và chạy ra khỏi chuồng. Bài thi thực hiện trong 2 phút."
+    },
+    {
+      "id": 8,
+      "name": "Bài thi tạm dừng ở nơi có đường sắt chạy qua",
+      "comment": "Xe phải dừng cách vách quy định không quá 50 cm. Nếu cách xa hơn 50 cm bị trừ 5 điểm. Dừng xe lố vạch quy định trừ 5 điểm. Mẹo sa hình B2 ở phần thi này là căn qua gương phụ trái. Nếu mắt người thi, mép dưới gương phụ và vạch dừng thẳng hàng thì đạp phanh và côn để xe dừng lại."
+    },
+    {
+      "id": 9,
+      "name": "Thay đổi số trên đường thẳng",
+      "comment": "Cho xe đi thẳng, cầm chắc vô lăng, nhả hết côn, phanh và đạp ga từ từ để xe tăng tốc. Khi xe qua biển “Bắt đầu” thì đạp chân côn vào số 2 rồi nhả chân côn, đạp chân ga để đi tiếp.Tốc độ tối thiểu phải trên 20 km/h. Khi gần như dừng lại thì cho về số 1 trước biển “Tốc độ tối đa cho phép”. Cuối cùng nhả côn, cho xe từ từ đi qua biển báo này. Để canh dễ dàng, khi thấy vai trùng với góc vuông thì đánh hết vô lăng sang phải, lùi xe vào chỗ đỗ khi xe ở góc 45 độ so với đường thẳng vỉa hè. Sau đó trả lái cho xe lùi khi nào bánh xe sau bên trái ngang với mép ngoài của xe. Xoay vô lăng sang trái và lùi dần vào chỗ đỗ. Cuối cùng điều chỉnh xe về đúng vị trí, chú ý giữ khoảng cách để dễ dàng chạy ra."
+    },
+    {
+      "id": 10,
+      "name": "Kết thúc bài thi",
+      "comment": "Khi kết thúc bài thi, người thi bật đèn xi nhan, phải lái xe qua hẳn vạch kết thúc. Nếu không bật xi-nhan sẽ bị trừ 5 điểm."
+    }
+  ]
+}
