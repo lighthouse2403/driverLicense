@@ -16,7 +16,10 @@
 #import "FLTGoogleMobileAdsPlugin.h"
 #import "FLTMediationNetworkExtrasProvider.h"
 #import "FLTMobileAds_Internal.h"
+#import "FLTNativeTemplateStyle.h"
+#import "GADTTemplateView.h"
 #import <GoogleMobileAds/GoogleMobileAds.h>
+#import <UIKit/UIKit.h>
 
 @class FLTAdInstanceManager;
 @protocol FLTNativeAdFactory;
@@ -87,6 +90,7 @@
 @property id<
     FLTMediationNetworkExtrasProvider> _Nullable mediationNetworkExtrasProvider;
 @property NSDictionary<NSString *, NSString *> *_Nullable adMobExtras;
+@property NSString *_Nonnull requestAgent;
 
 - (GADRequest *_Nonnull)asGADRequest:(NSString *_Nonnull)adUnitId;
 @end
@@ -99,9 +103,12 @@
 @property NSString *_Nullable adNetworkClassName;
 @property NSNumber *_Nullable latency;
 @property NSString *_Nullable dictionaryDescription;
-@property NSString *_Nullable credentialsDescription;
 @property NSDictionary<NSString *, NSString *> *_Nullable adUnitMapping;
 @property NSError *_Nullable error;
+@property NSString *_Nullable adSourceInstanceID;
+@property NSString *_Nullable adSourceID;
+@property NSString *_Nullable adSourceName;
+@property NSString *_Nullable adSourceInstanceName;
 
 - (instancetype _Nonnull)initWithResponseInfo:
     (GADAdNetworkResponseInfo *_Nonnull)responseInfo;
@@ -114,6 +121,8 @@
 @property NSString *_Nullable responseIdentifier;
 @property NSString *_Nullable adNetworkClassName;
 @property NSArray<FLTGADAdNetworkResponseInfo *> *_Nullable adNetworkInfoArray;
+@property FLTGADAdNetworkResponseInfo *_Nullable loadedAdNetworkResponseInfo;
+@property NSDictionary<NSString *, id> *_Nullable extrasDictionary;
 
 - (instancetype _Nonnull)initWithResponseInfo:
     (GADResponseInfo *_Nonnull)responseInfo;
@@ -219,25 +228,25 @@
 @end
 
 @interface FLTRewardedAd : FLTFullScreenAd
-- (instancetype _Nonnull)
-                 initWithAdUnitId:(NSString *_Nonnull)adUnitId
-                          request:(FLTAdRequest *_Nonnull)request
-               rootViewController:(UIViewController *_Nonnull)rootViewController
-    serverSideVerificationOptions:(FLTServerSideVerificationOptions *_Nullable)
-                                      serverSideVerificationOptions
-                             adId:(NSNumber *_Nonnull)adId;
+- (instancetype _Nonnull)initWithAdUnitId:(NSString *_Nonnull)adUnitId
+                                  request:(FLTAdRequest *_Nonnull)request
+                       rootViewController:
+                           (UIViewController *_Nonnull)rootViewController
+                                     adId:(NSNumber *_Nonnull)adId;
 - (GADRewardedAd *_Nullable)rewardedAd;
+- (void)setServerSideVerificationOptions:
+    (FLTServerSideVerificationOptions *_Nullable)serverSideVerificationOptions;
 @end
 
 @interface FLTRewardedInterstitialAd : FLTFullScreenAd
-- (instancetype _Nonnull)
-                 initWithAdUnitId:(NSString *_Nonnull)adUnitId
-                          request:(FLTAdRequest *_Nonnull)request
-               rootViewController:(UIViewController *_Nonnull)rootViewController
-    serverSideVerificationOptions:(FLTServerSideVerificationOptions *_Nullable)
-                                      serverSideVerificationOptions
-                             adId:(NSNumber *_Nonnull)adId;
+- (instancetype _Nonnull)initWithAdUnitId:(NSString *_Nonnull)adUnitId
+                                  request:(FLTAdRequest *_Nonnull)request
+                       rootViewController:
+                           (UIViewController *_Nonnull)rootViewController
+                                     adId:(NSNumber *_Nonnull)adId;
 - (GADRewardedInterstitialAd *_Nullable)rewardedInterstitialAd;
+- (void)setServerSideVerificationOptions:
+    (FLTServerSideVerificationOptions *_Nullable)serverSideVerificationOptions;
 @end
 
 @interface FLTAppOpenAd : FLTFullScreenAd
@@ -287,13 +296,14 @@
     : FLTBaseAd <FLTAd, FlutterPlatformView, GADNativeAdDelegate,
                  GADNativeAdLoaderDelegate>
 - (instancetype _Nonnull)
-      initWithAdUnitId:(NSString *_Nonnull)adUnitId
-               request:(FLTAdRequest *_Nonnull)request
-       nativeAdFactory:(NSObject<FLTNativeAdFactory> *_Nonnull)nativeAdFactory
-         customOptions:(NSDictionary<NSString *, id> *_Nullable)customOptions
-    rootViewController:(UIViewController *_Nonnull)rootViewController
-                  adId:(NSNumber *_Nonnull)adId
-       nativeAdOptions:(FLTNativeAdOptions *_Nullable)nativeAdOptions;
+       initWithAdUnitId:(NSString *_Nonnull)adUnitId
+                request:(FLTAdRequest *_Nonnull)request
+        nativeAdFactory:(NSObject<FLTNativeAdFactory> *_Nonnull)nativeAdFactory
+          customOptions:(NSDictionary<NSString *, id> *_Nullable)customOptions
+     rootViewController:(UIViewController *_Nonnull)rootViewController
+                   adId:(NSNumber *_Nonnull)adId
+        nativeAdOptions:(FLTNativeAdOptions *_Nullable)nativeAdOptions
+    nativeTemplateStyle:(FLTNativeTemplateStyle *_Nullable)nativeTemplateStyle;
 - (GADAdLoader *_Nonnull)adLoader;
 @end
 

@@ -100,7 +100,7 @@ class _TestListState extends State<TestList> {
   }
 
   void goToTestPage(int index) {
-    var finishedQuestion = finishedQuestions.where((element) => element.testId == index) ?? [];
+    var finishedQuestion = finishedQuestions.where((element) => element.testId == index);
     TestModel selectedTest = testArray[index];
 
     List<String> selectedQuestionIDs = selectedTest.questionIds.map((e) => '${e}').toList();
