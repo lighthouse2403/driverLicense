@@ -1,7 +1,9 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:license/more/theory_tip.dart';
+import 'package:license/more/model/theory_tip.dart';
+
+import 'child_view/section_tip.dart';
 
 class Tips extends StatelessWidget {
   Tips({super.key});
@@ -14,15 +16,38 @@ class Tips extends StatelessWidget {
     tips = List<TheoryTipModel>.from(theoryTipData["theory_tips"].map((json) {
       return TheoryTipModel.fromJson(json);
     }));
-    print('tips ${tips.length}');
   }
 
   @override
   Widget build(BuildContext context) {
-    return FutureBuilder(
-        future: loadTips(),
-        builder: (context, snapshot) {
-          return Container(color: Colors.white);
-        });
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.green,
+        title: const Text(
+          'Mẹo thi lý thuyết',
+          style: TextStyle(
+              fontSize: 18,
+              fontWeight: FontWeight.w600,
+              color: Colors.white
+          ),
+        ),
+      ),
+      body: FutureBuilder(
+          future: loadTips(),
+          builder: (context, snapshot) {
+            return Container(
+                color: Colors.white,
+                padding: const EdgeInsets.symmetric(vertical: 20),
+                child: ListView.builder(
+                    itemCount: tips.length,
+                    itemBuilder: (context, index) {
+                      return SectionTip(
+                        tipModel: tips[index],
+                      );
+                    })
+            );
+          }
+          )
+    );
   }
 }
