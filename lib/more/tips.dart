@@ -1,53 +1,83 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
-import 'package:license/more/model/theory_tip.dart';
+import 'package:license/more/practice_tips.dart';
+import 'package:license/more/theory_tips.dart';
 
-import 'child_view/section_tip.dart';
+class Tips extends StatefulWidget {
+  const Tips({Key? key}) : super(key: key);
 
-class Tips extends StatelessWidget {
-  Tips({super.key});
+  @override
+  State<Tips> createState() => _TipsState();
+}
 
-  List<TheoryTipModel> tips = [];
+class _TipsState extends State<Tips>
+    with SingleTickerProviderStateMixin {
+  late final TabController _tabController;
 
-  Future<void> loadTips() async {
-    final String theoryResponse = await rootBundle.loadString('assets/json/tips.json');
-    final theoryTipData = await json.decode(theoryResponse);
-    tips = List<TheoryTipModel>.from(theoryTipData["theory_tips"].map((json) {
-      return TheoryTipModel.fromJson(json);
-    }));
+  final List<String> tabTitles = [
+    'Mẹo thi lý thuyết',
+    'Mẹo thực hành',
+  ];
+
+  @override
+  void initState() {
+    super.initState();
+    _tabController = TabController(length: tabTitles.length, vsync: this);
+  }
+
+  @override
+  void dispose() {
+    _tabController.dispose();
+    super.dispose();
   }
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
+      backgroundColor: Colors.white,
       appBar: AppBar(
         backgroundColor: Colors.green,
         title: const Text(
-          'Mẹo thi lý thuyết',
-          style: TextStyle(
-              fontSize: 18,
-              fontWeight: FontWeight.w600,
-              color: Colors.white
-          ),
-        ),
+          'Mẹo',
+          style: TextStyle(fontWeight: FontWeight.normal),
+        )
       ),
-      body: FutureBuilder(
-          future: loadTips(),
-          builder: (context, snapshot) {
-            return Container(
-                color: Colors.white,
-                padding: const EdgeInsets.symmetric(vertical: 20),
-                child: ListView.builder(
-                    itemCount: tips.length,
-                    itemBuilder: (context, index) {
-                      return SectionTip(
-                        tipModel: tips[index],
-                      );
-                    })
-            );
-          }
-          )
+      body: Column(      // Column
+        children: <Widget>[
+          Container(
+            decoration: const BoxDecoration(
+              color: Colors.white,
+            ),       // Tab Bar color change
+            child: TabBar(           // TabBar
+              controller: _tabController,
+              unselectedLabelColor: Colors.black.withOpacity(0.4),
+              labelColor: Colors.green,
+              indicatorWeight: 2,
+              indicatorColor: Colors.green,
+              indicatorPadding: const EdgeInsets.symmetric(horizontal: 30),
+              tabs: tabTitles.map((e) => Tab(
+                  child: Text(
+                    e,
+                    style: const TextStyle(
+                      fontSize: 16,
+                      fontWeight: FontWeight.w600
+                    ),
+                  ))
+              ).toList(),
+              dividerColor: Colors.transparent,
+            ),
+          ),
+          Expanded(
+            child: TabBarView(
+              controller: _tabController,
+              children: [
+                TheoryTips(),
+                PracticeTips(),
+              ],
+            ),
+          ),
+        ],
+      )
     );
   }
 }

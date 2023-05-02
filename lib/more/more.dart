@@ -6,6 +6,7 @@ import 'package:license/Database/sqlHelper.dart';
 import 'package:license/Theory/questionPage.dart';
 import 'package:license/more/model/more_model.dart';
 import 'package:license/more/child_view/more_row.dart';
+import 'package:license/more/theory_tips.dart';
 import 'package:license/more/tips.dart';
 
 import '../Theory/Model/QuestionModel.dart';

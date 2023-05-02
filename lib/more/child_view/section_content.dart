@@ -1,7 +1,5 @@
-import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:license/more/model/section_tip.dart';
-import 'package:license/more/model/theory_tip.dart';
 
 class SectionContent extends StatelessWidget {
   SectionContent({super.key, required this.sectionModel});
