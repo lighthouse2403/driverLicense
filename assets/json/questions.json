@@ -8,7 +8,7 @@
       "answerList": ["Phần mặt đường và lề đường.", "Phần đường xe chạy.", "Phần đường xe cơ giới."],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": "Lề đường không sử dụng cho các phương tiện giao thông qua lại"
+      "comment": "Phần đường xe chạy là đáp án đúng. Lề đường không sử dụng cho các phương tiện giao thông qua lại"
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "answerList": ["Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, sử dụng cho xe chạy", "Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có bề rộng đủ cho xe chạy an toàn.", "Là một phần của phần đường xe chạy được chia theo chiều dọc của đường, có đủ bề rộng cho xe ô tô chạy an toàn"],
       "answerIndex": 1,
       "isDeadPoint": false,
-      "comment": "Có bề rộng đủ cho xe chạy an toàn"
+      "comment": "Làn đường là phần đường được chia theo chiều dọc của đường và phải đảm bảo có bề rộng đủ cho xe chạy an toàn"
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "answerList": ["Là khoảng trống có kích thước giới hạn về chiều cao, chiều rộng của đường, cầu, bến phà, hầm đường bộ để các xe kể cả hàng hóa xếp trên xe đi qua được an toàn.", "Là khoảng trống có kích thước giới hạn về chiều rộng của đường, cầu, bến phà, hầm trên đường bộ để các xe kể cả hàng hóa xếp trên xe đi qua được an toàn.", "Là khoảng trống có kích thước giới hạn về chiều cao của cầu, bến phà, hầm trên đường bộ để các xe đi qua được an toàn."],
       "answerIndex": 0,
       "isDeadPoint": false,
-      "comment": "Giới hạn về chiều cao, chiều rộng"
+      "comment": "Khổ giới hạn phải bao gồm cả giới hạn về chiều cao và chiều rộng"
     },
     {
       "id": 4,

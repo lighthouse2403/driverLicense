@@ -14,15 +14,43 @@ class CommentRow extends StatelessWidget{
             borderRadius: BorderRadius.circular(6),
             color: Colors.green.withOpacity(0.5)
         ),
-        child: Text(
-          comment,
-          style: const TextStyle(
-              fontWeight: FontWeight.w400,
-              fontSize: 16,
-              color: Colors.black,
-              height: 1.3
-          ),
-        ),
+        child: Column(
+          children: [
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: const [
+                Icon(
+                  Icons.question_answer,
+                  color: Colors.black,
+                  size: 24.0,
+                ),
+                SizedBox(width: 5,),
+                Center(
+                  child: Text(
+                      'Giải thích đáp án:',
+                      style: TextStyle(
+                          fontWeight: FontWeight.w500,
+                          fontSize: 18,
+                          color: Colors.black,
+                          height: 1.3
+                      )
+                  ),
+                )
+              ],
+            ),
+            const SizedBox(height: 10),
+            Text(
+              comment,
+              style: const TextStyle(
+                  fontWeight: FontWeight.w400,
+                  fontSize: 16,
+                  color: Colors.black,
+                  height: 1.3
+              ),
+            )
+          ],
+        )
+
       )
     );
   }

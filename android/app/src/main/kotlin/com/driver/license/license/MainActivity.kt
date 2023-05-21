@@ -1,4 +1,4 @@
-package com.driver.license.license
+package com.driver.license
 
 import io.flutter.embedding.android.FlutterActivity
 
