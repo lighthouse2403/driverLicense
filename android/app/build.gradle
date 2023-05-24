@@ -12,12 +12,12 @@ if (flutterRoot == null) {
 
 def flutterVersionCode = localProperties.getProperty('flutter.versionCode')
 if (flutterVersionCode == null) {
-    flutterVersionCode = '1'
+    flutterVersionCode = '4'
 }
 
 def flutterVersionName = localProperties.getProperty('flutter.versionName')
 if (flutterVersionName == null) {
-    flutterVersionName = '1.0'
+    flutterVersionName = '1.0.0'
 }
 
 apply plugin: 'com.android.application'
@@ -47,11 +47,11 @@ android {
         main.java.srcDirs += 'src/main/kotlin'
     }
 
-    namespace 'com.driver.license'
+    namespace 'com.beacon.driver.license'
 
     defaultConfig {
         // TODO: Specify your own unique Application ID (https://developer.android.com/studio/build/application-id.html).
-        applicationId "com.driver.license"
+        applicationId "com.beacon.driver.license"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-gradle-build-configuration.
         minSdkVersion 19
@@ -90,5 +90,4 @@ dependencies {
     // Firebase Analytics (Java)
     implementation 'com.google.firebase:firebase-analytics'
     implementation("androidx.multidex:multidex:2.0.1")
-
 }

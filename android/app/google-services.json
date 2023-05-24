@@ -10,7 +10,7 @@
       "client_info": {
         "mobilesdk_app_id": "1:457970911968:android:0d0b659dc1a2614ff51e85",
         "android_client_info": {
-          "package_name": "com.driver.license"
+          "package_name": "com.beacon.driver.license"
         }
       },
       "oauth_client": [
@@ -35,7 +35,7 @@
               "client_id": "457970911968-ftej4b2sja2580jpt65m60oh71irv2j1.apps.googleusercontent.com",
               "client_type": 2,
               "ios_info": {
-                "bundle_id": "com.driver.license"
+                "bundle_id": "com.beacon.driver.license"
               }
             }
           ]
