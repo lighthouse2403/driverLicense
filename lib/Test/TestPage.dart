@@ -114,17 +114,15 @@ class TestPageState extends State<TestPage> {
   }
 
   void reTest() async {
-    status = TestStatus.none;
+    status = TestStatus.testing;
     stopTimer();
     SQLHelper.deleteAllQuestionOnTest(widget.test.id);
     for (var question in widget.questionList) {
       question.selectedIndex = -1;
     }
-    
-    print('resetquestion: ${widget.questionList.map((e) => e.selectedIndex)}');
-    await getQuestionList();
 
-    status = TestStatus.testing;
+    widget.finishedQuestionList = [];
+
     currentPage = 1;
     pageController.jumpToPage(0);
     startTimer();

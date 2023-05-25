@@ -27,7 +27,6 @@ class SQLHelper {
     // Get a reference to the database.
     final db = await SQLHelper.db(tableName);
 
-    print('insertQuestion ${question.toJson().toString()}');
     // Insert the Dog into the correct table. You might also specify the
     // `conflictAlgorithm` to use in case the same dog is inserted twice.
     //
@@ -58,6 +57,13 @@ class SQLHelper {
     final db = await SQLHelper.db(tableName);
     final List<Map<String, dynamic>> maps = await db.query(tableName, where: 'id = ?', whereArgs: [id]);
     return QuestionModel.fromDatabase(maps.first);
+  }
+
+  Future<List<QuestionModel>> getQuestionsOnAllTest() async {
+    const tableName = 'questions_in_test';
+    final db = await SQLHelper.db(tableName);
+    final List<Map<String, dynamic>> list = await db.query(tableName);
+    return list.map((e) => QuestionModel.fromDatabase(e)).toList();
   }
 
   Future<List<QuestionModel>> getAllQuestionOnTest(int testId) async {
@@ -113,7 +119,6 @@ class SQLHelper {
 
   Future<void> updateQuestionOnTest(QuestionModel question, String tableName) async {
     final db = await SQLHelper.db(tableName);
-    print('updateQuestionOnTest ${question.toJson().toString()}');
 
     await db.update(
       tableName,
