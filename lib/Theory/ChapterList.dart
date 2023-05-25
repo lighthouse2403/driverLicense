@@ -36,7 +36,6 @@ class _ChapterListState extends State<ChapterList> {
       if (chapter.id == chapterArray.length) {
         var questions = finishedQuestions.where((element) => element.isDeadPoint).toList();
 
-        print('deathpoint ${questions.length}');
         chapter.finishedCount = questions.length;
       }
     }
@@ -53,7 +52,6 @@ class _ChapterListState extends State<ChapterList> {
     if (chapterId == chapterArray.last.id) {
       // Death point
       questions = widget.questionList.where((element) => element.isDeadPoint).toList();
-      print('deathpoint ${questions.length}');
       chapter = chapterArray.last;
     }
 

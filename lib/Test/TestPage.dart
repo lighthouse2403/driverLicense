@@ -44,6 +44,9 @@ class TestPageState extends State<TestPage> {
   void initState() {
     // TODO: implement initState
     super.initState();
+    if (widget.test.status == 1) {
+      status = TestStatus.done;
+    }
     AdHelper.showAds();
   }
 
@@ -81,7 +84,11 @@ class TestPageState extends State<TestPage> {
   
   // Step 4
   void stopTimer() {
-      setState(() => countdownTimer!.cancel());
+    setState(() {
+      if (countdownTimer != null) {
+        countdownTimer!.cancel();
+      }
+    });
   }
 
   // Step 6
@@ -110,7 +117,13 @@ class TestPageState extends State<TestPage> {
     status = TestStatus.none;
     stopTimer();
     SQLHelper.deleteAllQuestionOnTest(widget.test.id);
+    for (var question in widget.questionList) {
+      question.selectedIndex = -1;
+    }
+    
+    print('resetquestion: ${widget.questionList.map((e) => e.selectedIndex)}');
     await getQuestionList();
+
     status = TestStatus.testing;
     currentPage = 1;
     pageController.jumpToPage(0);
@@ -133,14 +146,13 @@ class TestPageState extends State<TestPage> {
   }
 
   Future<void> getQuestionList() async {
-    if (status != TestStatus.none) {
+    if (status == TestStatus.testing) {
       return;
     }
 
-    for (var question in widget.questionList) {
-      if (widget.finishedQuestionList.where((element) => (element.id == question.id) && element.testId == widget.test.id ).isNotEmpty) {
-          question = widget.finishedQuestionList.where((element) => element.id == question.id).first;
-      }
+    for (var finishedQuestion in widget.finishedQuestionList) {
+      widget.questionList.where((e) => e.id == finishedQuestion.id).first.selectedIndex = finishedQuestion.selectedIndex;
+      widget.questionList.where((e) => e.id == finishedQuestion.id).first.testId = finishedQuestion.testId;
     }
   }
 
@@ -161,7 +173,6 @@ class TestPageState extends State<TestPage> {
     final minutes = strDigits(testingDuration.inMinutes.remainder(60));
     final seconds = strDigits(testingDuration.inSeconds.remainder(60));
     var testStatus = 'Bắt đầu';
-
     switch (status) {
       case TestStatus.testing:
         testStatus = 'Kết thúc';

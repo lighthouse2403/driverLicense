@@ -13,7 +13,7 @@ class TestRow extends StatelessWidget {
     String status = 'LÀM BÀI';
 
     if (testModel.status == 1) {
-      status = testModel.exactCount >= (testModel.questionIds.length - 2) ? 'ĐẠT' : 'TRƯỢT';
+      status = testModel.exactCount >= (testModel.licenseType?.require ?? testModel.questionIds.length - 2) ? 'ĐẠT' : 'TRƯỢT';
       strokeColor = testModel.exactCount < (testModel.licenseType?.require ?? 45) ? Colors.red : strokeColor;
     }
 

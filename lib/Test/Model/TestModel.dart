@@ -12,11 +12,12 @@ class TestModel {
   LicenseTypeModel? licenseType;
 
    TestModel({
-    required this.id,
-    required this.status,
-    required this.finishedCount,
-    required this.total,
-    required this.hasDeadthPoint,
+      required this.id,
+      required this.status,
+      required this.finishedCount,
+      required this.total,
+      required this.hasDeadthPoint,
+      required this.licenseType,
   });
 
   TestModel.fromJson(Map<String, dynamic> json) {
@@ -25,6 +26,7 @@ class TestModel {
     questionIds = json['questionIds'];
     finishedCount = json['finishedCount'];
     total = json['total'];
+    hasDeadthPoint = json['hasDeadthPoint'];
     hasDeadthPoint = json['hasDeadthPoint'];
 
     if (json['exactCount'] != null) {

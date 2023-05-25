@@ -25,9 +25,7 @@ class _TestListState extends State<TestList> {
   List<LicenseTypeModel>? licenseTypes;
 
   List<QuestionModel> getRandomTests(List<QuestionModel> parentQuestions, int count) {
-
     List<QuestionModel> randomQuestion = List.generate(count, (_) => parentQuestions[random.nextInt(parentQuestions.length)]);
-
     return randomQuestion;
   }
 
@@ -48,7 +46,9 @@ class _TestListState extends State<TestList> {
     }
 
     int newRandomId = testArray.length;
-    TestModel newRandomTest = TestModel(id: newRandomId, status: 0, finishedCount: 0, total: 35, hasDeadthPoint: true);
+    LicenseTypeModel? licenseType = licenseTypes?.where((element) => element.id == currentLicenseTypeId).first;
+
+    TestModel newRandomTest = TestModel(id: newRandomId, status: 0, finishedCount: 0, total: 35, hasDeadthPoint: true, licenseType: licenseType);
     newRandomTest.licenseType = licenseTypes?.where((element) => element.id == currentLicenseTypeId).first;
 
     newRandomTest.questionIds = randomQuestion.map((e) => '${e.id}').toList();
