@@ -26,11 +26,14 @@ class _MoreState extends State<More> {
   List<QuestionModel> wrongQuestions = [];
 
   @override
-  void initState() async {
+  void initState() {
     // TODO: implement initState
     super.initState();
+  }
+
+  Future<void> loadWrongQuestion() async {
     List<QuestionModel> questionsOnAllTest = await SQLHelper().getQuestionsOnAllTest();
-    wrongQuestions = questionsOnAllTest.where((element) => element.selectedIndex != element.answerIndex).toList();
+    wrongQuestions = questionsOnAllTest.where((element) => (element.selectedIndex != element.answerIndex) && element.selectedIndex != -1).toSet().toList();
   }
 
   @override
@@ -41,23 +44,28 @@ class _MoreState extends State<More> {
           title: const Text('Tiện ích'),
           backgroundColor: Colors.green,
         ),
-        body: Container(
-          margin: const EdgeInsets.all(10),
-          child: GridView.builder(
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2,
-              ),
-              itemCount: moreList.length,
-              shrinkWrap: false,
-              itemBuilder: (BuildContext context, int index) {
-                return InkWell(
-                  onTap: () {
-                    gotoDetail(index);
-                  },
-                  child: MoreRow(moreModel: moreList[index])
+        body: FutureBuilder(
+            future: loadWrongQuestion(),
+            builder: (context, item) {
+              return Container(
+                  margin: const EdgeInsets.all(10),
+                  child: GridView.builder(
+                      gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+                        crossAxisCount: 2,
+                      ),
+                      itemCount: moreList.length,
+                      shrinkWrap: false,
+                      itemBuilder: (BuildContext context, int index) {
+                        return InkWell(
+                            onTap: () {
+                              gotoDetail(index);
+                            },
+                            child: MoreRow(moreModel: moreList[index])
+                        );
+                      }
+                  ),
                 );
-              }
-              ),
+            }
         )
     );
   }
