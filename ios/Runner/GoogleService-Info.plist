@@ -3,21 +3,21 @@
 <plist version="1.0">
 <dict>
 	<key>CLIENT_ID</key>
-	<string>457970911968-ftej4b2sja2580jpt65m60oh71irv2j1.apps.googleusercontent.com</string>
+	<string>855984490695-r2ghgkhjnjcp6f93dfopk70uote87f9u.apps.googleusercontent.com</string>
 	<key>REVERSED_CLIENT_ID</key>
-	<string>com.googleusercontent.apps.457970911968-ftej4b2sja2580jpt65m60oh71irv2j1</string>
+	<string>com.googleusercontent.apps.855984490695-r2ghgkhjnjcp6f93dfopk70uote87f9u</string>
 	<key>API_KEY</key>
-	<string>AIzaSyB_g2qNXwgJZNMmq1f6fojWwD4JRP5lRyI</string>
+	<string>AIzaSyDI5gYkmW7od5GYj7MGK9truWICrx4OMDg</string>
 	<key>GCM_SENDER_ID</key>
-	<string>457970911968</string>
+	<string>855984490695</string>
 	<key>PLIST_VERSION</key>
 	<string>1</string>
 	<key>BUNDLE_ID</key>
 	<string>com.driver.license</string>
 	<key>PROJECT_ID</key>
-	<string>driver-license-6d9e1</string>
+	<string>driver-licens</string>
 	<key>STORAGE_BUCKET</key>
-	<string>driver-license-6d9e1.appspot.com</string>
+	<string>driver-licens.appspot.com</string>
 	<key>IS_ADS_ENABLED</key>
 	<false></false>
 	<key>IS_ANALYTICS_ENABLED</key>
@@ -29,6 +29,6 @@
 	<key>IS_SIGNIN_ENABLED</key>
 	<true></true>
 	<key>GOOGLE_APP_ID</key>
-	<string>1:457970911968:ios:c143e50e57d7b573f51e85</string>
+	<string>1:855984490695:ios:70f09987c05a6d773856e2</string>
 </dict>
 </plist>
