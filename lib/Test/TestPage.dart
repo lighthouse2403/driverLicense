@@ -17,6 +17,7 @@ enum TestStatus {
   done,
 }
 
+// ignore: must_be_immutable
 class TestPage extends StatefulWidget {
   TestPage({super.key, required this.test, required this.finishedQuestionList, required this.questionList});
   // final TestModel test;
