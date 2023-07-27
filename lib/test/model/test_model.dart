@@ -1,4 +1,4 @@
-import 'package:license/Setting/Model/license_type_model.dart';
+import 'package:license/setting/model/license_model.dart';
 
 class TestModel {
   int id = 0 ;
@@ -16,7 +16,7 @@ class TestModel {
       required this.finishedCount,
       required this.total,
       required this.hasDeadthPoint,
-      required this.licenseType,
+     required this.licenseType
   });
 
   TestModel.fromJson(Map<String, dynamic> json) {
@@ -25,7 +25,6 @@ class TestModel {
     questionIds = json['questionIds'];
     finishedCount = json['finishedCount'];
     total = json['total'];
-    hasDeadthPoint = json['hasDeadthPoint'];
     hasDeadthPoint = json['hasDeadthPoint'];
 
     if (json['exactCount'] != null) {

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:license/test_list/test_page.dart';
+import 'package:license/test/test_page.dart';
 import 'package:license/theory/models/theory_question_model.dart';
 
 class QuestionInTestRow extends StatelessWidget {

@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:license/database/sql_helper.dart';
-import 'package:license/test_list/model/test_model.dart';
-import 'package:license/test_list/question_in_test_row.dart';
-import 'package:license/test_list/test_page.dart';
+import 'package:license/test/model/test_model.dart';
+import 'package:license/test/question_in_test_row.dart';
+import 'package:license/test/test_page.dart';
 import 'package:license/theory/comment_row.dart';
 import 'package:license/theory/models/theory_question_model.dart';
 import 'package:license/theory/question_row.dart';

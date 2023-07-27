@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:license/customer_widget/circular_countdown.dart';
-import 'package:license/test_list/model/test_model.dart';
+import 'package:license/test/model/test_model.dart';
 
 class TestRow extends StatelessWidget {
   TestRow({super.key, required this.testModel});

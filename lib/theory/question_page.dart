@@ -1,7 +1,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:license/ads/ads_helper.dart';
-import 'package:license/test_list/horizontal_tab.dart';
+import 'package:license/test/horizontal_tab.dart';
 import 'package:license/theory/models/theory_question_model.dart';
 import 'package:license/theory/question_detail.dart';
 

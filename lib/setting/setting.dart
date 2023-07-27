@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:license/setting/model/license_type_model.dart';
+import 'package:license/setting/model/license_model.dart';
 import 'package:license/setting/setting_row.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

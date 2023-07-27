@@ -1,7 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
-import 'package:license/test_list/horizontal_tab.dart';
+import 'package:license/test/horizontal_tab.dart';
 import 'package:license/trafficSign/Model/traffic_sign_model.dart';
 import 'package:license/trafficSign/traffic_sign_page.dart';
 

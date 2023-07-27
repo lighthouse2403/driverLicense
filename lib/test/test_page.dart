@@ -2,12 +2,12 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:license/ads/ads_helper.dart';
 import 'package:license/database/sql_helper.dart';
-import 'package:license/test_list/horizontal_tab.dart';
-import 'package:license/test_list/model/test_model.dart';
-import 'package:license/test_list/result_button.dart';
-import 'package:license/test_list/test_detail.dart';
-import 'package:license/test_list/test_result.dart';
-import 'package:license/test_list/time_screen.dart';
+import 'package:license/test/horizontal_tab.dart';
+import 'package:license/test/model/test_model.dart';
+import 'package:license/test/result_button.dart';
+import 'package:license/test/test_detail.dart';
+import 'package:license/test/test_result.dart';
+import 'package:license/test/time_screen.dart';
 import 'package:license/theory/models/theory_question_model.dart';
 
 enum TestStatus {

@@ -4,7 +4,7 @@ import 'package:flutter/services.dart';
 import 'package:license/ads/ads_helper.dart';
 import 'package:license/more/more.dart';
 import 'package:license/setting/setting.dart';
-import 'package:license/test_list/test_list.dart';
+import 'package:license/test/test_list.dart';
 import 'package:license/theory/chapter_list.dart';
 import 'package:license/theory/models/theory_question_model.dart';
 import 'package:license/trafficSign/traffic_sIgn.dart';

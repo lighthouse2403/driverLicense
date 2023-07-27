@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:license/setting/model/license_type_model.dart';
+import 'package:license/setting/model/license_model.dart';
 
 class SettingRowWidget extends StatelessWidget {
   SettingRowWidget({super.key, required this.licenseType, required this.selectedLicenseId});

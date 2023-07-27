@@ -1,5 +1,5 @@
 import 'package:flutter/foundation.dart';
-import 'package:license/test_list/model/test_model.dart';
+import 'package:license/test/model/test_model.dart';
 import 'package:license/theory/models/theory_question_model.dart';
 import 'package:sqflite/sqflite.dart' as sql;
 

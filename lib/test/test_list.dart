@@ -2,11 +2,12 @@ import 'dart:convert';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:license/common/constant.dart';
 import 'package:license/database/sql_helper.dart';
-import 'package:license/setting/model/license_type_model.dart';
-import 'package:license/test_list/model/test_model.dart';
-import 'package:license/test_list/test_page.dart';
-import 'package:license/test_list/test_row.dart';
+import 'package:license/setting/model/license_model.dart';
+import 'package:license/test/model/test_model.dart';
+import 'package:license/test/test_page.dart';
+import 'package:license/test/test_row.dart';
 import 'package:license/theory/models/theory_question_model.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
@@ -21,7 +22,7 @@ class _TestListState extends State<TestList> {
   List<QuestionModel> finishedQuestions = [];
   List<QuestionModel> questionList = [];
   final random = Random();
-  List<LicenseTypeModel>? licenseTypes;
+  List<LicenseTypeModel> licenseTypes = [];
 
   List<QuestionModel> getRandomTests(List<QuestionModel> parentQuestions, int count) {
     List<QuestionModel> randomQuestion = List.generate(count, (_) => parentQuestions[random.nextInt(parentQuestions.length)]);
@@ -45,10 +46,16 @@ class _TestListState extends State<TestList> {
     }
 
     int newRandomId = testArray.length;
-    LicenseTypeModel? licenseType = licenseTypes?.where((element) => element.id == currentLicenseTypeId).first;
+    LicenseTypeModel? currentLicenseType = licenseTypes.where((element) => element.id == currentLicenseTypeId).firstOrNull;
 
-    TestModel newRandomTest = TestModel(id: newRandomId, status: 0, finishedCount: 0, total: 35, hasDeadthPoint: true, licenseType: licenseType);
-    newRandomTest.licenseType = licenseTypes?.where((element) => element.id == currentLicenseTypeId).first as LicenseTypeModel?;
+    TestModel newRandomTest = TestModel(
+        id: newRandomId,
+        status: 0,
+        finishedCount: 0,
+        total: 35,
+        hasDeadthPoint: true,
+        licenseType: currentLicenseType
+    );
 
     newRandomTest.questionIds = randomQuestion.map((e) => '${e.id}').toList();
 
@@ -89,9 +96,11 @@ class _TestListState extends State<TestList> {
 
     // Update question information in the test
     for (var test in testArray) {
+      LicenseTypeModel? currentLicenseType = licenseTypes.where((element) => element.id == licenseId).firstOrNull;
+
       test.finishedCount = finishedQuestions.where((element) => element.testId == test.id).length;
       test.exactCount = finishedQuestions.where((element) => (element.testId == test.id) && (element.selectedIndex == element.answerIndex)).length;
-      test.licenseType = licenseTypes?.where((element) => element.id == licenseId).first;
+      test.licenseType = currentLicenseType;
       if (finishedTest.map((e) => e.id).contains(test.id)) {
         test.status = 1;
       }
