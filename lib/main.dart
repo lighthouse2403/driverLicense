@@ -1,8 +1,6 @@
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:flutter/material.dart';
-import 'package:license/bottomTabBar/bottomTabBar.dart';
-import 'package:firebase_core/firebase_core.dart';
-import 'firebase_options.dart';
+import 'package:license/bottom_tab_bar/bottom_tab_bar.dart';
 
 Future<void> main() async {
 

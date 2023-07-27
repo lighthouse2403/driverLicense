@@ -2,9 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:license/more/model/practice_tip.dart';
-import 'package:license/more/model/theory_tip.dart';
 import 'package:license/more/practice_section.dart';
-import 'child_view/section_tip.dart';
 
 class PracticeTips extends StatelessWidget {
   PracticeTips({super.key});

@@ -1,14 +1,14 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
-import 'package:license/CustomWidget/alert.dart';
-import 'package:license/Database/sqlHelper.dart';
-import 'package:license/Theory/questionPage.dart';
+import 'package:license/chat/chat.dart';
+import 'package:license/customer_widget/alert.dart';
+import 'package:license/database/sql_helper.dart';
 import 'package:license/more/model/more_model.dart';
 import 'package:license/more/child_view/more_row.dart';
 import 'package:license/more/tips.dart';
-
-import '../Theory/Model/QuestionModel.dart';
+import 'package:license/theory/models/theory_question_model.dart';
+import 'package:license/theory/question_page.dart';
 
 class More extends StatefulWidget {
   More({super.key});
@@ -21,6 +21,7 @@ class _MoreState extends State<More> {
   List moreList = [
     MoreModel(icon: 'tips', name: 'Mẹo'),
     MoreModel(icon: 'wrongAnswer', name: 'Câu sai'),
+    MoreModel(icon: 'conversation', name: 'Hỏi đáp'),
     MoreModel(icon: 'reset', name: 'Xoá dữ liệu cũ'),
   ];
   List<QuestionModel> wrongQuestions = [];
@@ -90,6 +91,12 @@ class _MoreState extends State<More> {
         );
         break;
       case 2:
+        Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) => const Chat())
+            );
+        break;
+      case 3:
         showDialog(
           context: context,
           builder: (_) {
