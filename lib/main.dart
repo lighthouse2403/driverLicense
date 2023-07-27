@@ -1,6 +1,9 @@
 import 'package:firebase_analytics/firebase_analytics.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:license/bottom_tab_bar/bottom_tab_bar.dart';
+import 'package:license/firebase/firebase_module.dart';
+import 'package:license/firebase_options.dart';
 
 Future<void> main() async {
 
@@ -12,6 +15,9 @@ Future<void> main() async {
   //     print("completedAppInitialize");
   //   });
   // }
+  WidgetsFlutterBinding.ensureInitialized();
+  FirebaseModule.instance.initFirebase();
+
   runApp(const DriverLicense());
 }
 
@@ -24,6 +30,8 @@ class DriverLicense extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+
     return MaterialApp(
       title: 'GPLX ô tô',
       theme: ThemeData(
