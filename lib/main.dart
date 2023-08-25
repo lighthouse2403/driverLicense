@@ -1,22 +1,14 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:license/bottom_tab_bar/bottom_tab_bar.dart';
-import 'package:license/firebase/firebase_module.dart';
-import 'package:license/firebase_options.dart';
+import 'package:license/firebase/firebase_user.dart';
+import 'package:license/firebase/firebase_option.dart';
 
 Future<void> main() async {
-
-  // if (Firebase.apps.isEmpty) {
-  //   await Firebase.initializeApp(
-  //     name: 'Driver license',
-  //     options: DefaultFirebaseOptions.currentPlatform,
-  //   ).whenComplete(() {
-  //     print("completedAppInitialize");
-  //   });
-  // }
   WidgetsFlutterBinding.ensureInitialized();
-  FirebaseModule.instance.initFirebase();
+  await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform);
 
   runApp(const DriverLicense());
 }

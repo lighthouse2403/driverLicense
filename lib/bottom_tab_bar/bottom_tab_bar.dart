@@ -2,7 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:license/ads/ads_helper.dart';
-import 'package:license/firebase/firebase_module.dart';
+import 'package:license/firebase/firebase_user.dart';
 import 'package:license/more/more.dart';
 import 'package:license/setting/setting.dart';
 import 'package:license/test/test_list.dart';
@@ -43,8 +43,8 @@ class MainBottomTabBarState extends State<MainBottomTabBar> {
     ads.initGoogleMobileAds();
     ads.loadGoogleAds();
 
-    FirebaseModule.instance.addUser();
-    FirebaseModule.instance.updateLastTime();
+    FirebaseUser.instance.addUser();
+    FirebaseUser.instance.updateLastTime();
   }
 
   @override
@@ -63,35 +63,39 @@ class MainBottomTabBarState extends State<MainBottomTabBar> {
               child: widgetOptions.elementAt(_selectedIndex),
             ),
             bottomNavigationBar: BottomNavigationBar(
+              showUnselectedLabels: true,
               items: const <BottomNavigationBarItem>[
                 BottomNavigationBarItem(
                   icon: Icon(Icons.home),
                   label: 'Lý thuyết',
-                  backgroundColor: Colors.green,
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.school),
                   label: 'Thi thử',
-                  backgroundColor: Colors.green,
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.traffic),
                   label: 'Biển báo',
-                  backgroundColor: Colors.green,
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.warning),
                   label: 'Tiện ích',
-                  backgroundColor: Colors.green,
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.settings),
                   label: 'Cài đặt',
-                  backgroundColor: Colors.green,
                 ),
               ],
               currentIndex: _selectedIndex,
-              selectedItemColor: Colors.white,
+              selectedItemColor: Colors.green,
+              unselectedItemColor: Colors.grey,
+              unselectedLabelStyle: const TextStyle(
+                fontSize: 12
+              ),
+              selectedLabelStyle: const TextStyle(
+                  fontSize: 14,
+                fontWeight: FontWeight.w700
+              ),
               onTap: _onItemTapped,
             ),
           );
