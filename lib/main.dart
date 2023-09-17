@@ -20,9 +20,12 @@ class DriverLicense extends StatelessWidget {
   static FirebaseAnalyticsObserver observer =
   FirebaseAnalyticsObserver(analytics: analytics);
 
+  void saveUserLog() async {
+    await FirebaseUser.instance.addUser();
+  }
+
   @override
   Widget build(BuildContext context) {
-
 
     return MaterialApp(
       title: 'GPLX ô tô',

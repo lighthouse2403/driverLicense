@@ -22,6 +22,8 @@ class FirebaseUser {
         'firstTime': FieldValue.serverTimestamp()
       }).then((value) => print("User Added"))
           .catchError((error) => print("Failed to add user: $error"));
+    } else {
+      updateLastTime();
     }
   }
 

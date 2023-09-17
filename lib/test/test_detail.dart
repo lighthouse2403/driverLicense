@@ -24,6 +24,7 @@ class _TestDetailState extends State<TestDetail> {
   Widget build(BuildContext context) {
     final int answerCount = widget.question.answerList.length;
     return FutureBuilder(
+      future: null,
         builder: (context, snapshot) {
           return Container(
             padding: const EdgeInsets.only(top: 10, bottom: 10),

@@ -4,6 +4,7 @@ import 'package:fluttertoast/fluttertoast.dart';
 import 'package:license/chat/chat.dart';
 import 'package:license/customer_widget/alert.dart';
 import 'package:license/database/sql_helper.dart';
+import 'package:license/more/items/chat/thread_list.dart';
 import 'package:license/more/model/more_model.dart';
 import 'package:license/more/child_view/more_row.dart';
 import 'package:license/more/tips.dart';
@@ -21,7 +22,7 @@ class _MoreState extends State<More> {
   List moreList = [
     MoreModel(icon: 'tips', name: 'Mẹo'),
     MoreModel(icon: 'wrongAnswer', name: 'Câu sai'),
-    MoreModel(icon: 'conversation', name: 'Hỏi đáp'),
+    MoreModel(icon: 'chat', name: 'Giao lưu'),
     MoreModel(icon: 'reset', name: 'Xoá dữ liệu cũ'),
   ];
   List<QuestionModel> wrongQuestions = [];
@@ -109,6 +110,8 @@ class _MoreState extends State<More> {
             );
           },
         );
+        break;
+      default:
         break;
     }
   }

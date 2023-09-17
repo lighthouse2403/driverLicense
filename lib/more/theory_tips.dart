@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:license/more/model/theory_tip.dart';
 
-import 'child_view/section_tip.dart';
+import 'child_view/tip/section_tip.dart';
 
 class TheoryTips extends StatelessWidget {
   TheoryTips({super.key});
