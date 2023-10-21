@@ -38,7 +38,4 @@ class ThreadListState extends BaseStatefulState<BaseStatefulWidget> {
       _loading = true;
     }
   }
-
-
-
 }

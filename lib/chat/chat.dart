@@ -1,12 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:license/chat/child_widget/chat_detail.dart';
 import 'package:license/common/base/base_statefull_widget.dart';
 import 'package:license/firebase/firebase_chat.dart';
-import 'package:license/more/items/chat/new_thread.dart';
+import 'package:license/chat/child_widget/new_thread.dart';
 import 'package:license/more/items/chat/thread_row.dart';
 import 'package:license/more/model/thread_model.dart';
-import 'package:license/test/model/test_model.dart';
 
 class Chat extends BaseStatefulWidget {
   const Chat({super.key});
@@ -29,31 +29,27 @@ class _ChatState extends BaseStatefulState<Chat> {
 
   Future loadData() async {
     threads = await FirebaseChat.instance.loadThread();
+    setState(() {
+      _loading = false;
+    });
   }
 
   void _onScroll() {
     if (!_controller.hasClients || _loading) return;
+
     final shouldReload = _controller.position.extentAfter < _endReachedThreshold;
-    if (shouldReload && !_loading) {
+    bool isNotFull = threads.length >= FirebaseChat.instance.threadLimit;
+    if (shouldReload && !_loading && isNotFull) {
       _loading = true;
+      loadData();
     }
   }
 
   void addNewThread(int index) {
-    Navigator.push(
-        context,
-        MaterialPageRoute(
-            builder: (context) => const NewThread())
-    ).then(onGoBack);
-  }
-
-  onGoBack(dynamic value) {
-    setState(() {});
   }
 
   @override
   PreferredSizeWidget? buildAppBar() {
-    // TODO: implement buildAppBar
     return AppBar(
       title: const Text(
         'Giao lưu',
@@ -67,10 +63,7 @@ class _ChatState extends BaseStatefulState<Chat> {
       actions: [
         TextButton(
             onPressed: () {
-              Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) => const NewThread())
-              );
+              Navigator.push(context, MaterialPageRoute(builder: (context) => const NewThread())).then((res) => loadData());
             },
             child: const Text(
               'Thêm mới',
@@ -99,24 +92,32 @@ class _ChatState extends BaseStatefulState<Chat> {
         ),
         SliverList(
           delegate: SliverChildBuilderDelegate((context, index) {
-            return ThreadRow(thread: threads[index]);
+            return InkWell(
+              onTap: () {
+                Navigator.push(context, MaterialPageRoute(builder: (context) => ChatDetail(thread: threads[index]))).then((res) => loadData());
+              },
+              child: ThreadRow(thread: threads[index]),
+            );
           },
             childCount: threads.length,
           ),
         ),
-        const SliverToBoxAdapter(
+        SliverToBoxAdapter(
           child: SizedBox(
             height: 30,
-            child: CupertinoActivityIndicator(
+            child: FirebaseChat.instance.threadLimit > threads.length
+                ? Container()
+                : CupertinoActivityIndicator(
                 radius: 12.0, color: CupertinoColors.inactiveGray
-            ),
+            )
           ),
-        ),
+        )
       ],
     );
   }
 
   Future<void> _refresh() async {
-    _loading = true;
+    FirebaseChat.instance.threadLimit = 0;
+    loadData();
   }
 }

@@ -1,27 +1,30 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-class ThreadModel {
+class CommentModel {
+  String commentId = '';
   String threadId = '';
   String deviceId = '';
   String? deviceName = '';
-  String title = '';
+  String content = '';
   Timestamp createTime = Timestamp(0, 0);
   Timestamp updateTime = Timestamp(0, 0);
 
 
-  ThreadModel({
+  CommentModel({
     required this.threadId,
+    required this.commentId,
     required this.deviceId,
     required this.deviceName,
-    required this.title,
+    required this.content,
     required this.createTime,
     required this.updateTime,
   });
 
-  ThreadModel.fromJson(Map<String, dynamic> json) {
+  CommentModel.fromJson(Map<String, dynamic> json) {
     threadId = json['threadId'];
     deviceId = json['deviceId'];
-    title = json['title'];
+    commentId = json['commentId'];
+    content = json['content'];
     createTime = json['createTime'];
     updateTime = json['updateTime'];
     deviceName = json['deviceName'];

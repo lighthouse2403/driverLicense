@@ -1,17 +1,17 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:license/more/model/thread_model.dart';
+import 'package:license/chat/comment_model.dart';
 
-class ThreadRow extends StatefulWidget {
-  const ThreadRow({super.key, required this.thread});
+class ChatRow extends StatefulWidget {
+  const ChatRow({super.key, required this.comment});
 
-  final ThreadModel thread;
+  final CommentModel comment;
 
   @override
-  State<ThreadRow> createState() => ThreadRowState();
+  State<ChatRow> createState() => ChatRowState();
 }
 
-class ThreadRowState extends State<ThreadRow> {
+class ChatRowState extends State<ChatRow> {
 
   @override
   Widget build(BuildContext context) {
@@ -36,27 +36,27 @@ class ThreadRowState extends State<ThreadRow> {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: [
           Text(
-            widget.thread.deviceName ?? 'No name',
+            widget.comment.deviceName ?? 'No name',
             style: const TextStyle(
                 fontSize: 15,
                 fontWeight: FontWeight.w700,
                 color:  Colors.green,
-              overflow: TextOverflow.ellipsis
+                overflow: TextOverflow.ellipsis
             ),
           ),
           const SizedBox(height: 6),
           Text(
-            widget.thread.title,
+            widget.comment.content,
             style: const TextStyle(
-              fontSize: 16,
-              fontWeight: FontWeight.w400
+                fontSize: 16,
+                fontWeight: FontWeight.w400
             ),
           ),
           const SizedBox(height: 4),
           Align(
             alignment: Alignment.centerRight,
             child: Text(
-              widget.thread.createTime.toDate().toString(),
+              widget.comment.createTime.toDate().toString(),
               textAlign: TextAlign.right,
               style: const TextStyle(
                   fontSize: 14,
