@@ -588,61 +588,61 @@
           },
         {
               "type": 1,
-              "name": "R.E,9a",
+              "name": "R.E.9a",
               "comment": "Cấm đỗ xe trong khu vực",
               "description": ""
           },
         {
               "type": 1,
-              "name": "R.E,9b",
+              "name": "R.E.9b",
               "comment": "Cấm đỗ xe theo giờ trong khu vực",
               "description": ""
           },
         {
               "type": 1,
-              "name": "R.E,9c",
+              "name": "R.E.9c",
               "comment": "Khu vực đỗ xe",
               "description": ""
           },
         {
               "type": 1,
-              "name": "R.E,9d",
+              "name": "R.E.9d",
               "comment": "Hạn chế tốc độ tối đa trong khu vực",
               "description": ""
           },
         {
               "type": 1,
-              "name": "R.E,10a",
+              "name": "R.E.10a",
               "comment": "Hết cấm đỗ xe trong khu vực",
               "description": ""
           },
         {
               "type": 1,
-              "name": "R.E,10b",
+              "name": "R.E.10b",
               "comment": "Hết cấm đỗ xe theo giờ trong khu vực",
               "description": ""
           },
         {
               "type": 1,
-              "name": "R.E,10c",
+              "name": "R.E.10c",
               "comment": "Hết khu vực đỗ xe",
               "description": ""
           },
         {
               "type": 1,
-              "name": "R.E,10d",
+              "name": "R.E.10d",
               "comment": "Hết hạn chế tốc độ tối đa trong khu vực",
               "description": ""
           },
         {
               "type": 1,
-              "name": "R.E,11a",
+              "name": "R.E.11a",
               "comment": "Đường hầm",
               "description": ""
           },
         {
               "type": 1,
-              "name": "R.E,11b",
+              "name": "R.E.11b",
               "comment": "Kết thúc đường hầm",
               "description": ""
           },

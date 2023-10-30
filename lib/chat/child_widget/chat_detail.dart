@@ -1,14 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
 import 'package:license/chat/child_widget/comment_row.dart';
+import 'package:license/chat/child_widget/new_comment.dart';
 import 'package:license/chat/comment_model.dart';
+import 'package:license/common/app_colors.dart';
 import 'package:license/common/base/base_statefull_widget.dart';
+import 'package:license/common/component/loading_view.dart';
+import 'package:license/extension/text_extension.dart';
 import 'package:license/firebase/firebase_chat.dart';
-import 'package:license/chat/child_widget/new_thread.dart';
 import 'package:license/more/items/chat/thread_row.dart';
 import 'package:license/more/model/thread_model.dart';
-import 'package:license/theory/comment_row.dart';
 
 class ChatDetail extends BaseStatefulWidget {
   ChatDetail({super.key, required this.thread});
@@ -22,7 +23,6 @@ class ChatDetail extends BaseStatefulWidget {
 class _ChatState extends BaseStatefulState<ChatDetail> {
 
   final ScrollController _controller = ScrollController();
-  TextEditingController textController = TextEditingController();
 
   final double _endReachedThreshold = 30;
   bool _loading = false;
@@ -36,8 +36,12 @@ class _ChatState extends BaseStatefulState<ChatDetail> {
   }
 
   Future loadData() async {
+    OverlayLoadingProgress.start(context);
+    _loading = true;
     comments = await FirebaseChat.instance.loadComment(widget.thread.threadId);
+
     setState(() {
+      OverlayLoadingProgress.stop();
       _loading = false;
     });
   }
@@ -59,16 +63,8 @@ class _ChatState extends BaseStatefulState<ChatDetail> {
   @override
   PreferredSizeWidget? buildAppBar() {
     return AppBar(
-      title: Text(
-        widget.thread.title ?? '',
-        style: const TextStyle(
-            fontWeight: FontWeight.w500,
-            fontSize: 14,
-            color: Colors.white,
-          overflow: TextOverflow.ellipsis
-        ),
-      ),
-      backgroundColor: Colors.green,
+      title: Text(widget.thread.title ?? '').w500().text14().whiteColor().ellipsis(),
+      backgroundColor: AppColors.mainColor,
     );
   }
 
@@ -78,6 +74,7 @@ class _ChatState extends BaseStatefulState<ChatDetail> {
     return SafeArea(
         child: Column(
           children: [
+            ThreadRow(thread: widget.thread),
             Expanded(
                 child: CustomScrollView(
                   controller: _controller,
@@ -87,12 +84,6 @@ class _ChatState extends BaseStatefulState<ChatDetail> {
                   slivers: [
                     CupertinoSliverRefreshControl(
                       onRefresh: _refresh,
-                    ),
-                    SliverToBoxAdapter(
-                      child: Container(
-                        color: Colors.green,
-                        child: ThreadRow(thread: widget.thread),
-                      ),
                     ),
                     SliverList(
                       delegate: SliverChildBuilderDelegate((context, index) {
@@ -106,43 +97,15 @@ class _ChatState extends BaseStatefulState<ChatDetail> {
                           height: 30,
                           child: FirebaseChat.instance.commentLimit > comments.length
                               ? Container()
-                              : CupertinoActivityIndicator(
-                              radius: 12.0, color: CupertinoColors.inactiveGray
-                          )
+                              : const CupertinoActivityIndicator(radius: 12.0, color: CupertinoColors.inactiveGray)
                       ),
                     )
                   ],
                 )
             ),
-            Row(
-              children: [
-                Expanded(
-                    child: Container(
-                      padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
-                      child: TextField(
-                        controller: textController,
-                        maxLines: 4,
-                        minLines: 1,
-                      ),
-                    )
-                ),
-                Container(
-                  padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-                  alignment: Alignment.center,
-                  width: 80,
-                  height: 60,
-                  child: InkWell(
-                    onTap: () {
-                      setState(() {
-                        FirebaseChat.instance.addNewComment(widget.thread.threadId, textController.text);
-                      });
-                    },
-                    child: Text(
-                      'Gửi', style: TextStyle(fontWeight: FontWeight.w700, color: Colors.green),
-                    ),
-                  ),
-                )
-              ],
+            NewComment(
+                thread: widget.thread,
+                sentComment: _refresh
             )
           ],
         )

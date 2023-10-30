@@ -69,7 +69,7 @@ class FirebaseChat {
     CollectionReference chat = firestore.collection('chat');
     List<String> deviceInfo = await FirebaseUser.instance.getDeviceDetails();
     var comment = await chat.doc(threadId).collection('comments');
-    comment.add({
+    await comment.add({
       'commentId': FieldValue.serverTimestamp().toString(),
       'threadId': threadId,
       'os': deviceInfo.firstOrNull,

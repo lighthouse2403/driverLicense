@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:license/chat/child_widget/chat_detail.dart';
 import 'package:license/common/base/base_statefull_widget.dart';
+import 'package:license/extension/text_extension.dart';
 import 'package:license/firebase/firebase_chat.dart';
 import 'package:license/chat/child_widget/new_thread.dart';
 import 'package:license/more/items/chat/thread_row.dart';
@@ -65,14 +66,7 @@ class _ChatState extends BaseStatefulState<Chat> {
             onPressed: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => const NewThread())).then((res) => loadData());
             },
-            child: const Text(
-              'Thêm mới',
-              style: TextStyle(
-                  fontWeight: FontWeight.w600,
-                  fontSize: 14,
-                  color: Colors.white
-              ),
-            )
+            child: const Text('Hỏi').w600().text14().whiteColor()
         )
       ],
     );
@@ -107,9 +101,7 @@ class _ChatState extends BaseStatefulState<Chat> {
             height: 30,
             child: FirebaseChat.instance.threadLimit > threads.length
                 ? Container()
-                : CupertinoActivityIndicator(
-                radius: 12.0, color: CupertinoColors.inactiveGray
-            )
+                : const CupertinoActivityIndicator(radius: 12.0, color: CupertinoColors.inactiveGray)
           ),
         )
       ],
