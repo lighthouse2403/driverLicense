@@ -25,7 +25,7 @@ class AppBarCustom extends StatelessWidget {
           constraints: BoxConstraints(
             maxWidth: availableWidth,
           ),
-          child: Text(title, textScaleFactor: .8,),
+          child: Text(title, textScaleFactor: .8),
         ),
       ),
     );

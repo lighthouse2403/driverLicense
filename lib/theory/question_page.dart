@@ -1,6 +1,8 @@
 
 import 'package:flutter/material.dart';
 import 'package:license/ads/ads_helper.dart';
+import 'package:license/common/app_colors.dart';
+import 'package:license/common/base/base_app_bar.dart';
 import 'package:license/test/horizontal_tab.dart';
 import 'package:license/theory/models/theory_question_model.dart';
 import 'package:license/theory/question_detail.dart';
@@ -54,14 +56,11 @@ class _QuestionPageState extends State<QuestionPage> {
       }).toList(),
     );
     return Scaffold(
-        appBar: AppBar(
-          title: Text(widget.title, style: const TextStyle(fontSize: 18, fontWeight: FontWeight.w500)),
-          backgroundColor: Colors.green,
-        ),
+        appBar: BaseAppBar(title: widget.title),
         body: Column(
           children: [
             Container(child: horizontalTab),
-            Container(height: 0.5, color: Colors.green,),
+            Container(height: 0.5, color: AppColors.mainColor),
             Expanded(
                 child: Container(
                   color: Colors.white,

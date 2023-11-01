@@ -1,6 +1,8 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:license/_gen/assets.gen.dart';
 import 'package:license/chat/comment_model.dart';
+import 'package:license/common/app_colors.dart';
 import 'package:license/extension/date_extension.dart';
 import 'package:license/extension/text_extension.dart';
 
@@ -28,14 +30,18 @@ class ChatRowState extends State<ChatRow> {
           const SizedBox(height: 6),
           Text(widget.comment.content).w400().text16(),
           const SizedBox(height: 4),
-          Align(
-            alignment: Alignment.centerRight,
-            child: Text(
-              widget.comment.createTime.toDate().generateDurationTime())
-                .w400()
-                .text13()
-                .customColor(Colors.grey)
-                .right(),
+          Row(
+            children: [
+
+              Align(
+                alignment: Alignment.centerRight,
+                child: Text(widget.comment.createTime.toDate().generateDurationTime())
+                    .w400()
+                    .text13()
+                    .customColor(AppColors.disableColor)
+                    .right(),
+              ),
+            ],
           ),
           const SizedBox(height: 10),
           Container(height: 1, color: Colors.grey.withOpacity(0.6))

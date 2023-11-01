@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:license/extension/text_extension.dart';
 import 'package:license/trafficSign/traffic_sign_detail.dart';
 import 'package:license/trafficSign/Model/traffic_sign_model.dart';
 
@@ -33,11 +34,7 @@ class _TrafficSignRowState extends State<TrafficSignRow> {
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
-                    Text(
-                      widget.model.name,
-                      style: const TextStyle(fontSize: 18,
-                          fontWeight: FontWeight.w600,
-                          color: Colors.green),),
+                    Text(widget.model.name).w600().text16().blackColor(),
                     const SizedBox(height: 10,),
                     Text(
                       widget.model.comment,

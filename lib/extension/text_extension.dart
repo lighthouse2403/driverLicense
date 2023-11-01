@@ -18,6 +18,10 @@ extension TextExtension on Text? {
     return Text(this?.data ?? '', style: this?.style?.greenColor(), textAlign: this?.textAlign);
   }
 
+  Text blackColor() {
+    return Text(this?.data ?? '', style: this?.style?.blackColor(), textAlign: this?.textAlign);
+  }
+
   Text mainColor() {
     return Text(this?.data ?? '', style: this?.style?.mainColor(), textAlign: this?.textAlign);
   }

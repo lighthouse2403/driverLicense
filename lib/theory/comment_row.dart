@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:license/common/app_colors.dart';
 
 class CommentRow extends StatelessWidget{
   CommentRow({super.key, required this.comment});
@@ -12,7 +13,7 @@ class CommentRow extends StatelessWidget{
         padding: const EdgeInsets.only(left: 10, right: 10, top: 16, bottom: 16),
         decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(6),
-            color: Colors.green.withOpacity(0.5)
+            color: AppColors.mainColor.withOpacity(0.5)
         ),
         child: Column(
           children: [

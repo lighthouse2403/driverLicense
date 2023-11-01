@@ -87,7 +87,7 @@ class MainBottomTabBarState extends State<MainBottomTabBar> {
                 ),
               ],
               currentIndex: _selectedIndex,
-              selectedItemColor: Colors.green,
+              selectedItemColor: AppColors.mainColor
               unselectedItemColor: Colors.grey,
               unselectedLabelStyle: const TextStyle(
                 fontSize: 12

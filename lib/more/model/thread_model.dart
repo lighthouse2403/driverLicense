@@ -1,10 +1,13 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:license/chat/comment_model.dart';
 
 class ThreadModel {
   String threadId = '';
   String deviceId = '';
   String? deviceName = '';
   String title = '';
+  int? commentsCount = 0;
+
   Timestamp createTime = Timestamp(0, 0);
   Timestamp updateTime = Timestamp(0, 0);
 
@@ -25,5 +28,6 @@ class ThreadModel {
     createTime = json['createTime'];
     updateTime = json['updateTime'];
     deviceName = json['deviceName'];
+    commentsCount = json['commentsCount'];
   }
 }

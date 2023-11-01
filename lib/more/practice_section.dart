@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:license/extension/text_extension.dart';
 
 class PracticeSection extends StatelessWidget {
   const PracticeSection({super.key, required this.name, required this.comment});
@@ -33,14 +34,7 @@ class PracticeSection extends StatelessWidget {
                 Flexible(
                     child: Container(
                       padding: const EdgeInsets.all(10),
-                      child: Text(
-                        name,
-                        style: const TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.w700,
-                            color: Colors.green
-                        ),
-                      ),
+                      child: Text(name).w700().text18().mainColor(),
                     )
                 )
               ],

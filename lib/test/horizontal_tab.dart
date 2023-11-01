@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:license/extension/text_color_extension.dart';
 
 class HorizontalTab extends StatelessWidget {
   HorizontalTab({super.key, required this.length, required this.currentPage, required this.callback, required this.title, required this.screenRate});
@@ -47,7 +48,7 @@ class HorizontalTab extends StatelessWidget {
                     style: TextStyle(
                         fontSize: shouldHightLight ? 18 : 14,
                         fontWeight: shouldHightLight ? FontWeight.w700 : FontWeight.w500,
-                        color: shouldHightLight ? Colors.green : Colors.black.withOpacity(0.2)
+                        color: shouldHightLight ? AppColors.mainColor : Colors.black.withOpacity(0.2)
                     ),
                     textAlign: TextAlign.center,
                   ),

@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:license/common/base/base_statefull_widget.dart';
+import 'package:license/common/component/loading_view.dart';
 import 'package:license/firebase/firebase_chat.dart';
 import 'package:license/more/items/chat/thread_row.dart';
 import 'package:license/more/model/thread_model.dart';
@@ -21,14 +22,11 @@ class ThreadListState extends BaseStatefulState<BaseStatefulWidget> {
   void initState() {
     _controller.addListener(_onScroll);
     loadData();
-    
-    print('ThreadList ${threads.firstOrNull?.title ?? ''}');
     super.initState();
   }
 
   Future loadData() async {
     threads = await FirebaseChat.instance.loadThread();
-    print('number of thread: ${threads.length}');
   }
 
   void _onScroll() {

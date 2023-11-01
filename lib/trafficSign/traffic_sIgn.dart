@@ -1,6 +1,9 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:license/common/app_colors.dart';
+import 'package:license/common/base/base_app_bar.dart';
+import 'package:license/extension/text_color_extension.dart';
 import 'package:license/test/horizontal_tab.dart';
 import 'package:license/trafficSign/Model/traffic_sign_model.dart';
 import 'package:license/trafficSign/traffic_sign_page.dart';
@@ -54,14 +57,11 @@ class _TrafficSignState extends State<TrafficSign> {
     );
 
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Biển báo'),
-        backgroundColor: Colors.green,
-      ),
+      appBar: BaseAppBar(title: 'Biển báo'),
       body: Column(
         children: [
           Container(child: horizontalTab),
-          Container(height: 0.5, color: Colors.green,),
+          Container(height: 0.5, color: AppColors.mainColor,),
           Expanded(
               child: FutureBuilder(
                 future: loadTrafficSignData(),

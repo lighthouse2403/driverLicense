@@ -1,6 +1,8 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:license/common/app_colors.dart';
+import 'package:license/common/base/base_app_bar.dart';
 import 'package:license/setting/model/license_model.dart';
 import 'package:license/setting/setting_row.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -38,10 +40,7 @@ class _SettingScreenState extends State<SettingScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Cài đặt'),
-        backgroundColor: Colors.green,
-      ),
+      appBar: BaseAppBar(title: 'Cài đặt'),
       body: FutureBuilder(
         future: getLicenseType(),
         builder: (context, index) {
@@ -56,7 +55,7 @@ class _SettingScreenState extends State<SettingScreen> {
                 ),
               ),
               Container(
-                color: Colors.green,
+                color: AppColors.mainColor,
                 height: 0.5,
                 margin: const EdgeInsets.only(top: 10, bottom: 10),
               ),

@@ -2,7 +2,9 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:license/chat/child_widget/chat_detail.dart';
+import 'package:license/common/app_colors.dart';
 import 'package:license/common/base/base_statefull_widget.dart';
+import 'package:license/common/component/loading_view.dart';
 import 'package:license/extension/text_extension.dart';
 import 'package:license/firebase/firebase_chat.dart';
 import 'package:license/chat/child_widget/new_thread.dart';
@@ -24,13 +26,16 @@ class _ChatState extends BaseStatefulState<Chat> {
   @override
   void initState() {
     _controller.addListener(_onScroll);
+    OverlayLoadingProgress.start(context);
     loadData();
     super.initState();
   }
 
   Future loadData() async {
     threads = await FirebaseChat.instance.loadThread();
+
     setState(() {
+      OverlayLoadingProgress.stop();
       _loading = false;
     });
   }
@@ -46,21 +51,11 @@ class _ChatState extends BaseStatefulState<Chat> {
     }
   }
 
-  void addNewThread(int index) {
-  }
-
   @override
   PreferredSizeWidget? buildAppBar() {
     return AppBar(
-      title: const Text(
-        'Giao lưu',
-        style: TextStyle(
-            fontWeight: FontWeight.w700,
-            fontSize: 18,
-            color: Colors.white
-        ),
-      ),
-      backgroundColor: Colors.green,
+      title: const Text('Giao lưu').w700().text18().whiteColor(),
+      backgroundColor: AppColors.mainColor,
       actions: [
         TextButton(
             onPressed: () {

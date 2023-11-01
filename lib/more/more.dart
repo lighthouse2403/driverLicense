@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:fluttertoast/fluttertoast.dart';
 import 'package:license/chat/chat.dart';
+import 'package:license/common/base/base_app_bar.dart';
 import 'package:license/customer_widget/alert.dart';
 import 'package:license/database/sql_helper.dart';
 import 'package:license/more/items/chat/thread_list.dart';
@@ -42,10 +43,7 @@ class _MoreState extends State<More> {
   Widget build(BuildContext context) {
 
     return Scaffold(
-        appBar: AppBar(
-          title: const Text('Tiện ích'),
-          backgroundColor: Colors.green,
-        ),
+        appBar: BaseAppBar(title: 'Tiện ích'),
         body: FutureBuilder(
             future: loadWrongQuestion(),
             builder: (context, item) {

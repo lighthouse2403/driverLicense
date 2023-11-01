@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:license/common/app_colors.dart';
+import 'package:license/common/base/base_app_bar.dart';
+import 'package:license/extension/text_extension.dart';
 import 'package:license/trafficSign/Model/traffic_sign_model.dart';
 
 class TrafficSignDetail extends StatefulWidget {
@@ -14,15 +17,7 @@ class _TrafficSignDetailState extends State<TrafficSignDetail> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text('Biển ${widget.trafficSignModel.name}',
-          style: const TextStyle(
-              fontSize: 20,
-              color: Colors.white,
-              fontWeight: FontWeight.w800),
-        ),
-        backgroundColor: Colors.green,
-      ),
+      appBar: BaseAppBar(title: 'Biển ${widget.trafficSignModel.name}'),
       body: Container(
         decoration: const BoxDecoration(
             color: Colors.white
@@ -30,12 +25,7 @@ class _TrafficSignDetailState extends State<TrafficSignDetail> {
         padding: const EdgeInsets.only(left: 16, right: 16, top:  20),
         child: ListView(
           children: [
-            Text('Biển ${widget.trafficSignModel.name}',
-              style: const TextStyle(
-                  fontSize: 20,
-                  color: Colors.green,
-                  fontWeight: FontWeight.w700),
-            ),
+            Text('Biển ${widget.trafficSignModel.name}').w700().text20().blackColor(),
             Container(
               margin: const EdgeInsets.all(16),
               child: Center(
@@ -45,15 +35,11 @@ class _TrafficSignDetailState extends State<TrafficSignDetail> {
             Container(
               decoration: BoxDecoration(
                   borderRadius: const BorderRadius.all(Radius.circular(8)),
-                  color: Colors.green.withOpacity(0.5)
+                  color: AppColors.mainColor.withOpacity(0.5)
               ),
               margin: const EdgeInsets.only(top: 10),
               padding: const EdgeInsets.only(left: 10, right: 10, top: 16, bottom: 16),
-              child: Text(widget.trafficSignModel.comment,
-                  style: const TextStyle(
-                      fontSize: 14,
-                      color: Colors.black,
-                      fontWeight: FontWeight.w500)),
+              child: Text(widget.trafficSignModel.comment).w500().text14().blackColor(),
             )
           ],
         )

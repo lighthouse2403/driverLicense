@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:license/common/app_colors.dart';
+import 'package:license/extension/text_extension.dart';
 import 'package:license/theory/models/chapter_model.dart';
 
  class TheoryRow extends StatelessWidget {
@@ -30,18 +32,11 @@ import 'package:license/theory/models/chapter_model.dart';
                       value: theory.finishedCount/theory.count,
                       strokeWidth: 3,
                       backgroundColor:  Colors.grey.withOpacity(0.3),
-                      valueColor: const AlwaysStoppedAnimation(Colors.green)
+                      valueColor: AlwaysStoppedAnimation(AppColors.mainColor)
                   ),
                 ),
                 Center(
-                  child: Text(
-                      '${theory.finishedCount}/${theory.count}',
-                      style: const TextStyle(
-                          fontSize: 12,
-                          fontWeight: FontWeight.w500,
-                          color: Colors.green
-                      ),
-                  ),
+                  child: Text('${theory.finishedCount}/${theory.count}').w400().text12().mainColor(),
                 )
               ],
             )
@@ -54,11 +49,7 @@ import 'package:license/theory/models/chapter_model.dart';
                   children: [
                     Container(
                       padding: const EdgeInsets.only(right: 15.0),
-                      child: Text(
-                          theory.name,
-                          style: const TextStyle(color: Colors.green, fontWeight: FontWeight.w500, fontSize: 18),
-                          softWrap: true
-                      ),
+                      child: Text(theory.name).w500().text17().mainColor().ellipsis(),
                     ),
                     const SizedBox(height: 5,),
                     Container(

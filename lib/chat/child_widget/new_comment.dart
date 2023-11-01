@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:fluttertoast/fluttertoast.dart';
 import 'package:license/_gen/assets.gen.dart';
 import 'package:license/common/app_colors.dart';
 import 'package:license/extension/font_size_extension.dart';
@@ -65,7 +66,11 @@ class NewCommentState extends State<NewComment> {
   }
 
   Future<void> addComment() async {
-    await FirebaseChat.instance.addNewComment(widget.thread.threadId, textController.text);
+    if (textController.text.isEmpty) {
+      Fluttertoast.showToast(msg: 'Vui lòng viết nhận xét để gửi?');
+      return;
+    }
+    await FirebaseChat.instance.addNewComment(widget.thread, textController.text);
     textController.text = '';
     widget.sentComment();
   }

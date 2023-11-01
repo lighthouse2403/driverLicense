@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:license/common/app_colors.dart';
+import 'package:license/common/base/base_app_bar.dart';
 import 'package:license/more/practice_tips.dart';
 import 'package:license/more/theory_tips.dart';
 
@@ -35,13 +37,7 @@ class _TipsState extends State<Tips>
 
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: AppBar(
-        backgroundColor: Colors.green,
-        title: const Text(
-          'Mẹo',
-          style: TextStyle(fontWeight: FontWeight.normal),
-        )
-      ),
+      appBar: BaseAppBar(title: 'Mẹo'),
       body: Column(      // Column
         children: <Widget>[
           Container(
@@ -51,9 +47,9 @@ class _TipsState extends State<Tips>
             child: TabBar(           // TabBar
               controller: _tabController,
               unselectedLabelColor: Colors.black.withOpacity(0.4),
-              labelColor: Colors.green,
+              labelColor: AppColors.mainColor,
               indicatorWeight: 2,
-              indicatorColor: Colors.green,
+              indicatorColor: AppColors.mainColor,
               indicatorPadding: const EdgeInsets.symmetric(horizontal: 30),
               tabs: tabTitles.map((e) => Tab(
                   child: Text(

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:license/common/app_colors.dart';
 import 'package:license/setting/model/license_model.dart';
 
 class SettingRowWidget extends StatelessWidget {
@@ -14,7 +15,7 @@ class SettingRowWidget extends StatelessWidget {
         borderRadius: const BorderRadius.all(Radius.circular(6)),
         border: Border.all(
             width: 0.5,
-            color: (selectedLicenseId == licenseType.id) ? Colors.green : Colors.grey.withOpacity(0.8)
+            color: (selectedLicenseId == licenseType.id) ? AppColors.mainColor : Colors.grey.withOpacity(0.8)
         )
       ),
       padding: const EdgeInsets.only(left: 10, right: 5, top: 12, bottom: 12),
@@ -26,7 +27,7 @@ class SettingRowWidget extends StatelessWidget {
             style: TextStyle(
               fontSize: 20,
               fontWeight: FontWeight.w700,
-              color: (selectedLicenseId == licenseType.id) ? Colors.green : Colors.black
+              color: (selectedLicenseId == licenseType.id) ? AppColors.mainColor : Colors.black
             ),
           ),
           const SizedBox(width: 10,),
@@ -36,7 +37,7 @@ class SettingRowWidget extends StatelessWidget {
                 style: TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.w500,
-                    color: (selectedLicenseId == licenseType.id) ? Colors.green : Colors.black
+                    color: (selectedLicenseId == licenseType.id) ? AppColors.mainColor : Colors.black
                 ),
               )
           )

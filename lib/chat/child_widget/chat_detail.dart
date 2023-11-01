@@ -4,6 +4,7 @@ import 'package:license/chat/child_widget/comment_row.dart';
 import 'package:license/chat/child_widget/new_comment.dart';
 import 'package:license/chat/comment_model.dart';
 import 'package:license/common/app_colors.dart';
+import 'package:license/common/base/base_app_bar.dart';
 import 'package:license/common/base/base_statefull_widget.dart';
 import 'package:license/common/component/loading_view.dart';
 import 'package:license/extension/text_extension.dart';
@@ -39,6 +40,7 @@ class _ChatState extends BaseStatefulState<ChatDetail> {
     OverlayLoadingProgress.start(context);
     _loading = true;
     comments = await FirebaseChat.instance.loadComment(widget.thread.threadId);
+    FirebaseChat.instance.updateNumberOfComment(widget.thread.threadId, comments.length);
 
     setState(() {
       OverlayLoadingProgress.stop();
@@ -62,10 +64,7 @@ class _ChatState extends BaseStatefulState<ChatDetail> {
 
   @override
   PreferredSizeWidget? buildAppBar() {
-    return AppBar(
-      title: Text(widget.thread.title ?? '').w500().text14().whiteColor().ellipsis(),
-      backgroundColor: AppColors.mainColor,
-    );
+    return BaseAppBar(title: widget.thread.title ?? '');
   }
 
   @override

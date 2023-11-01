@@ -134,7 +134,7 @@ class _TestListState extends State<TestList> {
     return Scaffold(
         appBar: AppBar(
           title: const Text('Thi thử'),
-          backgroundColor: Colors.green,
+          backgroundColor: AppColors.mainColor,
           actions: [
             Container(
               margin: const EdgeInsets.all(10),

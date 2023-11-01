@@ -50,11 +50,15 @@ class $AssetsJsonGen {
 class $AssetsIconChatGen {
   const $AssetsIconChatGen();
 
+  /// File path: assets/icon/chat/comments.svg
+  SvgGenImage get comments =>
+      const SvgGenImage('assets/icon/chat/comments.svg');
+
   /// File path: assets/icon/chat/send.svg
   SvgGenImage get send => const SvgGenImage('assets/icon/chat/send.svg');
 
   /// List of all assets
-  List<SvgGenImage> get values => [send];
+  List<SvgGenImage> get values => [comments, send];
 }
 
 class $AssetsIconHomeGen {

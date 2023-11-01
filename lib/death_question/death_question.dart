@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:license/common/base/base_app_bar.dart';
 import 'package:license/test/horizontal_tab.dart';
 import 'package:license/theory/models/theory_question_model.dart';
 import 'package:license/theory/question_detail.dart';
@@ -44,14 +45,11 @@ class _DeathQuestionPageState extends State<DeathQuestionPage> {
       }).toList(),
     );
     return Scaffold(
-        appBar: AppBar(
-          title: Text('${widget.questionList.length} Câu điểm liệt'),
-          backgroundColor: Colors.green,
-        ),
+        appBar: BaseAppBar(title: '${widget.questionList.length} Câu điểm liệt'),
         body: Column(
           children: [
             Container(child: horizontalTab),
-            Container(height: 0.5, color: Colors.green,),
+            Container(height: 0.5, color: AppColors.mainColor),
             Expanded(
                 child: Container(
                   color: Colors.white,

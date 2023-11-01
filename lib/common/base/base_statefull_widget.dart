@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class BaseStatefulWidget extends StatefulWidget {
+class BaseStatefulWidget extends StatefulWidget  {
   const BaseStatefulWidget({super.key});
 
   @override

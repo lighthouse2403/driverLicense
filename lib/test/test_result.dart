@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
+import 'package:license/common/base/base_app_bar.dart';
 import 'package:license/test/model/test_model.dart';
 import 'package:license/theory/models/theory_question_model.dart';
 import 'test_result_row.dart';
@@ -27,16 +28,7 @@ class _TestResultState extends State<TestResult> {
     String resultString = passed ? 'Đạt': 'Không đạt';
 
     return Scaffold(
-        appBar: AppBar(
-          title: Text(
-            'Đề số ${widget.test.id + 1}',
-            style: const TextStyle(
-              fontSize: 20,
-              fontWeight: FontWeight.w600
-            ),
-          ),
-          backgroundColor: Colors.green,
-        ),
+        appBar: BaseAppBar(title: 'Đề số ${widget.test.id + 1}'),
         body: Column(
           children: [
             Container(

@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:license/common/base/base_app_bar.dart';
 import 'package:license/database/sql_helper.dart';
 import 'package:license/theory/models/chapter_model.dart';
 import 'package:license/theory/models/theory_question_model.dart';
@@ -68,10 +69,7 @@ class _ChapterListState extends State<ChapterList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: const Text('Lý thuyết'),
-        backgroundColor: Colors.green,
-      ),
+      appBar: BaseAppBar(title: 'Lý thuyết'),
       body: FutureBuilder(
         future: loadTheoryData(),
         builder: (context, snapshot) {

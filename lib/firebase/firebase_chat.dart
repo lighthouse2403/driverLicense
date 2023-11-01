@@ -35,6 +35,7 @@ class FirebaseChat {
         'deviceName': deviceInfo[1],
         'os': deviceInfo.firstOrNull,
         'deviceVersion': deviceInfo[2],
+        'commentsCount': 0,
     }).then((value) async {
       await editThreadId(value.id);
     }).catchError((error) => print("Failed to add user: $error"));
@@ -53,6 +54,13 @@ class FirebaseChat {
     });
   }
 
+  Future<void> updateNumberOfComment(String threadId, int commentsCount) async {
+    CollectionReference chat = firestore.collection('chat');
+    await chat.doc(threadId).update({
+      'commentsCount' : commentsCount
+    });
+  }
+
   Future<List<CommentModel>> loadComment(String threadId) async {
     commentLimit += 10;
 
@@ -65,13 +73,13 @@ class FirebaseChat {
     return allData;
   }
 
-  Future<void> addNewComment(String threadId, String content) async {
+  Future<void> addNewComment(ThreadModel thread, String content) async {
     CollectionReference chat = firestore.collection('chat');
     List<String> deviceInfo = await FirebaseUser.instance.getDeviceDetails();
-    var comment = await chat.doc(threadId).collection('comments');
+    var comment = await chat.doc(thread.threadId).collection('comments');
     await comment.add({
       'commentId': FieldValue.serverTimestamp().toString(),
-      'threadId': threadId,
+      'threadId': thread.threadId,
       'os': deviceInfo.firstOrNull,
       'deviceName': deviceInfo[1],
       'deviceVersion': deviceInfo[2],
@@ -80,7 +88,8 @@ class FirebaseChat {
       'updateTime': FieldValue.serverTimestamp(),
       'createTime': FieldValue.serverTimestamp()
     }).then((value) async {
-      await updateComment(threadId, value.id, content);
+      await updateComment(thread.threadId, value.id, content);
+      await updateNumberOfComment(thread.threadId, (thread.commentsCount ?? 0) + 1);
     }).catchError((error) => print("Failed to add user: $error"));
   }
 
