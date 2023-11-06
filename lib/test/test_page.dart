@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:license/ads/ads_helper.dart';
+import 'package:license/common/app_colors.dart';
 import 'package:license/database/sql_helper.dart';
 import 'package:license/test/horizontal_tab.dart';
 import 'package:license/test/model/test_model.dart';
@@ -228,7 +229,7 @@ class TestPageState extends State<TestPage> {
             },
             child: status == TestStatus.done ? const ResultButton() : TimeWidget(minutes: minutes,seconds: seconds,)
           ),
-          backgroundColor: Colors.green,
+          backgroundColor: AppColors.mainColor,
         ) ,
         body: FutureBuilder(
           future: getQuestionList(),
@@ -245,7 +246,7 @@ class TestPageState extends State<TestPage> {
             return Column(
               children: [
                 Container(child: horizontalTab),
-                Container(height: 0.5, color: Colors.green,),
+                Container(height: 0.5, color: AppColors.mainColor),
                 Expanded(
                     child: Container(
                       color: Colors.white,

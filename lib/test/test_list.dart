@@ -2,8 +2,10 @@ import 'dart:convert';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:license/common/app_colors.dart';
 import 'package:license/common/constant.dart';
 import 'package:license/database/sql_helper.dart';
+import 'package:license/extension/text_extension.dart';
 import 'package:license/setting/model/license_model.dart';
 import 'package:license/test/model/test_model.dart';
 import 'package:license/test/test_page.dart';
@@ -146,14 +148,7 @@ class _TestListState extends State<TestList> {
                   onPressed: () {
                     generateRandomTest();
                   },
-                  child: const Text(
-                    'Thêm đề',
-                    style: TextStyle(
-                        fontWeight: FontWeight.w400,
-                        fontSize: 15,
-                        color: Colors.white
-                    ),
-                  )
+                  child: const Text('Thi ngẫu nhiên').w400().text15().whiteColor()
               )
             )
           ],

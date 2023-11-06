@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:license/common/app_colors.dart';
 import 'package:license/extension/text_extension.dart';
 import 'package:license/more/model/section_tip.dart';
 
@@ -42,10 +43,10 @@ class TheorySectionContentRow extends StatelessWidget {
         ),
         child: Text(
           sectionTipsModel.name,
-          style: const TextStyle(
+          style: TextStyle(
               fontWeight: FontWeight.w700,
               fontSize: 18,
-              color: AppColors.mainColor
+              color: AppColors.mainColor,
           ),
         ),
       ),

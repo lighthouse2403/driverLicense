@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:license/bottom_tab_bar/bottom_tab_bar.dart';
 import 'package:license/firebase/firebase_user.dart';
 import 'package:license/firebase/firebase_option.dart';
+import 'package:license/routes/routes.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();

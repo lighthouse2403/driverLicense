@@ -22,11 +22,21 @@ class FirebaseChat {
     return allData;
   }
 
+  Future<ThreadModel> loadThreadDetail(String threadId) async {
+    final doc = await firestore.collection("chat").doc(threadId);
+    final docSnap = await doc.get();
+    final threadDetail = docSnap.data();
+
+    ThreadModel newThread = ThreadModel.fromJson(threadDetail as Map<String, dynamic>);
+    print('${newThread.commentsCount} ${threadId}');
+    return newThread;
+  }
+
   Future<void> addNewThread(String title) async {
     CollectionReference chat = firestore.collection('chat');
     List<String> deviceInfo = await FirebaseUser.instance.getDeviceDetails();
 
-    chat.add({
+    await chat.add({
         'createTime': FieldValue.serverTimestamp(),
         'threadId': FieldValue.serverTimestamp().toString(),
         'title': title,
@@ -62,14 +72,11 @@ class FirebaseChat {
   }
 
   Future<List<CommentModel>> loadComment(String threadId) async {
-    commentLimit += 10;
+    commentLimit += 100;
 
     QuerySnapshot chatSnapshot = await firestore.collection('chat').doc(threadId).collection('comments').limit(commentLimit).orderBy('updateTime', descending: true).get();
-
     // Get data from docs and convert map to List
     final allData = chatSnapshot.docs.map((doc) => CommentModel.fromJson(doc.data() as Map<String, dynamic>)).toList();
-
-    print(allData.length);
     return allData;
   }
 
@@ -88,6 +95,7 @@ class FirebaseChat {
       'updateTime': FieldValue.serverTimestamp(),
       'createTime': FieldValue.serverTimestamp()
     }).then((value) async {
+      print('comment count: ${thread.commentsCount}');
       await updateComment(thread.threadId, value.id, content);
       await updateNumberOfComment(thread.threadId, (thread.commentsCount ?? 0) + 1);
     }).catchError((error) => print("Failed to add user: $error"));

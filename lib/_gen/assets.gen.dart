@@ -16,9 +16,17 @@ class $AssetsIconGen {
 
   $AssetsIconChatGen get chat => const $AssetsIconChatGen();
   $AssetsIconHomeGen get home => const $AssetsIconHomeGen();
+
+  /// File path: assets/icon/loading_primary.svg
+  SvgGenImage get loadingPrimary =>
+      const SvgGenImage('assets/icon/loading_primary.svg');
+
   $AssetsIconQuestionGen get question => const $AssetsIconQuestionGen();
   $AssetsIconTrafficSignGen get trafficSign =>
       const $AssetsIconTrafficSignGen();
+
+  /// List of all assets
+  List<SvgGenImage> get values => [loadingPrimary];
 }
 
 class $AssetsJsonGen {

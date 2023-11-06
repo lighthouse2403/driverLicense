@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:license/ads/ads_helper.dart';
+import 'package:license/common/app_colors.dart';
 import 'package:license/firebase/firebase_user.dart';
 import 'package:license/more/more.dart';
 import 'package:license/setting/setting.dart';
@@ -87,7 +88,7 @@ class MainBottomTabBarState extends State<MainBottomTabBar> {
                 ),
               ],
               currentIndex: _selectedIndex,
-              selectedItemColor: AppColors.mainColor
+              selectedItemColor: AppColors.mainColor,
               unselectedItemColor: Colors.grey,
               unselectedLabelStyle: const TextStyle(
                 fontSize: 12

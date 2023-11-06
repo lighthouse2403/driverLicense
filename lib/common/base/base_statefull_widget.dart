@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:license/common/component/loading_view.dart';
 
 class BaseStatefulWidget extends StatefulWidget  {
   const BaseStatefulWidget({super.key});
@@ -8,6 +9,8 @@ class BaseStatefulWidget extends StatefulWidget  {
 }
 
 class BaseStatefulState<T extends StatefulWidget> extends State<T> {
+  final LoadingView loadingView = LoadingView();
+
   @override
   void initState() {
     super.initState();

@@ -92,7 +92,7 @@ class _MoreState extends State<More> {
       case 2:
         Navigator.push(
             context,
-            MaterialPageRoute(builder: (context) => const Chat())
+            MaterialPageRoute(builder: (context) => Chat())
             );
         break;
       case 3:

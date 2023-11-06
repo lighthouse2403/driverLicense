@@ -1,76 +1,45 @@
 import 'package:flutter/material.dart';
+import 'package:license/common/app_colors.dart';
+import 'package:license/extension/text_extension.dart';
 
-class OverlayLoadingProgress {
-  static OverlayEntry? _overlay;
+class LoadingView {
 
-  static start(
-      BuildContext context, {
-        Color? barrierColor = Colors.black54,
-        Widget? widget,
-        Color color = Colors.black38,
-        String? gifOrImagePath,
-        bool barrierDismissible = true,
-        double? loadingWidth,
-      }) async {
-    if (_overlay != null) return;
-    _overlay = OverlayEntry(builder: (BuildContext context) {
-      return _LoadingWidget(
-        color: color,
-        barrierColor: barrierColor,
-        widget: widget,
-        gifOrImagePath: gifOrImagePath,
-        barrierDismissible: barrierDismissible,
-        loadingWidth: loadingWidth,
+  late OverlayEntry _progressOverlayEntry;
+
+  void show(BuildContext context){
+    _progressOverlayEntry = _createdProgressEntry(context);
+    Overlay.of(context).insert(_progressOverlayEntry);
+  }
+
+  void hide(){
+    if(_progressOverlayEntry != null){
+      _progressOverlayEntry.remove();
+    }
+  }
+
+  OverlayEntry _createdProgressEntry(BuildContext context) =>
+      OverlayEntry(
+          builder: (BuildContext context) =>
+              Stack(
+                children: <Widget>[
+                  Container(
+                    color: Colors.black.withOpacity(0.2),
+                  ),
+                  Positioned(
+                    top: screenHeight(context) / 2,
+                    left: screenWidth(context) / 2,
+                    child: CircularProgressIndicator(color: AppColors.mainColor),
+                  )
+
+                ],
+
+              )
       );
-    });
-    Overlay.of(context).insert(_overlay!);
-  }
 
-  static stop() {
-    if (_overlay == null) return;
-    _overlay!.remove();
-    _overlay = null;
-  }
-}
+  double screenHeight(BuildContext context) =>
+      MediaQuery.of(context).size.height;
 
-class _LoadingWidget extends StatelessWidget {
-  final Widget? widget;
-  final Color? color;
-  final Color? barrierColor;
-  final String? gifOrImagePath;
-  final bool barrierDismissible;
-  final double? loadingWidth;
+  double screenWidth(BuildContext context) =>
+      MediaQuery.of(context).size.width;
 
-  const _LoadingWidget({
-    Key? key,
-    this.widget,
-    this.color,
-    this.barrierColor,
-    this.gifOrImagePath,
-    required this.barrierDismissible,
-    this.loadingWidth,
-  }) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: barrierDismissible ? OverlayLoadingProgress.stop : null,
-      child: Container(
-        constraints: const BoxConstraints.expand(),
-        color: barrierColor,
-        child: GestureDetector(
-          onTap: () {},
-          child: Center(
-            child: widget ??
-                SizedBox.square(
-                  dimension: loadingWidth,
-                  child: gifOrImagePath != null
-                      ? Image.asset(gifOrImagePath!)
-                      : const CircularProgressIndicator(strokeWidth: 3),
-                ),
-          ),
-        ),
-      ),
-    );
-  }
 }

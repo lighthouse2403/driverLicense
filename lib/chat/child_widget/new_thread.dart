@@ -1,29 +1,30 @@
 import 'package:flutter/material.dart';
-import 'package:flutter/services.dart';
+import 'package:license/chat/bloc/chat_bloc.dart';
 import 'package:license/common/app_colors.dart';
 import 'package:license/common/base/base_app_bar.dart';
-import 'package:license/common/component/loading_view.dart';
+import 'package:license/common/base/base_statefull_widget.dart';
 import 'package:license/extension/font_size_extension.dart';
 import 'package:license/extension/font_weight_extension.dart';
 import 'package:license/extension/text_color_extension.dart';
 import 'package:license/extension/text_extension.dart';
 import 'package:license/firebase/firebase_chat.dart';
 
-class NewThread extends StatefulWidget {
+class NewThread extends BaseStatefulWidget {
   const NewThread({super.key});
   @override
   State<NewThread> createState() => _NewThreadState();
 }
 
-class _NewThreadState extends State<NewThread> {
+class _NewThreadState extends BaseStatefulState<NewThread> {
   TextEditingController textController = TextEditingController();
+  ChatBloc chatBloc = ChatBloc();
 
   onGoBack(dynamic value) {
     setState(() {});
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget? buildBody() {
     return Scaffold(
         appBar: BaseAppBar(title: 'Thêm chủ đề'),
         body: Column(
@@ -65,10 +66,10 @@ class _NewThreadState extends State<NewThread> {
               ),
               child: InkWell(
                 onTap: () async {
-                  OverlayLoadingProgress.start(context);
+                  loadingView.show(context);
                   await FirebaseChat.instance.addNewThread(textController.text);
-                  OverlayLoadingProgress.stop();
-                  Navigator.pop(context);
+                  loadingView.hide();
+                  Navigator.of(context).pop();
                 },
                 child: const Text('Tạo mới').w500().text16().whiteColor(),
               ),

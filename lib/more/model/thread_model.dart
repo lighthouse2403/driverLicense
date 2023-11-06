@@ -30,4 +30,8 @@ class ThreadModel {
     deviceName = json['deviceName'];
     commentsCount = json['commentsCount'];
   }
+
+  void updateCommentCount() {
+    commentsCount = (commentsCount ?? 0) + 1;
+  }
 }

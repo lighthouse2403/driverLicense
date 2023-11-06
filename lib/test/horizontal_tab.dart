@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:license/common/app_colors.dart';
 import 'package:license/extension/text_color_extension.dart';
 
 class HorizontalTab extends StatelessWidget {
