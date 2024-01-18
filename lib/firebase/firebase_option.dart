@@ -19,8 +19,8 @@ class DefaultFirebaseOptions {
     apiKey: 'AIzaSyClTNyWbqAh0yWsfrGEi8iCz0kqKbkoXoE',
     appId: '1:855984490695:android:6643027bc44252d53856e2',
     messagingSenderId: '490028130190',
-    projectId: 'golfzon-gsm',
-    storageBucket: 'golfzon-gsm.appspot.com',
+    projectId: 'com.driver.license',
+    storageBucket: 'driver-licens.appspot.com',
     androidClientId: '490028130190-mdagqnl1gfk3ohb0qvdokntrsho57n6o.apps.googleusercontent.com',
   );
 

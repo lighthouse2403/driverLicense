@@ -1,11 +1,9 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_analytics/firebase_analytics.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:license/bottom_tab_bar/bottom_tab_bar.dart';
 import 'package:license/firebase/firebase_user.dart';
 import 'package:license/firebase/firebase_option.dart';
-import 'package:license/routes/routes.dart';
 
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
