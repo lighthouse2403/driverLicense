@@ -48,7 +48,7 @@ class TestPageState extends State<TestPage> {
     if (widget.test.status == 1) {
       status = TestStatus.done;
     }
-    AdHelper.showAds();
+    AdHelper.showAds(dismiss: (){});
   }
 
   @override

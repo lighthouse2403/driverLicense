@@ -10,12 +10,24 @@ class AdHelper {
     ads.loadInterstitialAd();
   }
 
-  static showAds() {
+  static showAds({required Function dismiss}) {
     double currentTime = DateTime.now().microsecondsSinceEpoch/1000000;
 
+    if (AdHelper.interstitialAd != null) {
+      AdHelper().loadInterstitialAd();
+      return;
+    }
     if ((AdHelper.interstitialAd != null) && (currentTime- 18000) > lastDisplayingTime) {
-      AdHelper.interstitialAd?.show();
       AdHelper.lastDisplayingTime = DateTime.now().microsecondsSinceEpoch/1000000;
+      AdHelper.interstitialAd?.fullScreenContentCallback = FullScreenContentCallback(
+        onAdDismissedFullScreenContent: (ads) {
+          // Dismissed ads
+          dismiss();
+          return;
+          print('dismissed ads');
+        },
+      );
+      AdHelper.interstitialAd?.show();
       AdHelper().loadInterstitialAd();
     }
   }
@@ -30,24 +42,18 @@ class AdHelper {
   }
 
   void loadInterstitialAd() {
+    AdHelper.interstitialAd = null;
+
     InterstitialAd.load(
       adUnitId: interstitialAdUnitId,
       request: const AdRequest(),
       adLoadCallback: InterstitialAdLoadCallback(
         onAdLoaded: (ads) {
-
-          ads.fullScreenContentCallback = FullScreenContentCallback(
-            onAdDismissedFullScreenContent: (ads) {
-              // Dismissed ads
-              print('dismissed ads');
-            },
-          );
-
           AdHelper.interstitialAd = ads;
           print('onAdLoaded ${AdHelper.interstitialAd}');
-
         },
         onAdFailedToLoad: (err) {
+          AdHelper.interstitialAd = null;
           print('Failed to load an interstitial ad: ${err.message}');
         },
       ),

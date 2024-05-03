@@ -30,7 +30,7 @@ class _QuestionPageState extends State<QuestionPage> {
   void initState() {
     // TODO: implement initState
     super.initState();
-    AdHelper.showAds();
+    AdHelper.showAds(dismiss: () {});
   }
 
   void onPageChanged(int index) {
