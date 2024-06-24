@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:license/ads/ads_helper.dart';
 import 'package:license/common/base/base_app_bar.dart';
 import 'package:license/database/sql_helper.dart';
 import 'package:license/theory/models/chapter_model.dart';
@@ -56,10 +57,12 @@ class _ChapterListState extends State<ChapterList> {
       chapter = chapterArray.last;
     }
 
-    Navigator.push(
-        context,
-        MaterialPageRoute(builder: (context) => QuestionPage(questionList: questions, title: chapter.name,))
-    ).then(onGoBack);
+    AdHelper.showAds(dismiss: () {
+      Navigator.push(
+          context,
+          MaterialPageRoute(builder: (context) => QuestionPage(questionList: questions, title: chapter.name,))
+      ).then(onGoBack);
+    });
   }
 
   onGoBack(dynamic value) {

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:license/ads/ads_helper.dart';
 import 'package:license/extension/text_extension.dart';
 import 'package:license/trafficSign/traffic_sign_detail.dart';
 import 'package:license/trafficSign/Model/traffic_sign_model.dart';
@@ -17,10 +18,12 @@ class _TrafficSignRowState extends State<TrafficSignRow> {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.push(
-            context,
-            MaterialPageRoute(builder: (context) => TrafficSignDetail(trafficSignModel: widget.model,))
-        );
+        AdHelper.showAds(dismiss: () {
+          Navigator.push(
+              context,
+              MaterialPageRoute(builder: (context) => TrafficSignDetail(trafficSignModel: widget.model,))
+          );
+        });
       },
       child: Row(
         children: [
