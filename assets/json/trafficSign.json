@@ -146,9 +146,15 @@
     {
         "type": 0,
         "name": "P.117",
-        "comment": "Hạn chế chiều ngang xe",
-        "description": "Cấm các loại xe cơ giới/thô sơ (kể cả xe ưu tiên) có chiều ngang vượt quá trị số ghi trên biển đi vào."
+        "comment": "Hạn chế chiều cao của xe",
+        "description": "Cấm các loại xe cơ giới/thô sơ (kể cả xe ưu tiên) có chiều cao vượt quá trị số ghi trên biển đi vào."
       },
+    {
+      "type": 0,
+      "name": "P.118",
+      "comment": "Hạn chế chiều ngang của xe",
+      "description": "Cấm các loại xe cơ giới/thô sơ (kể cả xe ưu tiên) có chiều ngang vượt quá trị số ghi trên biển đi vào."
+    },
     {
         "type": 0,
         "name": "P.119",
@@ -533,41 +539,77 @@
               "description": ""
           },
         {
+          "type": 1,
+          "name": "R.412e",
+          "comment": "Làn đường dành cho xe buýt",
+          "description": ""
+        },
+        {
               "type": 1,
               "name": "R.412f",
               "comment": "Làn đường dành cho xe ô tô",
               "description": ""
           },
+    {
+      "type": 1,
+      "name": "R.412g",
+      "comment": "Làn đường dành cho xe máy và xe đạp",
+      "description": "Làn đường dành riêng cho xe máy (kể cả xe gắn máy) và xe đạp (kể cả các loại xe thô sơ khác)."
+    },
+    {
+      "type": 1,
+      "name": "R.412h",
+      "comment": "Làn đường dành cho xe đạp",
+      "description": "Làn đường dành riêng cho xe đạp (kể cả các loại xe thô sơ khác)."
+    },
         {
               "type": 1,
-              "name": "R.413i",
-              "comment": "Kết thúc làn đường dành cho xe khách",
+              "name": "R.412i",
+              "comment": "Kết thúc làn đường dành cho xe ôtô khách",
               "description": ""
           },
         {
               "type": 1,
-              "name": "R.413j",
-              "comment": "Kết thúc làn đường dành cho xe con",
+              "name": "R.412j",
+              "comment": "Kết thúc làn đường dành cho xe ô tô con",
               "description": ""
           },
         {
               "type": 1,
-              "name": "R.413k",
+              "name": "R.412k",
               "comment": "Kết thúc làn đường dành cho xe tải",
               "description": ""
           },
         {
               "type": 1,
-              "name": "R.413l",
+              "name": "R.412l",
               "comment": "Kết thúc làn đường dành cho xe mô tô",
               "description": ""
           },
+    {
+      "type": 1,
+      "name": "R.412m",
+      "comment": "Kết thúc làn đường dành cho xe buýt",
+      "description": ""
+    },
         {
               "type": 1,
-              "name": "R.413n",
+              "name": "R.412n",
               "comment": "Kết thúc làn đường dành cho xe ô tô",
               "description": ""
           },
+    {
+      "type": 1,
+      "name": "R.412o",
+      "comment": "Kết thúc làn đường dành cho xe xe máy và xe đạp",
+      "description": ""
+    },
+    {
+      "type": 1,
+      "name": "R.412p",
+      "comment": "Kết thúc làn đường dành cho xe đạp",
+      "description": ""
+    },
         {
               "type": 1,
               "name": "R.415",

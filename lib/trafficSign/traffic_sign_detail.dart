@@ -17,6 +17,10 @@ class _TrafficSignDetailState extends State<TrafficSignDetail> {
 
   @override
   Widget build(BuildContext context) {
+    String description = widget.trafficSignModel.description ?? '';
+    if (description.isEmpty) {
+      description = widget.trafficSignModel.comment;
+    }
     return Scaffold(
       appBar: BaseAppBar(
         title: 'Biển ${widget.trafficSignModel.name}',
@@ -49,7 +53,7 @@ class _TrafficSignDetailState extends State<TrafficSignDetail> {
               ),
               margin: const EdgeInsets.only(top: 10),
               padding: const EdgeInsets.only(left: 10, right: 10, top: 16, bottom: 16),
-              child: Text(widget.trafficSignModel.comment).w500().text14().blackColor(),
+              child: Text(description).w500().text14().blackColor(),
             )
           ],
         )
