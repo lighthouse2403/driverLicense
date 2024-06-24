@@ -2380,6 +2380,10 @@ class $AssetsIconTrafficSignGen {
   AssetGenImage get r302b =>
       const AssetGenImage('assets/icon/trafficSign/R.302b.png');
 
+  /// File path: assets/icon/trafficSign/R.302c.png
+  AssetGenImage get r302c =>
+      const AssetGenImage('assets/icon/trafficSign/R.302c.png');
+
   /// File path: assets/icon/trafficSign/R.303.png
   AssetGenImage get r303 =>
       const AssetGenImage('assets/icon/trafficSign/R.303.png');
@@ -2432,6 +2436,22 @@ class $AssetsIconTrafficSignGen {
   AssetGenImage get r403b =>
       const AssetGenImage('assets/icon/trafficSign/R.403b.png');
 
+  /// File path: assets/icon/trafficSign/R.403c.png
+  AssetGenImage get r403c =>
+      const AssetGenImage('assets/icon/trafficSign/R.403c.png');
+
+  /// File path: assets/icon/trafficSign/R.403d.png
+  AssetGenImage get r403d =>
+      const AssetGenImage('assets/icon/trafficSign/R.403d.png');
+
+  /// File path: assets/icon/trafficSign/R.403e.png
+  AssetGenImage get r403e =>
+      const AssetGenImage('assets/icon/trafficSign/R.403e.png');
+
+  /// File path: assets/icon/trafficSign/R.403f.png
+  AssetGenImage get r403f =>
+      const AssetGenImage('assets/icon/trafficSign/R.403f.png');
+
   /// File path: assets/icon/trafficSign/R.404a.png
   AssetGenImage get r404a =>
       const AssetGenImage('assets/icon/trafficSign/R.404a.png');
@@ -2439,6 +2459,22 @@ class $AssetsIconTrafficSignGen {
   /// File path: assets/icon/trafficSign/R.404b.png
   AssetGenImage get r404b =>
       const AssetGenImage('assets/icon/trafficSign/R.404b.png');
+
+  /// File path: assets/icon/trafficSign/R.404c.png
+  AssetGenImage get r404c =>
+      const AssetGenImage('assets/icon/trafficSign/R.404c.png');
+
+  /// File path: assets/icon/trafficSign/R.404d.png
+  AssetGenImage get r404d =>
+      const AssetGenImage('assets/icon/trafficSign/R.404d.png');
+
+  /// File path: assets/icon/trafficSign/R.404e.png
+  AssetGenImage get r404e =>
+      const AssetGenImage('assets/icon/trafficSign/R.404e.png');
+
+  /// File path: assets/icon/trafficSign/R.404f.png
+  AssetGenImage get r404f =>
+      const AssetGenImage('assets/icon/trafficSign/R.404f.png');
 
   /// File path: assets/icon/trafficSign/R.411.png
   AssetGenImage get r411 =>
@@ -2460,9 +2496,53 @@ class $AssetsIconTrafficSignGen {
   AssetGenImage get r412d =>
       const AssetGenImage('assets/icon/trafficSign/R.412d.png');
 
+  /// File path: assets/icon/trafficSign/R.412e.png
+  AssetGenImage get r412e =>
+      const AssetGenImage('assets/icon/trafficSign/R.412e.png');
+
   /// File path: assets/icon/trafficSign/R.412f.png
   AssetGenImage get r412f =>
       const AssetGenImage('assets/icon/trafficSign/R.412f.png');
+
+  /// File path: assets/icon/trafficSign/R.412g.png
+  AssetGenImage get r412g =>
+      const AssetGenImage('assets/icon/trafficSign/R.412g.png');
+
+  /// File path: assets/icon/trafficSign/R.412h.png
+  AssetGenImage get r412h =>
+      const AssetGenImage('assets/icon/trafficSign/R.412h.png');
+
+  /// File path: assets/icon/trafficSign/R.412i.png
+  AssetGenImage get r412i =>
+      const AssetGenImage('assets/icon/trafficSign/R.412i.png');
+
+  /// File path: assets/icon/trafficSign/R.412j.png
+  AssetGenImage get r412j =>
+      const AssetGenImage('assets/icon/trafficSign/R.412j.png');
+
+  /// File path: assets/icon/trafficSign/R.412k.png
+  AssetGenImage get r412k =>
+      const AssetGenImage('assets/icon/trafficSign/R.412k.png');
+
+  /// File path: assets/icon/trafficSign/R.412l.png
+  AssetGenImage get r412l =>
+      const AssetGenImage('assets/icon/trafficSign/R.412l.png');
+
+  /// File path: assets/icon/trafficSign/R.412m.png
+  AssetGenImage get r412m =>
+      const AssetGenImage('assets/icon/trafficSign/R.412m.png');
+
+  /// File path: assets/icon/trafficSign/R.412n.png
+  AssetGenImage get r412n =>
+      const AssetGenImage('assets/icon/trafficSign/R.412n.png');
+
+  /// File path: assets/icon/trafficSign/R.412o.png
+  AssetGenImage get r412o =>
+      const AssetGenImage('assets/icon/trafficSign/R.412o.png');
+
+  /// File path: assets/icon/trafficSign/R.412p.png
+  AssetGenImage get r412p =>
+      const AssetGenImage('assets/icon/trafficSign/R.412p.png');
 
   /// File path: assets/icon/trafficSign/R.413i.png
   AssetGenImage get r413i =>
@@ -3079,6 +3159,7 @@ class $AssetsIconTrafficSignGen {
         r301i,
         r302a,
         r302b,
+        r302c,
         r303,
         r304,
         r305,
@@ -3092,14 +3173,33 @@ class $AssetsIconTrafficSignGen {
         r310c,
         r403a,
         r403b,
+        r403c,
+        r403d,
+        r403e,
+        r403f,
         r404a,
         r404b,
+        r404c,
+        r404d,
+        r404e,
+        r404f,
         r411,
         r412a,
         r412b,
         r412c,
         r412d,
+        r412e,
         r412f,
+        r412g,
+        r412h,
+        r412i,
+        r412j,
+        r412k,
+        r412l,
+        r412m,
+        r412n,
+        r412o,
+        r412p,
         r413i,
         r413j,
         r413k,
