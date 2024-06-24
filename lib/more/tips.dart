@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:license/_gen/assets.gen.dart';
 import 'package:license/common/app_colors.dart';
 import 'package:license/common/base/base_app_bar.dart';
 import 'package:license/more/practice_tips.dart';
@@ -37,7 +38,16 @@ class _TipsState extends State<Tips>
 
     return Scaffold(
       backgroundColor: Colors.white,
-      appBar: BaseAppBar(title: 'Mẹo'),
+      appBar: BaseAppBar(
+        title: 'Mẹo',
+        leading: InkWell(
+          onTap: () => Navigator.pop(context),
+          child: Align(
+            alignment: Alignment.center,
+            child: Assets.icon.arrowBack.svg(width: 24, height: 24),
+          ),
+        ),
+      ),
       body: Column(      // Column
         children: <Widget>[
           Container(

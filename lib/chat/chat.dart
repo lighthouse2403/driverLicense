@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:license/_gen/assets.gen.dart';
 import 'package:license/chat/bloc/chat_bloc.dart';
 import 'package:license/chat/bloc/chat_event.dart';
 import 'package:license/chat/bloc/chat_state.dart';
@@ -46,6 +47,13 @@ class _ChatState extends BaseStatefulState<Chat> {
   PreferredSizeWidget? buildAppBar() {
     return AppBar(
       title: const Text('Giao lưu').w700().text18().whiteColor(),
+      leading: InkWell(
+        onTap: () => Navigator.pop(context),
+        child: Align(
+          alignment: Alignment.center,
+          child: Assets.icon.arrowBack.svg(width: 24, height: 24),
+        ),
+      ),
       backgroundColor: AppColors.mainColor,
       actions: [
         TextButton(

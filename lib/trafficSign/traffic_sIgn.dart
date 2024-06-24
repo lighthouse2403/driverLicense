@@ -75,7 +75,6 @@ class _TrafficSignState extends State<TrafficSign> {
                       onPageChanged: onPageChanged,
                       itemBuilder: (BuildContext context, int index) {
                         List<TrafficSignModel> trafficSign = traficSignArray.where((element) => element.type == index).toList();
-
                         return TrafficSignPage(type: index, traficSignByTypeArray: trafficSign);
                       },
                     ),
