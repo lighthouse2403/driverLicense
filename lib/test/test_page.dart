@@ -1,8 +1,10 @@
 import 'dart:async';
 import 'package:flutter/material.dart';
+import 'package:license/_gen/assets.gen.dart';
 import 'package:license/ads/ads_helper.dart';
 import 'package:license/common/app_colors.dart';
 import 'package:license/database/sql_helper.dart';
+import 'package:license/routes/routes.dart';
 import 'package:license/test/horizontal_tab.dart';
 import 'package:license/test/model/test_model.dart';
 import 'package:license/test/result_button.dart';
@@ -48,7 +50,6 @@ class TestPageState extends State<TestPage> {
     if (widget.test.status == 1) {
       status = TestStatus.done;
     }
-    AdHelper.showAds(dismiss: (){});
   }
 
   @override
@@ -186,6 +187,13 @@ class TestPageState extends State<TestPage> {
 
     return Scaffold(
         appBar: AppBar(
+          leading: InkWell(
+            onTap: () => Navigator.pop(context),
+            child: Align(
+              alignment: Alignment.center,
+              child: Assets.icon.arrowBack.svg(width: 24, height: 24),
+            ),
+          ),
           actions: [
             Center(
               child:  Container(

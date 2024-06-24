@@ -19,9 +19,7 @@ class _TrafficSignPageState extends State<TrafficSignPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
     super.initState();
-    AdHelper.showAds();
   }
 
   @override

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:license/_gen/assets.gen.dart';
 import 'package:license/common/app_colors.dart';
 import 'package:license/common/base/base_app_bar.dart';
 import 'package:license/extension/text_extension.dart';
@@ -17,7 +18,16 @@ class _TrafficSignDetailState extends State<TrafficSignDetail> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: BaseAppBar(title: 'Biển ${widget.trafficSignModel.name}'),
+      appBar: BaseAppBar(
+        title: 'Biển ${widget.trafficSignModel.name}',
+        leading: InkWell(
+          onTap: () => Navigator.pop(context),
+          child: Align(
+            alignment: Alignment.center,
+            child: Assets.icon.arrowBack.svg(width: 24, height: 24),
+          ),
+        ),
+      ),
       body: Container(
         decoration: const BoxDecoration(
             color: Colors.white

@@ -2,6 +2,7 @@ import 'dart:convert';
 import 'dart:math';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:license/ads/ads_helper.dart';
 import 'package:license/common/app_colors.dart';
 import 'package:license/common/constant.dart';
 import 'package:license/database/sql_helper.dart';
@@ -116,15 +117,18 @@ class _TestListState extends State<TestList> {
     List<String> selectedQuestionIDs = selectedTest.questionIds.map((e) => '${e}').toList();
     List<QuestionModel> questionsInTest = questionList.where((element) => selectedQuestionIDs.contains('${element.id}')).toList();
 
-    Navigator.push(
-        context,
-        MaterialPageRoute(
-            builder: (context) => TestPage(
-                                    test: testArray[index],
-                                    finishedQuestionList: finishedQuestion.toList(),
-                                    questionList: questionsInTest,
-            ))
-    ).then(onGoBack);
+    AdHelper.showAds(dismiss: () {
+      Navigator.push(
+          context,
+          MaterialPageRoute(
+              builder: (context) => TestPage(
+                test: testArray[index],
+                finishedQuestionList: finishedQuestion.toList(),
+                questionList: questionsInTest,
+              ))
+      ).then(onGoBack);
+    });
+
   }
 
   onGoBack(dynamic value) {

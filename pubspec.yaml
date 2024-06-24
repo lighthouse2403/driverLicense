@@ -35,7 +35,7 @@ dependencies:
   shared_preferences:
   google_fonts: ^3.0.1
   google_mobile_ads: ^3.1.0
-  fluttertoast: ^8.2.1
+  fluttertoast: ^8.2.6
   firebase_analytics: ^10.6.2
   firebase_crashlytics: ^3.4.2
   cloud_firestore: ^4.12.1

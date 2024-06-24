@@ -13,7 +13,8 @@ class AdHelper {
   static showAds({required Function dismiss}) {
     double currentTime = DateTime.now().microsecondsSinceEpoch/1000000;
 
-    if (AdHelper.interstitialAd != null) {
+    if (AdHelper.interstitialAd == null) {
+      dismiss();
       AdHelper().loadInterstitialAd();
       return;
     }
@@ -21,14 +22,14 @@ class AdHelper {
       AdHelper.lastDisplayingTime = DateTime.now().microsecondsSinceEpoch/1000000;
       AdHelper.interstitialAd?.fullScreenContentCallback = FullScreenContentCallback(
         onAdDismissedFullScreenContent: (ads) {
-          // Dismissed ads
+          AdHelper().loadInterstitialAd();
           dismiss();
           return;
-          print('dismissed ads');
         },
       );
       AdHelper.interstitialAd?.show();
-      AdHelper().loadInterstitialAd();
+    } else {
+      dismiss();
     }
   }
 
@@ -50,11 +51,9 @@ class AdHelper {
       adLoadCallback: InterstitialAdLoadCallback(
         onAdLoaded: (ads) {
           AdHelper.interstitialAd = ads;
-          print('onAdLoaded ${AdHelper.interstitialAd}');
         },
         onAdFailedToLoad: (err) {
           AdHelper.interstitialAd = null;
-          print('Failed to load an interstitial ad: ${err.message}');
         },
       ),
     );
